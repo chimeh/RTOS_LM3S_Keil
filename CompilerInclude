@@ -1,0 +1,6 @@
+﻿.\APP;.\BSP;.\BSP\RIT\;.\BSP\uCOS-II\;.\DriverLib\driverlib\;.\DriverLib\inc;.\uC-CPU\;.\uC-CPU\ARM-Cortex-M3\;.\uC-LIB\;.\uC-LIB\Ports\;.\uCOS-II\Ports\;.\uCOS-II\Sourse
+
+.;.\APP;.\BSP;.\BSP\RIT;.\BSP\uCOS-II;.\DriverLib;.\DriverLib\driverlib;.\DriverLib\inc;.\uC-CPU;.\uC-CPU\ARM-Cortex-M3;.\uC-LIB;.\uC-LIB\Ports;.\uCOS-II\Ports;.\uCOS-II\Source;
+
+
+

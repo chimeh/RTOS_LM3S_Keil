@@ -1,0 +1,50 @@
+
+
+                                             修改记录
+
+****************************************************************************************************
+*@date  :2013.04.10
+*@autor :Jimmin 
+*@why   :降低文件组织目录深度
+*
+****************************************************************************************************
+目录结构变化，以及文件重命名。以及更改了相应的编译器传递参数
+原来的BSP目录结构
+BSP\
+    --RIT\
+        --rit128x96x4.c
+        --rit128x96x4.h
+    --uCOS-II\
+        --bsp_os.c
+        --bsp_os.h
+
+更改:
+pwd：UCOS_TI_LM3S_Keil
+//以命令的形式记录更改
+mv -rf ./BSP/RIT   ./DriverLib/
+cp -f ./BSP/uCOS-II/* ./BSP/
+rmdir -rf ../BSP/uCOS-II
+
+//更改cpu.h cpu_c.c cpu_a.asm 位置及重命名 cpu_c.c cpu_a.asm
+mv  ./uC-CPU/ARM-Coterx-M3/IAR/* ./uC-CPU/
+cd ./uC-CPU
+rename cpu_c.c  cpu_c_Ports.c
+rename cpu_a.asm cpu_a_Ports.asm
+
+cd ../uC-LIB
+mv ./Port/lib_mem_a.asm   ./
+rename  lib_mem_a.asm lib_mem_a_Ports.asm
+
+
+
+
+
+
+@未记录完,,
+
+
+
+
+
+
+@todo:注意将cpu_cfg.h  app_cfg.h放在的目录以减少交叉引用带来的复杂性
