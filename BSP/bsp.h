@@ -60,11 +60,12 @@
 #include  <cpu.h>
 #include  <cpu_core.h>
 
-#include  <lib_def.h>
-#include  <lib_mem.h>
-#include  <lib_str.h>
+//comment by mim, i think the bsp should use uc_lib, since the relation is compx, the knownlege is poor
+//#include  <lib_def.h>
+//#include  <lib_mem.h>
+//#include  <lib_str.h>
 
-#include  <app_cfg.h>
+//#include  <app_cfg.h>
 
 #include  <bsp_int.h>
 #include  <bsp_ser.h>

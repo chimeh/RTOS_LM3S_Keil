@@ -310,7 +310,7 @@ static  void  App_TaskCreate (void)
                              (void          * ) 0,
                              (INT16U          )(OS_TASK_OPT_STK_CLR | OS_TASK_OPT_STK_CHK));
 
-    APP_TEST_FAULT(os_err, OS_ERR_NONE);
+    APP_TEST_FAULT(os_err, OS_ERR_NONE); 
 
 #if (OS_TASK_NAME_EN > 0)
     OSTaskNameSet(APP_TASK_USER_IF_PRIO, (INT8U *)"User IF", &os_err);
@@ -329,7 +329,7 @@ static  void  App_TaskCreate (void)
                              (void          * ) 0,
                              (INT16U          )(OS_TASK_OPT_STK_CLR | OS_TASK_OPT_STK_CHK));
 
-    APP_TEST_FAULT(os_err, OS_ERR_NONE);
+    APP_TEST_FAULT(os_err, OS_ERR_NONE);  
 
 #if (OS_TASK_NAME_EN > 0)
     OSTaskNameSet(APP_TASK_KBD_PRIO, (INT8U *)"Kbd", &os_err);

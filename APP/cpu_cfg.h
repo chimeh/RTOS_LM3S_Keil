@@ -53,7 +53,7 @@
 */
 
                                                                 /* Configure CPU name feature (see Note #1) :           */
-#define  CPU_CFG_NAME_EN                        DEF_ENABLED
+#define  CPU_CFG_NAME_EN                        DEF_ENABLED   
                                                                 /*   DEF_DISABLED  CPU name DISABLED                    */
                                                                 /*   DEF_ENABLED   CPU name ENABLED                     */
 

@@ -40,8 +40,10 @@ extern "C" {
 *                                           INCLUDE HEADER FILES
 *********************************************************************************************************
 */
-
-#include <app_cfg.h>
+//comment by jim 2013_06_13,
+// i think the os shouldn't be conf in app_cfg. but the os cfg instead.
+//#include <app_cfg.h> 
+       
 #include <os_cfg.h>
 #include <os_cpu.h>
 

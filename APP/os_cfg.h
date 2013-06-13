@@ -57,6 +57,11 @@
 #define OS_TASK_IDLE_STK_SIZE   128u   /* Idle       task stack size (# of OS_STK wide entries)        */
 
 
+                                       /* --------------------- TASK PRIORITIES ---------------------- */
+//add by jim 2013_06_13
+//the os task configure, i think it shouldn't be in app_cfg,  i move it here.
+#define  OS_TASK_TMR_PRIO    (OS_LOWEST_PRIO - 2)  /* The priority of the Timer management task        */
+
                                        /* --------------------- TASK MANAGEMENT ---------------------- */
 #define OS_TASK_CHANGE_PRIO_EN    1u   /*     Include code for OSTaskChangePrio()                      */
 #define OS_TASK_CREATE_EN         1u   /*     Include code for OSTaskCreate()                          */

@@ -59,8 +59,9 @@
 #define  APP_TASK_START_PRIO                               3
 #define  APP_TASK_USER_IF_PRIO                             4
 #define  APP_TASK_KBD_PRIO                                 5
-
-#define  OS_TASK_TMR_PRIO                (OS_LOWEST_PRIO - 2)
+//comment by jim 2013_06_13
+//the os task configure, i think it should be in os_cfg,  i move it to os _cfg.
+//#define  OS_TASK_TMR_PRIO                (OS_LOWEST_PRIO - 2)
 
 /*
 *********************************************************************************************************
