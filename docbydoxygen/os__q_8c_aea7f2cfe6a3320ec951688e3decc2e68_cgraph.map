@@ -1,0 +1,6 @@
+<map id="OSQPend" name="OSQPend">
+<area shape="rect" id="node2" href="$os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="136,5,291,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#a72ffa04010427c899c109336e1de0046" title="OS_EventTaskWait" alt="" coords="146,56,281,83"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="171,107,256,133"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="339,107,450,133"/>
+</map>

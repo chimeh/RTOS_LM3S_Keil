@@ -1,0 +1,718 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uC-LIB/lib_ascii.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('lib__ascii_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">lib_ascii.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="lib__ascii_8h_source.html">lib_ascii.h</a>&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+lib_ascii.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__ascii_8c__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__ascii_8c" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__ascii_8c" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__ascii_8c">
+<area shape="rect" id="node2" href="lib__ascii_8h.html" title="lib_ascii.h" alt="" coords="55,96,135,123"/><area shape="rect" id="node3" href="cpu_8h.html" title="cpu.h" alt="" coords="67,245,121,272"/><area shape="rect" id="node6" href="lib__def_8h.html" title="lib_def.h" alt="" coords="97,171,167,197"/><area shape="rect" id="node4" href="cpu__def_8h.html" title="cpu_def.h" alt="" coords="5,320,83,347"/><area shape="rect" id="node5" href="u_c-_c_p_u_2cpu__cfg_8h.html" title="cpu_cfg.h" alt="" coords="107,320,185,347"/></map>
+</div>
+</div>
+<p><a href="lib__ascii_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a4d05ecf7e55d8f8b0470dda3cec28e8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a4d05ecf7e55d8f8b0470dda3cec28e8f">LIB_ASCII_MODULE</a></td></tr>
+<tr class="separator:a4d05ecf7e55d8f8b0470dda3cec28e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a34a8daa692410d8e9e843351310ba236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a34a8daa692410d8e9e843351310ba236">ASCII_IsAlpha</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a34a8daa692410d8e9e843351310ba236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e861dfe4f8f1ee7aa122388b9aa55ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a7e861dfe4f8f1ee7aa122388b9aa55ab">ASCII_IsAlphaNum</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a7e861dfe4f8f1ee7aa122388b9aa55ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d3e4b634675a538e5551ffe6941d46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a62d3e4b634675a538e5551ffe6941d46">ASCII_IsLower</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a62d3e4b634675a538e5551ffe6941d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf9f1caaef8aeebd5328b2ae2a54480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a0cf9f1caaef8aeebd5328b2ae2a54480">ASCII_IsUpper</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a0cf9f1caaef8aeebd5328b2ae2a54480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b4bc4ac5b9636ceffe09e03da8083b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a73b4bc4ac5b9636ceffe09e03da8083b">ASCII_IsDig</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a73b4bc4ac5b9636ceffe09e03da8083b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac7932bf20d3330b432eecfaf5580b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a6ac7932bf20d3330b432eecfaf5580b7">ASCII_IsDigOct</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a6ac7932bf20d3330b432eecfaf5580b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3babd5a4465b77e26841bc081320a9d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a3babd5a4465b77e26841bc081320a9d8">ASCII_IsDigHex</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a3babd5a4465b77e26841bc081320a9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b57a35b861e1a3997760822a0a5b767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a4b57a35b861e1a3997760822a0a5b767">ASCII_IsBlank</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a4b57a35b861e1a3997760822a0a5b767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3426d9c0bb974e75bc8634c101f30f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#adf3426d9c0bb974e75bc8634c101f30f">ASCII_IsSpace</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:adf3426d9c0bb974e75bc8634c101f30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054037a698a50e5f8c123d364a58ddfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a054037a698a50e5f8c123d364a58ddfa">ASCII_IsPrint</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a054037a698a50e5f8c123d364a58ddfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e818b236165919f610733e1f568702f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a3e818b236165919f610733e1f568702f">ASCII_IsGraph</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a3e818b236165919f610733e1f568702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1244c067ee54c4e568f069945319ec91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a1244c067ee54c4e568f069945319ec91">ASCII_IsPunct</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a1244c067ee54c4e568f069945319ec91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5056829a5cff8bad658da6228f540515"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a5056829a5cff8bad658da6228f540515">ASCII_IsCtrl</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a5056829a5cff8bad658da6228f540515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70913ff7a3db65921adc450f570f348e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a70913ff7a3db65921adc450f570f348e">ASCII_ToLower</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:a70913ff7a3db65921adc450f570f348e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33b68186b6f002e66a876319354c97e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#af33b68186b6f002e66a876319354c97e">ASCII_ToUpper</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c)</td></tr>
+<tr class="separator:af33b68186b6f002e66a876319354c97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20980b424a8113e1a7a1c33b73fef4f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__ascii_8c.html#a20980b424a8113e1a7a1c33b73fef4f6">ASCII_Cmp</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c1, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> c2)</td></tr>
+<tr class="separator:a20980b424a8113e1a7a1c33b73fef4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a4d05ecf7e55d8f8b0470dda3cec28e8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIB_ASCII_MODULE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a34a8daa692410d8e9e843351310ba236"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsAlpha </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00156">156</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00531">ASCII_IS_ALPHA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  alpha;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    alpha = <a class="code" href="lib__ascii_8h.html#aa374b2da86d2f4795776a8f2fc4b481b">ASCII_IS_ALPHA</a>(c);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> (alpha);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7e861dfe4f8f1ee7aa122388b9aa55ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsAlphaNum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00186">186</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00554">ASCII_IS_ALPHA_NUM</a>.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l02731">Str_ParseNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  alpha_num;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    alpha_num = <a class="code" href="lib__ascii_8h.html#afa9ed2971342647874e65aa70b67313a">ASCII_IS_ALPHA_NUM</a>(c);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> (alpha_num);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__ascii_8c_a7e861dfe4f8f1ee7aa122388b9aa55ab_icgraph.png" border="0" usemap="#lib__ascii_8c_a7e861dfe4f8f1ee7aa122388b9aa55ab_icgraph" alt=""/></div>
+<map name="lib__ascii_8c_a7e861dfe4f8f1ee7aa122388b9aa55ab_icgraph" id="lib__ascii_8c_a7e861dfe4f8f1ee7aa122388b9aa55ab_icgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03" title="Str_ParseNbr_Int32" alt="" coords="187,31,322,57"/><area shape="rect" id="node3" href="lib__str_8h.html#a3f03bd123ba5567ab9fb6e777e7b40f6" title="Str_ParseNbr_Int32U" alt="" coords="371,5,515,32"/><area shape="rect" id="node4" href="lib__str_8h.html#a41bff67862bf1e7df3a686c1ea3af376" title="Str_ParseNbr_Int32S" alt="" coords="371,56,515,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a62d3e4b634675a538e5551ffe6941d46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsLower </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00217">217</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00486">ASCII_IS_LOWER</a>.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l02731">Str_ParseNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  lower;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    lower = <a class="code" href="lib__ascii_8h.html#a2fe6e110a7f6d3e2d457734a8d4c7dc4">ASCII_IS_LOWER</a>(c);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">return</span> (lower);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__ascii_8c_a62d3e4b634675a538e5551ffe6941d46_icgraph.png" border="0" usemap="#lib__ascii_8c_a62d3e4b634675a538e5551ffe6941d46_icgraph" alt=""/></div>
+<map name="lib__ascii_8c_a62d3e4b634675a538e5551ffe6941d46_icgraph" id="lib__ascii_8c_a62d3e4b634675a538e5551ffe6941d46_icgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03" title="Str_ParseNbr_Int32" alt="" coords="161,31,295,57"/><area shape="rect" id="node3" href="lib__str_8h.html#a3f03bd123ba5567ab9fb6e777e7b40f6" title="Str_ParseNbr_Int32U" alt="" coords="344,5,488,32"/><area shape="rect" id="node4" href="lib__str_8h.html#a41bff67862bf1e7df3a686c1ea3af376" title="Str_ParseNbr_Int32S" alt="" coords="344,56,488,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0cf9f1caaef8aeebd5328b2ae2a54480"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsUpper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00247">247</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00508">ASCII_IS_UPPER</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  upper;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    upper = <a class="code" href="lib__ascii_8h.html#a5291d23e318542910a776be7db0086f9">ASCII_IS_UPPER</a>(c);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">return</span> (upper);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a73b4bc4ac5b9636ceffe09e03da8083b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsDig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00278">278</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00418">ASCII_IS_DIG</a>.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l02731">Str_ParseNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;{</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  dig;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    dig = <a class="code" href="lib__ascii_8h.html#a0fcd36241dc19eb565f8d51ebd5b2791">ASCII_IS_DIG</a>(c);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">return</span> (dig);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__ascii_8c_a73b4bc4ac5b9636ceffe09e03da8083b_icgraph.png" border="0" usemap="#lib__ascii_8c_a73b4bc4ac5b9636ceffe09e03da8083b_icgraph" alt=""/></div>
+<map name="lib__ascii_8c_a73b4bc4ac5b9636ceffe09e03da8083b_icgraph" id="lib__ascii_8c_a73b4bc4ac5b9636ceffe09e03da8083b_icgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03" title="Str_ParseNbr_Int32" alt="" coords="145,31,279,57"/><area shape="rect" id="node3" href="lib__str_8h.html#a3f03bd123ba5567ab9fb6e777e7b40f6" title="Str_ParseNbr_Int32U" alt="" coords="328,5,472,32"/><area shape="rect" id="node4" href="lib__str_8h.html#a41bff67862bf1e7df3a686c1ea3af376" title="Str_ParseNbr_Int32S" alt="" coords="328,56,472,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ac7932bf20d3330b432eecfaf5580b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsDigOct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00307">307</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00439">ASCII_IS_DIG_OCT</a>.</p>
+<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  dig_oct;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    dig_oct = <a class="code" href="lib__ascii_8h.html#ad6029d2bbdc45990395111cf7f95abab">ASCII_IS_DIG_OCT</a>(c);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">return</span> (dig_oct);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3babd5a4465b77e26841bc081320a9d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsDigHex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00337">337</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00461">ASCII_IS_DIG_HEX</a>.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l02731">Str_ParseNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;{</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  dig_hex;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    dig_hex = <a class="code" href="lib__ascii_8h.html#ac7b2d93d178e4df4f81047642eaf3e4a">ASCII_IS_DIG_HEX</a>(c);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordflow">return</span> (dig_hex);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__ascii_8c_a3babd5a4465b77e26841bc081320a9d8_icgraph.png" border="0" usemap="#lib__ascii_8c_a3babd5a4465b77e26841bc081320a9d8_icgraph" alt=""/></div>
+<map name="lib__ascii_8c_a3babd5a4465b77e26841bc081320a9d8_icgraph" id="lib__ascii_8c_a3babd5a4465b77e26841bc081320a9d8_icgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03" title="Str_ParseNbr_Int32" alt="" coords="169,31,303,57"/><area shape="rect" id="node3" href="lib__str_8h.html#a3f03bd123ba5567ab9fb6e777e7b40f6" title="Str_ParseNbr_Int32U" alt="" coords="352,5,496,32"/><area shape="rect" id="node4" href="lib__str_8h.html#a41bff67862bf1e7df3a686c1ea3af376" title="Str_ParseNbr_Int32S" alt="" coords="352,56,496,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b57a35b861e1a3997760822a0a5b767"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsBlank </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00371">371</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00581">ASCII_IS_BLANK</a>.</p>
+<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;{</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  blank;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    blank = <a class="code" href="lib__ascii_8h.html#a0921e444f52a0739b96bd9d299dd550b">ASCII_IS_BLANK</a>(c);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">return</span> (blank);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adf3426d9c0bb974e75bc8634c101f30f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsSpace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00405">405</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00607">ASCII_IS_SPACE</a>.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l02731">Str_ParseNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;{</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  space;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    space = <a class="code" href="lib__ascii_8h.html#a06e060ed85cf9164bbef067de3fc392e">ASCII_IS_SPACE</a>(c);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">return</span> (space);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__ascii_8c_adf3426d9c0bb974e75bc8634c101f30f_icgraph.png" border="0" usemap="#lib__ascii_8c_adf3426d9c0bb974e75bc8634c101f30f_icgraph" alt=""/></div>
+<map name="lib__ascii_8c_adf3426d9c0bb974e75bc8634c101f30f_icgraph" id="lib__ascii_8c_adf3426d9c0bb974e75bc8634c101f30f_icgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03" title="Str_ParseNbr_Int32" alt="" coords="163,31,298,57"/><area shape="rect" id="node3" href="lib__str_8h.html#a3f03bd123ba5567ab9fb6e777e7b40f6" title="Str_ParseNbr_Int32U" alt="" coords="347,5,491,32"/><area shape="rect" id="node4" href="lib__str_8h.html#a41bff67862bf1e7df3a686c1ea3af376" title="Str_ParseNbr_Int32S" alt="" coords="347,56,491,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a054037a698a50e5f8c123d364a58ddfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsPrint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00440">440</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00636">ASCII_IS_PRINT</a>.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l02406">Str_FmtNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;{</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  print;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    print = <a class="code" href="lib__ascii_8h.html#ac178e277399f861505d2aa783c0edb1d">ASCII_IS_PRINT</a>(c);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordflow">return</span> (print);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__ascii_8c_a054037a698a50e5f8c123d364a58ddfa_icgraph.png" border="0" usemap="#lib__ascii_8c_a054037a698a50e5f8c123d364a58ddfa_icgraph" alt=""/></div>
+<map name="lib__ascii_8c_a054037a698a50e5f8c123d364a58ddfa_icgraph" id="lib__ascii_8c_a054037a698a50e5f8c123d364a58ddfa_icgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#af2f3af19820c2f157b06be68b0d83442" title="Str_FmtNbr_Int32" alt="" coords="153,81,277,108"/><area shape="rect" id="node3" href="lib__str_8h.html#aed48c259d2251935d4ca98aa47074698" title="Str_FmtNbr_Int32U" alt="" coords="325,56,459,83"/><area shape="rect" id="node11" href="lib__str_8h.html#a9f08b4d28d18041631bfe6a00f1e3e73" title="Str_FmtNbr_Int32S" alt="" coords="325,107,459,133"/><area shape="rect" id="node4" href="app_8c.html#a0da05763e1462db15828337b9f178e60" title="App_DispScr_VersionTickRateCPU" alt="" coords="507,5,733,32"/><area shape="rect" id="node9" href="app_8c.html#ad2dbd15c596634877dea4574a1c7989f" title="App_DispScr_CtxSw" alt="" coords="549,56,691,83"/><area shape="rect" id="node10" href="app_8c.html#ac09ea0b7f47aa25a3358c4d3d3741c64" title="App_DispScr_Inputs" alt="" coords="550,107,690,133"/><area shape="rect" id="node5" href="app_8c.html#a4217307366bcf4be2514445ba929360b" title="App_TaskUserIF" alt="" coords="782,56,901,83"/><area shape="rect" id="node6" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="950,56,1069,83"/><area shape="rect" id="node7" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="1118,56,1226,83"/><area shape="rect" id="node8" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1275,56,1325,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e818b236165919f610733e1f568702f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00474">474</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00662">ASCII_IS_GRAPH</a>.</p>
+<div class="fragment"><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;{</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  graph;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    graph = <a class="code" href="lib__ascii_8h.html#a5ae91755103fe0add1cc75f2632d06b1">ASCII_IS_GRAPH</a>(c);</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    <span class="keywordflow">return</span> (graph);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1244c067ee54c4e568f069945319ec91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsPunct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00505">505</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00685">ASCII_IS_PUNCT</a>.</p>
+<div class="fragment"><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;{</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  punct;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    punct = <a class="code" href="lib__ascii_8h.html#a6ef797c9b047cd68a20813f2dd8c84bc">ASCII_IS_PUNCT</a>(c);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">return</span> (punct);</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5056829a5cff8bad658da6228f540515"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_IsCtrl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00539">539</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00713">ASCII_IS_CTRL</a>.</p>
+<div class="fragment"><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;{</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  ctrl;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    ctrl = <a class="code" href="lib__ascii_8h.html#a7ba50f8a760154a31ee3a0e91cef2a2d">ASCII_IS_CTRL</a>(c);</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="keywordflow">return</span> (ctrl);</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a70913ff7a3db65921adc450f570f348e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> ASCII_ToLower </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00578">578</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00751">ASCII_TO_LOWER</a>.</p>
+<div class="fragment"><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;{</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  lower;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    lower = <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(c);</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <span class="keywordflow">return</span> (lower);</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af33b68186b6f002e66a876319354c97e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> ASCII_ToUpper </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00616">616</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00781">ASCII_TO_UPPER</a>.</p>
+<div class="fragment"><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;{</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  upper;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    upper = <a class="code" href="lib__ascii_8h.html#a5a2f7e86a523d65b8dea8a4d5d6c77aa">ASCII_TO_UPPER</a>(c);</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <span class="keywordflow">return</span> (upper);</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a20980b424a8113e1a7a1c33b73fef4f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> ASCII_Cmp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>c2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__ascii_8c_source.html">lib_ascii.c</a> 第 <a class="el" href="lib__ascii_8c_source.html#l00648">648</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00781">ASCII_TO_UPPER</a>, <a class="el" href="cpu__pr_8h_source.html#l00048">DEF_NO</a> , 以及 <a class="el" href="cpu__pr_8h_source.html#l00049">DEF_YES</a>.</p>
+<div class="fragment"><div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;{</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>     c1_upper;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>     c2_upper;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  cmp;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    c1_upper =  <a class="code" href="lib__ascii_8h.html#a5a2f7e86a523d65b8dea8a4d5d6c77aa">ASCII_TO_UPPER</a>(c1);</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    c2_upper =  <a class="code" href="lib__ascii_8h.html#a5a2f7e86a523d65b8dea8a4d5d6c77aa">ASCII_TO_UPPER</a>(c2);</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    cmp      = (c1_upper == c2_upper) ? (<a class="code" href="cpu__pr_8h.html#aafb86a1ccea033ab753871c989737f8c">DEF_YES</a>) : (<a class="code" href="cpu__pr_8h.html#a1dc1e0035eddc2b91f9c5b24c6d600d5">DEF_NO</a>);</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    <span class="keywordflow">return</span> (cmp);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_67fecfbdfd1e64087a1302f9ae2874c1.html">uC-LIB</a></li><li class="navelem"><a class="el" href="lib__ascii_8c.html">lib_ascii.c</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:43 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

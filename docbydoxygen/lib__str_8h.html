@@ -1,0 +1,1598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uC-LIB/lib_str.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('lib__str_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">lib_str.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="cpu_8h_source.html">cpu.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="lib__def_8h_source.html">lib_def.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="lib__ascii_8h_source.html">lib_ascii.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="app__cfg_8h_source.html">app_cfg.h</a>&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;ctype.h&gt;</code><br/>
+<code>#include &lt;errno.h&gt;</code><br/>
+<code>#include &lt;limits.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+lib_str.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__str_8h" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__str_8h" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__str_8h">
+<area shape="rect" id="node2" href="cpu_8h.html" title="cpu.h" alt="" coords="80,245,134,272"/><area shape="rect" id="node5" href="lib__def_8h.html" title="lib_def.h" alt="" coords="110,171,180,197"/><area shape="rect" id="node6" href="lib__ascii_8h.html" title="lib_ascii.h" alt="" coords="29,96,109,123"/><area shape="rect" id="node7" href="app__cfg_8h.html" title="app_cfg.h" alt="" coords="184,96,262,123"/><area shape="rect" id="node3" href="cpu__def_8h.html" title="cpu_def.h" alt="" coords="18,320,96,347"/><area shape="rect" id="node4" href="u_c-_c_p_u_2cpu__cfg_8h.html" title="cpu_cfg.h" alt="" coords="120,320,198,347"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h__dep__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__str_8hdep" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__str_8hdep" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__str_8hdep">
+<area shape="rect" id="node2" href="cpu__core_8h.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;CPU/cpu_core.h" alt="" coords="867,97,1033,138"/><area shape="rect" id="node3" href="includes_8h.html" title="UCOS_TI_LM3S_Keil/APP\l/includes.h" alt="" coords="195,278,372,319"/><area shape="rect" id="node22" href="lib__str_8c.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;LIB/lib_str.c" alt="" coords="1058,97,1224,138"/><area shape="rect" id="node6" href="lib__mem_8h.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;LIB/lib_mem.h" alt="" coords="741,187,907,229"/><area shape="rect" id="node8" href="lib__math_8h.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;LIB/lib_math.h" alt="" coords="322,187,488,229"/><area shape="rect" id="node10" href="bsp_8h.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp.h" alt="" coords="1071,187,1248,229"/><area shape="rect" id="node14" href="os__app__hooks_8c.html" title="UCOS_TI_LM3S_Keil/APP\l/os_app_hooks.c" alt="" coords="1997,278,2173,319"/><area shape="rect" id="node19" href="cpu__bsp_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/cpu_bsp.c" alt="" coords="2198,278,2375,319"/><area shape="rect" id="node20" href="cpu__c___ports_8c.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;CPU/cpu_c_Ports.c" alt="" coords="1273,187,1439,229"/><area shape="rect" id="node21" href="cpu__core_8c.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;CPU/cpu_core.c" alt="" coords="1463,187,1629,229"/><area shape="rect" id="node4" href="app_8c.html" title="UCOS_TI_LM3S_Keil/APP\l/app.c" alt="" coords="95,369,272,410"/><area shape="rect" id="node5" href="app__vect_8c.html" title="UCOS_TI_LM3S_Keil/APP\l/app_vect.c" alt="" coords="297,369,473,410"/><area shape="rect" id="node7" href="lib__mem_8c.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;LIB/lib_mem.c" alt="" coords="397,278,563,319"/><area shape="rect" id="node9" href="lib__math_8c.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;LIB/lib_math.c" alt="" coords="5,278,171,319"/><area shape="rect" id="node11" href="bsp__int_8h.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_int.h" alt="" coords="1594,278,1771,319"/><area shape="rect" id="node12" href="bsp__ser_8h.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_ser.h" alt="" coords="1795,278,1972,319"/><area shape="rect" id="node13" href="bsp__os_8h.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_os.h" alt="" coords="587,278,764,319"/><area shape="rect" id="node15" href="bsp_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp.c" alt="" coords="789,278,965,319"/><area shape="rect" id="node16" href="bsp__int_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_int.c" alt="" coords="990,278,1167,319"/><area shape="rect" id="node17" href="bsp__os_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_os.c" alt="" coords="1191,278,1368,319"/><area shape="rect" id="node18" href="bsp__ser_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_ser.c" alt="" coords="1393,278,1569,319"/></map>
+</div>
+</div>
+<p><a href="lib__str_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a6eceaafba1c92446200265deb5e1e14d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a6eceaafba1c92446200265deb5e1e14d">LIB_STR_EXT</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:a6eceaafba1c92446200265deb5e1e14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9691abb12f292946fc7482a9372307"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a4f9691abb12f292946fc7482a9372307">Str_FmtPrint</a>&#160;&#160;&#160;snprintf</td></tr>
+<tr class="separator:a4f9691abb12f292946fc7482a9372307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596e92e287b605990d6378e990f9cc64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a596e92e287b605990d6378e990f9cc64">Str_FmtScan</a>&#160;&#160;&#160;sscanf</td></tr>
+<tr class="separator:a596e92e287b605990d6378e990f9cc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4bf57c0f5adfd8daaacc3c78c83588"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#acb4bf57c0f5adfd8daaacc3c78c83588">Str_IsPrint</a>(a)&#160;&#160;&#160;<a class="el" href="lib__ascii_8h.html#a054037a698a50e5f8c123d364a58ddfa">ASCII_IsPrint</a>(a)</td></tr>
+<tr class="separator:acb4bf57c0f5adfd8daaacc3c78c83588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1a07f040d32783c25a0448fab45b72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a4a1a07f040d32783c25a0448fab45b72">Str_ToLong</a>(a, b, c)&#160;&#160;&#160;<a class="el" href="lib__str_8h.html#a41bff67862bf1e7df3a686c1ea3af376">Str_ParseNbr_Int32S</a>((<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)(a), (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> **)(b), (<a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>)(c))</td></tr>
+<tr class="separator:a4a1a07f040d32783c25a0448fab45b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ab100a4bec13d19cd7e9f8a57ebab1cfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#ab100a4bec13d19cd7e9f8a57ebab1cfc">Str_Len</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr)</td></tr>
+<tr class="separator:ab100a4bec13d19cd7e9f8a57ebab1cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47711dcd318c43d3a24f4fc0d51d9201"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a47711dcd318c43d3a24f4fc0d51d9201">Str_Len_N</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr, <a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a> len_max)</td></tr>
+<tr class="separator:a47711dcd318c43d3a24f4fc0d51d9201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa324e6ac85d7b960263938f52cd601"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#adfa324e6ac85d7b960263938f52cd601">Str_Copy</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pdest, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *psrc)</td></tr>
+<tr class="separator:adfa324e6ac85d7b960263938f52cd601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491a492e57e96f3188014278ad0fabae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a491a492e57e96f3188014278ad0fabae">Str_Copy_N</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pdest, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *psrc, <a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a> len_max)</td></tr>
+<tr class="separator:a491a492e57e96f3188014278ad0fabae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75795b2dc9578f4948f3b66d6be0ed68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a75795b2dc9578f4948f3b66d6be0ed68">Str_Cat</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pdest, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr_cat)</td></tr>
+<tr class="separator:a75795b2dc9578f4948f3b66d6be0ed68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2f89c5a7769421803a9cb12dae320d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#aaa2f89c5a7769421803a9cb12dae320d">Str_Cat_N</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pdest, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr_cat, <a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a> len_max)</td></tr>
+<tr class="separator:aaa2f89c5a7769421803a9cb12dae320d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac17588dd52c88085a2b50b0711f161ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#ac17588dd52c88085a2b50b0711f161ed">Str_Cmp</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *p1_str, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *p2_str)</td></tr>
+<tr class="separator:ac17588dd52c88085a2b50b0711f161ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb0026db6715016adefcff4d235d27f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#aadb0026db6715016adefcff4d235d27f">Str_Cmp_N</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *p1_str, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *p2_str, <a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a> len_max)</td></tr>
+<tr class="separator:aadb0026db6715016adefcff4d235d27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1896709f50a9a0d1c72c933abefac70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#aa1896709f50a9a0d1c72c933abefac70">Str_CmpIgnoreCase</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *p1_str, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *p2_str)</td></tr>
+<tr class="separator:aa1896709f50a9a0d1c72c933abefac70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b66d3cfb2f83c8c48dbeedeba0edcdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a6b66d3cfb2f83c8c48dbeedeba0edcdc">Str_CmpIgnoreCase_N</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *p1_str, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *p2_str, <a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a> len_max)</td></tr>
+<tr class="separator:a6b66d3cfb2f83c8c48dbeedeba0edcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12eaa826a75cae05cd08c74b9c6ebf20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a12eaa826a75cae05cd08c74b9c6ebf20">Str_Char</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> srch_char)</td></tr>
+<tr class="separator:a12eaa826a75cae05cd08c74b9c6ebf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d81af6c7fbdfbd04361f8006c2a642"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a73d81af6c7fbdfbd04361f8006c2a642">Str_Char_N</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr, <a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a> len_max, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> srch_char)</td></tr>
+<tr class="separator:a73d81af6c7fbdfbd04361f8006c2a642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f2bb0306d16e8892d7300e9aa2d490"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#ac9f2bb0306d16e8892d7300e9aa2d490">Str_Char_Last</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> srch_char)</td></tr>
+<tr class="separator:ac9f2bb0306d16e8892d7300e9aa2d490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3a3e08952ec6ace09bd2491ab22df0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a6b3a3e08952ec6ace09bd2491ab22df0">Str_Str</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *psrch_str)</td></tr>
+<tr class="separator:a6b3a3e08952ec6ace09bd2491ab22df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed48c259d2251935d4ca98aa47074698"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#aed48c259d2251935d4ca98aa47074698">Str_FmtNbr_Int32U</a> (<a class="el" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a> nbr, <a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> nbr_dig, <a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> nbr_base, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> lead_char, <a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> lower_case, <a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> nul, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr)</td></tr>
+<tr class="separator:aed48c259d2251935d4ca98aa47074698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f08b4d28d18041631bfe6a00f1e3e73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a9f08b4d28d18041631bfe6a00f1e3e73">Str_FmtNbr_Int32S</a> (<a class="el" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a> nbr, <a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> nbr_dig, <a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> nbr_base, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> lead_char, <a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> lower_case, <a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> nul, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr)</td></tr>
+<tr class="separator:a9f08b4d28d18041631bfe6a00f1e3e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f03bd123ba5567ab9fb6e777e7b40f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a3f03bd123ba5567ab9fb6e777e7b40f6">Str_ParseNbr_Int32U</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> **pstr_next, <a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> nbr_base)</td></tr>
+<tr class="separator:a3f03bd123ba5567ab9fb6e777e7b40f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41bff67862bf1e7df3a686c1ea3af376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__str_8h.html#a41bff67862bf1e7df3a686c1ea3af376">Str_ParseNbr_Int32S</a> (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *pstr, <a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> **pstr_next, <a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> nbr_base)</td></tr>
+<tr class="separator:a41bff67862bf1e7df3a686c1ea3af376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a6eceaafba1c92446200265deb5e1e14d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIB_STR_EXT&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8h_source.html">lib_str.h</a> 第 <a class="el" href="lib__str_8h_source.html#l00118">118</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f9691abb12f292946fc7482a9372307"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Str_FmtPrint&#160;&#160;&#160;snprintf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8h_source.html">lib_str.h</a> 第 <a class="el" href="lib__str_8h_source.html#l00189">189</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a596e92e287b605990d6378e990f9cc64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Str_FmtScan&#160;&#160;&#160;sscanf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8h_source.html">lib_str.h</a> 第 <a class="el" href="lib__str_8h_source.html#l00190">190</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb4bf57c0f5adfd8daaacc3c78c83588"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Str_IsPrint</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a)</td><td></td>
+          <td>&#160;&#160;&#160;<a class="el" href="lib__ascii_8h.html#a054037a698a50e5f8c123d364a58ddfa">ASCII_IsPrint</a>(a)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8h_source.html">lib_str.h</a> 第 <a class="el" href="lib__str_8h_source.html#l00193">193</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a1a07f040d32783c25a0448fab45b72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Str_ToLong</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="lib__str_8h.html#a41bff67862bf1e7df3a686c1ea3af376">Str_ParseNbr_Int32S</a>((<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)(a), (<a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> **)(b), (<a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>)(c))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8h_source.html">lib_str.h</a> 第 <a class="el" href="lib__str_8h_source.html#l00194">194</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ab100a4bec13d19cd7e9f8a57ebab1cfc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a> Str_Len </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00208">208</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__def_8h_source.html#l00324">DEF_INT_CPU_U_MAX_VAL</a> , 以及 <a class="el" href="lib__str_8c_source.html#l00257">Str_Len_N()</a>.</p>
+
+<p>参考自 <a class="el" href="bsp__ser_8c_source.html#l00575">BSP_Print()</a>, <a class="el" href="bsp__ser_8c_source.html#l00532">BSP_SerPrint()</a>, <a class="el" href="lib__str_8c_source.html#l01267">Str_Char_Last()</a> , 以及 <a class="el" href="lib__str_8c_source.html#l01337">Str_Str()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>  len;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    len = <a class="code" href="lib__str_8c.html#a47711dcd318c43d3a24f4fc0d51d9201">Str_Len_N</a>((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)pstr,</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                    (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)<a class="code" href="lib__def_8h.html#a86383f474505e2b9b01609a47c503869">DEF_INT_CPU_U_MAX_VAL</a>);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">return</span> (len);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_ab100a4bec13d19cd7e9f8a57ebab1cfc_cgraph.png" border="0" usemap="#lib__str_8h_ab100a4bec13d19cd7e9f8a57ebab1cfc_cgraph" alt=""/></div>
+<map name="lib__str_8h_ab100a4bec13d19cd7e9f8a57ebab1cfc_cgraph" id="lib__str_8h_ab100a4bec13d19cd7e9f8a57ebab1cfc_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a47711dcd318c43d3a24f4fc0d51d9201" title="Str_Len_N" alt="" coords="120,5,203,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_ab100a4bec13d19cd7e9f8a57ebab1cfc_icgraph.png" border="0" usemap="#lib__str_8h_ab100a4bec13d19cd7e9f8a57ebab1cfc_icgraph" alt=""/></div>
+<map name="lib__str_8h_ab100a4bec13d19cd7e9f8a57ebab1cfc_icgraph" id="lib__str_8h_ab100a4bec13d19cd7e9f8a57ebab1cfc_icgraph">
+<area shape="rect" id="node2" href="bsp__ser_8h.html#ac8ee31bc6cf3d16c567190aea85825f3" title="BSP_Print" alt="" coords="132,5,215,32"/><area shape="rect" id="node3" href="bsp__ser_8h.html#a327fa6dafb822d8a72fccbffa52c7b36" title="BSP_SerPrint" alt="" coords="122,56,225,83"/><area shape="rect" id="node4" href="lib__str_8h.html#ac9f2bb0306d16e8892d7300e9aa2d490" title="Str_Char_Last" alt="" coords="121,107,226,133"/><area shape="rect" id="node5" href="lib__str_8h.html#a6b3a3e08952ec6ace09bd2491ab22df0" title="Str_Str" alt="" coords="142,157,205,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a47711dcd318c43d3a24f4fc0d51d9201"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a> Str_Len_N </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>&#160;</td>
+          <td class="paramname"><em>len_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00257">257</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l00208">Str_Len()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>  len;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    len = 0;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">while</span> (( pstr != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;                       <span class="comment">/* Calc str len until NULL ptr (see Note #2a) ...       */</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;           (*pstr != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp;                       <span class="comment">/* ... or NULL char found      (see Note #2b) ...       */</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;           ( len   &lt; (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)len_max)) {                    <span class="comment">/* ... or max nbr chars srch&#39;d (see Note #2c).          */</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        len++;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        pstr++;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">return</span> (len);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a47711dcd318c43d3a24f4fc0d51d9201_icgraph.png" border="0" usemap="#lib__str_8h_a47711dcd318c43d3a24f4fc0d51d9201_icgraph" alt=""/></div>
+<map name="lib__str_8h_a47711dcd318c43d3a24f4fc0d51d9201_icgraph" id="lib__str_8h_a47711dcd318c43d3a24f4fc0d51d9201_icgraph">
+<area shape="rect" id="node2" href="lib__str_8h.html#ab100a4bec13d19cd7e9f8a57ebab1cfc" title="Str_Len" alt="" coords="136,81,203,108"/><area shape="rect" id="node3" href="bsp__ser_8h.html#ac8ee31bc6cf3d16c567190aea85825f3" title="BSP_Print" alt="" coords="263,5,345,32"/><area shape="rect" id="node4" href="bsp__ser_8h.html#a327fa6dafb822d8a72fccbffa52c7b36" title="BSP_SerPrint" alt="" coords="253,56,355,83"/><area shape="rect" id="node5" href="lib__str_8h.html#ac9f2bb0306d16e8892d7300e9aa2d490" title="Str_Char_Last" alt="" coords="251,107,357,133"/><area shape="rect" id="node6" href="lib__str_8h.html#a6b3a3e08952ec6ace09bd2491ab22df0" title="Str_Str" alt="" coords="273,157,335,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adfa324e6ac85d7b960263938f52cd601"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_Copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pdest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>psrc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00313">313</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__def_8h_source.html#l00324">DEF_INT_CPU_U_MAX_VAL</a> , 以及 <a class="el" href="lib__str_8c_source.html#l00369">Str_Copy_N()</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00579">App_DispScr_CtxSw()</a>, <a class="el" href="app_8c_source.html#l00610">App_DispScr_Inputs()</a>, <a class="el" href="app_8c_source.html#l00506">App_DispScr_SignOn()</a> , 以及 <a class="el" href="app_8c_source.html#l00539">App_DispScr_VersionTickRateCPU()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    pdest = <a class="code" href="lib__str_8c.html#a491a492e57e96f3188014278ad0fabae">Str_Copy_N</a>((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)pdest,</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                       (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)psrc,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                       (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)<a class="code" href="lib__def_8h.html#a86383f474505e2b9b01609a47c503869">DEF_INT_CPU_U_MAX_VAL</a>);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">return</span> (pdest);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_adfa324e6ac85d7b960263938f52cd601_cgraph.png" border="0" usemap="#lib__str_8h_adfa324e6ac85d7b960263938f52cd601_cgraph" alt=""/></div>
+<map name="lib__str_8h_adfa324e6ac85d7b960263938f52cd601_cgraph" id="lib__str_8h_adfa324e6ac85d7b960263938f52cd601_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a491a492e57e96f3188014278ad0fabae" title="Str_Copy_N" alt="" coords="131,5,223,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_adfa324e6ac85d7b960263938f52cd601_icgraph.png" border="0" usemap="#lib__str_8h_adfa324e6ac85d7b960263938f52cd601_icgraph" alt=""/></div>
+<map name="lib__str_8h_adfa324e6ac85d7b960263938f52cd601_icgraph" id="lib__str_8h_adfa324e6ac85d7b960263938f52cd601_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#ad2dbd15c596634877dea4574a1c7989f" title="App_DispScr_CtxSw" alt="" coords="173,5,315,32"/><area shape="rect" id="node7" href="app_8c.html#ac09ea0b7f47aa25a3358c4d3d3741c64" title="App_DispScr_Inputs" alt="" coords="174,56,314,83"/><area shape="rect" id="node8" href="app_8c.html#a3aac18f0c1edfab2d7a816198d0c1cd7" title="App_DispScr_SignOn" alt="" coords="170,107,318,133"/><area shape="rect" id="node9" href="app_8c.html#a0da05763e1462db15828337b9f178e60" title="App_DispScr_VersionTickRateCPU" alt="" coords="131,157,357,184"/><area shape="rect" id="node3" href="app_8c.html#a4217307366bcf4be2514445ba929360b" title="App_TaskUserIF" alt="" coords="406,81,525,108"/><area shape="rect" id="node4" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="574,81,693,108"/><area shape="rect" id="node5" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="742,81,850,108"/><area shape="rect" id="node6" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="899,81,949,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a491a492e57e96f3188014278ad0fabae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_Copy_N </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pdest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>psrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>&#160;</td>
+          <td class="paramname"><em>len_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00369">369</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l00313">Str_Copy()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;{</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *pstr;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *pstr_next;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>   len_copy;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                                                <span class="comment">/* Rtn NULL if str ptr(s) NULL      (see Note #2a).     */</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span> (pdest == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">return</span>  ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (psrc  == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordflow">return</span>  ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordflow">if</span> (len_max == (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)0) {                             <span class="comment">/* Rtn NULL if copy len equals zero (see Note #2d).     */</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordflow">return</span>  ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    pstr      = pdest;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    pstr_next = pstr;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    pstr_next++;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    len_copy  = 0;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">while</span> (( pstr_next != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;                  <span class="comment">/* Copy str until NULL ptr(s)  [see Note #2b]  ...      */</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;           ( psrc      != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;           (*psrc      != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp;                  <span class="comment">/* ... or NULL char found      (see Note #2c); ...      */</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;           ( len_copy  &lt;  (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)len_max)) {               <span class="comment">/* ... or max nbr chars copied (see Note #2d).          */</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;       *pstr = *psrc;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        pstr++;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        pstr_next++;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        psrc++;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        len_copy++;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;   *pstr = (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>)<span class="charliteral">&#39;\0&#39;</span>;                                      <span class="comment">/* Append NULL char (see Note #2b2).                    */</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">return</span> (pdest);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a491a492e57e96f3188014278ad0fabae_icgraph.png" border="0" usemap="#lib__str_8h_a491a492e57e96f3188014278ad0fabae_icgraph" alt=""/></div>
+<map name="lib__str_8h_a491a492e57e96f3188014278ad0fabae_icgraph" id="lib__str_8h_a491a492e57e96f3188014278ad0fabae_icgraph">
+<area shape="rect" id="node2" href="lib__str_8h.html#adfa324e6ac85d7b960263938f52cd601" title="Str_Copy" alt="" coords="147,81,223,108"/><area shape="rect" id="node3" href="app_8c.html#ad2dbd15c596634877dea4574a1c7989f" title="App_DispScr_CtxSw" alt="" coords="314,5,457,32"/><area shape="rect" id="node8" href="app_8c.html#ac09ea0b7f47aa25a3358c4d3d3741c64" title="App_DispScr_Inputs" alt="" coords="315,56,455,83"/><area shape="rect" id="node9" href="app_8c.html#a3aac18f0c1edfab2d7a816198d0c1cd7" title="App_DispScr_SignOn" alt="" coords="311,107,459,133"/><area shape="rect" id="node10" href="app_8c.html#a0da05763e1462db15828337b9f178e60" title="App_DispScr_VersionTickRateCPU" alt="" coords="272,157,499,184"/><area shape="rect" id="node4" href="app_8c.html#a4217307366bcf4be2514445ba929360b" title="App_TaskUserIF" alt="" coords="547,81,666,108"/><area shape="rect" id="node5" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="715,81,834,108"/><area shape="rect" id="node6" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="883,81,991,108"/><area shape="rect" id="node7" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1040,81,1091,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a75795b2dc9578f4948f3b66d6be0ed68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_Cat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pdest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr_cat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00454">454</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__def_8h_source.html#l00324">DEF_INT_CPU_U_MAX_VAL</a> , 以及 <a class="el" href="lib__str_8c_source.html#l00513">Str_Cat_N()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;{</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    pdest = <a class="code" href="lib__str_8c.html#aaa2f89c5a7769421803a9cb12dae320d">Str_Cat_N</a>((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)pdest,</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                      (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)pstr_cat,</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                      (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)<a class="code" href="lib__def_8h.html#a86383f474505e2b9b01609a47c503869">DEF_INT_CPU_U_MAX_VAL</a>);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordflow">return</span> (pdest);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a75795b2dc9578f4948f3b66d6be0ed68_cgraph.png" border="0" usemap="#lib__str_8h_a75795b2dc9578f4948f3b66d6be0ed68_cgraph" alt=""/></div>
+<map name="lib__str_8h_a75795b2dc9578f4948f3b66d6be0ed68_cgraph" id="lib__str_8h_a75795b2dc9578f4948f3b66d6be0ed68_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#aaa2f89c5a7769421803a9cb12dae320d" title="Str_Cat_N" alt="" coords="120,5,203,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa2f89c5a7769421803a9cb12dae320d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_Cat_N </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pdest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr_cat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>&#160;</td>
+          <td class="paramname"><em>len_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00513">513</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l00454">Str_Cat()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;{</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *pstr;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *pstr_next;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>   len_cat;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                                                                <span class="comment">/* Rtn NULL if str ptr(s) NULL     (see Note #2a).      */</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordflow">if</span> (pdest == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="keywordflow">return</span>  ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    }</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keywordflow">if</span> (pstr_cat == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <span class="keywordflow">return</span>  ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    }</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordflow">if</span> (len_max == (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)0) {                             <span class="comment">/* Rtn NULL if cat len equals zero (see Note #2e).      */</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <span class="keywordflow">return</span>  ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    }</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    pstr = pdest;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keywordflow">while</span> (( pstr != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;                       <span class="comment">/* Adv to end of cur dest str until NULL ptr ...        */</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;           (*pstr != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )<span class="charliteral">&#39;\0&#39;</span>)) {                       <span class="comment">/* ... or NULL char found..                             */</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        pstr++;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    }</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="keywordflow">if</span> (pstr == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {                                <span class="comment">/* If NULL str overrun, rtn NULL (see Note #2b).        */</span></div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    }</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    pstr_next = pstr;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    pstr_next++;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    len_cat   = 0;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordflow">while</span> (( pstr_next != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;                  <span class="comment">/* Cat str until NULL ptr(s)  [see Note #2c]  ...       */</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;           ( pstr_cat  != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;           (*pstr_cat  != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp;                  <span class="comment">/* ... or NULL char found     (see Note #2d); ...       */</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;           ( len_cat   &lt;  (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)len_max)) {               <span class="comment">/* ... or max nbr chars cat&#39;d (see Note #2d).           */</span></div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;       *pstr = *pstr_cat;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        pstr++;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        pstr_next++;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        pstr_cat++;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        len_cat++;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    }</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;   *pstr = (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>)<span class="charliteral">&#39;\0&#39;</span>;                                      <span class="comment">/* Append NULL char (see Note #2c2).                    */</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="keywordflow">return</span> (pdest);</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_aaa2f89c5a7769421803a9cb12dae320d_icgraph.png" border="0" usemap="#lib__str_8h_aaa2f89c5a7769421803a9cb12dae320d_icgraph" alt=""/></div>
+<map name="lib__str_8h_aaa2f89c5a7769421803a9cb12dae320d_icgraph" id="lib__str_8h_aaa2f89c5a7769421803a9cb12dae320d_icgraph">
+<area shape="rect" id="node2" href="lib__str_8h.html#a75795b2dc9578f4948f3b66d6be0ed68" title="Str_Cat" alt="" coords="136,5,203,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac17588dd52c88085a2b50b0711f161ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a> Str_Cmp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>p1_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>p2_str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00641">641</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__def_8h_source.html#l00324">DEF_INT_CPU_U_MAX_VAL</a> , 以及 <a class="el" href="lib__str_8c_source.html#l00743">Str_Cmp_N()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;{</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>  cmp_val;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    cmp_val = <a class="code" href="lib__str_8c.html#aadb0026db6715016adefcff4d235d27f">Str_Cmp_N</a>((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)p1_str,</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                        (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)p2_str,</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                        (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)<a class="code" href="lib__def_8h.html#a86383f474505e2b9b01609a47c503869">DEF_INT_CPU_U_MAX_VAL</a>);</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <span class="keywordflow">return</span> (cmp_val);</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_ac17588dd52c88085a2b50b0711f161ed_cgraph.png" border="0" usemap="#lib__str_8h_ac17588dd52c88085a2b50b0711f161ed_cgraph" alt=""/></div>
+<map name="lib__str_8h_ac17588dd52c88085a2b50b0711f161ed_cgraph" id="lib__str_8h_ac17588dd52c88085a2b50b0711f161ed_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#aadb0026db6715016adefcff4d235d27f" title="Str_Cmp_N" alt="" coords="129,5,218,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aadb0026db6715016adefcff4d235d27f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a> Str_Cmp_N </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>p1_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>p2_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>&#160;</td>
+          <td class="paramname"><em>len_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00743">743</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l00641">Str_Cmp()</a> , 以及 <a class="el" href="lib__str_8c_source.html#l01337">Str_Str()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;{</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *p1_str_next;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *p2_str_next;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>   cmp_val;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>   cmp_len;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">if</span> (len_max == 0) {                                         <span class="comment">/* If cmp len equals zero, rtn 0      (see Note #3d1).  */</span></div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    }</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="keywordflow">if</span> (p1_str == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordflow">if</span> (p2_str == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0);                             <span class="comment">/* If BOTH str ptrs NULL,  rtn 0      (see Note #3a1A). */</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        }</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        cmp_val = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0 - (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)(*p2_str);</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <span class="keywordflow">return</span> (cmp_val);                                       <span class="comment">/* If p1_str NULL, rtn neg p2_str val (see Note #3a1B1).*/</span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    }</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keywordflow">if</span> (p2_str == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        cmp_val = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)(*p1_str);</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        <span class="keywordflow">return</span> (cmp_val);                                       <span class="comment">/* If p2_str NULL, rtn pos p1_str val (see Note #3a1B2).*/</span></div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    }</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    p1_str_next = p1_str;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    p2_str_next = p2_str;</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;    p1_str_next++;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    p2_str_next++;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    cmp_len     = 0;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="keywordflow">while</span> ((*p1_str      == *p2_str)          &amp;&amp;                <span class="comment">/* Cmp strs until non-matching chars (see Note #3c) ... */</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;           (*p1_str      != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp;                <span class="comment">/* ... or NULL chars                 (see Note #3b) ... */</span></div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;           ( p1_str_next != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;                <span class="comment">/* ... or NULL ptr(s) found          (see Note #3a2);   */</span></div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;           ( p2_str_next != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;           ( cmp_len     &lt;  (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)len_max)) {             <span class="comment">/* ... or max nbr chars cmp&#39;d        (see Note #3d2).   */</span></div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        p1_str_next++;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        p2_str_next++;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        p1_str++;</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        p2_str++;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        cmp_len++;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    }</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="keywordflow">if</span> (cmp_len == len_max) {                                       <span class="comment">/* If strs     identical for len nbr of chars, ...  */</span></div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0);                                     <span class="comment">/* ... rtn 0                   (see Note #3d2).     */</span></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    }</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordflow">if</span> (*p1_str != *p2_str) {                                       <span class="comment">/* If strs NOT identical, ...                       */</span></div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;         cmp_val = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)(*p1_str) - (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)(*p2_str);   <span class="comment">/* ... calc &amp; rtn char diff    (see Note #3c).      */</span></div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (*p1_str  == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>)<span class="charliteral">&#39;\0&#39;</span>) {                        <span class="comment">/* If NULL char(s) found, ...                       */</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;         cmp_val = 0;                                               <span class="comment">/* ... strs identical; rtn 0   (see Note #3b).      */</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <span class="keywordflow">if</span> (p1_str_next == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            <span class="keywordflow">if</span> (p2_str_next == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {                     <span class="comment">/* If BOTH next str ptrs NULL, ...                  */</span></div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;                cmp_val  = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0;                           <span class="comment">/* ... rtn 0                   (see Note #3a2A).    */</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            } <span class="keywordflow">else</span> {                                                <span class="comment">/* If p1_str_next NULL, ...                         */</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;                                                                    <span class="comment">/* ... rtn neg p2_str_next val (see Note #3a2B1).   */</span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;                cmp_val  = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0 - (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)(*p2_str_next);</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;            }</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        } <span class="keywordflow">else</span> {                                                    <span class="comment">/* If p2_str_next NULL, ...                         */</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            cmp_val = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)(*p1_str_next);                   <span class="comment">/* ... rtn pos p1_str_next val (see Note #3a2B2).   */</span></div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        }</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    }</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <span class="keywordflow">return</span> (cmp_val);</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_aadb0026db6715016adefcff4d235d27f_icgraph.png" border="0" usemap="#lib__str_8h_aadb0026db6715016adefcff4d235d27f_icgraph" alt=""/></div>
+<map name="lib__str_8h_aadb0026db6715016adefcff4d235d27f_icgraph" id="lib__str_8h_aadb0026db6715016adefcff4d235d27f_icgraph">
+<area shape="rect" id="node2" href="lib__str_8h.html#ac17588dd52c88085a2b50b0711f161ed" title="Str_Cmp" alt="" coords="145,5,218,32"/><area shape="rect" id="node3" href="lib__str_8h.html#a6b3a3e08952ec6ace09bd2491ab22df0" title="Str_Str" alt="" coords="150,56,213,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1896709f50a9a0d1c72c933abefac70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a> Str_CmpIgnoreCase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>p1_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>p2_str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l00902">902</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__def_8h_source.html#l00324">DEF_INT_CPU_U_MAX_VAL</a> , 以及 <a class="el" href="lib__str_8c_source.html#l01014">Str_CmpIgnoreCase_N()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;{</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>  cmp_val;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;    cmp_val = <a class="code" href="lib__str_8c.html#a6b66d3cfb2f83c8c48dbeedeba0edcdc">Str_CmpIgnoreCase_N</a>((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)p1_str,</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                                  (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)p2_str,</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;                                  (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)<a class="code" href="lib__def_8h.html#a86383f474505e2b9b01609a47c503869">DEF_INT_CPU_U_MAX_VAL</a>);</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    <span class="keywordflow">return</span> (cmp_val);</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_aa1896709f50a9a0d1c72c933abefac70_cgraph.png" border="0" usemap="#lib__str_8h_aa1896709f50a9a0d1c72c933abefac70_cgraph" alt=""/></div>
+<map name="lib__str_8h_aa1896709f50a9a0d1c72c933abefac70_cgraph" id="lib__str_8h_aa1896709f50a9a0d1c72c933abefac70_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a6b66d3cfb2f83c8c48dbeedeba0edcdc" title="Str_CmpIgnoreCase_N" alt="" coords="192,5,347,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b66d3cfb2f83c8c48dbeedeba0edcdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a> Str_CmpIgnoreCase_N </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>p1_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>p2_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>&#160;</td>
+          <td class="paramname"><em>len_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l01014">1014</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__ascii_8h_source.html#l00751">ASCII_TO_LOWER</a>.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l00902">Str_CmpIgnoreCase()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;{</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *p1_str_next;</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *p2_str_next;</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>     char1;</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>     char2;</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>   cmp_val;</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>   cmp_len;</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;    <span class="keywordflow">if</span> (len_max == 0) {                                         <span class="comment">/* If cmp len equals zero, rtn 0      (see Note #3d1).  */</span></div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0);</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;    }</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;    <span class="keywordflow">if</span> (p1_str == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;        <span class="keywordflow">if</span> (p2_str == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;            <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0);                             <span class="comment">/* If BOTH str ptrs NULL,  rtn 0      (see Note #3a1A). */</span></div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;        }</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;        char2   =  <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(*p2_str);</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;        cmp_val = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0 - (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)char2;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;        <span class="keywordflow">return</span> (cmp_val);                                       <span class="comment">/* If p1_str NULL, rtn neg p2_str val (see Note #3a1B1).*/</span></div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;    }</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;    <span class="keywordflow">if</span> (p2_str == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;        char1   =  <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(*p1_str);</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;        cmp_val = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)char1;</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;        <span class="keywordflow">return</span> (cmp_val);                                       <span class="comment">/* If p2_str NULL, rtn pos p1_str val (see Note #3a1B2).*/</span></div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;    }</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;    p1_str_next = p1_str;</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;    p2_str_next = p2_str;</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;    p1_str_next++;</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;    p2_str_next++;</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;    char1       = <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(*p1_str);</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;    char2       = <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(*p2_str);</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;    cmp_len     = 0;</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    <span class="keywordflow">while</span> (( char1       ==  char2)           &amp;&amp;                <span class="comment">/* Cmp strs until non-matching chars (see Note #3c) ... */</span></div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;           (*p1_str      != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )<span class="charliteral">&#39;\0&#39;</span>) &amp;&amp;                <span class="comment">/* ... or NULL chars                 (see Note #3b) ... */</span></div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;           ( p1_str_next != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;                <span class="comment">/* ... or NULL ptr(s) found          (see Note #3a2);   */</span></div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;           ( p2_str_next != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 ) &amp;&amp;</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;           ( cmp_len     &lt;  (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)len_max)) {             <span class="comment">/* ... or max nbr chars cmp&#39;d        (see Note #3d2).   */</span></div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;        p1_str_next++;</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;        p2_str_next++;</div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;        p1_str++;</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;        p2_str++;</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;        cmp_len++;</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;        char1 = <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(*p1_str);</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;        char2 = <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(*p2_str);</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;    }</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    <span class="keywordflow">if</span> (cmp_len == len_max) {                                   <span class="comment">/* If strs     identical for len nbr of chars, ...      */</span></div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0);                                 <span class="comment">/* ... rtn 0                   (see Note #3d2).         */</span></div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;    }</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    <span class="keywordflow">if</span> (char1 != char2) {                                       <span class="comment">/* If strs NOT identical, ...                           */</span></div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;         cmp_val = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)char1 - (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)char2;       <span class="comment">/* ... calc &amp; rtn char diff    (see Note #3c).          */</span></div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (char1 == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>)<span class="charliteral">&#39;\0&#39;</span>) {                       <span class="comment">/* If NULL char(s) found, ...                           */</span></div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;         cmp_val = 0;                                           <span class="comment">/* ... strs identical; rtn 0   (see Note #3b).          */</span></div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        <span class="keywordflow">if</span> (p1_str_next == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;            <span class="keywordflow">if</span> (p2_str_next == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {                 <span class="comment">/* If BOTH next str ptrs NULL, ...                      */</span></div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;                cmp_val  = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0;                       <span class="comment">/* ... rtn 0                   (see Note #3a2A).        */</span></div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;            } <span class="keywordflow">else</span> {                                            <span class="comment">/* If p1_str_next NULL, ...                             */</span></div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;                char2    =  <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(*p2_str_next);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;                cmp_val  = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)0 - (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)char2;   <span class="comment">/* ... rtn neg p2_str_next val (see Note #3a2B1).       */</span></div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;            }</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;        } <span class="keywordflow">else</span> {                                                <span class="comment">/* If p2_str_next NULL, ...                             */</span></div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;            char1   =  <a class="code" href="lib__ascii_8h.html#a288c08185de0ab570fe4285647e0a81a">ASCII_TO_LOWER</a>(*p1_str_next);</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;            cmp_val = (<a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>)char1;                        <span class="comment">/* ... rtn pos p1_str_next val (see Note #3a2B2).       */</span></div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        }</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;    }</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    <span class="keywordflow">return</span> (cmp_val);</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a6b66d3cfb2f83c8c48dbeedeba0edcdc_icgraph.png" border="0" usemap="#lib__str_8h_a6b66d3cfb2f83c8c48dbeedeba0edcdc_icgraph" alt=""/></div>
+<map name="lib__str_8h_a6b66d3cfb2f83c8c48dbeedeba0edcdc_icgraph" id="lib__str_8h_a6b66d3cfb2f83c8c48dbeedeba0edcdc_icgraph">
+<area shape="rect" id="node2" href="lib__str_8h.html#aa1896709f50a9a0d1c72c933abefac70" title="Str_CmpIgnoreCase" alt="" coords="208,5,347,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a12eaa826a75cae05cd08c74b9c6ebf20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_Char </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>srch_char</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l01133">1133</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__def_8h_source.html#l00324">DEF_INT_CPU_U_MAX_VAL</a> , 以及 <a class="el" href="lib__str_8c_source.html#l01191">Str_Char_N()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;{</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;    pstr = <a class="code" href="lib__str_8c.html#a73d81af6c7fbdfbd04361f8006c2a642">Str_Char_N</a>((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)pstr,</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;                      (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)<a class="code" href="lib__def_8h.html#a86383f474505e2b9b01609a47c503869">DEF_INT_CPU_U_MAX_VAL</a>,</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;                      (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )srch_char);</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;    <span class="keywordflow">return</span> (pstr);</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a12eaa826a75cae05cd08c74b9c6ebf20_cgraph.png" border="0" usemap="#lib__str_8h_a12eaa826a75cae05cd08c74b9c6ebf20_cgraph" alt=""/></div>
+<map name="lib__str_8h_a12eaa826a75cae05cd08c74b9c6ebf20_cgraph" id="lib__str_8h_a12eaa826a75cae05cd08c74b9c6ebf20_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a73d81af6c7fbdfbd04361f8006c2a642" title="Str_Char_N" alt="" coords="129,5,218,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a73d81af6c7fbdfbd04361f8006c2a642"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_Char_N </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>&#160;</td>
+          <td class="paramname"><em>len_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>srch_char</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l01191">1191</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__str_8c_source.html#l01133">Str_Char()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;{</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *pstr_next;</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>   len_srch;</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;    <span class="keywordflow">if</span> (pstr == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {                                <span class="comment">/* Rtn NULL if srch str ptr NULL    (see Note #2a).     */</span></div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;    }</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;    <span class="keywordflow">if</span> (len_max == (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)0) {                             <span class="comment">/* Rtn NULL if srch len equals zero (see Note #2e).     */</span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    }</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;    pstr_next = pstr;</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    pstr_next++;</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;    len_srch  = 0;</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;    <span class="keywordflow">while</span> (( pstr_next != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)  0 )      &amp;&amp;             <span class="comment">/* Srch str until NULL ptr(s)  [see Note #2b]  ...      */</span></div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;           (*pstr      != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )<span class="charliteral">&#39;\0&#39;</span>)      &amp;&amp;             <span class="comment">/* ... or NULL char            (see Note #2c)  ...      */</span></div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;           (*pstr      != (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  )srch_char) &amp;&amp;             <span class="comment">/* ... or srch char found      (see Note #2d); ...      */</span></div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;           ( len_srch  &lt;  (<a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>)len_max)) {               <span class="comment">/* ... or max nbr chars srch&#39;d (see Note #2e).          */</span></div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;        pstr++;</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;        pstr_next++;</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;        len_srch++;</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    }</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;</div>
+<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;    <span class="keywordflow">if</span> (*pstr != srch_char) {                                   <span class="comment">/* If srch char NOT found, str points to NULL; ...      */</span></div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;         <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);                                <span class="comment">/* ... rtn NULL (see Notes #2b &amp; #2c).                  */</span></div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;    }</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    <span class="keywordflow">return</span> (pstr);                                              <span class="comment">/* Else rtn ptr to found srch char (see Note #2d).      */</span></div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a73d81af6c7fbdfbd04361f8006c2a642_icgraph.png" border="0" usemap="#lib__str_8h_a73d81af6c7fbdfbd04361f8006c2a642_icgraph" alt=""/></div>
+<map name="lib__str_8h_a73d81af6c7fbdfbd04361f8006c2a642_icgraph" id="lib__str_8h_a73d81af6c7fbdfbd04361f8006c2a642_icgraph">
+<area shape="rect" id="node2" href="lib__str_8h.html#a12eaa826a75cae05cd08c74b9c6ebf20" title="Str_Char" alt="" coords="145,5,218,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9f2bb0306d16e8892d7300e9aa2d490"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_Char_Last </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>srch_char</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l01267">1267</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__str_8c_source.html#l00208">Str_Len()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;{</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *pstr_next;</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>   str_len;</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;    <span class="keywordflow">if</span> (pstr == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {                                <span class="comment">/* Rtn NULL if srch str ptr NULL (see Note #2a).        */</span></div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;    }</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;    pstr_next  = pstr;</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;    str_len    = <a class="code" href="lib__str_8c.html#ab100a4bec13d19cd7e9f8a57ebab1cfc">Str_Len</a>(pstr);</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;    pstr_next += str_len;</div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;    <span class="keywordflow">while</span> (( pstr_next != pstr) &amp;&amp;                              <span class="comment">/* Srch str from end until begining (see Note #2c) ...  */</span></div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;           (*pstr_next != srch_char)) {                         <span class="comment">/* ... until srch char found        (see Note #2d).     */</span></div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;        pstr_next--;</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    }</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;    <span class="keywordflow">if</span> (*pstr_next != srch_char) {                              <span class="comment">/* If srch char NOT found, str points to NULL; ...      */</span></div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;         <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);                                <span class="comment">/* ... rtn NULL (see Notes #2b &amp; #2c).                  */</span></div>
+<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;    }</div>
+<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;    <span class="keywordflow">return</span> (pstr_next);                                         <span class="comment">/* Else rtn ptr to found srch char (see Note #2d).      */</span></div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_ac9f2bb0306d16e8892d7300e9aa2d490_cgraph.png" border="0" usemap="#lib__str_8h_ac9f2bb0306d16e8892d7300e9aa2d490_cgraph" alt=""/></div>
+<map name="lib__str_8h_ac9f2bb0306d16e8892d7300e9aa2d490_cgraph" id="lib__str_8h_ac9f2bb0306d16e8892d7300e9aa2d490_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#ab100a4bec13d19cd7e9f8a57ebab1cfc" title="Str_Len" alt="" coords="160,5,227,32"/><area shape="rect" id="node3" href="lib__str_8c.html#a47711dcd318c43d3a24f4fc0d51d9201" title="Str_Len_N" alt="" coords="275,5,357,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b3a3e08952ec6ace09bd2491ab22df0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_Str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>psrch_str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l01337">1337</a> 行定义.</p>
+
+<p>参考 <a class="el" href="cpu__pr_8h_source.html#l00048">DEF_NO</a>, <a class="el" href="cpu__pr_8h_source.html#l00049">DEF_YES</a>, <a class="el" href="lib__str_8c_source.html#l00743">Str_Cmp_N()</a> , 以及 <a class="el" href="lib__str_8c_source.html#l00208">Str_Len()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;{</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>    str_len;</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>    srch_str_len;</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>    srch_len;</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;    <a class="code" href="cpu__pr_8h.html#a137467f659b1c836450e8121e78d49b4">CPU_SIZE_T</a>    srch_ix;</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>   srch_done;</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac5e8df1af46862d3d1e0fe438fd8131e">CPU_INT16S</a>    srch_cmp;</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>     *pstr_srch_ix;</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;                                                                <span class="comment">/* Rtn NULL if str ptr(s) NULL (see Note #2a).          */</span></div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;    <span class="keywordflow">if</span> (pstr == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;    }</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;    <span class="keywordflow">if</span> (psrch_str == (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0) {</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    }</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;    str_len      = <a class="code" href="lib__str_8c.html#ab100a4bec13d19cd7e9f8a57ebab1cfc">Str_Len</a>(pstr);</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;    srch_str_len = <a class="code" href="lib__str_8c.html#ab100a4bec13d19cd7e9f8a57ebab1cfc">Str_Len</a>(psrch_str);</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;    <span class="keywordflow">if</span> (srch_str_len &gt; str_len) {                               <span class="comment">/* If srch str len &gt; str len, rtn NULL  (see Note #2b). */</span></div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    }</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;    <span class="keywordflow">if</span> (srch_str_len == 0) {                                    <span class="comment">/* If srch str len = 0, srch str equal NULL str; ...    */</span></div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        pstr_srch_ix = (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)(pstr + str_len);            <span class="comment">/* ... rtn ptr to NULL str found in str (see Note #2c). */</span></div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <span class="keywordflow">return</span> (pstr_srch_ix);</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;    }</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    srch_len  = str_len - srch_str_len;                         <span class="comment">/* Determine srch len (see Note #2d1).                  */</span></div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;    srch_ix   = 0;</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;    srch_done = <a class="code" href="cpu__pr_8h.html#a1dc1e0035eddc2b91f9c5b24c6d600d5">DEF_NO</a>;</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;        pstr_srch_ix = (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)(pstr + srch_ix);</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;        srch_cmp     =  <a class="code" href="lib__str_8c.html#aadb0026db6715016adefcff4d235d27f">Str_Cmp_N</a>(pstr_srch_ix, psrch_str, srch_str_len);</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;        srch_done    = (srch_cmp == 0) ? <a class="code" href="cpu__pr_8h.html#aafb86a1ccea033ab753871c989737f8c">DEF_YES</a> : <a class="code" href="cpu__pr_8h.html#a1dc1e0035eddc2b91f9c5b24c6d600d5">DEF_NO</a>;</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;        srch_ix++;</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;    } <span class="keywordflow">while</span> ((srch_done == <a class="code" href="cpu__pr_8h.html#a1dc1e0035eddc2b91f9c5b24c6d600d5">DEF_NO</a>) &amp;&amp; (srch_ix &lt;= srch_len));</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;    <span class="keywordflow">if</span> (srch_cmp != 0) {                                        <span class="comment">/* If srch str NOT found, rtn NULL  (see Note #2d).     */</span></div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *)0);</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;    }</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    <span class="keywordflow">return</span> (pstr_srch_ix);                                      <span class="comment">/* Rtn ptr to srch str found in str (see Note #2e).     */</span></div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a6b3a3e08952ec6ace09bd2491ab22df0_cgraph.png" border="0" usemap="#lib__str_8h_a6b3a3e08952ec6ace09bd2491ab22df0_cgraph" alt=""/></div>
+<map name="lib__str_8h_a6b3a3e08952ec6ace09bd2491ab22df0_cgraph" id="lib__str_8h_a6b3a3e08952ec6ace09bd2491ab22df0_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#aadb0026db6715016adefcff4d235d27f" title="Str_Cmp_N" alt="" coords="118,5,207,32"/><area shape="rect" id="node3" href="lib__str_8c.html#ab100a4bec13d19cd7e9f8a57ebab1cfc" title="Str_Len" alt="" coords="129,56,196,83"/><area shape="rect" id="node4" href="lib__str_8c.html#a47711dcd318c43d3a24f4fc0d51d9201" title="Str_Len_N" alt="" coords="256,56,339,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aed48c259d2251935d4ca98aa47074698"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_FmtNbr_Int32U </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>&#160;</td>
+          <td class="paramname"><em>nbr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>nbr_dig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>nbr_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>lead_char</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>lower_case</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>nul</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l01476">1476</a> 行定义.</p>
+
+<p>参考 <a class="el" href="cpu__pr_8h_source.html#l00048">DEF_NO</a> , 以及 <a class="el" href="lib__str_8c_source.html#l02406">Str_FmtNbr_Int32()</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00579">App_DispScr_CtxSw()</a>, <a class="el" href="app_8c_source.html#l00610">App_DispScr_Inputs()</a> , 以及 <a class="el" href="app_8c_source.html#l00539">App_DispScr_VersionTickRateCPU()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;{</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  *pstr_fmt;</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;    pstr_fmt = <a class="code" href="lib__str_8c.html#af2f3af19820c2f157b06be68b0d83442">Str_FmtNbr_Int32</a>((<a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a> )nbr,               <span class="comment">/* Fmt unsigned int into str.                           */</span></div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> )nbr_dig,</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> )nbr_base,</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>)<a class="code" href="cpu__pr_8h.html#a1dc1e0035eddc2b91f9c5b24c6d600d5">DEF_NO</a>,</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>   )lead_char,</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>)lower_case,</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>)nul,</div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  *)pstr);</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    <span class="keywordflow">return</span> (pstr_fmt);</div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_aed48c259d2251935d4ca98aa47074698_cgraph.png" border="0" usemap="#lib__str_8h_aed48c259d2251935d4ca98aa47074698_cgraph" alt=""/></div>
+<map name="lib__str_8h_aed48c259d2251935d4ca98aa47074698_cgraph" id="lib__str_8h_aed48c259d2251935d4ca98aa47074698_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#af2f3af19820c2f157b06be68b0d83442" title="Str_FmtNbr_Int32" alt="" coords="187,5,311,32"/><area shape="rect" id="node3" href="lib__ascii_8c.html#a054037a698a50e5f8c123d364a58ddfa" title="ASCII_IsPrint" alt="" coords="360,5,459,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_aed48c259d2251935d4ca98aa47074698_icgraph.png" border="0" usemap="#lib__str_8h_aed48c259d2251935d4ca98aa47074698_icgraph" alt=""/></div>
+<map name="lib__str_8h_aed48c259d2251935d4ca98aa47074698_icgraph" id="lib__str_8h_aed48c259d2251935d4ca98aa47074698_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#ad2dbd15c596634877dea4574a1c7989f" title="App_DispScr_CtxSw" alt="" coords="229,5,371,32"/><area shape="rect" id="node7" href="app_8c.html#ac09ea0b7f47aa25a3358c4d3d3741c64" title="App_DispScr_Inputs" alt="" coords="230,56,370,83"/><area shape="rect" id="node8" href="app_8c.html#a0da05763e1462db15828337b9f178e60" title="App_DispScr_VersionTickRateCPU" alt="" coords="187,107,413,133"/><area shape="rect" id="node3" href="app_8c.html#a4217307366bcf4be2514445ba929360b" title="App_TaskUserIF" alt="" coords="462,56,581,83"/><area shape="rect" id="node4" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="630,56,749,83"/><area shape="rect" id="node5" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="798,56,906,83"/><area shape="rect" id="node6" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="955,56,1005,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f08b4d28d18041631bfe6a00f1e3e73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>* Str_FmtNbr_Int32S </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a>&#160;</td>
+          <td class="paramname"><em>nbr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>nbr_dig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>nbr_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>&#160;</td>
+          <td class="paramname"><em>lead_char</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>lower_case</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>nul</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l01602">1602</a> 行定义.</p>
+
+<p>参考 <a class="el" href="cpu__pr_8h_source.html#l00048">DEF_NO</a>, <a class="el" href="cpu__pr_8h_source.html#l00049">DEF_YES</a> , 以及 <a class="el" href="lib__str_8c_source.html#l02406">Str_FmtNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;{</div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>     *pstr_fmt;</div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;    <a class="code" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a>    nbr_fmt;</div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>   nbr_neg;</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;</div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;    nbr_fmt = nbr;</div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;    <span class="keywordflow">if</span> (nbr_fmt &lt; 0) {                                          <span class="comment">/* If nbr neg, ...                                      */</span></div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;        nbr_fmt = -nbr_fmt;                                     <span class="comment">/* ... negate nbr.                                      */</span></div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;        nbr_neg =  <a class="code" href="cpu__pr_8h.html#aafb86a1ccea033ab753871c989737f8c">DEF_YES</a>;</div>
+<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;        nbr_neg =  <a class="code" href="cpu__pr_8h.html#a1dc1e0035eddc2b91f9c5b24c6d600d5">DEF_NO</a>;</div>
+<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;    }</div>
+<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;</div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;    pstr_fmt = <a class="code" href="lib__str_8c.html#af2f3af19820c2f157b06be68b0d83442">Str_FmtNbr_Int32</a>((<a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a> )nbr_fmt,           <span class="comment">/* Fmt signed int into str.                             */</span></div>
+<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> )nbr_dig,</div>
+<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> )nbr_base,</div>
+<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>)nbr_neg,</div>
+<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>   )lead_char,</div>
+<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>)lower_case,</div>
+<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>)nul,</div>
+<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;                                (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>  *)pstr);</div>
+<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;</div>
+<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;    <span class="keywordflow">return</span> (pstr_fmt);</div>
+<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a9f08b4d28d18041631bfe6a00f1e3e73_cgraph.png" border="0" usemap="#lib__str_8h_a9f08b4d28d18041631bfe6a00f1e3e73_cgraph" alt=""/></div>
+<map name="lib__str_8h_a9f08b4d28d18041631bfe6a00f1e3e73_cgraph" id="lib__str_8h_a9f08b4d28d18041631bfe6a00f1e3e73_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#af2f3af19820c2f157b06be68b0d83442" title="Str_FmtNbr_Int32" alt="" coords="187,5,311,32"/><area shape="rect" id="node3" href="lib__ascii_8c.html#a054037a698a50e5f8c123d364a58ddfa" title="ASCII_IsPrint" alt="" coords="360,5,459,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f03bd123ba5567ab9fb6e777e7b40f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a> Str_ParseNbr_Int32U </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> **&#160;</td>
+          <td class="paramname"><em>pstr_next</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>nbr_base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l02037">2037</a> 行定义.</p>
+
+<p>参考 <a class="el" href="cpu__pr_8h_source.html#l00048">DEF_NO</a> , 以及 <a class="el" href="lib__str_8c_source.html#l02731">Str_ParseNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;{</div>
+<div class="line"><a name="l02041"></a><span class="lineno"> 2041</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>  nbr;</div>
+<div class="line"><a name="l02042"></a><span class="lineno"> 2042</span>&#160;</div>
+<div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160;</div>
+<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;    nbr = <a class="code" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03">Str_ParseNbr_Int32</a>((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *)pstr,               <span class="comment">/* Parse/convert str ...                                */</span></div>
+<div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;                             (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>   **)pstr_next,</div>
+<div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;                             (<a class="code" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>   )nbr_base,</div>
+<div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;                             (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  )<a class="code" href="cpu__pr_8h.html#a1dc1e0035eddc2b91f9c5b24c6d600d5">DEF_NO</a>,             <span class="comment">/* ... as unsigned int (see Note #2a2).                 */</span></div>
+<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;                             (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> *)0);</div>
+<div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;</div>
+<div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;    <span class="keywordflow">return</span> (nbr);</div>
+<div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a3f03bd123ba5567ab9fb6e777e7b40f6_cgraph.png" border="0" usemap="#lib__str_8h_a3f03bd123ba5567ab9fb6e777e7b40f6_cgraph" alt=""/></div>
+<map name="lib__str_8h_a3f03bd123ba5567ab9fb6e777e7b40f6_cgraph" id="lib__str_8h_a3f03bd123ba5567ab9fb6e777e7b40f6_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03" title="Str_ParseNbr_Int32" alt="" coords="198,107,333,133"/><area shape="rect" id="node3" href="lib__ascii_8c.html#a7e861dfe4f8f1ee7aa122388b9aa55ab" title="ASCII_IsAlphaNum" alt="" coords="382,5,514,32"/><area shape="rect" id="node4" href="lib__ascii_8c.html#a73b4bc4ac5b9636ceffe09e03da8083b" title="ASCII_IsDig" alt="" coords="403,56,493,83"/><area shape="rect" id="node5" href="lib__ascii_8c.html#a3babd5a4465b77e26841bc081320a9d8" title="ASCII_IsDigHex" alt="" coords="391,107,505,133"/><area shape="rect" id="node6" href="lib__ascii_8c.html#a62d3e4b634675a538e5551ffe6941d46" title="ASCII_IsLower" alt="" coords="395,157,501,184"/><area shape="rect" id="node7" href="lib__ascii_8c.html#adf3426d9c0bb974e75bc8634c101f30f" title="ASCII_IsSpace" alt="" coords="393,208,503,235"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a41bff67862bf1e7df3a686c1ea3af376"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a> Str_ParseNbr_Int32S </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> *&#160;</td>
+          <td class="paramname"><em>pstr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a> **&#160;</td>
+          <td class="paramname"><em>pstr_next</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>nbr_base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__str_8c_source.html">lib_str.c</a> 第 <a class="el" href="lib__str_8c_source.html#l02252">2252</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__def_8h_source.html#l00251">DEF_INT_32S_MAX_VAL</a>, <a class="el" href="lib__def_8h_source.html#l00250">DEF_INT_32S_MIN_VAL</a>, <a class="el" href="lib__def_8h_source.html#l00247">DEF_INT_32S_MIN_VAL_ONES_CPL</a>, <a class="el" href="cpu__pr_8h_source.html#l00048">DEF_NO</a>, <a class="el" href="cpu__pr_8h_source.html#l00049">DEF_YES</a> , 以及 <a class="el" href="lib__str_8c_source.html#l02731">Str_ParseNbr_Int32()</a>.</p>
+<div class="fragment"><div class="line"><a name="l02255"></a><span class="lineno"> 2255</span>&#160;{</div>
+<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160;    <a class="code" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a>   nbr;</div>
+<div class="line"><a name="l02257"></a><span class="lineno"> 2257</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>   nbr_abs;</div>
+<div class="line"><a name="l02258"></a><span class="lineno"> 2258</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  nbr_neg;</div>
+<div class="line"><a name="l02259"></a><span class="lineno"> 2259</span>&#160;</div>
+<div class="line"><a name="l02260"></a><span class="lineno"> 2260</span>&#160;</div>
+<div class="line"><a name="l02261"></a><span class="lineno"> 2261</span>&#160;    nbr_abs = <a class="code" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03">Str_ParseNbr_Int32</a>((<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>    *) pstr,          <span class="comment">/* Parse/convert str ...                                */</span></div>
+<div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160;                                 (<a class="code" href="cpu__pr_8h.html#ac598a89939440979012768e89b3c66f7">CPU_CHAR</a>   **) pstr_next,</div>
+<div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;                                 (<a class="code" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>   ) nbr_base,</div>
+<div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;                                 (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  ) <a class="code" href="cpu__pr_8h.html#aafb86a1ccea033ab753871c989737f8c">DEF_YES</a>,       <span class="comment">/* ... as signed int (see Note #2a2).                   */</span></div>
+<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;                                 (<a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> *)&amp;nbr_neg);</div>
+<div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;</div>
+<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;    <span class="keywordflow">if</span> (nbr_neg == <a class="code" href="cpu__pr_8h.html#a1dc1e0035eddc2b91f9c5b24c6d600d5">DEF_NO</a>) {                                    <span class="comment">/* Chk for neg nbr &amp; ovf/undf (see Note #2a3A1).        */</span></div>
+<div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;        nbr = (nbr_abs &gt; (<a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>) <a class="code" href="lib__def_8h.html#a44837ac1b3c4d8bf56752a818d432c7c">DEF_INT_32S_MAX_VAL</a>)          ?  (<a class="code" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a>)<a class="code" href="lib__def_8h.html#a44837ac1b3c4d8bf56752a818d432c7c">DEF_INT_32S_MAX_VAL</a></div>
+<div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160;                                                                    :  (<a class="code" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a>)nbr_abs;</div>
+<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;        nbr = (nbr_abs &gt; (<a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>)-<a class="code" href="lib__def_8h.html#a50c509774d03e713d3f6c6306c1802be">DEF_INT_32S_MIN_VAL_ONES_CPL</a>) ?  (<a class="code" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a>)<a class="code" href="lib__def_8h.html#a7fdeba3f5143e8f5fd84c247417f7bf1">DEF_INT_32S_MIN_VAL</a></div>
+<div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;                                                                    : -(<a class="code" href="cpu__pr_8h.html#acd6f7305992590a70b820f7b08535722">CPU_INT32S</a>)nbr_abs;</div>
+<div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;    }</div>
+<div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160;</div>
+<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160;    <span class="keywordflow">return</span> (nbr);</div>
+<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__str_8h_a41bff67862bf1e7df3a686c1ea3af376_cgraph.png" border="0" usemap="#lib__str_8h_a41bff67862bf1e7df3a686c1ea3af376_cgraph" alt=""/></div>
+<map name="lib__str_8h_a41bff67862bf1e7df3a686c1ea3af376_cgraph" id="lib__str_8h_a41bff67862bf1e7df3a686c1ea3af376_cgraph">
+<area shape="rect" id="node2" href="lib__str_8c.html#a319658a68bbbd5ea58aecce89764df03" title="Str_ParseNbr_Int32" alt="" coords="198,107,333,133"/><area shape="rect" id="node3" href="lib__ascii_8c.html#a7e861dfe4f8f1ee7aa122388b9aa55ab" title="ASCII_IsAlphaNum" alt="" coords="382,5,514,32"/><area shape="rect" id="node4" href="lib__ascii_8c.html#a73b4bc4ac5b9636ceffe09e03da8083b" title="ASCII_IsDig" alt="" coords="403,56,493,83"/><area shape="rect" id="node5" href="lib__ascii_8c.html#a3babd5a4465b77e26841bc081320a9d8" title="ASCII_IsDigHex" alt="" coords="391,107,505,133"/><area shape="rect" id="node6" href="lib__ascii_8c.html#a62d3e4b634675a538e5551ffe6941d46" title="ASCII_IsLower" alt="" coords="395,157,501,184"/><area shape="rect" id="node7" href="lib__ascii_8c.html#adf3426d9c0bb974e75bc8634c101f30f" title="ASCII_IsSpace" alt="" coords="393,208,503,235"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_67fecfbdfd1e64087a1302f9ae2874c1.html">uC-LIB</a></li><li class="navelem"><a class="el" href="lib__str_8h.html">lib_str.h</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:44 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

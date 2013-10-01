@@ -1,0 +1,797 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/BSP/bsp.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('bsp_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">bsp.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="bsp_8h_source.html">bsp.h</a>&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+bsp.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2_b_s_p_2bsp_8c" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2_b_s_p_2bsp_8c" id="_u_c_o_s___t_i___l_m3_s___keil_2_b_s_p_2bsp_8c">
+<area shape="rect" id="node2" href="bsp_8h.html" title="bsp.h" alt="" coords="1306,96,1360,123"/><area shape="rect" id="node3" href="cpu_8h.html" title="cpu.h" alt="" coords="318,469,372,496"/><area shape="rect" id="node6" href="cpu__core_8h.html" title="cpu_core.h" alt="" coords="218,171,304,197"/><area shape="rect" id="node17" href="bsp__int_8h.html" title="bsp_int.h" alt="" coords="1044,171,1119,197"/><area shape="rect" id="node18" href="bsp__ser_8h.html" title="bsp_ser.h" alt="" coords="1143,171,1221,197"/><area shape="rect" id="node20" href="bsp__os_8h.html" title="bsp_os.h" alt="" coords="1247,171,1321,197"/><area shape="rect" id="node4" href="cpu__def_8h.html" title="cpu_def.h" alt="" coords="306,544,384,571"/><area shape="rect" id="node5" href="u_c-_c_p_u_2cpu__cfg_8h.html" title="cpu_cfg.h" alt="" coords="85,544,163,571"/><area shape="rect" id="node7" href="lib__def_8h.html" title="lib_def.h" alt="" coords="251,395,321,421"/><area shape="rect" id="node8" href="lib__mem_8h.html" title="lib_mem.h" alt="" coords="141,245,224,272"/><area shape="rect" id="node10" href="lib__str_8h.html" title="lib_str.h" alt="" coords="479,245,547,272"/><area shape="rect" id="node9" href="app__cfg_8h.html" title="app_cfg.h" alt="" coords="145,320,223,347"/><area shape="rect" id="node11" href="lib__ascii_8h.html" title="lib_ascii.h" alt="" coords="435,320,515,347"/><area shape="rect" id="node21" href="ucos__ii_8h.html" title="ucos_ii.h" alt="" coords="1247,245,1321,272"/><area shape="rect" id="node22" href="_a_p_p_2os__cfg_8h.html" title="os_cfg.h" alt="" coords="1201,320,1271,347"/><area shape="rect" id="node23" href="os__cpu_8h.html" title="os_cpu.h" alt="" coords="1296,320,1371,347"/></map>
+</div>
+</div>
+<p><a href="bsp_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:acdcec9325615b1cb3ca9da438fcfcd77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#acdcec9325615b1cb3ca9da438fcfcd77">BSP_MODULE</a></td></tr>
+<tr class="separator:acdcec9325615b1cb3ca9da438fcfcd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261b69a0e9fde7daf9b915abb8c09c80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a261b69a0e9fde7daf9b915abb8c09c80">BSP_GPIOA_U0RX</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#ac030a463b313457b59df8bdecce3c376">DEF_BIT_00</a>      /* UART0 Receive.                                       */</td></tr>
+<tr class="separator:a261b69a0e9fde7daf9b915abb8c09c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f48db4dc0f82aea2cf5698940607b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a06f48db4dc0f82aea2cf5698940607b8">BSP_GPIOA_U0TX</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a088113a7f418ca1237670864c64c5ea4">DEF_BIT_01</a>      /* UART1 Transmit.                                      */</td></tr>
+<tr class="separator:a06f48db4dc0f82aea2cf5698940607b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8265b6089f5c3037880d32a11c301960"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a8265b6089f5c3037880d32a11c301960">BSP_GPIOA_SSI0CLK</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a87d6b289b7e4a5ac561ca6ba2e19c196">DEF_BIT_02</a>      /* OLED.                                                */</td></tr>
+<tr class="separator:a8265b6089f5c3037880d32a11c301960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff52f6bc0ff9bb9194e32b682c50991"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a1ff52f6bc0ff9bb9194e32b682c50991">BSP_GPIOA_OLEDCSN</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aabb2e28f0ee22292b2dc52053e6eee46">DEF_BIT_03</a>      /* OLED Chip Select.                                    */</td></tr>
+<tr class="separator:a1ff52f6bc0ff9bb9194e32b682c50991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7063f39173e1138846f0581816cb7de6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a7063f39173e1138846f0581816cb7de6">BSP_GPIOA_SSI0RX</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aeee5ac3a77fb210db3e8e813ef7e7290">DEF_BIT_04</a>      /* OLED.                                                */</td></tr>
+<tr class="separator:a7063f39173e1138846f0581816cb7de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760860bdfd9011f42df1ea96b24d86b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a760860bdfd9011f42df1ea96b24d86b4">BSP_GPIOC_OLEDDC</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aef0b96006ba8ca212ea673728b7deac1">DEF_BIT_07</a>      /* OLED.                                                */</td></tr>
+<tr class="separator:a760860bdfd9011f42df1ea96b24d86b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23d1419caec96396af5b71b33e51e1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a87d6b289b7e4a5ac561ca6ba2e19c196">DEF_BIT_02</a>      /* User LED.                                            */</td></tr>
+<tr class="separator:af23d1419caec96396af5b71b33e51e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5315daf16a7df89c70a2a036faa6506"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#af5315daf16a7df89c70a2a036faa6506">BSP_GPIOG_SW_UP</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aabb2e28f0ee22292b2dc52053e6eee46">DEF_BIT_03</a>      /* User Button: Up.                                     */</td></tr>
+<tr class="separator:af5315daf16a7df89c70a2a036faa6506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83ae64ddb12f194688dd3bd7a825d85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#af83ae64ddb12f194688dd3bd7a825d85">BSP_GPIOG_SW_DOWN</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aeee5ac3a77fb210db3e8e813ef7e7290">DEF_BIT_04</a>      /* User Button: Down.                                   */</td></tr>
+<tr class="separator:af83ae64ddb12f194688dd3bd7a825d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accaf61106976a4b3f9f68af407913890"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#accaf61106976a4b3f9f68af407913890">BSP_GPIOG_SW_LEFT</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a5095705c81da08376853fdcf317797f7">DEF_BIT_05</a>      /* User Button: Left.                                   */</td></tr>
+<tr class="separator:accaf61106976a4b3f9f68af407913890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d4f9ae28b134d2c30a6dc62d3a62c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a91d4f9ae28b134d2c30a6dc62d3a62c1">BSP_GPIOG_SW_RIGHT</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a3337caa20e63c077505ec55a0a27fa32">DEF_BIT_06</a>      /* User Button: Right.                                  */</td></tr>
+<tr class="separator:a91d4f9ae28b134d2c30a6dc62d3a62c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136091d18a81d4653c6a44b7f3289d91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a136091d18a81d4653c6a44b7f3289d91">BSP_GPIOG_SW_SELECT</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aef0b96006ba8ca212ea673728b7deac1">DEF_BIT_07</a>      /* User Button: Select.                                 */</td></tr>
+<tr class="separator:a136091d18a81d4653c6a44b7f3289d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3061e7f843a08f4b4dc46d30f112893d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a3061e7f843a08f4b4dc46d30f112893d">BSP_GPIOH_PWM2</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#ac030a463b313457b59df8bdecce3c376">DEF_BIT_00</a>      /* Sound.                                               */</td></tr>
+<tr class="separator:a3061e7f843a08f4b4dc46d30f112893d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb06a568a503cd4e22ee0aeacc6e7a8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#adb06a568a503cd4e22ee0aeacc6e7a8b">BSP_GPIOH_PWM3</a>&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a088113a7f418ca1237670864c64c5ea4">DEF_BIT_01</a>      /* Sound.                                               */</td></tr>
+<tr class="separator:adb06a568a503cd4e22ee0aeacc6e7a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae64c0b76c8263e488a9580ca4eea606f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#ae64c0b76c8263e488a9580ca4eea606f">BSP_LED_Init</a> (void)</td></tr>
+<tr class="separator:ae64c0b76c8263e488a9580ca4eea606f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3651ee4f44e4e00baa51aa7183a598c2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a3651ee4f44e4e00baa51aa7183a598c2">BSP_PB_Init</a> (void)</td></tr>
+<tr class="separator:a3651ee4f44e4e00baa51aa7183a598c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3f1730d68ea5aa990ec47d5da7048d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a7c3f1730d68ea5aa990ec47d5da7048d">BSP_Init</a> (void)</td></tr>
+<tr class="separator:a7c3f1730d68ea5aa990ec47d5da7048d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89e82a6407b3e32de3a89c5b8f3580e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#af89e82a6407b3e32de3a89c5b8f3580e">BSP_CPU_ClkFreq</a> (void)</td></tr>
+<tr class="separator:af89e82a6407b3e32de3a89c5b8f3580e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3553cdde7df0d9ffaaeacd3e6fbaccb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#af3553cdde7df0d9ffaaeacd3e6fbaccb">BSP_LED_On</a> (<a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> led)</td></tr>
+<tr class="separator:af3553cdde7df0d9ffaaeacd3e6fbaccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f3c18f64c29426678252b5569ef0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a91f3c18f64c29426678252b5569ef0ac">BSP_LED_Off</a> (<a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> led)</td></tr>
+<tr class="separator:a91f3c18f64c29426678252b5569ef0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafaee768842bbf307a9f9512d357095"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#afafaee768842bbf307a9f9512d357095">BSP_LED_Toggle</a> (<a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> led)</td></tr>
+<tr class="separator:afafaee768842bbf307a9f9512d357095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b28ad35e9aa55a6144f5fdbf63c63a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp_8c.html#a11b28ad35e9aa55a6144f5fdbf63c63a">BSP_PB_GetStatus</a> (<a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> pb)</td></tr>
+<tr class="separator:a11b28ad35e9aa55a6144f5fdbf63c63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="acdcec9325615b1cb3ca9da438fcfcd77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_MODULE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00034">34</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a261b69a0e9fde7daf9b915abb8c09c80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOA_U0RX&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#ac030a463b313457b59df8bdecce3c376">DEF_BIT_00</a>      /* UART0 Receive.                                       */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06f48db4dc0f82aea2cf5698940607b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOA_U0TX&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a088113a7f418ca1237670864c64c5ea4">DEF_BIT_01</a>      /* UART1 Transmit.                                      */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8265b6089f5c3037880d32a11c301960"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOA_SSI0CLK&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a87d6b289b7e4a5ac561ca6ba2e19c196">DEF_BIT_02</a>      /* OLED.                                                */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ff52f6bc0ff9bb9194e32b682c50991"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOA_OLEDCSN&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aabb2e28f0ee22292b2dc52053e6eee46">DEF_BIT_03</a>      /* OLED Chip Select.                                    */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7063f39173e1138846f0581816cb7de6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOA_SSI0RX&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aeee5ac3a77fb210db3e8e813ef7e7290">DEF_BIT_04</a>      /* OLED.                                                */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a760860bdfd9011f42df1ea96b24d86b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOC_OLEDDC&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aef0b96006ba8ca212ea673728b7deac1">DEF_BIT_07</a>      /* OLED.                                                */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00052">52</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af23d1419caec96396af5b71b33e51e1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOG_PWM0&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a87d6b289b7e4a5ac561ca6ba2e19c196">DEF_BIT_02</a>      /* User LED.                                            */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00055">55</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00191">BSP_LED_Init()</a>, <a class="el" href="bsp_8c_source.html#l00252">BSP_LED_Off()</a>, <a class="el" href="bsp_8c_source.html#l00219">BSP_LED_On()</a> , 以及 <a class="el" href="bsp_8c_source.html#l00285">BSP_LED_Toggle()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5315daf16a7df89c70a2a036faa6506"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOG_SW_UP&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aabb2e28f0ee22292b2dc52053e6eee46">DEF_BIT_03</a>      /* User Button: Up.                                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00056">56</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00363">BSP_PB_GetStatus()</a> , 以及 <a class="el" href="bsp_8c_source.html#l00331">BSP_PB_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af83ae64ddb12f194688dd3bd7a825d85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOG_SW_DOWN&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aeee5ac3a77fb210db3e8e813ef7e7290">DEF_BIT_04</a>      /* User Button: Down.                                   */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00057">57</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00363">BSP_PB_GetStatus()</a> , 以及 <a class="el" href="bsp_8c_source.html#l00331">BSP_PB_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="accaf61106976a4b3f9f68af407913890"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOG_SW_LEFT&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a5095705c81da08376853fdcf317797f7">DEF_BIT_05</a>      /* User Button: Left.                                   */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00058">58</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00363">BSP_PB_GetStatus()</a> , 以及 <a class="el" href="bsp_8c_source.html#l00331">BSP_PB_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91d4f9ae28b134d2c30a6dc62d3a62c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOG_SW_RIGHT&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a3337caa20e63c077505ec55a0a27fa32">DEF_BIT_06</a>      /* User Button: Right.                                  */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00059">59</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00363">BSP_PB_GetStatus()</a> , 以及 <a class="el" href="bsp_8c_source.html#l00331">BSP_PB_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a136091d18a81d4653c6a44b7f3289d91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOG_SW_SELECT&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#aef0b96006ba8ca212ea673728b7deac1">DEF_BIT_07</a>      /* User Button: Select.                                 */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00060">60</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00363">BSP_PB_GetStatus()</a> , 以及 <a class="el" href="bsp_8c_source.html#l00331">BSP_PB_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3061e7f843a08f4b4dc46d30f112893d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOH_PWM2&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#ac030a463b313457b59df8bdecce3c376">DEF_BIT_00</a>      /* Sound.                                               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00063">63</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="adb06a568a503cd4e22ee0aeacc6e7a8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_GPIOH_PWM3&#160;&#160;&#160;<a class="el" href="lib__def_8h.html#a088113a7f418ca1237670864c64c5ea4">DEF_BIT_01</a>      /* Sound.                                               */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00064">64</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ae64c0b76c8263e488a9580ca4eea606f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BSP_LED_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00191">191</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp_8c_source.html#l00055">BSP_GPIOG_PWM0</a> , 以及 <a class="el" href="bsp_8c_source.html#l00252">BSP_LED_Off()</a>.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00129">BSP_Init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOG);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    GPIODirModeSet(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>, GPIO_DIR_MODE_OUT);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    GPIOPadConfigSet(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="bsp_8c.html#a91f3c18f64c29426678252b5569ef0ac">BSP_LED_Off</a>(0);                                             <span class="comment">/* Turn OFF all the LEDs.                               */</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_ae64c0b76c8263e488a9580ca4eea606f_cgraph.png" border="0" usemap="#bsp_8c_ae64c0b76c8263e488a9580ca4eea606f_cgraph" alt=""/></div>
+<map name="bsp_8c_ae64c0b76c8263e488a9580ca4eea606f_cgraph" id="bsp_8c_ae64c0b76c8263e488a9580ca4eea606f_cgraph">
+<area shape="rect" id="node2" href="bsp_8c.html#a91f3c18f64c29426678252b5569ef0ac" title="BSP_LED_Off" alt="" coords="160,5,264,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_ae64c0b76c8263e488a9580ca4eea606f_icgraph.png" border="0" usemap="#bsp_8c_ae64c0b76c8263e488a9580ca4eea606f_icgraph" alt=""/></div>
+<map name="bsp_8c_ae64c0b76c8263e488a9580ca4eea606f_icgraph" id="bsp_8c_ae64c0b76c8263e488a9580ca4eea606f_icgraph">
+<area shape="rect" id="node2" href="bsp_8h.html#a7c3f1730d68ea5aa990ec47d5da7048d" title="BSP_Init" alt="" coords="161,5,234,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="283,5,333,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3651ee4f44e4e00baa51aa7183a598c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BSP_PB_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00331">331</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp_8c_source.html#l00057">BSP_GPIOG_SW_DOWN</a>, <a class="el" href="bsp_8c_source.html#l00058">BSP_GPIOG_SW_LEFT</a>, <a class="el" href="bsp_8c_source.html#l00059">BSP_GPIOG_SW_RIGHT</a>, <a class="el" href="bsp_8c_source.html#l00060">BSP_GPIOG_SW_SELECT</a> , 以及 <a class="el" href="bsp_8c_source.html#l00056">BSP_GPIOG_SW_UP</a>.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00129">BSP_Init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;{</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOG);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    GPIODirModeSet(  GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#a136091d18a81d4653c6a44b7f3289d91">BSP_GPIOG_SW_SELECT</a> | <a class="code" href="bsp_8c.html#af5315daf16a7df89c70a2a036faa6506">BSP_GPIOG_SW_UP</a> | <a class="code" href="bsp_8c.html#af83ae64ddb12f194688dd3bd7a825d85">BSP_GPIOG_SW_DOWN</a> | <a class="code" href="bsp_8c.html#accaf61106976a4b3f9f68af407913890">BSP_GPIOG_SW_LEFT</a> | <a class="code" href="bsp_8c.html#a91d4f9ae28b134d2c30a6dc62d3a62c1">BSP_GPIOG_SW_RIGHT</a>, GPIO_DIR_MODE_IN);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    GPIOPadConfigSet(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#a136091d18a81d4653c6a44b7f3289d91">BSP_GPIOG_SW_SELECT</a> | <a class="code" href="bsp_8c.html#af5315daf16a7df89c70a2a036faa6506">BSP_GPIOG_SW_UP</a> | <a class="code" href="bsp_8c.html#af83ae64ddb12f194688dd3bd7a825d85">BSP_GPIOG_SW_DOWN</a> | <a class="code" href="bsp_8c.html#accaf61106976a4b3f9f68af407913890">BSP_GPIOG_SW_LEFT</a> | <a class="code" href="bsp_8c.html#a91d4f9ae28b134d2c30a6dc62d3a62c1">BSP_GPIOG_SW_RIGHT</a>, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_a3651ee4f44e4e00baa51aa7183a598c2_icgraph.png" border="0" usemap="#bsp_8c_a3651ee4f44e4e00baa51aa7183a598c2_icgraph" alt=""/></div>
+<map name="bsp_8c_a3651ee4f44e4e00baa51aa7183a598c2_icgraph" id="bsp_8c_a3651ee4f44e4e00baa51aa7183a598c2_icgraph">
+<area shape="rect" id="node2" href="bsp_8h.html#a7c3f1730d68ea5aa990ec47d5da7048d" title="BSP_Init" alt="" coords="153,5,226,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="275,5,325,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c3f1730d68ea5aa990ec47d5da7048d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00129">129</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8c_source.html#l00276">BSP_IntInit()</a>, <a class="el" href="bsp_8c_source.html#l00191">BSP_LED_Init()</a> , 以及 <a class="el" href="bsp_8c_source.html#l00331">BSP_PB_Init()</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00153">main()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    SysCtlClockSet(SYSCTL_SYSDIV_4 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_8MHZ);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="bsp__int_8c.html#ad25cb43e8b6d2e3efa3bc5cf6aa22e5e">BSP_IntInit</a>();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    RIT128x96x4Init(3500000);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="bsp_8c.html#ae64c0b76c8263e488a9580ca4eea606f">BSP_LED_Init</a>();                                             <span class="comment">/* Initialize the I/Os for the LED controls.            */</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="bsp_8c.html#a3651ee4f44e4e00baa51aa7183a598c2">BSP_PB_Init</a>();                                              <span class="comment">/* Initialize the I/Os for the PB  controls.            */</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_a7c3f1730d68ea5aa990ec47d5da7048d_cgraph.png" border="0" usemap="#bsp_8c_a7c3f1730d68ea5aa990ec47d5da7048d_cgraph" alt=""/></div>
+<map name="bsp_8c_a7c3f1730d68ea5aa990ec47d5da7048d_cgraph" id="bsp_8c_a7c3f1730d68ea5aa990ec47d5da7048d_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#ad25cb43e8b6d2e3efa3bc5cf6aa22e5e" title="BSP_IntInit" alt="" coords="138,56,225,83"/><area shape="rect" id="node5" href="bsp_8c.html#ae64c0b76c8263e488a9580ca4eea606f" title="BSP_LED_Init" alt="" coords="129,107,234,133"/><area shape="rect" id="node7" href="bsp_8c.html#a3651ee4f44e4e00baa51aa7183a598c2" title="BSP_PB_Init" alt="" coords="132,157,231,184"/><area shape="rect" id="node3" href="bsp__int_8c.html#a43a9b2a782d11a30676238d4da5f81d0" title="BSP_IntVectSet" alt="" coords="304,5,421,32"/><area shape="rect" id="node4" href="bsp__int_8c.html#a4e72b2f47419d8140a58e44de3af12c1" title="BSP_IntHandlerDummy" alt="" coords="283,56,442,83"/><area shape="rect" id="node6" href="bsp_8c.html#a91f3c18f64c29426678252b5569ef0ac" title="BSP_LED_Off" alt="" coords="311,107,415,133"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_a7c3f1730d68ea5aa990ec47d5da7048d_icgraph.png" border="0" usemap="#bsp_8c_a7c3f1730d68ea5aa990ec47d5da7048d_icgraph" alt=""/></div>
+<map name="bsp_8c_a7c3f1730d68ea5aa990ec47d5da7048d_icgraph" id="bsp_8c_a7c3f1730d68ea5aa990ec47d5da7048d_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="128,5,179,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af89e82a6407b3e32de3a89c5b8f3580e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a> BSP_CPU_ClkFreq </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00157">157</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00209">App_TaskStart()</a> , 以及 <a class="el" href="bsp__ser_8c_source.html#l00203">BSP_SerInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>  freq;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    freq = SysCtlClockGet();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> (freq);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_af89e82a6407b3e32de3a89c5b8f3580e_icgraph.png" border="0" usemap="#bsp_8c_af89e82a6407b3e32de3a89c5b8f3580e_icgraph" alt=""/></div>
+<map name="bsp_8c_af89e82a6407b3e32de3a89c5b8f3580e_icgraph" id="bsp_8c_af89e82a6407b3e32de3a89c5b8f3580e_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="331,5,439,32"/><area shape="rect" id="node4" href="bsp__ser_8h.html#a1aaf9b0ea64ea177dc131d6d71aaf19d" title="BSP_SerInit" alt="" coords="189,31,283,57"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="488,5,539,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af3553cdde7df0d9ffaaeacd3e6fbaccb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_LED_On </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>led</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00219">219</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp_8c_source.html#l00055">BSP_GPIOG_PWM0</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;{</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">switch</span> (led) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;             GPIOPinWrite(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>, 0);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a91f3c18f64c29426678252b5569ef0ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_LED_Off </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>led</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00252">252</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp_8c_source.html#l00055">BSP_GPIOG_PWM0</a>.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00191">BSP_LED_Init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">switch</span> (led) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;             GPIOPinWrite(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_a91f3c18f64c29426678252b5569ef0ac_icgraph.png" border="0" usemap="#bsp_8c_a91f3c18f64c29426678252b5569ef0ac_icgraph" alt=""/></div>
+<map name="bsp_8c_a91f3c18f64c29426678252b5569ef0ac_icgraph" id="bsp_8c_a91f3c18f64c29426678252b5569ef0ac_icgraph">
+<area shape="rect" id="node2" href="bsp_8c.html#ae64c0b76c8263e488a9580ca4eea606f" title="BSP_LED_Init" alt="" coords="158,5,263,32"/><area shape="rect" id="node3" href="bsp_8h.html#a7c3f1730d68ea5aa990ec47d5da7048d" title="BSP_Init" alt="" coords="313,5,386,32"/><area shape="rect" id="node4" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="435,5,485,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afafaee768842bbf307a9f9512d357095"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_LED_Toggle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>led</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00285">285</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp_8c_source.html#l00055">BSP_GPIOG_PWM0</a>, <a class="el" href="lib__def_8h_source.html#l00586">DEF_BIT_IS_CLR</a> , 以及 <a class="el" href="cpu__pr_8h_source.html#l00049">DEF_YES</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00209">App_TaskStart()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>  pins;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">switch</span> (led) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;             pins = GPIOPinRead(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;             <span class="keywordflow">if</span> (<a class="code" href="lib__def_8h.html#a5315b9d0f355cb1bcbff9ff1a6bca2e4">DEF_BIT_IS_CLR</a>(pins, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>) == <a class="code" href="cpu__pr_8h.html#aafb86a1ccea033ab753871c989737f8c">DEF_YES</a>) {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                 GPIOPinWrite(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;             } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                 GPIOPinWrite(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af23d1419caec96396af5b71b33e51e1f">BSP_GPIOG_PWM0</a>, 0);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;             }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_afafaee768842bbf307a9f9512d357095_icgraph.png" border="0" usemap="#bsp_8c_afafaee768842bbf307a9f9512d357095_icgraph" alt=""/></div>
+<map name="bsp_8c_afafaee768842bbf307a9f9512d357095_icgraph" id="bsp_8c_afafaee768842bbf307a9f9512d357095_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="182,5,290,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="339,5,389,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a11b28ad35e9aa55a6144f5fdbf63c63a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a> BSP_PB_GetStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>pb</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp_8c_source.html">bsp.c</a> 第 <a class="el" href="bsp_8c_source.html#l00363">363</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp_8c_source.html#l00057">BSP_GPIOG_SW_DOWN</a>, <a class="el" href="bsp_8c_source.html#l00058">BSP_GPIOG_SW_LEFT</a>, <a class="el" href="bsp_8c_source.html#l00059">BSP_GPIOG_SW_RIGHT</a>, <a class="el" href="bsp_8c_source.html#l00060">BSP_GPIOG_SW_SELECT</a>, <a class="el" href="bsp_8c_source.html#l00056">BSP_GPIOG_SW_UP</a>, <a class="el" href="cpu__pr_8h_source.html#l00045">DEF_FALSE</a> , 以及 <a class="el" href="cpu__pr_8h_source.html#l00046">DEF_TRUE</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00355">App_TaskKbd()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;{</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1510d21ebb58398df7fe1c67e9830947">CPU_BOOLEAN</a>  status;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <a class="code" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>   pins;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    status = <a class="code" href="cpu__pr_8h.html#a66c0dee7f4d774f218d6f73b7eba98de">DEF_FALSE</a>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">switch</span> (pb) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;             pins = GPIOPinRead(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#a136091d18a81d4653c6a44b7f3289d91">BSP_GPIOG_SW_SELECT</a>);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;             <span class="keywordflow">if</span> (pins == 0) {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                 status = <a class="code" href="cpu__pr_8h.html#a0390b66463540a1383bcc59af8f8a8b3">DEF_TRUE</a>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;             }</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;             pins = GPIOPinRead(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af5315daf16a7df89c70a2a036faa6506">BSP_GPIOG_SW_UP</a>);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;             <span class="keywordflow">if</span> (pins == 0) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                 status = <a class="code" href="cpu__pr_8h.html#a0390b66463540a1383bcc59af8f8a8b3">DEF_TRUE</a>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;             }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;             pins = GPIOPinRead(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#af83ae64ddb12f194688dd3bd7a825d85">BSP_GPIOG_SW_DOWN</a>);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;             <span class="keywordflow">if</span> (pins == 0) {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                 status = <a class="code" href="cpu__pr_8h.html#a0390b66463540a1383bcc59af8f8a8b3">DEF_TRUE</a>;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;             }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;             pins = GPIOPinRead(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#accaf61106976a4b3f9f68af407913890">BSP_GPIOG_SW_LEFT</a>);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;             <span class="keywordflow">if</span> (pins == 0) {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                 status = <a class="code" href="cpu__pr_8h.html#a0390b66463540a1383bcc59af8f8a8b3">DEF_TRUE</a>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;             }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;             pins = GPIOPinRead(GPIO_PORTG_BASE, <a class="code" href="bsp_8c.html#a91d4f9ae28b134d2c30a6dc62d3a62c1">BSP_GPIOG_SW_RIGHT</a>);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;             <span class="keywordflow">if</span> (pins == 0) {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                 status = <a class="code" href="cpu__pr_8h.html#a0390b66463540a1383bcc59af8f8a8b3">DEF_TRUE</a>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;             }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">return</span> (status);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp_8c_a11b28ad35e9aa55a6144f5fdbf63c63a_icgraph.png" border="0" usemap="#bsp_8c_a11b28ad35e9aa55a6144f5fdbf63c63a_icgraph" alt=""/></div>
+<map name="bsp_8c_a11b28ad35e9aa55a6144f5fdbf63c63a_icgraph" id="bsp_8c_a11b28ad35e9aa55a6144f5fdbf63c63a_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#ad1c293a09028612fc01cb3864064c5fd" title="App_TaskKbd" alt="" coords="195,5,298,32"/><area shape="rect" id="node3" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="347,5,466,32"/><area shape="rect" id="node4" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="515,5,623,32"/><area shape="rect" id="node5" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="672,5,723,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_33cd9ca9555943b70c4654519d7bc5e0.html">BSP</a></li><li class="navelem"><a class="el" href="bsp_8c.html">bsp.c</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:40 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

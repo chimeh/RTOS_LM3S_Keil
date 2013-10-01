@@ -1,0 +1,10 @@
+<map id="OSTaskDel" name="OSTaskDel">
+<area shape="rect" id="node2" href="$os__core_8c.html#ad0dd3f8afd8d36a8cead860a53fffc92" title="OS_Dummy" alt="" coords="187,5,280,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="156,56,311,83"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="142,107,325,133"/>
+<area shape="rect" id="node5" href="$os__flag_8c.html#a7ad520bab57668b9a7f797d85bd2a5c7" title="OS_FlagUnlink" alt="" coords="179,157,288,184"/>
+<area shape="rect" id="node6" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="191,208,276,235"/>
+<area shape="rect" id="node8" href="$os__cpu__c_8c.html#a4d335ed0146fb4692f6a9ba561968391" title="OSTaskDelHook" alt="" coords="174,259,293,285"/>
+<area shape="rect" id="node7" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="383,208,494,235"/>
+<area shape="rect" id="node9" href="$os__app__hooks_8c.html#a23eb4142fb74b9314bec7495de78ea38" title="App_TaskDelHook" alt="" coords="374,259,503,285"/>
+</map>

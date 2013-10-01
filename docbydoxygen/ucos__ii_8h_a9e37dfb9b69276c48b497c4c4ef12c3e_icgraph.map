@@ -1,0 +1,8 @@
+<map id="OSTaskCreate" name="OSTaskCreate">
+<area shape="rect" id="node2" href="$os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="326,5,439,32"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="160,56,277,83"/>
+<area shape="rect" id="node6" href="$os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="161,107,276,133"/>
+<area shape="rect" id="node3" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="488,56,547,83"/>
+<area shape="rect" id="node4" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="595,56,645,83"/>
+<area shape="rect" id="node7" href="$ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="339,107,426,133"/>
+</map>

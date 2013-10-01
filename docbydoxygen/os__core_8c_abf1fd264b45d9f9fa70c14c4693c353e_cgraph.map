@@ -1,0 +1,4 @@
+<map id="OSIntExit" name="OSIntExit">
+<area shape="rect" id="node2" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="134,5,245,32"/>
+<area shape="rect" id="node3" href="$os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="143,56,236,83"/>
+</map>

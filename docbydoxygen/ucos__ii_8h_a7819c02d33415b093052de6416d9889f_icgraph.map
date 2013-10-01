@@ -1,0 +1,6 @@
+<map id="OSTaskIdleHook" name="OSTaskIdleHook">
+<area shape="rect" id="node2" href="$ucos__ii_8h.html#a73a3a478f8472462ac3b70b789f29409" title="OS_TaskIdle" alt="" coords="173,5,269,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="318,5,431,32"/>
+<area shape="rect" id="node4" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="480,5,539,32"/>
+<area shape="rect" id="node5" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="587,5,637,32"/>
+</map>

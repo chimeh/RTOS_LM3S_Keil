@@ -1,0 +1,4 @@
+<map id="OS_FlagTaskRdy" name="OS_FlagTaskRdy">
+<area shape="rect" id="node2" href="$ucos__ii_8h.html#a8e03e910cb0828414d1afd44a686465d" title="OSFlagDel" alt="" coords="183,5,268,32"/>
+<area shape="rect" id="node3" href="$ucos__ii_8h.html#ae884e04cb03f370c115c949169db9d18" title="OSFlagPost" alt="" coords="179,56,272,83"/>
+</map>

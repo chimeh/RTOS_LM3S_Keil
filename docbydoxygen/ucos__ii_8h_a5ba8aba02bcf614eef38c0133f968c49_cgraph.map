@@ -1,0 +1,5 @@
+<map id="OSStatInit" name="OSStatInit">
+<area shape="rect" id="node2" href="$os__time_8c.html#a79fa80d326d321b4823c6d518db941ba" title="OSTimeDly" alt="" coords="136,5,224,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="272,5,357,32"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="406,5,517,32"/>
+</map>

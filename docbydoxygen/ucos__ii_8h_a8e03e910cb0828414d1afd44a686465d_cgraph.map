@@ -1,0 +1,6 @@
+<map id="OSFlagDel" name="OSFlagDel">
+<area shape="rect" id="node2" href="$os__flag_8c.html#a577c837115f95d6c229978d88d3a4343" title="OS_FlagTaskRdy" alt="" coords="139,5,263,32"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="159,56,244,83"/>
+<area shape="rect" id="node3" href="$os__flag_8c.html#a7ad520bab57668b9a7f797d85bd2a5c7" title="OS_FlagUnlink" alt="" coords="313,5,423,32"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="313,56,423,83"/>
+</map>

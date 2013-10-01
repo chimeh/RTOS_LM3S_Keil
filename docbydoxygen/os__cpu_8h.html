@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uCOS-II/Ports/os_cpu.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('os__cpu_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">os_cpu.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu_8h__dep__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_ports_2os__cpu_8hdep" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_ports_2os__cpu_8hdep" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_ports_2os__cpu_8hdep">
+<area shape="rect" id="node2" href="ucos__ii_8h.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/ucos_ii.h" alt="" coords="1799,97,1984,138"/><area shape="rect" id="node3" href="bsp__os_8h.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_os.h" alt="" coords="709,187,885,229"/><area shape="rect" id="node5" href="includes_8h.html" title="UCOS_TI_LM3S_Keil/APP\l/includes.h" alt="" coords="105,369,281,410"/><area shape="rect" id="node10" href="os__app__hooks_8c.html" title="UCOS_TI_LM3S_Keil/APP\l/os_app_hooks.c" alt="" coords="1715,369,1892,410"/><area shape="rect" id="node16" href="os__cpu__c_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Ports/os_cpu_c.c" alt="" coords="962,187,1147,229"/><area shape="rect" id="node17" href="os__dbg_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Ports/os_dbg.c" alt="" coords="1171,187,1356,229"/><area shape="rect" id="node18" href="os__core_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_core.c" alt="" coords="1381,187,1565,229"/><area shape="rect" id="node19" href="os__flag_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_flag.c" alt="" coords="1590,187,1775,229"/><area shape="rect" id="node20" href="os__mbox_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_mbox.c" alt="" coords="1799,187,1984,229"/><area shape="rect" id="node21" href="os__mem_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_mem.c" alt="" coords="2009,187,2193,229"/><area shape="rect" id="node22" href="os__mutex_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_mutex.c" alt="" coords="2218,187,2403,229"/><area shape="rect" id="node23" href="os__q_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_q.c" alt="" coords="2427,187,2612,229"/><area shape="rect" id="node24" href="os__sem_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_sem.c" alt="" coords="2637,187,2821,229"/><area shape="rect" id="node25" href="os__task_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_task.c" alt="" coords="2846,187,3031,229"/><area shape="rect" id="node26" href="os__time_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_time.c" alt="" coords="3055,187,3240,229"/><area shape="rect" id="node27" href="os__tmr_8c.html" title="UCOS_TI_LM3S_Keil/uCOS\l&#45;II/Source/os_tmr.c" alt="" coords="3265,187,3449,229"/><area shape="rect" id="node4" href="bsp_8h.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp.h" alt="" coords="709,278,885,319"/><area shape="rect" id="node8" href="bsp__int_8h.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_int.h" alt="" coords="306,369,483,410"/><area shape="rect" id="node9" href="bsp__ser_8h.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_ser.h" alt="" coords="507,369,684,410"/><area shape="rect" id="node11" href="bsp_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp.c" alt="" coords="709,369,885,410"/><area shape="rect" id="node12" href="bsp__int_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_int.c" alt="" coords="910,369,1087,410"/><area shape="rect" id="node13" href="bsp__os_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_os.c" alt="" coords="1111,369,1288,410"/><area shape="rect" id="node14" href="bsp__ser_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/bsp_ser.c" alt="" coords="1313,369,1489,410"/><area shape="rect" id="node15" href="cpu__bsp_8c.html" title="UCOS_TI_LM3S_Keil/BSP\l/cpu_bsp.c" alt="" coords="1514,369,1691,410"/><area shape="rect" id="node6" href="app_8c.html" title="UCOS_TI_LM3S_Keil/APP\l/app.c" alt="" coords="5,459,181,501"/><area shape="rect" id="node7" href="app__vect_8c.html" title="UCOS_TI_LM3S_Keil/APP\l/app_vect.c" alt="" coords="206,459,383,501"/></map>
+</div>
+</div>
+<p><a href="os__cpu_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a878409f76dd8027cb277638524ec97fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a878409f76dd8027cb277638524ec97fa">OS_CPU_EXT</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:a878409f76dd8027cb277638524ec97fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785707bb7215f8bde0619d13b02bf6ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a785707bb7215f8bde0619d13b02bf6ba">OS_CRITICAL_METHOD</a>&#160;&#160;&#160;3u</td></tr>
+<tr class="separator:a785707bb7215f8bde0619d13b02bf6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2779e293a9c4658daeaed6b68f5cd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>()&#160;&#160;&#160;{cpu_sr = <a class="el" href="os__cpu_8h.html#a0fb971012ec4f9aadeb72aefd6bd1ff5">OS_CPU_SR_Save</a>();}</td></tr>
+<tr class="separator:aac2779e293a9c4658daeaed6b68f5cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4118ef84c499db9b81e3f8586e21354f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>()&#160;&#160;&#160;{<a class="el" href="os__cpu_8h.html#a40f81680210a7c0ebfbfa5be53abf6c5">OS_CPU_SR_Restore</a>(cpu_sr);}</td></tr>
+<tr class="separator:a4118ef84c499db9b81e3f8586e21354f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b707e9c6e5d15f48a1a3c622f4093a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a3b707e9c6e5d15f48a1a3c622f4093a3">OS_STK_GROWTH</a>&#160;&#160;&#160;1u                  /* Stack grows from HIGH to LOW memory on ARM        */</td></tr>
+<tr class="separator:a3b707e9c6e5d15f48a1a3c622f4093a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb26d41c0fbcdf700d01b8fc3a69ec1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a9cb26d41c0fbcdf700d01b8fc3a69ec1">OS_TASK_SW</a>()&#160;&#160;&#160;<a class="el" href="os__cpu_8h.html#a83f8c03650b621971f6e7cf0e53af510">OSCtxSw</a>()</td></tr>
+<tr class="separator:a9cb26d41c0fbcdf700d01b8fc3a69ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a112e3146cb38b6ee95e64d85842e380a"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a></td></tr>
+<tr class="separator:a112e3146cb38b6ee95e64d85842e380a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b4f0d7384ed9d5ed0dd95e92bc5a2c"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a></td></tr>
+<tr class="separator:aa6b4f0d7384ed9d5ed0dd95e92bc5a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26678b92d672555b29f190d6d9706b26"><td class="memItemLeft" align="right" valign="top">typedef signed char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a26678b92d672555b29f190d6d9706b26">INT8S</a></td></tr>
+<tr class="separator:a26678b92d672555b29f190d6d9706b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d9da7eb3e345e431a0949058541c14"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a></td></tr>
+<tr class="separator:af4d9da7eb3e345e431a0949058541c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae377f15cd52485f58fb7f91f058920"><td class="memItemLeft" align="right" valign="top">typedef signed short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a3ae377f15cd52485f58fb7f91f058920">INT16S</a></td></tr>
+<tr class="separator:a3ae377f15cd52485f58fb7f91f058920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3954a3ec775325f557f0b4942a964f91"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a></td></tr>
+<tr class="separator:a3954a3ec775325f557f0b4942a964f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9a50a1c70982a234bbc4bce0393a64"><td class="memItemLeft" align="right" valign="top">typedef signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a4a9a50a1c70982a234bbc4bce0393a64">INT32S</a></td></tr>
+<tr class="separator:a4a9a50a1c70982a234bbc4bce0393a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6916e6b5fcd442592961c772dfbe8a3"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#ac6916e6b5fcd442592961c772dfbe8a3">FP32</a></td></tr>
+<tr class="separator:ac6916e6b5fcd442592961c772dfbe8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4071e43355599c8d19eda0cae247081b"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a4071e43355599c8d19eda0cae247081b">FP64</a></td></tr>
+<tr class="separator:a4071e43355599c8d19eda0cae247081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f60e2713aaa63efc8c5fafdcdeaa8a2"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a1f60e2713aaa63efc8c5fafdcdeaa8a2">OS_STK</a></td></tr>
+<tr class="separator:a1f60e2713aaa63efc8c5fafdcdeaa8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5205c42256d1cca93aaa0171a20bae61"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a></td></tr>
+<tr class="separator:a5205c42256d1cca93aaa0171a20bae61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0fb971012ec4f9aadeb72aefd6bd1ff5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a0fb971012ec4f9aadeb72aefd6bd1ff5">OS_CPU_SR_Save</a> (void)</td></tr>
+<tr class="separator:a0fb971012ec4f9aadeb72aefd6bd1ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f81680210a7c0ebfbfa5be53abf6c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a40f81680210a7c0ebfbfa5be53abf6c5">OS_CPU_SR_Restore</a> (<a class="el" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a> cpu_sr)</td></tr>
+<tr class="separator:a40f81680210a7c0ebfbfa5be53abf6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f8c03650b621971f6e7cf0e53af510"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a83f8c03650b621971f6e7cf0e53af510">OSCtxSw</a> (void)</td></tr>
+<tr class="separator:a83f8c03650b621971f6e7cf0e53af510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89129ee2d0df565adefafe44c0f743f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f">OSIntCtxSw</a> (void)</td></tr>
+<tr class="separator:ae89129ee2d0df565adefafe44c0f743f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316a500d9ecd91fe31eb0f048f7a6b80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#a316a500d9ecd91fe31eb0f048f7a6b80">OSStartHighRdy</a> (void)</td></tr>
+<tr class="separator:a316a500d9ecd91fe31eb0f048f7a6b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1059f64b25d99b9d4e043fc437f9566"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#ad1059f64b25d99b9d4e043fc437f9566">OS_CPU_PendSVHandler</a> (void)</td></tr>
+<tr class="separator:ad1059f64b25d99b9d4e043fc437f9566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e1489143c09755d37135acc3ac6fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#ad1e1489143c09755d37135acc3ac6fb4">OS_CPU_SysTickHandler</a> (void)</td></tr>
+<tr class="separator:ad1e1489143c09755d37135acc3ac6fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b2de62ccadb6c51dba3f0b07df9c35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu_8h.html#af6b2de62ccadb6c51dba3f0b07df9c35">OS_CPU_SysTickInit</a> (<a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> cnts)</td></tr>
+<tr class="separator:af6b2de62ccadb6c51dba3f0b07df9c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a878409f76dd8027cb277638524ec97fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_EXT&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00030">30</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a785707bb7215f8bde0619d13b02bf6ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CRITICAL_METHOD&#160;&#160;&#160;3u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00075">75</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac2779e293a9c4658daeaed6b68f5cd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_ENTER_CRITICAL</td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td>&#160;&#160;&#160;{cpu_sr = <a class="el" href="os__cpu_8h.html#a0fb971012ec4f9aadeb72aefd6bd1ff5">OS_CPU_SR_Save</a>();}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00078">78</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00350">OS_CPU_SysTickHandler()</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="os__core_8c_source.html#l01731">OS_TaskIdle()</a>, <a class="el" href="os__core_8c_source.html#l01773">OS_TaskStat()</a>, <a class="el" href="os__core_8c_source.html#l01896">OS_TCBInit()</a>, <a class="el" href="os__core_8c_source.html#l00108">OSEventNameGet()</a>, <a class="el" href="os__core_8c_source.html#l00184">OSEventNameSet()</a>, <a class="el" href="os__core_8c_source.html#l00302">OSEventPendMulti()</a>, <a class="el" href="os__flag_8c_source.html#l00092">OSFlagAccept()</a>, <a class="el" href="os__flag_8c_source.html#l00211">OSFlagCreate()</a>, <a class="el" href="os__flag_8c_source.html#l00288">OSFlagDel()</a>, <a class="el" href="os__flag_8c_source.html#l00399">OSFlagNameGet()</a>, <a class="el" href="os__flag_8c_source.html#l00466">OSFlagNameSet()</a>, <a class="el" href="os__flag_8c_source.html#l00561">OSFlagPend()</a>, <a class="el" href="os__flag_8c_source.html#l00743">OSFlagPendGetFlagsRdy()</a>, <a class="el" href="os__flag_8c_source.html#l00800">OSFlagPost()</a>, <a class="el" href="os__flag_8c_source.html#l00928">OSFlagQuery()</a>, <a class="el" href="os__core_8c_source.html#l00656">OSIntExit()</a>, <a class="el" href="os__mbox_8c_source.html#l00047">OSMboxAccept()</a>, <a class="el" href="os__mbox_8c_source.html#l00088">OSMboxCreate()</a>, <a class="el" href="os__mbox_8c_source.html#l00155">OSMboxDel()</a>, <a class="el" href="os__mbox_8c_source.html#l00273">OSMboxPend()</a>, <a class="el" href="os__mbox_8c_source.html#l00382">OSMboxPendAbort()</a>, <a class="el" href="os__mbox_8c_source.html#l00458">OSMboxPost()</a>, <a class="el" href="os__mbox_8c_source.html#l00530">OSMboxPostOpt()</a>, <a class="el" href="os__mbox_8c_source.html#l00596">OSMboxQuery()</a>, <a class="el" href="os__mem_8c_source.html#l00059">OSMemCreate()</a>, <a class="el" href="os__mem_8c_source.html#l00142">OSMemGet()</a>, <a class="el" href="os__mem_8c_source.html#l00197">OSMemNameGet()</a>, <a class="el" href="os__mem_8c_source.html#l00258">OSMemNameSet()</a>, <a class="el" href="os__mem_8c_source.html#l00311">OSMemPut()</a>, <a class="el" href="os__mem_8c_source.html#l00359">OSMemQuery()</a>, <a class="el" href="os__mutex_8c_source.html#l00084">OSMutexAccept()</a>, <a class="el" href="os__mutex_8c_source.html#l00167">OSMutexCreate()</a>, <a class="el" href="os__mutex_8c_source.html#l00259">OSMutexDel()</a>, <a class="el" href="os__mutex_8c_source.html#l00399">OSMutexPend()</a>, <a class="el" href="os__mutex_8c_source.html#l00553">OSMutexPost()</a>, <a class="el" href="os__mutex_8c_source.html#l00626">OSMutexQuery()</a>, <a class="el" href="os__q_8c_source.html#l00061">OSQAccept()</a>, <a class="el" href="os__q_8c_source.html#l00122">OSQCreate()</a>, <a class="el" href="os__q_8c_source.html#l00213">OSQDel()</a>, <a class="el" href="os__q_8c_source.html#l00325">OSQFlush()</a>, <a class="el" href="os__q_8c_source.html#l00389">OSQPend()</a>, <a class="el" href="os__q_8c_source.html#l00503">OSQPendAbort()</a>, <a class="el" href="os__q_8c_source.html#l00576">OSQPost()</a>, <a class="el" href="os__q_8c_source.html#l00639">OSQPostFront()</a>, <a class="el" href="os__q_8c_source.html#l00711">OSQPostOpt()</a>, <a class="el" href="os__q_8c_source.html#l00787">OSQQuery()</a>, <a class="el" href="os__core_8c_source.html#l00703">OSSchedLock()</a>, <a class="el" href="os__core_8c_source.html#l00740">OSSchedUnlock()</a>, <a class="el" href="os__sem_8c_source.html#l00049">OSSemAccept()</a>, <a class="el" href="os__sem_8c_source.html#l00094">OSSemCreate()</a>, <a class="el" href="os__sem_8c_source.html#l00163">OSSemDel()</a>, <a class="el" href="os__sem_8c_source.html#l00280">OSSemPend()</a>, <a class="el" href="os__sem_8c_source.html#l00385">OSSemPendAbort()</a>, <a class="el" href="os__sem_8c_source.html#l00456">OSSemPost()</a>, <a class="el" href="os__sem_8c_source.html#l00510">OSSemQuery()</a>, <a class="el" href="os__sem_8c_source.html#l00577">OSSemSet()</a>, <a class="el" href="os__core_8c_source.html#l00822">OSStatInit()</a>, <a class="el" href="os__task_8c_source.html#l00051">OSTaskChangePrio()</a>, <a class="el" href="os__task_8c_source.html#l00216">OSTaskCreate()</a>, <a class="el" href="os__task_8c_source.html#l00332">OSTaskCreateExt()</a>, <a class="el" href="os__task_8c_source.html#l00424">OSTaskDel()</a>, <a class="el" href="os__task_8c_source.html#l00570">OSTaskDelReq()</a>, <a class="el" href="os__task_8c_source.html#l00637">OSTaskNameGet()</a>, <a class="el" href="os__task_8c_source.html#l00715">OSTaskNameSet()</a>, <a class="el" href="os__task_8c_source.html#l01011">OSTaskQuery()</a>, <a class="el" href="os__task_8c_source.html#l01078">OSTaskRegGet()</a>, <a class="el" href="os__task_8c_source.html#l01144">OSTaskRegSet()</a>, <a class="el" href="os__task_8c_source.html#l00786">OSTaskResume()</a>, <a class="el" href="os__task_8c_source.html#l00853">OSTaskStkChk()</a>, <a class="el" href="os__task_8c_source.html#l00938">OSTaskSuspend()</a>, <a class="el" href="os__time_8c_source.html#l00044">OSTimeDly()</a>, <a class="el" href="os__time_8c_source.html#l00156">OSTimeDlyResume()</a>, <a class="el" href="os__time_8c_source.html#l00216">OSTimeGet()</a>, <a class="el" href="os__time_8c_source.html#l00245">OSTimeSet()</a> , 以及 <a class="el" href="os__core_8c_source.html#l00856">OSTimeTick()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4118ef84c499db9b81e3f8586e21354f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_EXIT_CRITICAL</td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td>&#160;&#160;&#160;{<a class="el" href="os__cpu_8h.html#a40f81680210a7c0ebfbfa5be53abf6c5">OS_CPU_SR_Restore</a>(cpu_sr);}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00079">79</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00350">OS_CPU_SysTickHandler()</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="os__core_8c_source.html#l01731">OS_TaskIdle()</a>, <a class="el" href="os__core_8c_source.html#l01773">OS_TaskStat()</a>, <a class="el" href="os__core_8c_source.html#l01896">OS_TCBInit()</a>, <a class="el" href="os__core_8c_source.html#l00108">OSEventNameGet()</a>, <a class="el" href="os__core_8c_source.html#l00184">OSEventNameSet()</a>, <a class="el" href="os__core_8c_source.html#l00302">OSEventPendMulti()</a>, <a class="el" href="os__flag_8c_source.html#l00092">OSFlagAccept()</a>, <a class="el" href="os__flag_8c_source.html#l00211">OSFlagCreate()</a>, <a class="el" href="os__flag_8c_source.html#l00288">OSFlagDel()</a>, <a class="el" href="os__flag_8c_source.html#l00399">OSFlagNameGet()</a>, <a class="el" href="os__flag_8c_source.html#l00466">OSFlagNameSet()</a>, <a class="el" href="os__flag_8c_source.html#l00561">OSFlagPend()</a>, <a class="el" href="os__flag_8c_source.html#l00743">OSFlagPendGetFlagsRdy()</a>, <a class="el" href="os__flag_8c_source.html#l00800">OSFlagPost()</a>, <a class="el" href="os__flag_8c_source.html#l00928">OSFlagQuery()</a>, <a class="el" href="os__core_8c_source.html#l00656">OSIntExit()</a>, <a class="el" href="os__mbox_8c_source.html#l00047">OSMboxAccept()</a>, <a class="el" href="os__mbox_8c_source.html#l00088">OSMboxCreate()</a>, <a class="el" href="os__mbox_8c_source.html#l00155">OSMboxDel()</a>, <a class="el" href="os__mbox_8c_source.html#l00273">OSMboxPend()</a>, <a class="el" href="os__mbox_8c_source.html#l00382">OSMboxPendAbort()</a>, <a class="el" href="os__mbox_8c_source.html#l00458">OSMboxPost()</a>, <a class="el" href="os__mbox_8c_source.html#l00530">OSMboxPostOpt()</a>, <a class="el" href="os__mbox_8c_source.html#l00596">OSMboxQuery()</a>, <a class="el" href="os__mem_8c_source.html#l00059">OSMemCreate()</a>, <a class="el" href="os__mem_8c_source.html#l00142">OSMemGet()</a>, <a class="el" href="os__mem_8c_source.html#l00197">OSMemNameGet()</a>, <a class="el" href="os__mem_8c_source.html#l00258">OSMemNameSet()</a>, <a class="el" href="os__mem_8c_source.html#l00311">OSMemPut()</a>, <a class="el" href="os__mem_8c_source.html#l00359">OSMemQuery()</a>, <a class="el" href="os__mutex_8c_source.html#l00084">OSMutexAccept()</a>, <a class="el" href="os__mutex_8c_source.html#l00167">OSMutexCreate()</a>, <a class="el" href="os__mutex_8c_source.html#l00259">OSMutexDel()</a>, <a class="el" href="os__mutex_8c_source.html#l00399">OSMutexPend()</a>, <a class="el" href="os__mutex_8c_source.html#l00553">OSMutexPost()</a>, <a class="el" href="os__mutex_8c_source.html#l00626">OSMutexQuery()</a>, <a class="el" href="os__q_8c_source.html#l00061">OSQAccept()</a>, <a class="el" href="os__q_8c_source.html#l00122">OSQCreate()</a>, <a class="el" href="os__q_8c_source.html#l00213">OSQDel()</a>, <a class="el" href="os__q_8c_source.html#l00325">OSQFlush()</a>, <a class="el" href="os__q_8c_source.html#l00389">OSQPend()</a>, <a class="el" href="os__q_8c_source.html#l00503">OSQPendAbort()</a>, <a class="el" href="os__q_8c_source.html#l00576">OSQPost()</a>, <a class="el" href="os__q_8c_source.html#l00639">OSQPostFront()</a>, <a class="el" href="os__q_8c_source.html#l00711">OSQPostOpt()</a>, <a class="el" href="os__q_8c_source.html#l00787">OSQQuery()</a>, <a class="el" href="os__core_8c_source.html#l00703">OSSchedLock()</a>, <a class="el" href="os__core_8c_source.html#l00740">OSSchedUnlock()</a>, <a class="el" href="os__sem_8c_source.html#l00049">OSSemAccept()</a>, <a class="el" href="os__sem_8c_source.html#l00094">OSSemCreate()</a>, <a class="el" href="os__sem_8c_source.html#l00163">OSSemDel()</a>, <a class="el" href="os__sem_8c_source.html#l00280">OSSemPend()</a>, <a class="el" href="os__sem_8c_source.html#l00385">OSSemPendAbort()</a>, <a class="el" href="os__sem_8c_source.html#l00456">OSSemPost()</a>, <a class="el" href="os__sem_8c_source.html#l00510">OSSemQuery()</a>, <a class="el" href="os__sem_8c_source.html#l00577">OSSemSet()</a>, <a class="el" href="os__core_8c_source.html#l00822">OSStatInit()</a>, <a class="el" href="os__task_8c_source.html#l00051">OSTaskChangePrio()</a>, <a class="el" href="os__task_8c_source.html#l00216">OSTaskCreate()</a>, <a class="el" href="os__task_8c_source.html#l00332">OSTaskCreateExt()</a>, <a class="el" href="os__task_8c_source.html#l00424">OSTaskDel()</a>, <a class="el" href="os__task_8c_source.html#l00570">OSTaskDelReq()</a>, <a class="el" href="os__task_8c_source.html#l00637">OSTaskNameGet()</a>, <a class="el" href="os__task_8c_source.html#l00715">OSTaskNameSet()</a>, <a class="el" href="os__task_8c_source.html#l01011">OSTaskQuery()</a>, <a class="el" href="os__task_8c_source.html#l01078">OSTaskRegGet()</a>, <a class="el" href="os__task_8c_source.html#l01144">OSTaskRegSet()</a>, <a class="el" href="os__task_8c_source.html#l00786">OSTaskResume()</a>, <a class="el" href="os__task_8c_source.html#l00853">OSTaskStkChk()</a>, <a class="el" href="os__task_8c_source.html#l00938">OSTaskSuspend()</a>, <a class="el" href="os__time_8c_source.html#l00044">OSTimeDly()</a>, <a class="el" href="os__time_8c_source.html#l00156">OSTimeDlyResume()</a>, <a class="el" href="os__time_8c_source.html#l00216">OSTimeGet()</a>, <a class="el" href="os__time_8c_source.html#l00245">OSTimeSet()</a> , 以及 <a class="el" href="os__core_8c_source.html#l00856">OSTimeTick()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b707e9c6e5d15f48a1a3c622f4093a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_STK_GROWTH&#160;&#160;&#160;1u                  /* Stack grows from HIGH to LOW memory on ARM        */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00088">88</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cb26d41c0fbcdf700d01b8fc3a69ec1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_TASK_SW</td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td>&#160;&#160;&#160;<a class="el" href="os__cpu_8h.html#a83f8c03650b621971f6e7cf0e53af510">OSCtxSw</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00090">90</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a112e3146cb38b6ee95e64d85842e380a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="os__cpu_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00040">40</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6b4f0d7384ed9d5ed0dd95e92bc5a2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00041">41</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a26678b92d672555b29f190d6d9706b26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed char <a class="el" href="os__cpu_8h.html#a26678b92d672555b29f190d6d9706b26">INT8S</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00042">42</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4d9da7eb3e345e431a0949058541c14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short <a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00043">43</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ae377f15cd52485f58fb7f91f058920"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed short <a class="el" href="os__cpu_8h.html#a3ae377f15cd52485f58fb7f91f058920">INT16S</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3954a3ec775325f557f0b4942a964f91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a9a50a1c70982a234bbc4bce0393a64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed int <a class="el" href="os__cpu_8h.html#a4a9a50a1c70982a234bbc4bce0393a64">INT32S</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00046">46</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6916e6b5fcd442592961c772dfbe8a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef float <a class="el" href="os__cpu_8h.html#ac6916e6b5fcd442592961c772dfbe8a3">FP32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00047">47</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4071e43355599c8d19eda0cae247081b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef double <a class="el" href="os__cpu_8h.html#a4071e43355599c8d19eda0cae247081b">FP64</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f60e2713aaa63efc8c5fafdcdeaa8a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="os__cpu_8h.html#a1f60e2713aaa63efc8c5fafdcdeaa8a2">OS_STK</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00050">50</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5205c42256d1cca93aaa0171a20bae61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu_8h_source.html">os_cpu.h</a> 第 <a class="el" href="os__cpu_8h_source.html#l00051">51</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a0fb971012ec4f9aadeb72aefd6bd1ff5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a> OS_CPU_SR_Save </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a40f81680210a7c0ebfbfa5be53abf6c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OS_CPU_SR_Restore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>&#160;</td>
+          <td class="paramname"><em>cpu_sr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83f8c03650b621971f6e7cf0e53af510"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSCtxSw </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae89129ee2d0df565adefafe44c0f743f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSIntCtxSw </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l00656">OSIntExit()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu_8h_ae89129ee2d0df565adefafe44c0f743f_icgraph.png" border="0" usemap="#os__cpu_8h_ae89129ee2d0df565adefafe44c0f743f_icgraph" alt=""/></div>
+<map name="os__cpu_8h_ae89129ee2d0df565adefafe44c0f743f_icgraph" id="os__cpu_8h_ae89129ee2d0df565adefafe44c0f743f_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="147,1019,226,1045"/><area shape="rect" id="node3" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="304,993,419,1020"/><area shape="rect" id="node44" href="os__cpu__c_8c.html#ad1e1489143c09755d37135acc3ac6fb4" title="OS_CPU_SysTickHandler" alt="" coords="275,1044,448,1071"/><area shape="rect" id="node4" href="bsp__int_8h.html#a16b3b94c23717cd78ec4e98a3db7ed23" title="BSP_IntHandlerADC0" alt="" coords="519,5,667,32"/><area shape="rect" id="node5" href="bsp__int_8h.html#a32436fa6d821383d8c384bcb0071bb0a" title="BSP_IntHandlerADC1" alt="" coords="519,56,667,83"/><area shape="rect" id="node6" href="bsp__int_8h.html#a0abbbb33ac0f7b12c0da98e2f8c3bbe4" title="BSP_IntHandlerADC2" alt="" coords="519,107,667,133"/><area shape="rect" id="node7" href="bsp__int_8h.html#a0580ffb74c2eee5c824373474b89df2e" title="BSP_IntHandlerADC3" alt="" coords="519,157,667,184"/><area shape="rect" id="node8" href="bsp__int_8h.html#a4946157b3ad715ab5cbc250f9bd7838b" title="BSP_IntHandlerCOMP0" alt="" coords="513,208,673,235"/><area shape="rect" id="node9" href="bsp__int_8h.html#a45cde074095874e8627ca50540677c27" title="BSP_IntHandlerCOMP1" alt="" coords="513,259,673,285"/><area shape="rect" id="node10" href="bsp__int_8h.html#ac3a55edffa30ab4c0ab7952d99510b49" title="BSP_IntHandlerCOMP2" alt="" coords="513,309,673,336"/><area shape="rect" id="node11" href="bsp__int_8h.html#ac198daa2b0957f983adb207ad33ff3a3" title="BSP_IntHandlerFLASH" alt="" coords="515,360,671,387"/><area shape="rect" id="node12" href="bsp__int_8h.html#ac5e8a40a7c3f632343a44cd4e9ef2ee9" title="BSP_IntHandlerGPIOA" alt="" coords="516,411,671,437"/><area shape="rect" id="node13" href="bsp__int_8h.html#acdf4668d56bca81773d264c9336a2cc3" title="BSP_IntHandlerGPIOB" alt="" coords="516,461,671,488"/><area shape="rect" id="node14" href="bsp__int_8h.html#ac9d45ceaf0f606d66d6656d1d0dc3fa2" title="BSP_IntHandlerGPIOC" alt="" coords="516,512,671,539"/><area shape="rect" id="node15" href="bsp__int_8h.html#a728cfca4373a16a11596738daec9e9f7" title="BSP_IntHandlerGPIOD" alt="" coords="516,563,671,589"/><area shape="rect" id="node16" href="bsp__int_8h.html#afe0bd5356d1244c02f6ba98e44349152" title="BSP_IntHandlerGPIOE" alt="" coords="516,613,671,640"/><area shape="rect" id="node17" href="bsp__int_8h.html#a4e735ead54e14c863d3d60fde0b565f4" title="BSP_IntHandlerGPIOF" alt="" coords="516,664,671,691"/><area shape="rect" id="node18" href="bsp__int_8h.html#a3113ce5a04cdced1eaeb6b17222aa169" title="BSP_IntHandlerGPIOG" alt="" coords="515,715,671,741"/><area shape="rect" id="node19" href="bsp__int_8h.html#a3b49c2bbaabbcd57dbe1e3d407d7e0e5" title="BSP_IntHandlerGPIOH" alt="" coords="516,765,671,792"/><area shape="rect" id="node20" href="bsp__int_8h.html#ac22789bcb78f685d3df609638828b0c0" title="BSP_IntHandlerHIBERNATE" alt="" coords="500,816,687,843"/><area shape="rect" id="node21" href="bsp__int_8h.html#a8788f2ce4e612a669c09098c6eff68fc" title="BSP_IntHandlerI2C0" alt="" coords="523,867,663,893"/><area shape="rect" id="node22" href="bsp__int_8h.html#aa9e67049e3c0b2ae25e4e6083c157160" title="BSP_IntHandlerI2C1" alt="" coords="523,917,663,944"/><area shape="rect" id="node23" href="bsp__int_8h.html#a294c5ea43749706175825369de29a8c5" title="BSP_IntHandlerPWM_FAULT" alt="" coords="496,968,691,995"/><area shape="rect" id="node24" href="bsp__int_8h.html#a347689e95305a7a28740b644da43a861" title="BSP_IntHandlerPWM_GEN0" alt="" coords="499,1019,688,1045"/><area shape="rect" id="node25" href="bsp__int_8h.html#a4a3b136df3d372b1708a06f1167b6656" title="BSP_IntHandlerPWM_GEN1" alt="" coords="499,1069,688,1096"/><area shape="rect" id="node26" href="bsp__int_8h.html#a99171dfb12d98cfa4383f06172037e0f" title="BSP_IntHandlerPWM_GEN2" alt="" coords="499,1120,688,1147"/><area shape="rect" id="node27" href="bsp__int_8h.html#a24df141eadd8d4bb0b87ef26eb985410" title="BSP_IntHandlerQEI0" alt="" coords="522,1171,665,1197"/><area shape="rect" id="node28" href="bsp__int_8h.html#a5c8606e6588439ce712bde2b24fc1abd" title="BSP_IntHandlerQEI1" alt="" coords="522,1221,665,1248"/><area shape="rect" id="node29" href="bsp__int_8h.html#a08e40612be7710cc609fd7dee77f8523" title="BSP_IntHandlerSSI0" alt="" coords="522,1272,665,1299"/><area shape="rect" id="node30" href="bsp__int_8h.html#a6969102be6a3ad5c4087222a3e9ed6b0" title="BSP_IntHandlerSSI1" alt="" coords="522,1323,665,1349"/><area shape="rect" id="node31" href="bsp__int_8h.html#a9439914094dbd317f41dec6d593392e5" title="BSP_IntHandlerSYSCTL" alt="" coords="511,1373,675,1400"/><area shape="rect" id="node32" href="bsp__int_8h.html#a8b61cf90a3136369d1f11196d8e713ed" title="BSP_IntHandlerTIMER0A" alt="" coords="509,1424,678,1451"/><area shape="rect" id="node33" href="bsp__int_8h.html#a61b2450a6f922d0203a9c42dc17aba68" title="BSP_IntHandlerTIMER0B" alt="" coords="509,1475,678,1501"/><area shape="rect" id="node34" href="bsp__int_8h.html#a1bf80083e0adff10530e357c2e882aca" title="BSP_IntHandlerTIMER1A" alt="" coords="509,1525,678,1552"/><area shape="rect" id="node35" href="bsp__int_8h.html#a5a6946270499c00fd826048d159d8bd6" title="BSP_IntHandlerTIMER1B" alt="" coords="509,1576,678,1603"/><area shape="rect" id="node36" href="bsp__int_8h.html#ab9e4b83839bc4e5b2c47bb097fb7e543" title="BSP_IntHandlerTIMER2A" alt="" coords="509,1627,678,1653"/><area shape="rect" id="node37" href="bsp__int_8h.html#a4a2fc2151db90630577d1e2218d36ed3" title="BSP_IntHandlerTIMER2B" alt="" coords="509,1677,678,1704"/><area shape="rect" id="node38" href="bsp__int_8h.html#a8d7546c5c3314aeacf9efea73fed8299" title="BSP_IntHandlerTIMER3A" alt="" coords="509,1728,678,1755"/><area shape="rect" id="node39" href="bsp__int_8h.html#af1cc23b2db6b6153833ba02f589e8232" title="BSP_IntHandlerTIMER3B" alt="" coords="509,1779,678,1805"/><area shape="rect" id="node40" href="bsp__int_8h.html#ac9bbbf852f53f5c77f449485a4d288a4" title="BSP_IntHandlerUART0" alt="" coords="516,1829,671,1856"/><area shape="rect" id="node41" href="bsp__int_8h.html#a03d6d0dccc5594f984867d91cb647fbd" title="BSP_IntHandlerUART1" alt="" coords="516,1880,671,1907"/><area shape="rect" id="node42" href="bsp__int_8h.html#a9c199968842d7cffef7c66278fab0fc4" title="BSP_IntHandlerUART2" alt="" coords="516,1931,671,1957"/><area shape="rect" id="node43" href="bsp__int_8h.html#a985d8fb2169238272fb131fd2a57c79e" title="BSP_IntHandlerWATCHDOG" alt="" coords="498,1981,689,2008"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a316a500d9ecd91fe31eb0f048f7a6b80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSStartHighRdy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l00790">OSStart()</a>.</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu_8h_a316a500d9ecd91fe31eb0f048f7a6b80_icgraph.png" border="0" usemap="#os__cpu_8h_a316a500d9ecd91fe31eb0f048f7a6b80_icgraph" alt=""/></div>
+<map name="os__cpu_8h_a316a500d9ecd91fe31eb0f048f7a6b80_icgraph" id="os__cpu_8h_a316a500d9ecd91fe31eb0f048f7a6b80_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#af83ea21f3e3deb1d3848e02043e6d638" title="OSStart" alt="" coords="173,5,243,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="291,5,341,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1059f64b25d99b9d4e043fc437f9566"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OS_CPU_PendSVHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad1e1489143c09755d37135acc3ac6fb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OS_CPU_SysTickHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00350">350</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="os__core_8c_source.html#l00656">OSIntExit()</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a> , 以及 <a class="el" href="os__core_8c_source.html#l00856">OSTimeTick()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;{</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();                         <span class="comment">/* Tell uC/OS-II that we are starting an ISR          */</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a>++;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="os__core_8c.html#abf35bebb7ed88c38c212ee675f3713db">OSTimeTick</a>();                                <span class="comment">/* Call uC/OS-II&#39;s OSTimeTick()                       */</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <a class="code" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e">OSIntExit</a>();                                 <span class="comment">/* Tell uC/OS-II that we are leaving the ISR          */</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu_8h_ad1e1489143c09755d37135acc3ac6fb4_cgraph.png" border="0" usemap="#os__cpu_8h_ad1e1489143c09755d37135acc3ac6fb4_cgraph" alt=""/></div>
+<map name="os__cpu_8h_ad1e1489143c09755d37135acc3ac6fb4_cgraph" id="os__cpu_8h_ad1e1489143c09755d37135acc3ac6fb4_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="234,56,313,83"/><area shape="rect" id="node5" href="os__core_8c.html#abf35bebb7ed88c38c212ee675f3713db" title="OSTimeTick" alt="" coords="227,107,320,133"/><area shape="rect" id="node3" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="1141,56,1251,83"/><area shape="rect" id="node4" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="383,5,476,32"/><area shape="rect" id="node6" href="os__cpu__c_8c.html#a9580a668e52ffe7fcb5429e80d6eac8f" title="OSTimeTickHook" alt="" coords="368,119,491,145"/><area shape="rect" id="node7" href="os__app__hooks_8c.html#a34b4f20c9b531a194cd16923de46a58e" title="App_TimeTickHook" alt="" coords="539,195,674,221"/><area shape="rect" id="node11" href="os__tmr_8c.html#a9e534f7203e5f99a05853ebfe4ffa2f7" title="OSTmrSignal" alt="" coords="557,119,656,145"/><area shape="rect" id="node8" href="cpu__core_8c.html#ad801f4d88bd3e8b5c55f42882db4b4ea" title="CPU_TS_Update" alt="" coords="723,201,843,228"/><area shape="rect" id="node9" href="cpu__core_8c.html#a8bf28c61c2395a1bc52e2e8779f97c2d" title="CPU_TS_UpdateHandler" alt="" coords="891,208,1055,235"/><area shape="rect" id="node10" href="cpu__bsp_8c.html#a26d9e67e08e8f85e8602a85eed93f0f8" title="CPU_TS_TmrRd" alt="" coords="1137,208,1255,235"/><area shape="rect" id="node12" href="os__sem_8c.html#a972bf8ea56228c25b4170695248727d6" title="OSSemPost" alt="" coords="735,119,830,145"/><area shape="rect" id="node13" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="908,157,1039,184"/><area shape="rect" id="node16" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="931,107,1016,133"/><area shape="rect" id="node14" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="1119,107,1273,133"/><area shape="rect" id="node15" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="1105,157,1287,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af6b2de62ccadb6c51dba3f0b07df9c35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OS_CPU_SysTickInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>&#160;</td>
+          <td class="paramname"><em>cnts</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00376">376</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu__c_8c_source.html#l00052">OS_CPU_CM3_NVIC_PRIO_MIN</a>, <a class="el" href="os__cpu__c_8c_source.html#l00046">OS_CPU_CM3_NVIC_PRIO_ST</a>, <a class="el" href="os__cpu__c_8c_source.html#l00042">OS_CPU_CM3_NVIC_ST_CTRL</a>, <a class="el" href="os__cpu__c_8c_source.html#l00049">OS_CPU_CM3_NVIC_ST_CTRL_CLK_SRC</a>, <a class="el" href="os__cpu__c_8c_source.html#l00051">OS_CPU_CM3_NVIC_ST_CTRL_ENABLE</a>, <a class="el" href="os__cpu__c_8c_source.html#l00050">OS_CPU_CM3_NVIC_ST_CTRL_INTEN</a> , 以及 <a class="el" href="os__cpu__c_8c_source.html#l00043">OS_CPU_CM3_NVIC_ST_RELOAD</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00209">App_TaskStart()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;{</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <a class="code" href="os__cpu__c_8c.html#a4e23d3d17f00d4132ccba52e76e6b3ba">OS_CPU_CM3_NVIC_ST_RELOAD</a> = cnts - 1u;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                                                 <span class="comment">/* Set prio of SysTick handler to min prio.           */</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="os__cpu__c_8c.html#ad88b6f08162bd6f4fd27ece67ff89467">OS_CPU_CM3_NVIC_PRIO_ST</a>   = <a class="code" href="os__cpu__c_8c.html#acfa4edaf532892cfddfb98f3fc0e5747">OS_CPU_CM3_NVIC_PRIO_MIN</a>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                                                 <span class="comment">/* Enable timer.                                      */</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <a class="code" href="os__cpu__c_8c.html#af70be7256d707ab6656d4b76cb97f6b0">OS_CPU_CM3_NVIC_ST_CTRL</a>  |= <a class="code" href="os__cpu__c_8c.html#a86c9498b0281445e9b62347370905570">OS_CPU_CM3_NVIC_ST_CTRL_CLK_SRC</a> | <a class="code" href="os__cpu__c_8c.html#ab2f68dc93b836236fbf9778ed8ccdfc5">OS_CPU_CM3_NVIC_ST_CTRL_ENABLE</a>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                                 <span class="comment">/* Enable timer interrupt.                            */</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <a class="code" href="os__cpu__c_8c.html#af70be7256d707ab6656d4b76cb97f6b0">OS_CPU_CM3_NVIC_ST_CTRL</a>  |= <a class="code" href="os__cpu__c_8c.html#af07d9def6f1d21d0dac09f70e2e6a82f">OS_CPU_CM3_NVIC_ST_CTRL_INTEN</a>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu_8h_af6b2de62ccadb6c51dba3f0b07df9c35_icgraph.png" border="0" usemap="#os__cpu_8h_af6b2de62ccadb6c51dba3f0b07df9c35_icgraph" alt=""/></div>
+<map name="os__cpu_8h_af6b2de62ccadb6c51dba3f0b07df9c35_icgraph" id="os__cpu_8h_af6b2de62ccadb6c51dba3f0b07df9c35_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="201,5,309,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="357,5,408,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_71bcdadcecd7b5ff1becd3dd629fd845.html">uCOS-II</a></li><li class="navelem"><a class="el" href="dir_dcae676bdefcb0f1d0df9eae4788ad92.html">Ports</a></li><li class="navelem"><a class="el" href="os__cpu_8h.html">os_cpu.h</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:44 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

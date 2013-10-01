@@ -1,0 +1,14 @@
+<map id="OSSchedUnlock" name="OSSchedUnlock">
+<area shape="rect" id="node2" href="$os__tmr_8c.html#a3c59fb10ed187638d40c697b05e4ce0b" title="OSTmr_Task" alt="" coords="188,5,287,32"/>
+<area shape="rect" id="node7" href="$ucos__ii_8h.html#a0181651b83ee63d7b4496421ca27852d" title="OSTmrCreate" alt="" coords="187,56,288,83"/>
+<area shape="rect" id="node8" href="$ucos__ii_8h.html#aad27ab68d6a77945bd6ae958c6c99196" title="OSTmrDel" alt="" coords="196,107,279,133"/>
+<area shape="rect" id="node9" href="$ucos__ii_8h.html#a9faa1cf432d6d16c221ce115d35412f2" title="OSTmrNameGet" alt="" coords="178,157,297,184"/>
+<area shape="rect" id="node10" href="$ucos__ii_8h.html#a74aeb9559dfbe4568de6ce2861a2369c" title="OSTmrRemainGet" alt="" coords="173,208,301,235"/>
+<area shape="rect" id="node11" href="$ucos__ii_8h.html#a9a09d1983f006423b47e5f35371eed69" title="OSTmrStart" alt="" coords="192,259,283,285"/>
+<area shape="rect" id="node12" href="$ucos__ii_8h.html#ab19f8fa86f6f244035247aae191de39e" title="OSTmrStateGet" alt="" coords="180,309,295,336"/>
+<area shape="rect" id="node13" href="$ucos__ii_8h.html#a54b9a48ec5b352cb29b4460af5f6c090" title="OSTmrStop" alt="" coords="192,360,283,387"/>
+<area shape="rect" id="node3" href="$os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="349,5,464,32"/>
+<area shape="rect" id="node4" href="$ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="513,5,599,32"/>
+<area shape="rect" id="node5" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="648,5,707,32"/>
+<area shape="rect" id="node6" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="755,5,805,32"/>
+</map>

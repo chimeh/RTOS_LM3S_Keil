@@ -1,0 +1,10 @@
+<map id="OS_TaskStat" name="OS_TaskStat">
+<area shape="rect" id="node2" href="$os__core_8c.html#a504e6d3c536501abee75502199349c8b" title="OS_TaskStatStkChk" alt="" coords="155,5,298,32"/>
+<area shape="rect" id="node4" href="$os__cpu__c_8c.html#a18eed81d1c43665ae8cf9242a188db7f" title="OSTaskStatHook" alt="" coords="165,56,288,83"/>
+<area shape="rect" id="node6" href="$os__task_8c.html#aaed544c4c5e2e3d2677175284a703b5c" title="OSTaskSuspend" alt="" coords="167,107,287,133"/>
+<area shape="rect" id="node9" href="$os__time_8c.html#a79fa80d326d321b4823c6d518db941ba" title="OSTimeDly" alt="" coords="183,157,271,184"/>
+<area shape="rect" id="node3" href="$os__task_8c.html#ad2f10ed07769ebbd7d96e149af5a989c" title="OSTaskStkChk" alt="" coords="359,5,471,32"/>
+<area shape="rect" id="node5" href="$os__app__hooks_8c.html#a095fa8f0fdcb792dc4522a781b63c08a" title="App_TaskStatHook" alt="" coords="347,56,482,83"/>
+<area shape="rect" id="node7" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="372,132,457,159"/>
+<area shape="rect" id="node8" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="531,132,642,159"/>
+</map>

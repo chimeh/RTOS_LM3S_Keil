@@ -1,0 +1,4 @@
+<map id="CPU_TS_GetLo" name="CPU_TS_GetLo">
+<area shape="rect" id="node2" href="$cpu__core_8c.html#a8bf28c61c2395a1bc52e2e8779f97c2d" title="CPU_TS_UpdateHandler" alt="" coords="169,5,333,32"/>
+<area shape="rect" id="node3" href="$cpu__bsp_8c.html#a26d9e67e08e8f85e8602a85eed93f0f8" title="CPU_TS_TmrRd" alt="" coords="381,5,499,32"/>
+</map>

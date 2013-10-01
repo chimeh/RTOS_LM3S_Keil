@@ -1,0 +1,12 @@
+<map id="OS_TCBInit" name="OS_TCBInit">
+<area shape="rect" id="node2" href="$ucos__ii_8h.html#a9e37dfb9b69276c48b497c4c4ef12c3e" title="OSTaskCreate" alt="" coords="155,56,261,83"/>
+<area shape="rect" id="node9" href="$ucos__ii_8h.html#afc7f3dc9d4456c1be5e060da4d5c3afd" title="OSTaskCreateExt" alt="" coords="145,107,271,133"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="323,5,437,32"/>
+<area shape="rect" id="node6" href="$os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="321,56,439,83"/>
+<area shape="rect" id="node7" href="$os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="323,107,437,133"/>
+<area shape="rect" id="node4" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="649,81,708,108"/>
+<area shape="rect" id="node5" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="781,157,832,184"/>
+<area shape="rect" id="node8" href="$ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="489,107,575,133"/>
+<area shape="rect" id="node10" href="$app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="321,157,439,184"/>
+<area shape="rect" id="node11" href="$app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="625,157,733,184"/>
+</map>

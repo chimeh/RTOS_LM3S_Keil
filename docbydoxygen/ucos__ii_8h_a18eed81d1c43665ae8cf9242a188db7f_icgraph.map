@@ -1,0 +1,6 @@
+<map id="OSTaskStatHook" name="OSTaskStatHook">
+<area shape="rect" id="node2" href="$ucos__ii_8h.html#a827236210af1492f347cebe245caeda1" title="OS_TaskStat" alt="" coords="177,5,277,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="325,5,443,32"/>
+<area shape="rect" id="node4" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="491,5,549,32"/>
+<area shape="rect" id="node5" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="597,5,648,32"/>
+</map>

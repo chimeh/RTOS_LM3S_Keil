@@ -1,0 +1,635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uCOS-II/Source/os_mem.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('os__mem_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">os_mem.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="ucos__ii_8h_source.html">ucos_ii.h</a>&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+os_mem.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__mem_8c__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__mem_8c" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__mem_8c" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__mem_8c">
+<area shape="rect" id="node2" href="ucos__ii_8h.html" title="ucos_ii.h" alt="" coords="60,96,135,123"/><area shape="rect" id="node3" href="_a_p_p_2os__cfg_8h.html" title="os_cfg.h" alt="" coords="14,171,84,197"/><area shape="rect" id="node4" href="os__cpu_8h.html" title="os_cpu.h" alt="" coords="109,171,184,197"/></map>
+</div>
+</div>
+<p><a href="os__mem_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a29f724a0f705d9d75180c77762ea6042"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__mem_8c.html#a29f724a0f705d9d75180c77762ea6042">OSMemCreate</a> (void *addr, <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> nblks, <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> blksize, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *perr)</td></tr>
+<tr class="separator:a29f724a0f705d9d75180c77762ea6042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e77029cc413b2e96291d01eff3de47a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__mem_8c.html#a2e77029cc413b2e96291d01eff3de47a">OSMemGet</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *pmem, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *perr)</td></tr>
+<tr class="separator:a2e77029cc413b2e96291d01eff3de47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf9009904c5d6835a30af6130b08863"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__mem_8c.html#a1cf9009904c5d6835a30af6130b08863">OSMemNameGet</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *pmem, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> **pname, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *perr)</td></tr>
+<tr class="separator:a1cf9009904c5d6835a30af6130b08863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18523573211dc85a858f5e4ad046b6b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__mem_8c.html#a18523573211dc85a858f5e4ad046b6b4">OSMemNameSet</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *pmem, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *pname, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *perr)</td></tr>
+<tr class="separator:a18523573211dc85a858f5e4ad046b6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be214c601a48d091194e0228d5ae9af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__mem_8c.html#a3be214c601a48d091194e0228d5ae9af">OSMemPut</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *pmem, void *pblk)</td></tr>
+<tr class="separator:a3be214c601a48d091194e0228d5ae9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f56b67835333e5b63afe23f3cc2124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__mem_8c.html#ab6f56b67835333e5b63afe23f3cc2124">OSMemQuery</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *pmem, <a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m___d_a_t_a">OS_MEM_DATA</a> *p_mem_data)</td></tr>
+<tr class="separator:ab6f56b67835333e5b63afe23f3cc2124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a3563017f40e8bfea67fe5bc5dd43d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__mem_8c.html#af1a3563017f40e8bfea67fe5bc5dd43d">OS_MemInit</a> (void)</td></tr>
+<tr class="separator:af1a3563017f40e8bfea67fe5bc5dd43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a29f724a0f705d9d75180c77762ea6042"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a>* OSMemCreate </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>&#160;</td>
+          <td class="paramname"><em>nblks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>&#160;</td>
+          <td class="paramname"><em>blksize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>perr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__mem_8c_source.html">os_mem.c</a> 第 <a class="el" href="os__mem_8c_source.html#l00059">59</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00309">OS_ERR_MEM_INVALID_ADDR</a>, <a class="el" href="ucos__ii_8h_source.html#l00302">OS_ERR_MEM_INVALID_BLKS</a>, <a class="el" href="ucos__ii_8h_source.html#l00301">OS_ERR_MEM_INVALID_PART</a>, <a class="el" href="ucos__ii_8h_source.html#l00303">OS_ERR_MEM_INVALID_SIZE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00485">OS_MEM::OSMemAddr</a>, <a class="el" href="ucos__ii_8h_source.html#l00487">OS_MEM::OSMemBlkSize</a>, <a class="el" href="ucos__ii_8h_source.html#l00486">OS_MEM::OSMemFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00770">OSMemFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00488">OS_MEM::OSMemNBlks</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00489">OS_MEM::OSMemNFree</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a>    *pmem;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>     *pblk;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span>     **plink;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>     i;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                          </span><span class="comment">/* Allocate storage for CPU status register      */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (perr == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                         <span class="comment">/* Validate &#39;perr&#39;                               */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (addr == (<span class="keywordtype">void</span> *)0) {                          <span class="comment">/* Must pass a valid address for the memory part.*/</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a2f918f9967638c2774f17deb8d4bf6c8">OS_ERR_MEM_INVALID_ADDR</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (((<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)addr &amp; (<span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *) - 1u)) != 0u){  <span class="comment">/* Must be pointer size aligned                */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a2f918f9967638c2774f17deb8d4bf6c8">OS_ERR_MEM_INVALID_ADDR</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (nblks &lt; 2u) {                                 <span class="comment">/* Must have at least 2 blocks per partition     */</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a036508c75538f6b65996328fb351a815">OS_ERR_MEM_INVALID_BLKS</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (blksize &lt; <span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *)) {                   <span class="comment">/* Must contain space for at least a pointer     */</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a78fbcf296d4ed15e96d012085071b819">OS_ERR_MEM_INVALID_SIZE</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    pmem = <a class="code" href="ucos__ii_8h.html#adb1b60c7e1d81495c4d5132a8e7d6c2e">OSMemFreeList</a>;                             <span class="comment">/* Get next free memory partition                */</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#adb1b60c7e1d81495c4d5132a8e7d6c2e">OSMemFreeList</a> != (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0) {               <span class="comment">/* See if pool of free partitions was empty      */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="ucos__ii_8h.html#adb1b60c7e1d81495c4d5132a8e7d6c2e">OSMemFreeList</a> = (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)<a class="code" href="ucos__ii_8h.html#adb1b60c7e1d81495c4d5132a8e7d6c2e">OSMemFreeList</a>-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (pmem == (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0) {                        <span class="comment">/* See if we have a memory partition             */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a7c5f2542aaa9ca7f6d8cd7cfc1e55021">OS_ERR_MEM_INVALID_PART</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    plink = (<span class="keywordtype">void</span> **)addr;                            <span class="comment">/* Create linked list of free memory blocks      */</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    pblk  = (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)((<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)addr + blksize);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">for</span> (i = 0u; i &lt; (nblks - 1u); i++) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;       *plink = (<span class="keywordtype">void</span> *)pblk;                         <span class="comment">/* Save pointer to NEXT block in CURRENT block   */</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        plink = (<span class="keywordtype">void</span> **)pblk;                        <span class="comment">/* Position to  NEXT      block                  */</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        pblk  = (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)((<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)pblk + blksize);    <span class="comment">/* Point to the FOLLOWING block                  */</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    *plink              = (<span class="keywordtype">void</span> *)0;                  <span class="comment">/* Last memory block points to NULL              */</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#accd2d87b37e43c36706efd5f9ad622b2">OSMemAddr</a>     = addr;                       <span class="comment">/* Store start address of memory partition       */</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a> = addr;                       <span class="comment">/* Initialize pointer to pool of free blocks     */</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#ae2e306a43773f7a313208af6998f25f8">OSMemNFree</a>    = nblks;                      <span class="comment">/* Store number of free blocks in MCB            */</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#aae94d4239f045173b03cdf3d147fa3d1">OSMemNBlks</a>    = nblks;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#a415adfab4cad2f728c5c9f7ef211b94f">OSMemBlkSize</a>  = blksize;                    <span class="comment">/* Store block size of each memory blocks        */</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    *perr               = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> (pmem);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2e77029cc413b2e96291d01eff3de47a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* OSMemGet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *&#160;</td>
+          <td class="paramname"><em>pmem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>perr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__mem_8c_source.html">os_mem.c</a> 第 <a class="el" href="os__mem_8c_source.html#l00142">142</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00307">OS_ERR_MEM_INVALID_PMEM</a>, <a class="el" href="ucos__ii_8h_source.html#l00304">OS_ERR_MEM_NO_FREE_BLKS</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00486">OS_MEM::OSMemFreeList</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00489">OS_MEM::OSMemNFree</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">void</span>      *pblk;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                          </span><span class="comment">/* Allocate storage for CPU status register      */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (perr == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                         <span class="comment">/* Validate &#39;perr&#39;                               */</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (pmem == (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0) {                        <span class="comment">/* Must point to a valid memory partition        */</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a510696d8ee74d0d6005db3bc2811b641">OS_ERR_MEM_INVALID_PMEM</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">if</span> (pmem-&gt;<a class="code" href="ucos__ii_8h.html#ae2e306a43773f7a313208af6998f25f8">OSMemNFree</a> &gt; 0u) {                      <span class="comment">/* See if there are any free memory blocks       */</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        pblk                = pmem-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a>;    <span class="comment">/* Yes, point to next free memory block          */</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        pmem-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a> = *(<span class="keywordtype">void</span> **)pblk;         <span class="comment">/*      Adjust pointer to new free list          */</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        pmem-&gt;<a class="code" href="ucos__ii_8h.html#ae2e306a43773f7a313208af6998f25f8">OSMemNFree</a>--;                           <span class="comment">/*      One less memory block in this partition  */</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;                          <span class="comment">/*      No error                                 */</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span> (pblk);                                <span class="comment">/*      Return memory block to caller            */</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    *perr = <a class="code" href="ucos__ii_8h.html#a3e7aad34ac4245633dabc7d2e2622f0a">OS_ERR_MEM_NO_FREE_BLKS</a>;                  <span class="comment">/* No,  Notify caller of empty memory partition  */</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);                               <span class="comment">/*      Return NULL pointer to caller            */</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1cf9009904c5d6835a30af6130b08863"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSMemNameGet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *&#160;</td>
+          <td class="paramname"><em>pmem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> **&#160;</td>
+          <td class="paramname"><em>pname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>perr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__mem_8c_source.html">os_mem.c</a> 第 <a class="el" href="os__mem_8c_source.html#l00197">197</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00307">OS_ERR_MEM_INVALID_PMEM</a>, <a class="el" href="ucos__ii_8h_source.html#l00265">OS_ERR_NAME_GET_ISR</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00260">OS_ERR_PNAME_NULL</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="os__core_8c_source.html#l01696">OS_StrLen()</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00491">OS_MEM::OSMemName</a>.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>      len;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (perr == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                    <span class="comment">/* Validate &#39;perr&#39;                                    */</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span> (0u);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">if</span> (pmem == (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0) {                   <span class="comment">/* Is &#39;pmem&#39; a NULL pointer?                          */</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a510696d8ee74d0d6005db3bc2811b641">OS_ERR_MEM_INVALID_PMEM</a>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">return</span> (0u);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">if</span> (pname == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> **)0) {                  <span class="comment">/* Is &#39;pname&#39; a NULL pointer?                         */</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a235b07975bd2f4be3b364a23094116f2">OS_ERR_PNAME_NULL</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">return</span> (0u);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a> &gt; 0u) {                     <span class="comment">/* See if trying to call from an ISR                  */</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a111c2a78c8d131c8af31baa5558f9f76">OS_ERR_NAME_GET_ISR</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">return</span> (0u);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    *pname = pmem-&gt;<a class="code" href="ucos__ii_8h.html#afa24495878adec72f0374fccf7ba4044">OSMemName</a>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    len    = <a class="code" href="os__core_8c.html#a97dc1f3c7f7c04d67c65bc58d015faaf">OS_StrLen</a>(*pname);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    *perr  = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">return</span> (len);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__mem_8c_a1cf9009904c5d6835a30af6130b08863_cgraph.png" border="0" usemap="#os__mem_8c_a1cf9009904c5d6835a30af6130b08863_cgraph" alt=""/></div>
+<map name="os__mem_8c_a1cf9009904c5d6835a30af6130b08863_cgraph" id="os__mem_8c_a1cf9009904c5d6835a30af6130b08863_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a97dc1f3c7f7c04d67c65bc58d015faaf" title="OS_StrLen" alt="" coords="179,5,266,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a18523573211dc85a858f5e4ad046b6b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSMemNameSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *&#160;</td>
+          <td class="paramname"><em>pmem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>pname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>perr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__mem_8c_source.html">os_mem.c</a> 第 <a class="el" href="os__mem_8c_source.html#l00258">258</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00307">OS_ERR_MEM_INVALID_PMEM</a>, <a class="el" href="ucos__ii_8h_source.html#l00266">OS_ERR_NAME_SET_ISR</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00260">OS_ERR_PNAME_NULL</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00491">OS_MEM::OSMemName</a>.</p>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (perr == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                    <span class="comment">/* Validate &#39;perr&#39;                                    */</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    }</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (pmem == (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0) {                   <span class="comment">/* Is &#39;pmem&#39; a NULL pointer?                          */</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a510696d8ee74d0d6005db3bc2811b641">OS_ERR_MEM_INVALID_PMEM</a>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span> (pname == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                   <span class="comment">/* Is &#39;pname&#39; a NULL pointer?                         */</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a235b07975bd2f4be3b364a23094116f2">OS_ERR_PNAME_NULL</a>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a> &gt; 0u) {                     <span class="comment">/* See if trying to call from an ISR                  */</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#adbad8683408a259c274a7b8101a51681">OS_ERR_NAME_SET_ISR</a>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#afa24495878adec72f0374fccf7ba4044">OSMemName</a> = pname;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    *perr           = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3be214c601a48d091194e0228d5ae9af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSMemPut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *&#160;</td>
+          <td class="paramname"><em>pmem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pblk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__mem_8c_source.html">os_mem.c</a> 第 <a class="el" href="os__mem_8c_source.html#l00311">311</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00305">OS_ERR_MEM_FULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00306">OS_ERR_MEM_INVALID_PBLK</a>, <a class="el" href="ucos__ii_8h_source.html#l00307">OS_ERR_MEM_INVALID_PMEM</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00486">OS_MEM::OSMemFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00488">OS_MEM::OSMemNBlks</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00489">OS_MEM::OSMemNFree</a>.</p>
+<div class="fragment"><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;{</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pmem == (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0) {                   <span class="comment">/* Must point to a valid memory partition             */</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a510696d8ee74d0d6005db3bc2811b641">OS_ERR_MEM_INVALID_PMEM</a>);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    }</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> (pblk == (<span class="keywordtype">void</span> *)0) {                     <span class="comment">/* Must release a valid block                         */</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a27cfe86a231e46f8b7a1dedd84630b27">OS_ERR_MEM_INVALID_PBLK</a>);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">if</span> (pmem-&gt;<a class="code" href="ucos__ii_8h.html#ae2e306a43773f7a313208af6998f25f8">OSMemNFree</a> &gt;= pmem-&gt;<a class="code" href="ucos__ii_8h.html#aae94d4239f045173b03cdf3d147fa3d1">OSMemNBlks</a>) {  <span class="comment">/* Make sure all blocks not already returned          */</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a30e8d25afee04299a834e20d1f3d23c0">OS_ERR_MEM_FULL</a>);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    *(<span class="keywordtype">void</span> **)pblk      = pmem-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a>;   <span class="comment">/* Insert released block into free block list         */</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a> = pblk;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#ae2e306a43773f7a313208af6998f25f8">OSMemNFree</a>++;                          <span class="comment">/* One more memory block in this partition            */</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);                        <span class="comment">/* Notify caller that memory block was released       */</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab6f56b67835333e5b63afe23f3cc2124"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSMemQuery </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *&#160;</td>
+          <td class="paramname"><em>pmem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___m_e_m___d_a_t_a">OS_MEM_DATA</a> *&#160;</td>
+          <td class="paramname"><em>p_mem_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__mem_8c_source.html">os_mem.c</a> 第 <a class="el" href="os__mem_8c_source.html#l00359">359</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00308">OS_ERR_MEM_INVALID_PDATA</a>, <a class="el" href="ucos__ii_8h_source.html#l00307">OS_ERR_MEM_INVALID_PMEM</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00497">OS_MEM_DATA::OSAddr</a>, <a class="el" href="ucos__ii_8h_source.html#l00499">OS_MEM_DATA::OSBlkSize</a>, <a class="el" href="ucos__ii_8h_source.html#l00498">OS_MEM_DATA::OSFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00485">OS_MEM::OSMemAddr</a>, <a class="el" href="ucos__ii_8h_source.html#l00487">OS_MEM::OSMemBlkSize</a>, <a class="el" href="ucos__ii_8h_source.html#l00486">OS_MEM::OSMemFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00488">OS_MEM::OSMemNBlks</a>, <a class="el" href="ucos__ii_8h_source.html#l00489">OS_MEM::OSMemNFree</a>, <a class="el" href="ucos__ii_8h_source.html#l00500">OS_MEM_DATA::OSNBlks</a>, <a class="el" href="ucos__ii_8h_source.html#l00501">OS_MEM_DATA::OSNFree</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00502">OS_MEM_DATA::OSNUsed</a>.</p>
+<div class="fragment"><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pmem == (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)0) {                   <span class="comment">/* Must point to a valid memory partition             */</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a510696d8ee74d0d6005db3bc2811b641">OS_ERR_MEM_INVALID_PMEM</a>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keywordflow">if</span> (p_mem_data == (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m___d_a_t_a">OS_MEM_DATA</a> *)0) {        <span class="comment">/* Must release a valid storage area for the data     */</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#ae518670c6a4eeac6d49bcc28a3cff5c7">OS_ERR_MEM_INVALID_PDATA</a>);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    p_mem_data-&gt;<a class="code" href="ucos__ii_8h.html#ac7dbc8895f966f0187a488f3c3396fad">OSAddr</a>     = pmem-&gt;<a class="code" href="ucos__ii_8h.html#accd2d87b37e43c36706efd5f9ad622b2">OSMemAddr</a>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    p_mem_data-&gt;<a class="code" href="ucos__ii_8h.html#a0d79cc5199dc7ae54569a51fcb3d8c13">OSFreeList</a> = pmem-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a>;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    p_mem_data-&gt;<a class="code" href="ucos__ii_8h.html#a5e9deb6efb871c89fcd53e561834f2da">OSBlkSize</a>  = pmem-&gt;<a class="code" href="ucos__ii_8h.html#a415adfab4cad2f728c5c9f7ef211b94f">OSMemBlkSize</a>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    p_mem_data-&gt;<a class="code" href="ucos__ii_8h.html#a65010d979bf22ff33d36fd3733fcc4c0">OSNBlks</a>    = pmem-&gt;<a class="code" href="ucos__ii_8h.html#aae94d4239f045173b03cdf3d147fa3d1">OSMemNBlks</a>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    p_mem_data-&gt;<a class="code" href="ucos__ii_8h.html#ac0e6cc3fcf1a922a89478bf041f64cc6">OSNFree</a>    = pmem-&gt;<a class="code" href="ucos__ii_8h.html#ae2e306a43773f7a313208af6998f25f8">OSMemNFree</a>;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    p_mem_data-&gt;<a class="code" href="ucos__ii_8h.html#a75cc32576dcd9bbf58e3782da2e8a189">OSNUsed</a>    = p_mem_data-&gt;<a class="code" href="ucos__ii_8h.html#a65010d979bf22ff33d36fd3733fcc4c0">OSNBlks</a> - p_mem_data-&gt;<a class="code" href="ucos__ii_8h.html#ac0e6cc3fcf1a922a89478bf041f64cc6">OSNFree</a>;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af1a3563017f40e8bfea67fe5bc5dd43d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OS_MemInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__mem_8c_source.html">os_mem.c</a> 第 <a class="el" href="os__mem_8c_source.html#l00403">403</a> 行定义.</p>
+
+<p>参考 <a class="el" href="_a_p_p_2os__cfg_8h_source.html#l00044">OS_MAX_MEM_PART</a>, <a class="el" href="os__core_8c_source.html#l01549">OS_MemClr()</a>, <a class="el" href="ucos__ii_8h_source.html#l00486">OS_MEM::OSMemFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00770">OSMemFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00491">OS_MEM::OSMemName</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00771">OSMemTbl</a>.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l00563">OSInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;{</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#if OS_MAX_MEM_PART == 1u</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__core_8c.html#a0ba333bc9b08985d9519c29a430188f0">OS_MemClr</a>((<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)&amp;<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>[0], <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>));   <span class="comment">/* Clear the memory partition table          */</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="ucos__ii_8h.html#adb1b60c7e1d81495c4d5132a8e7d6c2e">OSMemFreeList</a>               = (<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a> *)&amp;<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>[0]; <span class="comment">/* Point to beginning of free list           */</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="preprocessor">#if OS_MEM_NAME_EN &gt; 0u</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor"></span>    <a class="code" href="ucos__ii_8h.html#adb1b60c7e1d81495c4d5132a8e7d6c2e">OSMemFreeList</a>-&gt;<a class="code" href="ucos__ii_8h.html#afa24495878adec72f0374fccf7ba4044">OSMemName</a>    = (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)<span class="stringliteral">&quot;?&quot;</span>;           <span class="comment">/* Unknown name                              */</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">#if OS_MAX_MEM_PART &gt;= 2u</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor"></span>    <a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a>  *pmem;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>   i;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <a class="code" href="os__core_8c.html#a0ba333bc9b08985d9519c29a430188f0">OS_MemClr</a>((<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)&amp;<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>[0], <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>));   <span class="comment">/* Clear the memory partition table          */</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    pmem = &amp;<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>[0];                                  <span class="comment">/* Point to memory control block (MCB)       */</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">for</span> (i = 0u; i &lt; (<a class="code" href="_a_p_p_2os__cfg_8h.html#a90b7877e6318c77dbe81e4cb180df73f">OS_MAX_MEM_PART</a> - 1u); i++) {       <span class="comment">/* Init. list of free memory partitions      */</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        pmem-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a> = (<span class="keywordtype">void</span> *)&amp;<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>[i+1];     <span class="comment">/* Chain list of free partitions             */</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#if OS_MEM_NAME_EN &gt; 0u</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor"></span>        pmem-&gt;<a class="code" href="ucos__ii_8h.html#afa24495878adec72f0374fccf7ba4044">OSMemName</a>  = (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)<span class="stringliteral">&quot;?&quot;</span>;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor"></span>        pmem++;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    pmem-&gt;<a class="code" href="ucos__ii_8h.html#abe03967cc288a8032a7757d46e2dd377">OSMemFreeList</a> = (<span class="keywordtype">void</span> *)0;                      <span class="comment">/* Initialize last node                      */</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#if OS_MEM_NAME_EN &gt; 0u</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="preprocessor"></span>    pmem-&gt;<a class="code" href="ucos__ii_8h.html#afa24495878adec72f0374fccf7ba4044">OSMemName</a> = (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)<span class="stringliteral">&quot;?&quot;</span>;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <a class="code" href="ucos__ii_8h.html#adb1b60c7e1d81495c4d5132a8e7d6c2e">OSMemFreeList</a>   = &amp;<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>[0];                       <span class="comment">/* Point to beginning of free list           */</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__mem_8c_af1a3563017f40e8bfea67fe5bc5dd43d_cgraph.png" border="0" usemap="#os__mem_8c_af1a3563017f40e8bfea67fe5bc5dd43d_cgraph" alt=""/></div>
+<map name="os__mem_8c_af1a3563017f40e8bfea67fe5bc5dd43d_cgraph" id="os__mem_8c_af1a3563017f40e8bfea67fe5bc5dd43d_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a0ba333bc9b08985d9519c29a430188f0" title="OS_MemClr" alt="" coords="149,5,243,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__mem_8c_af1a3563017f40e8bfea67fe5bc5dd43d_icgraph.png" border="0" usemap="#os__mem_8c_af1a3563017f40e8bfea67fe5bc5dd43d_icgraph" alt=""/></div>
+<map name="os__mem_8c_af1a3563017f40e8bfea67fe5bc5dd43d_icgraph" id="os__mem_8c_af1a3563017f40e8bfea67fe5bc5dd43d_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="149,5,208,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="256,5,307,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_71bcdadcecd7b5ff1becd3dd629fd845.html">uCOS-II</a></li><li class="navelem"><a class="el" href="dir_039f0bfb9474175ba2ca0fe1aa10ce74.html">Source</a></li><li class="navelem"><a class="el" href="os__mem_8c.html">os_mem.c</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:45 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

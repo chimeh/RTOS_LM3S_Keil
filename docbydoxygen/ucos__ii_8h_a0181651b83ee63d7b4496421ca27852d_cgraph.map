@@ -1,0 +1,7 @@
+<map id="OSTmrCreate" name="OSTmrCreate">
+<area shape="rect" id="node2" href="$os__core_8c.html#ae57079213997465346e3836c7fe037c2" title="OSSchedLock" alt="" coords="161,5,268,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#accb8ef08bd5b8ee1376b200e9f4ee9f7" title="OSSchedUnlock" alt="" coords="155,56,274,83"/>
+<area shape="rect" id="node6" href="$os__tmr_8c.html#a822b0d5214e0e8b6f592cbc089b545e8" title="OSTmr_Alloc" alt="" coords="165,107,264,133"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="323,56,408,83"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="457,56,567,83"/>
+</map>

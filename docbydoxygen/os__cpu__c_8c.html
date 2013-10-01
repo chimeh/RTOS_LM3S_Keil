@@ -1,0 +1,993 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uCOS-II/Ports/os_cpu_c.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('os__cpu__c_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">os_cpu_c.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="ucos__ii_8h_source.html">ucos_ii.h</a>&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+os_cpu_c.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_ports_2os__cpu__c_8c" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_ports_2os__cpu__c_8c" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_ports_2os__cpu__c_8c">
+<area shape="rect" id="node2" href="ucos__ii_8h.html" title="ucos_ii.h" alt="" coords="60,96,135,123"/><area shape="rect" id="node3" href="_a_p_p_2os__cfg_8h.html" title="os_cfg.h" alt="" coords="14,171,84,197"/><area shape="rect" id="node4" href="os__cpu_8h.html" title="os_cpu.h" alt="" coords="109,171,184,197"/></map>
+</div>
+</div>
+<p><a href="os__cpu__c_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:afc960d2c858117888badb4a9f245f276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#afc960d2c858117888badb4a9f245f276">OS_CPU_GLOBALS</a></td></tr>
+<tr class="separator:afc960d2c858117888badb4a9f245f276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70be7256d707ab6656d4b76cb97f6b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#af70be7256d707ab6656d4b76cb97f6b0">OS_CPU_CM3_NVIC_ST_CTRL</a>&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> *)0xE000E010uL)) /* SysTick Ctrl &amp; Status Reg. */</td></tr>
+<tr class="separator:af70be7256d707ab6656d4b76cb97f6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e23d3d17f00d4132ccba52e76e6b3ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a4e23d3d17f00d4132ccba52e76e6b3ba">OS_CPU_CM3_NVIC_ST_RELOAD</a>&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> *)0xE000E014uL)) /* SysTick Reload  Value Reg. */</td></tr>
+<tr class="separator:a4e23d3d17f00d4132ccba52e76e6b3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad628080a97f309114650a86527128e18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#ad628080a97f309114650a86527128e18">OS_CPU_CM3_NVIC_ST_CURRENT</a>&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> *)0xE000E018uL)) /* SysTick Current Value Reg. */</td></tr>
+<tr class="separator:ad628080a97f309114650a86527128e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09714e1ddfed5b18a2c86c868330ea6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#ab09714e1ddfed5b18a2c86c868330ea6">OS_CPU_CM3_NVIC_ST_CAL</a>&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> *)0xE000E01CuL)) /* SysTick Cal     Value Reg. */</td></tr>
+<tr class="separator:ab09714e1ddfed5b18a2c86c868330ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88b6f08162bd6f4fd27ece67ff89467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#ad88b6f08162bd6f4fd27ece67ff89467">OS_CPU_CM3_NVIC_PRIO_ST</a>&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>  *)0xE000ED23uL)) /* SysTick Handler Prio  Reg. */</td></tr>
+<tr class="separator:ad88b6f08162bd6f4fd27ece67ff89467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ede9d51407f837e2830aa3a4e7b3be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a20ede9d51407f837e2830aa3a4e7b3be">OS_CPU_CM3_NVIC_ST_CTRL_COUNT</a>&#160;&#160;&#160;0x00010000uL   /* Count flag.                */</td></tr>
+<tr class="separator:a20ede9d51407f837e2830aa3a4e7b3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c9498b0281445e9b62347370905570"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a86c9498b0281445e9b62347370905570">OS_CPU_CM3_NVIC_ST_CTRL_CLK_SRC</a>&#160;&#160;&#160;0x00000004uL   /* Clock Source.              */</td></tr>
+<tr class="separator:a86c9498b0281445e9b62347370905570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07d9def6f1d21d0dac09f70e2e6a82f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#af07d9def6f1d21d0dac09f70e2e6a82f">OS_CPU_CM3_NVIC_ST_CTRL_INTEN</a>&#160;&#160;&#160;0x00000002uL   /* Interrupt enable.          */</td></tr>
+<tr class="separator:af07d9def6f1d21d0dac09f70e2e6a82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f68dc93b836236fbf9778ed8ccdfc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#ab2f68dc93b836236fbf9778ed8ccdfc5">OS_CPU_CM3_NVIC_ST_CTRL_ENABLE</a>&#160;&#160;&#160;0x00000001uL   /* Counter mode.              */</td></tr>
+<tr class="separator:ab2f68dc93b836236fbf9778ed8ccdfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa4edaf532892cfddfb98f3fc0e5747"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#acfa4edaf532892cfddfb98f3fc0e5747">OS_CPU_CM3_NVIC_PRIO_MIN</a>&#160;&#160;&#160;0xFFu    /* Min handler prio.          */</td></tr>
+<tr class="separator:acfa4edaf532892cfddfb98f3fc0e5747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a74409555be699fa395c33669e2647ec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a74409555be699fa395c33669e2647ec6">OSInitHookBegin</a> (void)</td></tr>
+<tr class="separator:a74409555be699fa395c33669e2647ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8348f3a73c1b392f6c410e191887b401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a8348f3a73c1b392f6c410e191887b401">OSInitHookEnd</a> (void)</td></tr>
+<tr class="separator:a8348f3a73c1b392f6c410e191887b401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fb9d8cc4bd490553efd061f0a3f68e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#ae1fb9d8cc4bd490553efd061f0a3f68e">OSTaskCreateHook</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *ptcb)</td></tr>
+<tr class="separator:ae1fb9d8cc4bd490553efd061f0a3f68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d335ed0146fb4692f6a9ba561968391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a4d335ed0146fb4692f6a9ba561968391">OSTaskDelHook</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *ptcb)</td></tr>
+<tr class="separator:a4d335ed0146fb4692f6a9ba561968391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7819c02d33415b093052de6416d9889f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a7819c02d33415b093052de6416d9889f">OSTaskIdleHook</a> (void)</td></tr>
+<tr class="separator:a7819c02d33415b093052de6416d9889f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991988ad073d5ed20e3574bde354a733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a991988ad073d5ed20e3574bde354a733">OSTaskReturnHook</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *ptcb)</td></tr>
+<tr class="separator:a991988ad073d5ed20e3574bde354a733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18eed81d1c43665ae8cf9242a188db7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a18eed81d1c43665ae8cf9242a188db7f">OSTaskStatHook</a> (void)</td></tr>
+<tr class="separator:a18eed81d1c43665ae8cf9242a188db7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfeab30b10331febafd3fab8bc3b2552"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#a1f60e2713aaa63efc8c5fafdcdeaa8a2">OS_STK</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#abfeab30b10331febafd3fab8bc3b2552">OSTaskStkInit</a> (void(*task)(void *p_arg), void *p_arg, <a class="el" href="os__cpu_8h.html#a1f60e2713aaa63efc8c5fafdcdeaa8a2">OS_STK</a> *ptos, <a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a> opt)</td></tr>
+<tr class="separator:abfeab30b10331febafd3fab8bc3b2552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6431c47d513e7f6333ef551dfaa6b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a8c6431c47d513e7f6333ef551dfaa6b6">OSTaskSwHook</a> (void)</td></tr>
+<tr class="separator:a8c6431c47d513e7f6333ef551dfaa6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad175126f54000a30bf15a47ba68cffc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#ad175126f54000a30bf15a47ba68cffc4">OSTCBInitHook</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *ptcb)</td></tr>
+<tr class="separator:ad175126f54000a30bf15a47ba68cffc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9580a668e52ffe7fcb5429e80d6eac8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a9580a668e52ffe7fcb5429e80d6eac8f">OSTimeTickHook</a> (void)</td></tr>
+<tr class="separator:a9580a668e52ffe7fcb5429e80d6eac8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e1489143c09755d37135acc3ac6fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#ad1e1489143c09755d37135acc3ac6fb4">OS_CPU_SysTickHandler</a> (void)</td></tr>
+<tr class="separator:ad1e1489143c09755d37135acc3ac6fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b2de62ccadb6c51dba3f0b07df9c35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#af6b2de62ccadb6c51dba3f0b07df9c35">OS_CPU_SysTickInit</a> (<a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> cnts)</td></tr>
+<tr class="separator:af6b2de62ccadb6c51dba3f0b07df9c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a3c027cec46699fe0b79aae038a498966"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__cpu__c_8c.html#a3c027cec46699fe0b79aae038a498966">OSTmrCtr</a></td></tr>
+<tr class="separator:a3c027cec46699fe0b79aae038a498966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="afc960d2c858117888badb4a9f245f276"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_GLOBALS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00023">23</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af70be7256d707ab6656d4b76cb97f6b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_ST_CTRL&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> *)0xE000E010uL)) /* SysTick Ctrl &amp; Status Reg. */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00042">42</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00376">OS_CPU_SysTickInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e23d3d17f00d4132ccba52e76e6b3ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_ST_RELOAD&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> *)0xE000E014uL)) /* SysTick Reload  Value Reg. */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00043">43</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00376">OS_CPU_SysTickInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad628080a97f309114650a86527128e18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_ST_CURRENT&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> *)0xE000E018uL)) /* SysTick Current Value Reg. */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00044">44</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab09714e1ddfed5b18a2c86c868330ea6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_ST_CAL&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> *)0xE000E01CuL)) /* SysTick Cal     Value Reg. */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00045">45</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad88b6f08162bd6f4fd27ece67ff89467"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_PRIO_ST&#160;&#160;&#160;(*((volatile <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>  *)0xE000ED23uL)) /* SysTick Handler Prio  Reg. */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00046">46</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00376">OS_CPU_SysTickInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20ede9d51407f837e2830aa3a4e7b3be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_ST_CTRL_COUNT&#160;&#160;&#160;0x00010000uL   /* Count flag.                */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00048">48</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86c9498b0281445e9b62347370905570"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_ST_CTRL_CLK_SRC&#160;&#160;&#160;0x00000004uL   /* Clock Source.              */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00049">49</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00376">OS_CPU_SysTickInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af07d9def6f1d21d0dac09f70e2e6a82f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_ST_CTRL_INTEN&#160;&#160;&#160;0x00000002uL   /* Interrupt enable.          */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00050">50</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00376">OS_CPU_SysTickInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2f68dc93b836236fbf9778ed8ccdfc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_ST_CTRL_ENABLE&#160;&#160;&#160;0x00000001uL   /* Counter mode.              */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00051">51</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00376">OS_CPU_SysTickInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acfa4edaf532892cfddfb98f3fc0e5747"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CPU_CM3_NVIC_PRIO_MIN&#160;&#160;&#160;0xFFu    /* Min handler prio.          */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00052">52</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00376">OS_CPU_SysTickInit()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a74409555be699fa395c33669e2647ec6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSInitHookBegin </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00067">67</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu__c_8c_source.html#l00033">OSTmrCtr</a>.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l00563">OSInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#if OS_TMR_EN &gt; 0u</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu__c_8c.html#a3c027cec46699fe0b79aae038a498966">OSTmrCtr</a> = 0u;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a74409555be699fa395c33669e2647ec6_icgraph.png" border="0" usemap="#os__cpu__c_8c_a74409555be699fa395c33669e2647ec6_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a74409555be699fa395c33669e2647ec6_icgraph" id="os__cpu__c_8c_a74409555be699fa395c33669e2647ec6_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="176,5,235,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="283,5,333,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8348f3a73c1b392f6c410e191887b401"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSInitHookEnd </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00088">88</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l00563">OSInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a8348f3a73c1b392f6c410e191887b401_icgraph.png" border="0" usemap="#os__cpu__c_8c_a8348f3a73c1b392f6c410e191887b401_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a8348f3a73c1b392f6c410e191887b401_icgraph" id="os__cpu__c_8c_a8348f3a73c1b392f6c410e191887b401_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="165,5,224,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="272,5,323,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1fb9d8cc4bd490553efd061f0a3f68e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTaskCreateHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *&#160;</td>
+          <td class="paramname"><em>ptcb</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00105">105</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__app__hooks_8c_source.html#l00038">App_TaskCreateHook()</a>.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l01896">OS_TCBInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#if OS_APP_HOOKS_EN &gt; 0u</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__app__hooks_8c.html#a3fe26c8f7986e71fe528b5e682c3897d">App_TaskCreateHook</a>(ptcb);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span>    (void)ptcb;                                  <span class="comment">/* Prevent compiler warning                           */</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_ae1fb9d8cc4bd490553efd061f0a3f68e_cgraph.png" border="0" usemap="#os__cpu__c_8c_ae1fb9d8cc4bd490553efd061f0a3f68e_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_ae1fb9d8cc4bd490553efd061f0a3f68e_cgraph" id="os__cpu__c_8c_ae1fb9d8cc4bd490553efd061f0a3f68e_cgraph">
+<area shape="rect" id="node2" href="os__app__hooks_8c.html#a3fe26c8f7986e71fe528b5e682c3897d" title="App_TaskCreateHook" alt="" coords="193,5,341,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_ae1fb9d8cc4bd490553efd061f0a3f68e_icgraph.png" border="0" usemap="#os__cpu__c_8c_ae1fb9d8cc4bd490553efd061f0a3f68e_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_ae1fb9d8cc4bd490553efd061f0a3f68e_icgraph" id="os__cpu__c_8c_ae1fb9d8cc4bd490553efd061f0a3f68e_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#a95e9bc6f0d0dfe29f860cd5a5480fea4" title="OS_TCBInit" alt="" coords="192,81,283,108"/><area shape="rect" id="node3" href="ucos__ii_8h.html#a9e37dfb9b69276c48b497c4c4ef12c3e" title="OSTaskCreate" alt="" coords="341,56,448,83"/><area shape="rect" id="node10" href="ucos__ii_8h.html#afc7f3dc9d4456c1be5e060da4d5c3afd" title="OSTaskCreateExt" alt="" coords="331,107,458,133"/><area shape="rect" id="node4" href="os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="510,5,623,32"/><area shape="rect" id="node7" href="os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="508,56,625,83"/><area shape="rect" id="node8" href="os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="509,107,624,133"/><area shape="rect" id="node5" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="836,81,895,108"/><area shape="rect" id="node6" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="968,157,1019,184"/><area shape="rect" id="node9" href="ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="675,107,762,133"/><area shape="rect" id="node11" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="507,157,626,184"/><area shape="rect" id="node12" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="811,157,919,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d335ed0146fb4692f6a9ba561968391"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTaskDelHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *&#160;</td>
+          <td class="paramname"><em>ptcb</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00128">128</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__app__hooks_8c_source.html#l00055">App_TaskDelHook()</a>.</p>
+
+<p>参考自 <a class="el" href="os__task_8c_source.html#l00424">OSTaskDel()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#if OS_APP_HOOKS_EN &gt; 0u</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__app__hooks_8c.html#a23eb4142fb74b9314bec7495de78ea38">App_TaskDelHook</a>(ptcb);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span>    (void)ptcb;                                  <span class="comment">/* Prevent compiler warning                           */</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a4d335ed0146fb4692f6a9ba561968391_cgraph.png" border="0" usemap="#os__cpu__c_8c_a4d335ed0146fb4692f6a9ba561968391_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a4d335ed0146fb4692f6a9ba561968391_cgraph" id="os__cpu__c_8c_a4d335ed0146fb4692f6a9ba561968391_cgraph">
+<area shape="rect" id="node2" href="os__app__hooks_8c.html#a23eb4142fb74b9314bec7495de78ea38" title="App_TaskDelHook" alt="" coords="174,5,303,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a4d335ed0146fb4692f6a9ba561968391_icgraph.png" border="0" usemap="#os__cpu__c_8c_a4d335ed0146fb4692f6a9ba561968391_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a4d335ed0146fb4692f6a9ba561968391_icgraph" id="os__cpu__c_8c_a4d335ed0146fb4692f6a9ba561968391_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#a3a74414523d1a21d5248a2aa8052677f" title="OSTaskDel" alt="" coords="173,81,261,108"/><area shape="rect" id="node3" href="ucos__ii_8h.html#a77e2092daaffbae037aa73da59aa8869" title="OS_TaskReturn" alt="" coords="309,81,424,108"/><area shape="rect" id="node4" href="ucos__ii_8h.html#abfeab30b10331febafd3fab8bc3b2552" title="OSTaskStkInit" alt="" coords="472,81,579,108"/><area shape="rect" id="node5" href="ucos__ii_8h.html#a9e37dfb9b69276c48b497c4c4ef12c3e" title="OSTaskCreate" alt="" coords="637,56,744,83"/><area shape="rect" id="node12" href="ucos__ii_8h.html#afc7f3dc9d4456c1be5e060da4d5c3afd" title="OSTaskCreateExt" alt="" coords="627,107,754,133"/><area shape="rect" id="node6" href="os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="806,5,919,32"/><area shape="rect" id="node9" href="os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="804,56,921,83"/><area shape="rect" id="node10" href="os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="805,107,920,133"/><area shape="rect" id="node7" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="1132,81,1191,108"/><area shape="rect" id="node8" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1264,157,1315,184"/><area shape="rect" id="node11" href="ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="971,107,1058,133"/><area shape="rect" id="node13" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="803,157,922,184"/><area shape="rect" id="node14" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="1107,157,1215,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7819c02d33415b093052de6416d9889f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTaskIdleHook </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00151">151</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__app__hooks_8c_source.html#l00073">App_TaskIdleHook()</a>.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l01731">OS_TaskIdle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#if OS_APP_HOOKS_EN &gt; 0u</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__app__hooks_8c.html#a7a1d89e16105fcdb5e555b4ae6cc7468">App_TaskIdleHook</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a7819c02d33415b093052de6416d9889f_cgraph.png" border="0" usemap="#os__cpu__c_8c_a7819c02d33415b093052de6416d9889f_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a7819c02d33415b093052de6416d9889f_cgraph" id="os__cpu__c_8c_a7819c02d33415b093052de6416d9889f_cgraph">
+<area shape="rect" id="node2" href="os__app__hooks_8c.html#a7a1d89e16105fcdb5e555b4ae6cc7468" title="App_TaskIdleHook" alt="" coords="173,5,304,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a7819c02d33415b093052de6416d9889f_icgraph.png" border="0" usemap="#os__cpu__c_8c_a7819c02d33415b093052de6416d9889f_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a7819c02d33415b093052de6416d9889f_icgraph" id="os__cpu__c_8c_a7819c02d33415b093052de6416d9889f_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#a73a3a478f8472462ac3b70b789f29409" title="OS_TaskIdle" alt="" coords="173,5,269,32"/><area shape="rect" id="node3" href="os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="318,5,431,32"/><area shape="rect" id="node4" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="480,5,539,32"/><area shape="rect" id="node5" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="587,5,637,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a991988ad073d5ed20e3574bde354a733"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTaskReturnHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *&#160;</td>
+          <td class="paramname"><em>ptcb</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00173">173</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__app__hooks_8c_source.html#l00091">App_TaskReturnHook()</a>.</p>
+
+<p>参考自 <a class="el" href="os__task_8c_source.html#l01195">OS_TaskReturn()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#if OS_APP_HOOKS_EN &gt; 0u</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__app__hooks_8c.html#ae3aa4909a651d49a3b93780007c660d5">App_TaskReturnHook</a>(ptcb);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor"></span>    (void)ptcb;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a991988ad073d5ed20e3574bde354a733_cgraph.png" border="0" usemap="#os__cpu__c_8c_a991988ad073d5ed20e3574bde354a733_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a991988ad073d5ed20e3574bde354a733_cgraph" id="os__cpu__c_8c_a991988ad073d5ed20e3574bde354a733_cgraph">
+<area shape="rect" id="node2" href="os__app__hooks_8c.html#ae3aa4909a651d49a3b93780007c660d5" title="App_TaskReturnHook" alt="" coords="193,5,341,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a991988ad073d5ed20e3574bde354a733_icgraph.png" border="0" usemap="#os__cpu__c_8c_a991988ad073d5ed20e3574bde354a733_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a991988ad073d5ed20e3574bde354a733_icgraph" id="os__cpu__c_8c_a991988ad073d5ed20e3574bde354a733_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#a77e2092daaffbae037aa73da59aa8869" title="OS_TaskReturn" alt="" coords="192,81,307,108"/><area shape="rect" id="node3" href="ucos__ii_8h.html#abfeab30b10331febafd3fab8bc3b2552" title="OSTaskStkInit" alt="" coords="355,81,461,108"/><area shape="rect" id="node4" href="ucos__ii_8h.html#a9e37dfb9b69276c48b497c4c4ef12c3e" title="OSTaskCreate" alt="" coords="520,56,627,83"/><area shape="rect" id="node11" href="ucos__ii_8h.html#afc7f3dc9d4456c1be5e060da4d5c3afd" title="OSTaskCreateExt" alt="" coords="510,107,637,133"/><area shape="rect" id="node5" href="os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="689,5,802,32"/><area shape="rect" id="node8" href="os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="687,56,804,83"/><area shape="rect" id="node9" href="os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="688,107,803,133"/><area shape="rect" id="node6" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="1015,81,1073,108"/><area shape="rect" id="node7" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1147,157,1197,184"/><area shape="rect" id="node10" href="ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="854,107,941,133"/><area shape="rect" id="node12" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="686,157,805,184"/><area shape="rect" id="node13" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="990,157,1098,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a18eed81d1c43665ae8cf9242a188db7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTaskStatHook </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00195">195</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__app__hooks_8c_source.html#l00107">App_TaskStatHook()</a>.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l01773">OS_TaskStat()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#if OS_APP_HOOKS_EN &gt; 0u</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__app__hooks_8c.html#a095fa8f0fdcb792dc4522a781b63c08a">App_TaskStatHook</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a18eed81d1c43665ae8cf9242a188db7f_cgraph.png" border="0" usemap="#os__cpu__c_8c_a18eed81d1c43665ae8cf9242a188db7f_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a18eed81d1c43665ae8cf9242a188db7f_cgraph" id="os__cpu__c_8c_a18eed81d1c43665ae8cf9242a188db7f_cgraph">
+<area shape="rect" id="node2" href="os__app__hooks_8c.html#a095fa8f0fdcb792dc4522a781b63c08a" title="App_TaskStatHook" alt="" coords="177,5,311,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a18eed81d1c43665ae8cf9242a188db7f_icgraph.png" border="0" usemap="#os__cpu__c_8c_a18eed81d1c43665ae8cf9242a188db7f_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a18eed81d1c43665ae8cf9242a188db7f_icgraph" id="os__cpu__c_8c_a18eed81d1c43665ae8cf9242a188db7f_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#a827236210af1492f347cebe245caeda1" title="OS_TaskStat" alt="" coords="177,5,277,32"/><area shape="rect" id="node3" href="os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="325,5,443,32"/><area shape="rect" id="node4" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="491,5,549,32"/><area shape="rect" id="node5" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="597,5,648,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abfeab30b10331febafd3fab8bc3b2552"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#a1f60e2713aaa63efc8c5fafdcdeaa8a2">OS_STK</a>* OSTaskStkInit </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void *p_arg)&#160;</td>
+          <td class="paramname"><em>task</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a1f60e2713aaa63efc8c5fafdcdeaa8a2">OS_STK</a> *&#160;</td>
+          <td class="paramname"><em>ptos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00232">232</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__task_8c_source.html#l01195">OS_TaskReturn()</a>.</p>
+
+<p>参考自 <a class="el" href="os__task_8c_source.html#l00216">OSTaskCreate()</a> , 以及 <a class="el" href="os__task_8c_source.html#l00332">OSTaskCreateExt()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;{</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="os__cpu_8h.html#a1f60e2713aaa63efc8c5fafdcdeaa8a2">OS_STK</a> *stk;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    (void)opt;                                   <span class="comment">/* &#39;opt&#39; is not used, prevent warning                 */</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    stk       = ptos;                            <span class="comment">/* Load stack pointer                                 */</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                                 <span class="comment">/* Registers stacked as if auto-saved on exception    */</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    *(stk)    = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x01000000uL;            <span class="comment">/* xPSR                                               */</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)task;                    <span class="comment">/* Entry Point                                        */</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)<a class="code" href="os__task_8c.html#a77e2092daaffbae037aa73da59aa8869">OS_TaskReturn</a>;           <span class="comment">/* R14 (LR)                                           */</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x12121212uL;            <span class="comment">/* R12                                                */</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x03030303uL;            <span class="comment">/* R3                                                 */</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x02020202uL;            <span class="comment">/* R2                                                 */</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x01010101uL;            <span class="comment">/* R1                                                 */</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)p_arg;                   <span class="comment">/* R0 : argument                                      */</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                                 <span class="comment">/* Remaining registers saved on process stack         */</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x11111111uL;            <span class="comment">/* R11                                                */</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x10101010uL;            <span class="comment">/* R10                                                */</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x09090909uL;            <span class="comment">/* R9                                                 */</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x08080808uL;            <span class="comment">/* R8                                                 */</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x07070707uL;            <span class="comment">/* R7                                                 */</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x06060606uL;            <span class="comment">/* R6                                                 */</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x05050505uL;            <span class="comment">/* R5                                                 */</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    *(--stk)  = (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)0x04040404uL;            <span class="comment">/* R4                                                 */</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">return</span> (stk);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_abfeab30b10331febafd3fab8bc3b2552_cgraph.png" border="0" usemap="#os__cpu__c_8c_abfeab30b10331febafd3fab8bc3b2552_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_abfeab30b10331febafd3fab8bc3b2552_cgraph" id="os__cpu__c_8c_abfeab30b10331febafd3fab8bc3b2552_cgraph">
+<area shape="rect" id="node2" href="os__task_8c.html#a77e2092daaffbae037aa73da59aa8869" title="OS_TaskReturn" alt="" coords="160,183,275,209"/><area shape="rect" id="node3" href="os__cpu__c_8c.html#a991988ad073d5ed20e3574bde354a733" title="OSTaskReturnHook" alt="" coords="323,56,461,83"/><area shape="rect" id="node5" href="os__task_8c.html#a3a74414523d1a21d5248a2aa8052677f" title="OSTaskDel" alt="" coords="348,183,436,209"/><area shape="rect" id="node14" href="os__time_8c.html#a79fa80d326d321b4823c6d518db941ba" title="OSTimeDly" alt="" coords="348,259,436,285"/><area shape="rect" id="node4" href="os__app__hooks_8c.html#ae3aa4909a651d49a3b93780007c660d5" title="App_TaskReturnHook" alt="" coords="527,5,675,32"/><area shape="rect" id="node6" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="524,56,679,83"/><area shape="rect" id="node7" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="510,107,693,133"/><area shape="rect" id="node8" href="os__flag_8c.html#a7ad520bab57668b9a7f797d85bd2a5c7" title="OS_FlagUnlink" alt="" coords="547,157,656,184"/><area shape="rect" id="node9" href="os__core_8c.html#ad0dd3f8afd8d36a8cead860a53fffc92" title="OS_Dummy" alt="" coords="555,208,648,235"/><area shape="rect" id="node10" href="os__cpu__c_8c.html#a4d335ed0146fb4692f6a9ba561968391" title="OSTaskDelHook" alt="" coords="542,259,661,285"/><area shape="rect" id="node12" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="559,309,644,336"/><area shape="rect" id="node11" href="os__app__hooks_8c.html#a23eb4142fb74b9314bec7495de78ea38" title="App_TaskDelHook" alt="" coords="742,259,871,285"/><area shape="rect" id="node13" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="751,309,862,336"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_abfeab30b10331febafd3fab8bc3b2552_icgraph.png" border="0" usemap="#os__cpu__c_8c_abfeab30b10331febafd3fab8bc3b2552_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_abfeab30b10331febafd3fab8bc3b2552_icgraph" id="os__cpu__c_8c_abfeab30b10331febafd3fab8bc3b2552_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#a9e37dfb9b69276c48b497c4c4ef12c3e" title="OSTaskCreate" alt="" coords="171,56,277,83"/><area shape="rect" id="node9" href="ucos__ii_8h.html#afc7f3dc9d4456c1be5e060da4d5c3afd" title="OSTaskCreateExt" alt="" coords="161,107,287,133"/><area shape="rect" id="node3" href="os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="339,5,453,32"/><area shape="rect" id="node6" href="os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="337,56,455,83"/><area shape="rect" id="node7" href="os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="339,107,453,133"/><area shape="rect" id="node4" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="665,81,724,108"/><area shape="rect" id="node5" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="797,157,848,184"/><area shape="rect" id="node8" href="ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="505,107,591,133"/><area shape="rect" id="node10" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="337,157,455,184"/><area shape="rect" id="node11" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="641,157,749,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c6431c47d513e7f6333ef551dfaa6b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTaskSwHook </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00279">279</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__app__hooks_8c_source.html#l00130">App_TaskSwHook()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;{</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#if OS_APP_HOOKS_EN &gt; 0u</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__app__hooks_8c.html#a3aacccbbccc3fcf083e2c4370cf04b4a">App_TaskSwHook</a>();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a8c6431c47d513e7f6333ef551dfaa6b6_cgraph.png" border="0" usemap="#os__cpu__c_8c_a8c6431c47d513e7f6333ef551dfaa6b6_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a8c6431c47d513e7f6333ef551dfaa6b6_cgraph" id="os__cpu__c_8c_a8c6431c47d513e7f6333ef551dfaa6b6_cgraph">
+<area shape="rect" id="node2" href="os__app__hooks_8c.html#a3aacccbbccc3fcf083e2c4370cf04b4a" title="App_TaskSwHook" alt="" coords="171,5,299,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad175126f54000a30bf15a47ba68cffc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTCBInitHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *&#160;</td>
+          <td class="paramname"><em>ptcb</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00299">299</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__app__hooks_8c_source.html#l00149">App_TCBInitHook()</a>.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l01896">OS_TCBInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;{</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#if OS_APP_HOOKS_EN &gt; 0u</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__app__hooks_8c.html#a3d5498f1cb00285147781e84ddc75a3d">App_TCBInitHook</a>(ptcb);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor"></span>    (void)ptcb;                                  <span class="comment">/* Prevent compiler warning                           */</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_ad175126f54000a30bf15a47ba68cffc4_cgraph.png" border="0" usemap="#os__cpu__c_8c_ad175126f54000a30bf15a47ba68cffc4_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_ad175126f54000a30bf15a47ba68cffc4_cgraph" id="os__cpu__c_8c_ad175126f54000a30bf15a47ba68cffc4_cgraph">
+<area shape="rect" id="node2" href="os__app__hooks_8c.html#a3d5498f1cb00285147781e84ddc75a3d" title="App_TCBInitHook" alt="" coords="169,5,293,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_ad175126f54000a30bf15a47ba68cffc4_icgraph.png" border="0" usemap="#os__cpu__c_8c_ad175126f54000a30bf15a47ba68cffc4_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_ad175126f54000a30bf15a47ba68cffc4_icgraph" id="os__cpu__c_8c_ad175126f54000a30bf15a47ba68cffc4_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#a95e9bc6f0d0dfe29f860cd5a5480fea4" title="OS_TCBInit" alt="" coords="168,81,259,108"/><area shape="rect" id="node3" href="ucos__ii_8h.html#a9e37dfb9b69276c48b497c4c4ef12c3e" title="OSTaskCreate" alt="" coords="317,56,424,83"/><area shape="rect" id="node10" href="ucos__ii_8h.html#afc7f3dc9d4456c1be5e060da4d5c3afd" title="OSTaskCreateExt" alt="" coords="307,107,434,133"/><area shape="rect" id="node4" href="os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="486,5,599,32"/><area shape="rect" id="node7" href="os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="484,56,601,83"/><area shape="rect" id="node8" href="os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="485,107,600,133"/><area shape="rect" id="node5" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="812,81,871,108"/><area shape="rect" id="node6" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="944,157,995,184"/><area shape="rect" id="node9" href="ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="651,107,738,133"/><area shape="rect" id="node11" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="483,157,602,184"/><area shape="rect" id="node12" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="787,157,895,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9580a668e52ffe7fcb5429e80d6eac8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTimeTickHook </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00321">321</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__app__hooks_8c_source.html#l00167">App_TimeTickHook()</a>, <a class="el" href="_a_p_p_2os__cfg_8h_source.html#l00051">OS_TICKS_PER_SEC</a>, <a class="el" href="_a_p_p_2os__cfg_8h_source.html#l00146">OS_TMR_CFG_TICKS_PER_SEC</a>, <a class="el" href="os__cpu__c_8c_source.html#l00033">OSTmrCtr</a> , 以及 <a class="el" href="os__tmr_8c_source.html#l00690">OSTmrSignal()</a>.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l00856">OSTimeTick()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#if OS_APP_HOOKS_EN &gt; 0u</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__app__hooks_8c.html#a34b4f20c9b531a194cd16923de46a58e">App_TimeTickHook</a>();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor">#if OS_TMR_EN &gt; 0u</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu__c_8c.html#a3c027cec46699fe0b79aae038a498966">OSTmrCtr</a>++;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="os__cpu__c_8c.html#a3c027cec46699fe0b79aae038a498966">OSTmrCtr</a> &gt;= (<a class="code" href="_a_p_p_2os__cfg_8h.html#a673d8c27b9b599a483cb83d8a52e8e05">OS_TICKS_PER_SEC</a> / <a class="code" href="_a_p_p_2os__cfg_8h.html#a5eba95c76bb3136e85f1aa72a465610a">OS_TMR_CFG_TICKS_PER_SEC</a>)) {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <a class="code" href="os__cpu__c_8c.html#a3c027cec46699fe0b79aae038a498966">OSTmrCtr</a> = 0;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="os__tmr_8c.html#a9e534f7203e5f99a05853ebfe4ffa2f7">OSTmrSignal</a>();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a9580a668e52ffe7fcb5429e80d6eac8f_cgraph.png" border="0" usemap="#os__cpu__c_8c_a9580a668e52ffe7fcb5429e80d6eac8f_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a9580a668e52ffe7fcb5429e80d6eac8f_cgraph" id="os__cpu__c_8c_a9580a668e52ffe7fcb5429e80d6eac8f_cgraph">
+<area shape="rect" id="node2" href="os__app__hooks_8c.html#a34b4f20c9b531a194cd16923de46a58e" title="App_TimeTickHook" alt="" coords="177,16,311,43"/><area shape="rect" id="node6" href="os__tmr_8c.html#a9e534f7203e5f99a05853ebfe4ffa2f7" title="OSTmrSignal" alt="" coords="195,68,293,95"/><area shape="rect" id="node3" href="cpu__core_8c.html#ad801f4d88bd3e8b5c55f42882db4b4ea" title="CPU_TS_Update" alt="" coords="360,13,480,40"/><area shape="rect" id="node4" href="cpu__core_8c.html#a8bf28c61c2395a1bc52e2e8779f97c2d" title="CPU_TS_UpdateHandler" alt="" coords="529,12,693,39"/><area shape="rect" id="node5" href="cpu__bsp_8c.html#a26d9e67e08e8f85e8602a85eed93f0f8" title="CPU_TS_TmrRd" alt="" coords="775,5,892,32"/><area shape="rect" id="node7" href="os__sem_8c.html#a972bf8ea56228c25b4170695248727d6" title="OSSemPost" alt="" coords="373,69,467,96"/><area shape="rect" id="node8" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="545,69,676,96"/><area shape="rect" id="node11" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="568,132,653,159"/><area shape="rect" id="node9" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="756,56,911,83"/><area shape="rect" id="node10" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="742,107,925,133"/><area shape="rect" id="node12" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="778,157,889,184"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_a9580a668e52ffe7fcb5429e80d6eac8f_icgraph.png" border="0" usemap="#os__cpu__c_8c_a9580a668e52ffe7fcb5429e80d6eac8f_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_a9580a668e52ffe7fcb5429e80d6eac8f_icgraph" id="os__cpu__c_8c_a9580a668e52ffe7fcb5429e80d6eac8f_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#abf35bebb7ed88c38c212ee675f3713db" title="OSTimeTick" alt="" coords="176,5,269,32"/><area shape="rect" id="node3" href="os__cpu__c_8c.html#ad1e1489143c09755d37135acc3ac6fb4" title="OS_CPU_SysTickHandler" alt="" coords="317,5,491,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1e1489143c09755d37135acc3ac6fb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OS_CPU_SysTickHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00350">350</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="os__core_8c_source.html#l00656">OSIntExit()</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a> , 以及 <a class="el" href="os__core_8c_source.html#l00856">OSTimeTick()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;{</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();                         <span class="comment">/* Tell uC/OS-II that we are starting an ISR          */</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a>++;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="os__core_8c.html#abf35bebb7ed88c38c212ee675f3713db">OSTimeTick</a>();                                <span class="comment">/* Call uC/OS-II&#39;s OSTimeTick()                       */</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <a class="code" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e">OSIntExit</a>();                                 <span class="comment">/* Tell uC/OS-II that we are leaving the ISR          */</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_ad1e1489143c09755d37135acc3ac6fb4_cgraph.png" border="0" usemap="#os__cpu__c_8c_ad1e1489143c09755d37135acc3ac6fb4_cgraph" alt=""/></div>
+<map name="os__cpu__c_8c_ad1e1489143c09755d37135acc3ac6fb4_cgraph" id="os__cpu__c_8c_ad1e1489143c09755d37135acc3ac6fb4_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="234,56,313,83"/><area shape="rect" id="node5" href="os__core_8c.html#abf35bebb7ed88c38c212ee675f3713db" title="OSTimeTick" alt="" coords="227,107,320,133"/><area shape="rect" id="node3" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="1141,56,1251,83"/><area shape="rect" id="node4" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="383,5,476,32"/><area shape="rect" id="node6" href="os__cpu__c_8c.html#a9580a668e52ffe7fcb5429e80d6eac8f" title="OSTimeTickHook" alt="" coords="368,119,491,145"/><area shape="rect" id="node7" href="os__app__hooks_8c.html#a34b4f20c9b531a194cd16923de46a58e" title="App_TimeTickHook" alt="" coords="539,195,674,221"/><area shape="rect" id="node11" href="os__tmr_8c.html#a9e534f7203e5f99a05853ebfe4ffa2f7" title="OSTmrSignal" alt="" coords="557,119,656,145"/><area shape="rect" id="node8" href="cpu__core_8c.html#ad801f4d88bd3e8b5c55f42882db4b4ea" title="CPU_TS_Update" alt="" coords="723,201,843,228"/><area shape="rect" id="node9" href="cpu__core_8c.html#a8bf28c61c2395a1bc52e2e8779f97c2d" title="CPU_TS_UpdateHandler" alt="" coords="891,208,1055,235"/><area shape="rect" id="node10" href="cpu__bsp_8c.html#a26d9e67e08e8f85e8602a85eed93f0f8" title="CPU_TS_TmrRd" alt="" coords="1137,208,1255,235"/><area shape="rect" id="node12" href="os__sem_8c.html#a972bf8ea56228c25b4170695248727d6" title="OSSemPost" alt="" coords="735,119,830,145"/><area shape="rect" id="node13" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="908,157,1039,184"/><area shape="rect" id="node16" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="931,107,1016,133"/><area shape="rect" id="node14" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="1119,107,1273,133"/><area shape="rect" id="node15" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="1105,157,1287,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af6b2de62ccadb6c51dba3f0b07df9c35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OS_CPU_SysTickInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>&#160;</td>
+          <td class="paramname"><em>cnts</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00376">376</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu__c_8c_source.html#l00052">OS_CPU_CM3_NVIC_PRIO_MIN</a>, <a class="el" href="os__cpu__c_8c_source.html#l00046">OS_CPU_CM3_NVIC_PRIO_ST</a>, <a class="el" href="os__cpu__c_8c_source.html#l00042">OS_CPU_CM3_NVIC_ST_CTRL</a>, <a class="el" href="os__cpu__c_8c_source.html#l00049">OS_CPU_CM3_NVIC_ST_CTRL_CLK_SRC</a>, <a class="el" href="os__cpu__c_8c_source.html#l00051">OS_CPU_CM3_NVIC_ST_CTRL_ENABLE</a>, <a class="el" href="os__cpu__c_8c_source.html#l00050">OS_CPU_CM3_NVIC_ST_CTRL_INTEN</a> , 以及 <a class="el" href="os__cpu__c_8c_source.html#l00043">OS_CPU_CM3_NVIC_ST_RELOAD</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00209">App_TaskStart()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;{</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <a class="code" href="os__cpu__c_8c.html#a4e23d3d17f00d4132ccba52e76e6b3ba">OS_CPU_CM3_NVIC_ST_RELOAD</a> = cnts - 1u;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                                                 <span class="comment">/* Set prio of SysTick handler to min prio.           */</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="os__cpu__c_8c.html#ad88b6f08162bd6f4fd27ece67ff89467">OS_CPU_CM3_NVIC_PRIO_ST</a>   = <a class="code" href="os__cpu__c_8c.html#acfa4edaf532892cfddfb98f3fc0e5747">OS_CPU_CM3_NVIC_PRIO_MIN</a>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                                                 <span class="comment">/* Enable timer.                                      */</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <a class="code" href="os__cpu__c_8c.html#af70be7256d707ab6656d4b76cb97f6b0">OS_CPU_CM3_NVIC_ST_CTRL</a>  |= <a class="code" href="os__cpu__c_8c.html#a86c9498b0281445e9b62347370905570">OS_CPU_CM3_NVIC_ST_CTRL_CLK_SRC</a> | <a class="code" href="os__cpu__c_8c.html#ab2f68dc93b836236fbf9778ed8ccdfc5">OS_CPU_CM3_NVIC_ST_CTRL_ENABLE</a>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                                 <span class="comment">/* Enable timer interrupt.                            */</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <a class="code" href="os__cpu__c_8c.html#af70be7256d707ab6656d4b76cb97f6b0">OS_CPU_CM3_NVIC_ST_CTRL</a>  |= <a class="code" href="os__cpu__c_8c.html#af07d9def6f1d21d0dac09f70e2e6a82f">OS_CPU_CM3_NVIC_ST_CTRL_INTEN</a>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__cpu__c_8c_af6b2de62ccadb6c51dba3f0b07df9c35_icgraph.png" border="0" usemap="#os__cpu__c_8c_af6b2de62ccadb6c51dba3f0b07df9c35_icgraph" alt=""/></div>
+<map name="os__cpu__c_8c_af6b2de62ccadb6c51dba3f0b07df9c35_icgraph" id="os__cpu__c_8c_af6b2de62ccadb6c51dba3f0b07df9c35_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="201,5,309,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="357,5,408,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="a3c027cec46699fe0b79aae038a498966"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a> OSTmrCtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__cpu__c_8c_source.html">os_cpu_c.c</a> 第 <a class="el" href="os__cpu__c_8c_source.html#l00033">33</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="os__cpu__c_8c_source.html#l00067">OSInitHookBegin()</a> , 以及 <a class="el" href="os__cpu__c_8c_source.html#l00321">OSTimeTickHook()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_71bcdadcecd7b5ff1becd3dd629fd845.html">uCOS-II</a></li><li class="navelem"><a class="el" href="dir_dcae676bdefcb0f1d0df9eae4788ad92.html">Ports</a></li><li class="navelem"><a class="el" href="os__cpu__c_8c.html">os_cpu_c.c</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:44 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

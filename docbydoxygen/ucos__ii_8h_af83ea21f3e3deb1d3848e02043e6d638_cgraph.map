@@ -1,0 +1,4 @@
+<map id="OSStart" name="OSStart">
+<area shape="rect" id="node2" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="127,5,238,32"/>
+<area shape="rect" id="node3" href="$os__cpu_8h.html#a316a500d9ecd91fe31eb0f048f7a6b80" title="OSStartHighRdy" alt="" coords="123,56,242,83"/>
+</map>

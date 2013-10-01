@@ -1,0 +1,11 @@
+<map id="OS_EventWaitListInit" name="OS_EventWaitListInit">
+<area shape="rect" id="node2" href="$ucos__ii_8h.html#a62808c7bc864fa96f4ec694edd0b2d8e" title="OSMboxCreate" alt="" coords="202,5,313,32"/>
+<area shape="rect" id="node6" href="$ucos__ii_8h.html#a7ee9a96625a74c2d8a59f042cbe2f431" title="OSMutexCreate" alt="" coords="200,56,315,83"/>
+<area shape="rect" id="node7" href="$ucos__ii_8h.html#a09733715ea02098f9fe6b0cda12fcc90" title="OSQCreate" alt="" coords="213,107,302,133"/>
+<area shape="rect" id="node8" href="$ucos__ii_8h.html#a88a8aaaed348084594298abe359d4afa" title="OSSemCreate" alt="" coords="204,157,311,184"/>
+<area shape="rect" id="node3" href="$app_8c.html#ad179f0386a736897f8584eb4a6cd928b" title="App_EventCreate" alt="" coords="363,12,485,39"/>
+<area shape="rect" id="node4" href="$app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="534,37,642,64"/>
+<area shape="rect" id="node5" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="691,69,741,96"/>
+<area shape="rect" id="node9" href="$ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="381,107,467,133"/>
+<area shape="rect" id="node10" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="559,100,617,127"/>
+</map>

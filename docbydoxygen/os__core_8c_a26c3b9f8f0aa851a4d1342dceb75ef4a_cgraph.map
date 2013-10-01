@@ -1,0 +1,6 @@
+<map id="OSEventPendMulti" name="OSEventPendMulti">
+<area shape="rect" id="node2" href="$os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="185,5,367,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#a6986b3da9041b662337dd8f7fc5b0e09" title="OS_EventTaskWaitMulti" alt="" coords="195,56,357,83"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="233,107,319,133"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="417,107,527,133"/>
+</map>

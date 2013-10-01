@@ -1,0 +1,5 @@
+<map id="BSP_CPU_ClkFreq" name="BSP_CPU_ClkFreq">
+<area shape="rect" id="node2" href="$app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="331,5,439,32"/>
+<area shape="rect" id="node4" href="$bsp__ser_8h.html#a1aaf9b0ea64ea177dc131d6d71aaf19d" title="BSP_SerInit" alt="" coords="189,31,283,57"/>
+<area shape="rect" id="node3" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="488,5,539,32"/>
+</map>

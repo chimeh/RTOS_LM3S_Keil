@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uCOS-II/Source/os_time.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('os__time_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">os_time.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="ucos__ii_8h_source.html">ucos_ii.h</a>&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+os_time.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__time_8c__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__time_8c" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__time_8c" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__time_8c">
+<area shape="rect" id="node2" href="ucos__ii_8h.html" title="ucos_ii.h" alt="" coords="60,96,135,123"/><area shape="rect" id="node3" href="_a_p_p_2os__cfg_8h.html" title="os_cfg.h" alt="" coords="14,171,84,197"/><area shape="rect" id="node4" href="os__cpu_8h.html" title="os_cpu.h" alt="" coords="109,171,184,197"/></map>
+</div>
+</div>
+<p><a href="os__time_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a79fa80d326d321b4823c6d518db941ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__time_8c.html#a79fa80d326d321b4823c6d518db941ba">OSTimeDly</a> (<a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> ticks)</td></tr>
+<tr class="separator:a79fa80d326d321b4823c6d518db941ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae574d80c0590e93302061d2920475173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__time_8c.html#ae574d80c0590e93302061d2920475173">OSTimeDlyHMSM</a> (<a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> hours, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> minutes, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> seconds, <a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a> ms)</td></tr>
+<tr class="separator:ae574d80c0590e93302061d2920475173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ea8cb1d86d17ee7cfed22df59d8667"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__time_8c.html#a52ea8cb1d86d17ee7cfed22df59d8667">OSTimeDlyResume</a> (<a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> prio)</td></tr>
+<tr class="separator:a52ea8cb1d86d17ee7cfed22df59d8667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4512ccbbb9b56ed14c8b7160ae57bcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__time_8c.html#af4512ccbbb9b56ed14c8b7160ae57bcc">OSTimeGet</a> (void)</td></tr>
+<tr class="separator:af4512ccbbb9b56ed14c8b7160ae57bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8304f00a85a5be84f4727ff04a40109b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__time_8c.html#a8304f00a85a5be84f4727ff04a40109b">OSTimeSet</a> (<a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> ticks)</td></tr>
+<tr class="separator:a8304f00a85a5be84f4727ff04a40109b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a79fa80d326d321b4823c6d518db941ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTimeDly </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>&#160;</td>
+          <td class="paramname"><em>ticks</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__time_8c_source.html">os_time.c</a> 第 <a class="el" href="os__time_8c_source.html#l00044">44</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a>, <a class="el" href="ucos__ii_8h_source.html#l00742">OSRdyGrp</a>, <a class="el" href="ucos__ii_8h_source.html#l00743">OSRdyTbl</a>, <a class="el" href="ucos__ii_8h_source.html#l00640">OS_TCB::OSTCBBitX</a>, <a class="el" href="ucos__ii_8h_source.html#l00641">OS_TCB::OSTCBBitY</a>, <a class="el" href="ucos__ii_8h_source.html#l00758">OSTCBCur</a>, <a class="el" href="ucos__ii_8h_source.html#l00632">OS_TCB::OSTCBDly</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00638">OS_TCB::OSTCBY</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00355">App_TaskKbd()</a>, <a class="el" href="app_8c_source.html#l00209">App_TaskStart()</a>, <a class="el" href="app_8c_source.html#l00441">App_TaskUserIF()</a>, <a class="el" href="bsp__os_8c_source.html#l00104">BSP_OS_Dly_ms()</a>, <a class="el" href="os__task_8c_source.html#l01195">OS_TaskReturn()</a>, <a class="el" href="os__core_8c_source.html#l01773">OS_TaskStat()</a>, <a class="el" href="os__core_8c_source.html#l00822">OSStatInit()</a> , 以及 <a class="el" href="os__time_8c_source.html#l00096">OSTimeDlyHMSM()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>      y;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a> &gt; 0u) {                     <span class="comment">/* See if trying to call from an ISR                  */</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (ticks &gt; 0u) {                            <span class="comment">/* 0 means no delay!                                  */</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        y            =  <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#a2e62e0d49b5a6ee716ff782d87d88ede">OSTCBY</a>;        <span class="comment">/* Delay current task                                 */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="ucos__ii_8h.html#a558e37150e66695682e4b7e832558cbd">OSRdyTbl</a>[y] &amp;= ~<a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#ae4bbdf2bd93b6d5772c9f9cd4c539e4e">OSTCBBitX</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a558e37150e66695682e4b7e832558cbd">OSRdyTbl</a>[y] == 0u) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="ucos__ii_8h.html#a49b2e2692e2945cda23029b01b2d4cd5">OSRdyGrp</a> &amp;= ~<a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#a7b439a8d6dd69e8474907883f9e4d95b">OSTCBBitY</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#acce26ca7c92ec90b231e955e50a3ba87">OSTCBDly</a> = ticks;              <span class="comment">/* Load ticks in TCB                                  */</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292">OS_Sched</a>();                              <span class="comment">/* Find next task to run!                             */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__time_8c_a79fa80d326d321b4823c6d518db941ba_cgraph.png" border="0" usemap="#os__time_8c_a79fa80d326d321b4823c6d518db941ba_cgraph" alt=""/></div>
+<map name="os__time_8c_a79fa80d326d321b4823c6d518db941ba_cgraph" id="os__time_8c_a79fa80d326d321b4823c6d518db941ba_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="141,5,227,32"/><area shape="rect" id="node3" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="275,5,386,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__time_8c_a79fa80d326d321b4823c6d518db941ba_icgraph.png" border="0" usemap="#os__time_8c_a79fa80d326d321b4823c6d518db941ba_icgraph" alt=""/></div>
+<map name="os__time_8c_a79fa80d326d321b4823c6d518db941ba_icgraph" id="os__time_8c_a79fa80d326d321b4823c6d518db941ba_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#ad1c293a09028612fc01cb3864064c5fd" title="App_TaskKbd" alt="" coords="319,179,422,205"/><area shape="rect" id="node4" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="817,91,925,117"/><area shape="rect" id="node6" href="app_8c.html#a4217307366bcf4be2514445ba929360b" title="App_TaskUserIF" alt="" coords="146,128,265,155"/><area shape="rect" id="node7" href="bsp__os_8h.html#a1c82e41f9c4372ab1468928364227976" title="BSP_OS_Dly_ms" alt="" coords="142,331,269,357"/><area shape="rect" id="node13" href="ucos__ii_8h.html#a77e2092daaffbae037aa73da59aa8869" title="OS_TaskReturn" alt="" coords="148,229,263,256"/><area shape="rect" id="node22" href="ucos__ii_8h.html#a827236210af1492f347cebe245caeda1" title="OS_TaskStat" alt="" coords="321,280,421,307"/><area shape="rect" id="node23" href="ucos__ii_8h.html#a5ba8aba02bcf614eef38c0133f968c49" title="OSStatInit" alt="" coords="667,27,749,53"/><area shape="rect" id="node24" href="ucos__ii_8h.html#ae574d80c0590e93302061d2920475173" title="OSTimeDlyHMSM" alt="" coords="141,381,269,408"/><area shape="rect" id="node3" href="app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="649,128,767,155"/><area shape="rect" id="node5" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="1080,179,1131,205"/><area shape="rect" id="node8" href="bsp__ser_8h.html#a2d41af36cbfc3c79c6817b5217c397d4" title="BSP_SerRd" alt="" coords="325,331,417,357"/><area shape="rect" id="node9" href="bsp__ser_8h.html#abafcf1b8a1786f23e4c0dee1ca819522" title="BSP_SerRdLine" alt="" coords="478,381,594,408"/><area shape="rect" id="node10" href="bsp__ser_8h.html#a99e9be95a9e2dc53afb42b32bc62124b" title="BSP_SerWr" alt="" coords="324,432,417,459"/><area shape="rect" id="node11" href="bsp__ser_8h.html#ac8ee31bc6cf3d16c567190aea85825f3" title="BSP_Print" alt="" coords="495,432,577,459"/><area shape="rect" id="node12" href="bsp__ser_8h.html#a327fa6dafb822d8a72fccbffa52c7b36" title="BSP_SerPrint" alt="" coords="485,483,587,509"/><area shape="rect" id="node14" href="ucos__ii_8h.html#abfeab30b10331febafd3fab8bc3b2552" title="OSTaskStkInit" alt="" coords="317,229,424,256"/><area shape="rect" id="node15" href="ucos__ii_8h.html#a9e37dfb9b69276c48b497c4c4ef12c3e" title="OSTaskCreate" alt="" coords="483,280,589,307"/><area shape="rect" id="node21" href="ucos__ii_8h.html#afc7f3dc9d4456c1be5e060da4d5c3afd" title="OSTaskCreateExt" alt="" coords="473,229,599,256"/><area shape="rect" id="node16" href="os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="651,229,765,256"/><area shape="rect" id="node18" href="os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="649,331,767,357"/><area shape="rect" id="node19" href="os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="651,280,765,307"/><area shape="rect" id="node17" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="973,255,1032,281"/><area shape="rect" id="node20" href="ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="827,280,914,307"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae574d80c0590e93302061d2920475173"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSTimeDlyHMSM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td>
+          <td class="paramname"><em>hours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td>
+          <td class="paramname"><em>minutes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td>
+          <td class="paramname"><em>seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>&#160;</td>
+          <td class="paramname"><em>ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__time_8c_source.html">os_time.c</a> 第 <a class="el" href="os__time_8c_source.html#l00096">96</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00299">OS_ERR_TIME_DLY_ISR</a>, <a class="el" href="ucos__ii_8h_source.html#l00295">OS_ERR_TIME_INVALID_MINUTES</a>, <a class="el" href="ucos__ii_8h_source.html#l00297">OS_ERR_TIME_INVALID_MS</a>, <a class="el" href="ucos__ii_8h_source.html#l00296">OS_ERR_TIME_INVALID_SECONDS</a>, <a class="el" href="ucos__ii_8h_source.html#l00298">OS_ERR_TIME_ZERO_DLY</a>, <a class="el" href="_a_p_p_2os__cfg_8h_source.html#l00051">OS_TICKS_PER_SEC</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a> , 以及 <a class="el" href="os__time_8c_source.html#l00044">OSTimeDly()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> ticks;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a> &gt; 0u) {                     <span class="comment">/* See if trying to call from an ISR                  */</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a8214c9a676ee851c1689014824aead76">OS_ERR_TIME_DLY_ISR</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (hours == 0u) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (minutes == 0u) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span> (seconds == 0u) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">if</span> (ms == 0u) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a2cb8afb2ab1d1a233060bf43b271ebb8">OS_ERR_TIME_ZERO_DLY</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (minutes &gt; 59u) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a26c8d49690d327475d78be31da8bf6a8">OS_ERR_TIME_INVALID_MINUTES</a>);    <span class="comment">/* Validate arguments to be within range              */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (seconds &gt; 59u) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aeedccf158d8ca3e2ce613e242dd50042">OS_ERR_TIME_INVALID_SECONDS</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (ms &gt; 999u) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#ad087376088ccb9ba05899ce80126de15">OS_ERR_TIME_INVALID_MS</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span>                                                 <span class="comment">/* Compute the total number of clock ticks required.. */</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                                 <span class="comment">/* .. (rounded to the nearest tick)                   */</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    ticks = ((<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)hours * 3600uL + (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)minutes * 60uL + (<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)seconds) * <a class="code" href="_a_p_p_2os__cfg_8h.html#a673d8c27b9b599a483cb83d8a52e8e05">OS_TICKS_PER_SEC</a></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;          + <a class="code" href="_a_p_p_2os__cfg_8h.html#a673d8c27b9b599a483cb83d8a52e8e05">OS_TICKS_PER_SEC</a> * ((<a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>)ms + 500uL / <a class="code" href="_a_p_p_2os__cfg_8h.html#a673d8c27b9b599a483cb83d8a52e8e05">OS_TICKS_PER_SEC</a>) / 1000uL;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="os__time_8c.html#a79fa80d326d321b4823c6d518db941ba">OSTimeDly</a>(ticks);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__time_8c_ae574d80c0590e93302061d2920475173_cgraph.png" border="0" usemap="#os__time_8c_ae574d80c0590e93302061d2920475173_cgraph" alt=""/></div>
+<map name="os__time_8c_ae574d80c0590e93302061d2920475173_cgraph" id="os__time_8c_ae574d80c0590e93302061d2920475173_cgraph">
+<area shape="rect" id="node2" href="os__time_8c.html#a79fa80d326d321b4823c6d518db941ba" title="OSTimeDly" alt="" coords="181,5,269,32"/><area shape="rect" id="node3" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="317,5,403,32"/><area shape="rect" id="node4" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="451,5,562,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a52ea8cb1d86d17ee7cfed22df59d8667"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSTimeDlyResume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td>
+          <td class="paramname"><em>prio</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__time_8c_source.html">os_time.c</a> 第 <a class="el" href="os__time_8c_source.html#l00156">156</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00275">OS_ERR_PRIO_INVALID</a>, <a class="el" href="ucos__ii_8h_source.html#l00286">OS_ERR_TASK_NOT_EXIST</a>, <a class="el" href="ucos__ii_8h_source.html#l00294">OS_ERR_TIME_NOT_DLY</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="_a_p_p_2os__cfg_8h_source.html#l00039">OS_LOWEST_PRIO</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="ucos__ii_8h_source.html#l00114">OS_STAT_PEND_ANY</a>, <a class="el" href="ucos__ii_8h_source.html#l00121">OS_STAT_PEND_OK</a>, <a class="el" href="ucos__ii_8h_source.html#l00122">OS_STAT_PEND_TO</a>, <a class="el" href="ucos__ii_8h_source.html#l00105">OS_STAT_RDY</a>, <a class="el" href="ucos__ii_8h_source.html#l00109">OS_STAT_SUSPEND</a>, <a class="el" href="ucos__ii_8h_source.html#l00097">OS_TCB_RESERVED</a>, <a class="el" href="ucos__ii_8h_source.html#l00742">OSRdyGrp</a>, <a class="el" href="ucos__ii_8h_source.html#l00743">OSRdyTbl</a>, <a class="el" href="ucos__ii_8h_source.html#l00640">OS_TCB::OSTCBBitX</a>, <a class="el" href="ucos__ii_8h_source.html#l00641">OS_TCB::OSTCBBitY</a>, <a class="el" href="ucos__ii_8h_source.html#l00632">OS_TCB::OSTCBDly</a>, <a class="el" href="ucos__ii_8h_source.html#l00762">OSTCBPrioTbl</a>, <a class="el" href="ucos__ii_8h_source.html#l00633">OS_TCB::OSTCBStat</a>, <a class="el" href="ucos__ii_8h_source.html#l00634">OS_TCB::OSTCBStatPend</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00638">OS_TCB::OSTCBY</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a>    *ptcb;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                                   </span><span class="comment">/* Storage for CPU status register      */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (prio &gt;= <a class="code" href="_a_p_p_2os__cfg_8h.html#a15986333977445f8b73808d9d994db5e">OS_LOWEST_PRIO</a>) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a121bd340875b449cd3b375841f8ad54e">OS_ERR_PRIO_INVALID</a>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    ptcb = <a class="code" href="ucos__ii_8h.html#aa20debf0e8624401248604162af7d979">OSTCBPrioTbl</a>[prio];                                 <span class="comment">/* Make sure that task exist            */</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (ptcb == (<a class="code" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a> *)0) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a5345417c17b2f74851c230208b16c923">OS_ERR_TASK_NOT_EXIST</a>);                        <span class="comment">/* The task does not exist              */</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">if</span> (ptcb == <a class="code" href="ucos__ii_8h.html#a32b7458213ea979d03adba5077dca920">OS_TCB_RESERVED</a>) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a5345417c17b2f74851c230208b16c923">OS_ERR_TASK_NOT_EXIST</a>);                        <span class="comment">/* The task does not exist              */</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span> (ptcb-&gt;<a class="code" href="ucos__ii_8h.html#acce26ca7c92ec90b231e955e50a3ba87">OSTCBDly</a> == 0u) {                                <span class="comment">/* See if task is delayed               */</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aed97936e2523b0346c50070ab7f53ab6">OS_ERR_TIME_NOT_DLY</a>);                          <span class="comment">/* Indicate that task was not delayed   */</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    ptcb-&gt;<a class="code" href="ucos__ii_8h.html#acce26ca7c92ec90b231e955e50a3ba87">OSTCBDly</a> = 0u;                                       <span class="comment">/* Clear the time delay                 */</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> ((ptcb-&gt;<a class="code" href="ucos__ii_8h.html#ac3da2b8fcd7c5155a98cf31065fe9b80">OSTCBStat</a> &amp; <a class="code" href="ucos__ii_8h.html#a9b09326e2b7ae88683465a4586849fbc">OS_STAT_PEND_ANY</a>) != <a class="code" href="ucos__ii_8h.html#a1450c52d6c151e1e6766fa3948af90dd">OS_STAT_RDY</a>) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        ptcb-&gt;<a class="code" href="ucos__ii_8h.html#ac3da2b8fcd7c5155a98cf31065fe9b80">OSTCBStat</a>     &amp;= ~<a class="code" href="ucos__ii_8h.html#a9b09326e2b7ae88683465a4586849fbc">OS_STAT_PEND_ANY</a>;              <span class="comment">/* Yes, Clear status flag               */</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        ptcb-&gt;<a class="code" href="ucos__ii_8h.html#a85edcad3358d773d2a93e1afc813eedd">OSTCBStatPend</a>  =  <a class="code" href="ucos__ii_8h.html#a3a39c8ccb95b3f7709089b9afddc8597">OS_STAT_PEND_TO</a>;               <span class="comment">/* Indicate PEND timeout                */</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        ptcb-&gt;<a class="code" href="ucos__ii_8h.html#a85edcad3358d773d2a93e1afc813eedd">OSTCBStatPend</a>  =  <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> ((ptcb-&gt;<a class="code" href="ucos__ii_8h.html#ac3da2b8fcd7c5155a98cf31065fe9b80">OSTCBStat</a> &amp; <a class="code" href="ucos__ii_8h.html#a4bcad9921e6f80fd92c6d5e2a114e372">OS_STAT_SUSPEND</a>) == <a class="code" href="ucos__ii_8h.html#a1450c52d6c151e1e6766fa3948af90dd">OS_STAT_RDY</a>) {  <span class="comment">/* Is task suspended?                   */</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="ucos__ii_8h.html#a49b2e2692e2945cda23029b01b2d4cd5">OSRdyGrp</a>               |= ptcb-&gt;<a class="code" href="ucos__ii_8h.html#a7b439a8d6dd69e8474907883f9e4d95b">OSTCBBitY</a>;             <span class="comment">/* No,  Make ready                      */</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="ucos__ii_8h.html#a558e37150e66695682e4b7e832558cbd">OSRdyTbl</a>[ptcb-&gt;<a class="code" href="ucos__ii_8h.html#a2e62e0d49b5a6ee716ff782d87d88ede">OSTCBY</a>] |= ptcb-&gt;<a class="code" href="ucos__ii_8h.html#ae4bbdf2bd93b6d5772c9f9cd4c539e4e">OSTCBBitX</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292">OS_Sched</a>();                                            <span class="comment">/* See if this is new highest priority  */</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();                                    <span class="comment">/* Task may be suspended                */</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__time_8c_a52ea8cb1d86d17ee7cfed22df59d8667_cgraph.png" border="0" usemap="#os__time_8c_a52ea8cb1d86d17ee7cfed22df59d8667_cgraph" alt=""/></div>
+<map name="os__time_8c_a52ea8cb1d86d17ee7cfed22df59d8667_cgraph" id="os__time_8c_a52ea8cb1d86d17ee7cfed22df59d8667_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="189,5,275,32"/><area shape="rect" id="node3" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="323,5,434,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af4512ccbbb9b56ed14c8b7160ae57bcc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> OSTimeGet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__time_8c_source.html">os_time.c</a> 第 <a class="el" href="os__time_8c_source.html#l00216">216</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00780">OSTime</a>.</p>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>     ticks;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    ticks = <a class="code" href="ucos__ii_8h.html#a8edf459d0cc62ee7c523ce3bb88dd0ce">OSTime</a>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">return</span> (ticks);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a8304f00a85a5be84f4727ff04a40109b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSTimeSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>&#160;</td>
+          <td class="paramname"><em>ticks</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__time_8c_source.html">os_time.c</a> 第 <a class="el" href="os__time_8c_source.html#l00245">245</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00780">OSTime</a>.</p>
+<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="ucos__ii_8h.html#a8edf459d0cc62ee7c523ce3bb88dd0ce">OSTime</a> = ticks;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_71bcdadcecd7b5ff1becd3dd629fd845.html">uCOS-II</a></li><li class="navelem"><a class="el" href="dir_039f0bfb9474175ba2ca0fe1aa10ce74.html">Source</a></li><li class="navelem"><a class="el" href="os__time_8c.html">os_time.c</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:46 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

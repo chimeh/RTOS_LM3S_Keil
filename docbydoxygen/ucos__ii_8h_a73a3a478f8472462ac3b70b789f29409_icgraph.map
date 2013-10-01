@@ -1,0 +1,5 @@
+<map id="OS_TaskIdle" name="OS_TaskIdle">
+<area shape="rect" id="node2" href="$os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="150,5,263,32"/>
+<area shape="rect" id="node3" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="312,5,371,32"/>
+<area shape="rect" id="node4" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="419,5,469,32"/>
+</map>

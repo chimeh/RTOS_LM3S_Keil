@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uC-LIB/lib_math.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('lib__math_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">lib_math.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="cpu_8h_source.html">cpu.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="cpu__core_8h_source.html">cpu_core.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="lib__def_8h_source.html">lib_def.h</a>&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+lib_math.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__math_8h__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__math_8h" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__math_8h" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__math_8h">
+<area shape="rect" id="node2" href="cpu_8h.html" title="cpu.h" alt="" coords="673,395,727,421"/><area shape="rect" id="node5" href="cpu__core_8h.html" title="cpu_core.h" alt="" coords="707,96,793,123"/><area shape="rect" id="node6" href="lib__def_8h.html" title="lib_def.h" alt="" coords="715,320,785,347"/><area shape="rect" id="node3" href="cpu__def_8h.html" title="cpu_def.h" alt="" coords="661,469,739,496"/><area shape="rect" id="node4" href="u_c-_c_p_u_2cpu__cfg_8h.html" title="cpu_cfg.h" alt="" coords="287,469,365,496"/><area shape="rect" id="node7" href="lib__mem_8h.html" title="lib_mem.h" alt="" coords="788,171,871,197"/><area shape="rect" id="node9" href="lib__str_8h.html" title="lib_str.h" alt="" coords="503,171,571,197"/><area shape="rect" id="node8" href="app__cfg_8h.html" title="app_cfg.h" alt="" coords="789,245,867,272"/><area shape="rect" id="node10" href="lib__ascii_8h.html" title="lib_ascii.h" alt="" coords="93,245,173,272"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__math_8h__dep__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__math_8hdep" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__math_8hdep" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c-_l_i_b_2lib__math_8hdep">
+<area shape="rect" id="node2" href="includes_8h.html" title="UCOS_TI_LM3S_Keil/APP\l/includes.h" alt="" coords="105,97,281,138"/><area shape="rect" id="node5" href="lib__math_8c.html" title="UCOS_TI_LM3S_Keil/uC\l&#45;LIB/lib_math.c" alt="" coords="306,97,472,138"/><area shape="rect" id="node3" href="app_8c.html" title="UCOS_TI_LM3S_Keil/APP\l/app.c" alt="" coords="5,187,181,229"/><area shape="rect" id="node4" href="app__vect_8c.html" title="UCOS_TI_LM3S_Keil/APP\l/app_vect.c" alt="" coords="206,187,383,229"/></map>
+</div>
+</div>
+<p><a href="lib__math_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ae71b3adb4e8bcd190451b4055eb90fa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#ae71b3adb4e8bcd190451b4055eb90fa3">LIB_MATH_EXT</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:ae71b3adb4e8bcd190451b4055eb90fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae214962ae37b991e9203fa38ae474ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#aae214962ae37b991e9203fa38ae474ba">RAND_SEED_INIT_VAL</a>&#160;&#160;&#160;1u   /* See Note #1a.                                        */</td></tr>
+<tr class="separator:aae214962ae37b991e9203fa38ae474ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52028c4ff5f04cdc1121984c04d6b1c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#a52028c4ff5f04cdc1121984c04d6b1c0">RAND_LCG_PARAM_M</a>&#160;&#160;&#160;0x7FFFFFFFu   /* See Note #1b2B.                                      */</td></tr>
+<tr class="separator:a52028c4ff5f04cdc1121984c04d6b1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33c1c4f5c92f00976fee0d223edeb64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#ad33c1c4f5c92f00976fee0d223edeb64">RAND_LCG_PARAM_A</a>&#160;&#160;&#160;1103515245u   /* See Note #1b1A2.                                     */</td></tr>
+<tr class="separator:ad33c1c4f5c92f00976fee0d223edeb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf14d96b3f54b1b0e8ca21131b690a6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#adf14d96b3f54b1b0e8ca21131b690a6d">RAND_LCG_PARAM_B</a>&#160;&#160;&#160;12345u   /* See Note #1b1A3.                                     */</td></tr>
+<tr class="separator:adf14d96b3f54b1b0e8ca21131b690a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a294e63743d9a35b581b14ef99721cf89"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a></td></tr>
+<tr class="separator:a294e63743d9a35b581b14ef99721cf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a30225660ab55b043deefda89e04badc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#a30225660ab55b043deefda89e04badc0">Math_Init</a> (void)</td></tr>
+<tr class="separator:a30225660ab55b043deefda89e04badc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2877ce215667da9483779801899b7cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#aa2877ce215667da9483779801899b7cc">Math_RandSetSeed</a> (<a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a> seed)</td></tr>
+<tr class="separator:aa2877ce215667da9483779801899b7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4e55183e1e78601551a77604f97998"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#a1d4e55183e1e78601551a77604f97998">Math_Rand</a> (void)</td></tr>
+<tr class="separator:a1d4e55183e1e78601551a77604f97998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263887e93e6e2dc0dbb0def756c9a3fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lib__math_8h.html#a263887e93e6e2dc0dbb0def756c9a3fa">Math_RandSeed</a> (<a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a> seed)</td></tr>
+<tr class="separator:a263887e93e6e2dc0dbb0def756c9a3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ae71b3adb4e8bcd190451b4055eb90fa3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIB_MATH_EXT&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8h_source.html">lib_math.h</a> 第 <a class="el" href="lib__math_8h_source.html#l00115">115</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae214962ae37b991e9203fa38ae474ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAND_SEED_INIT_VAL&#160;&#160;&#160;1u   /* See Note #1a.                                        */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8h_source.html">lib_math.h</a> 第 <a class="el" href="lib__math_8h_source.html#l00160">160</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__math_8c_source.html#l00147">Math_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52028c4ff5f04cdc1121984c04d6b1c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAND_LCG_PARAM_M&#160;&#160;&#160;0x7FFFFFFFu   /* See Note #1b2B.                                      */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8h_source.html">lib_math.h</a> 第 <a class="el" href="lib__math_8h_source.html#l00162">162</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__math_8c_source.html#l00275">Math_RandSeed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad33c1c4f5c92f00976fee0d223edeb64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAND_LCG_PARAM_A&#160;&#160;&#160;1103515245u   /* See Note #1b1A2.                                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8h_source.html">lib_math.h</a> 第 <a class="el" href="lib__math_8h_source.html#l00163">163</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__math_8c_source.html#l00275">Math_RandSeed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf14d96b3f54b1b0e8ca21131b690a6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RAND_LCG_PARAM_B&#160;&#160;&#160;12345u   /* See Note #1b1A3.                                     */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8h_source.html">lib_math.h</a> 第 <a class="el" href="lib__math_8h_source.html#l00164">164</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="lib__math_8c_source.html#l00275">Math_RandSeed()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a class="anchor" id="a294e63743d9a35b581b14ef99721cf89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="cpu__pr_8h.html#ac049d4711475abaa82ae161753fb18b0">CPU_INT32U</a> <a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8h_source.html">lib_math.h</a> 第 <a class="el" href="lib__math_8h_source.html#l00180">180</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a30225660ab55b043deefda89e04badc0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Math_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8c_source.html">lib_math.c</a> 第 <a class="el" href="lib__math_8c_source.html#l00147">147</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__math_8c_source.html#l00176">Math_RandSetSeed()</a> , 以及 <a class="el" href="lib__math_8h_source.html#l00160">RAND_SEED_INIT_VAL</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00209">App_TaskStart()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="lib__math_8c.html#aa2877ce215667da9483779801899b7cc">Math_RandSetSeed</a>((<a class="code" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>)<a class="code" href="lib__math_8h.html#aae214962ae37b991e9203fa38ae474ba">RAND_SEED_INIT_VAL</a>);             <span class="comment">/* See Note #2.                                         */</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__math_8h_a30225660ab55b043deefda89e04badc0_cgraph.png" border="0" usemap="#lib__math_8h_a30225660ab55b043deefda89e04badc0_cgraph" alt=""/></div>
+<map name="lib__math_8h_a30225660ab55b043deefda89e04badc0_cgraph" id="lib__math_8h_a30225660ab55b043deefda89e04badc0_cgraph">
+<area shape="rect" id="node2" href="lib__math_8c.html#aa2877ce215667da9483779801899b7cc" title="Math_RandSetSeed" alt="" coords="128,5,267,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__math_8h_a30225660ab55b043deefda89e04badc0_icgraph.png" border="0" usemap="#lib__math_8h_a30225660ab55b043deefda89e04badc0_icgraph" alt=""/></div>
+<map name="lib__math_8h_a30225660ab55b043deefda89e04badc0_icgraph" id="lib__math_8h_a30225660ab55b043deefda89e04badc0_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="129,5,237,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="285,5,336,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2877ce215667da9483779801899b7cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Math_RandSetSeed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>&#160;</td>
+          <td class="paramname"><em>seed</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8c_source.html">lib_math.c</a> 第 <a class="el" href="lib__math_8c_source.html#l00176">176</a> 行定义.</p>
+
+<p>参考 <a class="el" href="cpu_8h_source.html#l00307">CPU_CRITICAL_ENTER</a>, <a class="el" href="cpu_8h_source.html#l00308">CPU_CRITICAL_EXIT</a>, <a class="el" href="cpu_8h_source.html#l00284">CPU_SR_ALLOC</a> , 以及 <a class="el" href="lib__math_8c_source.html#l00108">Math_RandSeedCur</a>.</p>
+
+<p>参考自 <a class="el" href="lib__math_8c_source.html#l00147">Math_Init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="cpu_8h.html#a9613b70052445254c261863595b0b6e5">CPU_SR_ALLOC</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="cpu_8h.html#a8f6a325617b3c9daea0084d5eed2698e">CPU_CRITICAL_ENTER</a>();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="lib__math_8c.html#a3df70bcdf79648cc155427dffae3d7d8">Math_RandSeedCur</a> = seed;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="cpu_8h.html#a14c1c05de85cf8a230d24ded521b1ed5">CPU_CRITICAL_EXIT</a>();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__math_8h_aa2877ce215667da9483779801899b7cc_icgraph.png" border="0" usemap="#lib__math_8h_aa2877ce215667da9483779801899b7cc_icgraph" alt=""/></div>
+<map name="lib__math_8h_aa2877ce215667da9483779801899b7cc_icgraph" id="lib__math_8h_aa2877ce215667da9483779801899b7cc_icgraph">
+<area shape="rect" id="node2" href="lib__math_8h.html#a30225660ab55b043deefda89e04badc0" title="Math_Init" alt="" coords="192,5,267,32"/><area shape="rect" id="node3" href="app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="315,5,423,32"/><area shape="rect" id="node4" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="472,5,523,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d4e55183e1e78601551a77604f97998"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a> Math_Rand </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8c_source.html">lib_math.c</a> 第 <a class="el" href="lib__math_8c_source.html#l00217">217</a> 行定义.</p>
+
+<p>参考 <a class="el" href="cpu_8h_source.html#l00307">CPU_CRITICAL_ENTER</a>, <a class="el" href="cpu_8h_source.html#l00308">CPU_CRITICAL_EXIT</a>, <a class="el" href="cpu_8h_source.html#l00284">CPU_SR_ALLOC</a>, <a class="el" href="lib__math_8c_source.html#l00275">Math_RandSeed()</a> , 以及 <a class="el" href="lib__math_8c_source.html#l00108">Math_RandSeedCur</a>.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;{</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>  seed;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>  rand_nbr;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="cpu_8h.html#a9613b70052445254c261863595b0b6e5">CPU_SR_ALLOC</a>();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="cpu_8h.html#a8f6a325617b3c9daea0084d5eed2698e">CPU_CRITICAL_ENTER</a>();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    seed             = <a class="code" href="lib__math_8c.html#a3df70bcdf79648cc155427dffae3d7d8">Math_RandSeedCur</a>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    rand_nbr         = <a class="code" href="lib__math_8c.html#a263887e93e6e2dc0dbb0def756c9a3fa">Math_RandSeed</a>(seed);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="lib__math_8c.html#a3df70bcdf79648cc155427dffae3d7d8">Math_RandSeedCur</a> = rand_nbr;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="cpu_8h.html#a14c1c05de85cf8a230d24ded521b1ed5">CPU_CRITICAL_EXIT</a>();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">return</span> (rand_nbr);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__math_8h_a1d4e55183e1e78601551a77604f97998_cgraph.png" border="0" usemap="#lib__math_8h_a1d4e55183e1e78601551a77604f97998_cgraph" alt=""/></div>
+<map name="lib__math_8h_a1d4e55183e1e78601551a77604f97998_cgraph" id="lib__math_8h_a1d4e55183e1e78601551a77604f97998_cgraph">
+<area shape="rect" id="node2" href="lib__math_8c.html#a263887e93e6e2dc0dbb0def756c9a3fa" title="Math_RandSeed" alt="" coords="142,5,261,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a263887e93e6e2dc0dbb0def756c9a3fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a> Math_RandSeed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>&#160;</td>
+          <td class="paramname"><em>seed</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="lib__math_8c_source.html">lib_math.c</a> 第 <a class="el" href="lib__math_8c_source.html#l00275">275</a> 行定义.</p>
+
+<p>参考 <a class="el" href="lib__math_8h_source.html#l00163">RAND_LCG_PARAM_A</a>, <a class="el" href="lib__math_8h_source.html#l00164">RAND_LCG_PARAM_B</a> , 以及 <a class="el" href="lib__math_8h_source.html#l00162">RAND_LCG_PARAM_M</a>.</p>
+
+<p>参考自 <a class="el" href="lib__math_8c_source.html#l00217">Math_Rand()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;{</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>  rand_nbr;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    rand_nbr = (((<a class="code" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>)<a class="code" href="lib__math_8h.html#ad33c1c4f5c92f00976fee0d223edeb64">RAND_LCG_PARAM_A</a> * seed) + (<a class="code" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>)<a class="code" href="lib__math_8h.html#adf14d96b3f54b1b0e8ca21131b690a6d">RAND_LCG_PARAM_B</a>)  %  ((<a class="code" href="lib__math_8h.html#a294e63743d9a35b581b14ef99721cf89">RAND_NBR</a>)<a class="code" href="lib__math_8h.html#a52028c4ff5f04cdc1121984c04d6b1c0">RAND_LCG_PARAM_M</a> + 1);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">return</span> (rand_nbr);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="lib__math_8h_a263887e93e6e2dc0dbb0def756c9a3fa_icgraph.png" border="0" usemap="#lib__math_8h_a263887e93e6e2dc0dbb0def756c9a3fa_icgraph" alt=""/></div>
+<map name="lib__math_8h_a263887e93e6e2dc0dbb0def756c9a3fa_icgraph" id="lib__math_8h_a263887e93e6e2dc0dbb0def756c9a3fa_icgraph">
+<area shape="rect" id="node2" href="lib__math_8h.html#a1d4e55183e1e78601551a77604f97998" title="Math_Rand" alt="" coords="173,5,261,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_67fecfbdfd1e64087a1302f9ae2874c1.html">uC-LIB</a></li><li class="navelem"><a class="el" href="lib__math_8h.html">lib_math.h</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:43 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

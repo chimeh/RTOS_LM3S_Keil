@@ -1,0 +1,6 @@
+<map id="BSP_IntHandler" name="BSP_IntHandler">
+<area shape="rect" id="node2" href="$os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="169,5,255,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="173,56,251,83"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="305,31,415,57"/>
+<area shape="rect" id="node5" href="$os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="313,81,407,108"/>
+</map>

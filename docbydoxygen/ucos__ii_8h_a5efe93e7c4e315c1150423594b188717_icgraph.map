@@ -1,0 +1,11 @@
+<map id="OS_TaskStkClr" name="OS_TaskStkClr">
+<area shape="rect" id="node2" href="$ucos__ii_8h.html#afc7f3dc9d4456c1be5e060da4d5c3afd" title="OSTaskCreateExt" alt="" coords="166,107,293,133"/>
+<area shape="rect" id="node3" href="$app_8c.html#a00ec7c6108f783a8dabbc5ccc6b3f64a" title="App_TaskCreate" alt="" coords="342,5,461,32"/>
+<area shape="rect" id="node5" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="832,56,883,83"/>
+<area shape="rect" id="node6" href="$os__core_8c.html#af870ae7949072c168fd4f8c17d1ae9c6" title="OS_InitTaskIdle" alt="" coords="511,107,625,133"/>
+<area shape="rect" id="node8" href="$os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="509,157,627,184"/>
+<area shape="rect" id="node9" href="$os__tmr_8c.html#a181e1b8d9b27b125a9d81cb8e4cb503b" title="OSTmr_InitTask" alt="" coords="344,208,459,235"/>
+<area shape="rect" id="node4" href="$app_8c.html#a9d49987cbbcbda5c3e1ae2b6de3c68be" title="App_TaskStart" alt="" coords="675,5,783,32"/>
+<area shape="rect" id="node7" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="700,132,759,159"/>
+<area shape="rect" id="node10" href="$ucos__ii_8h.html#a4d136013298ac20faeadac229fb30c21" title="OSTmr_Init" alt="" coords="525,208,611,235"/>
+</map>

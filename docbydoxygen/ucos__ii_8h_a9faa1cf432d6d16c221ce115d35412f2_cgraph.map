@@ -1,0 +1,7 @@
+<map id="OSTmrNameGet" name="OSTmrNameGet">
+<area shape="rect" id="node2" href="$os__core_8c.html#a97dc1f3c7f7c04d67c65bc58d015faaf" title="OS_StrLen" alt="" coords="190,5,277,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#ae57079213997465346e3836c7fe037c2" title="OSSchedLock" alt="" coords="180,56,287,83"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#accb8ef08bd5b8ee1376b200e9f4ee9f7" title="OSSchedUnlock" alt="" coords="174,107,293,133"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="341,107,427,133"/>
+<area shape="rect" id="node6" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="475,107,586,133"/>
+</map>

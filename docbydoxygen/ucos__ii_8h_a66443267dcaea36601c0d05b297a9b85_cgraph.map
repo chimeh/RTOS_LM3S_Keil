@@ -1,0 +1,4 @@
+<map id="OS_EventTaskRdy" name="OS_EventTaskRdy">
+<area shape="rect" id="node2" href="$os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="199,5,353,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="185,56,367,83"/>
+</map>

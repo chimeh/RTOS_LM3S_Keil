@@ -1,0 +1,5 @@
+<map id="OSTmrSignal" name="OSTmrSignal">
+<area shape="rect" id="node2" href="$ucos__ii_8h.html#a9580a668e52ffe7fcb5429e80d6eac8f" title="OSTimeTickHook" alt="" coords="152,5,275,32"/>
+<area shape="rect" id="node3" href="$ucos__ii_8h.html#abf35bebb7ed88c38c212ee675f3713db" title="OSTimeTick" alt="" coords="323,5,416,32"/>
+<area shape="rect" id="node4" href="$os__cpu__c_8c.html#ad1e1489143c09755d37135acc3ac6fb4" title="OS_CPU_SysTickHandler" alt="" coords="464,5,637,32"/>
+</map>

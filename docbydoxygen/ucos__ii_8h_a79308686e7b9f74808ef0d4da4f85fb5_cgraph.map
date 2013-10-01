@@ -1,0 +1,7 @@
+<map id="OSMboxPendAbort" name="OSMboxPendAbort">
+<area shape="rect" id="node2" href="$os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="189,56,320,83"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="212,107,297,133"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="383,5,537,32"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="369,56,551,83"/>
+<area shape="rect" id="node6" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="405,107,515,133"/>
+</map>

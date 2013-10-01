@@ -1,0 +1,8 @@
+<map id="OSTmrSignal" name="OSTmrSignal">
+<area shape="rect" id="node2" href="$os__sem_8c.html#a972bf8ea56228c25b4170695248727d6" title="OSSemPost" alt="" coords="153,81,247,108"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="296,56,427,83"/>
+<area shape="rect" id="node6" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="319,107,404,133"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="489,5,644,32"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="475,56,658,83"/>
+<area shape="rect" id="node7" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="511,107,622,133"/>
+</map>

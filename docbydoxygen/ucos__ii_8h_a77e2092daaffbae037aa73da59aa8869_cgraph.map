@@ -1,0 +1,14 @@
+<map id="OS_TaskReturn" name="OS_TaskReturn">
+<area shape="rect" id="node2" href="$os__task_8c.html#a3a74414523d1a21d5248a2aa8052677f" title="OSTaskDel" alt="" coords="193,157,281,184"/>
+<area shape="rect" id="node11" href="$os__cpu__c_8c.html#a991988ad073d5ed20e3574bde354a733" title="OSTaskReturnHook" alt="" coords="169,309,306,336"/>
+<area shape="rect" id="node13" href="$os__time_8c.html#a79fa80d326d321b4823c6d518db941ba" title="OSTimeDly" alt="" coords="193,259,281,285"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#ad0dd3f8afd8d36a8cead860a53fffc92" title="OS_Dummy" alt="" coords="400,107,493,133"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="369,157,524,184"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="355,208,538,235"/>
+<area shape="rect" id="node6" href="$os__flag_8c.html#a7ad520bab57668b9a7f797d85bd2a5c7" title="OS_FlagUnlink" alt="" coords="392,5,501,32"/>
+<area shape="rect" id="node7" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="404,259,489,285"/>
+<area shape="rect" id="node9" href="$os__cpu__c_8c.html#a4d335ed0146fb4692f6a9ba561968391" title="OSTaskDelHook" alt="" coords="387,56,506,83"/>
+<area shape="rect" id="node8" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="597,259,707,285"/>
+<area shape="rect" id="node10" href="$os__app__hooks_8c.html#a23eb4142fb74b9314bec7495de78ea38" title="App_TaskDelHook" alt="" coords="587,56,717,83"/>
+<area shape="rect" id="node12" href="$os__app__hooks_8c.html#ae3aa4909a651d49a3b93780007c660d5" title="App_TaskReturnHook" alt="" coords="373,309,521,336"/>
+</map>

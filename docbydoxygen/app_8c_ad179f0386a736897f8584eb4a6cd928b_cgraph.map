@@ -1,0 +1,5 @@
+<map id="App_EventCreate" name="App_EventCreate">
+<area shape="rect" id="node2" href="$os__core_8c.html#a4436b744a481644cf77c6addfae09ffa" title="OSEventNameSet" alt="" coords="177,5,303,32"/>
+<area shape="rect" id="node3" href="$os__mbox_8c.html#a62808c7bc864fa96f4ec694edd0b2d8e" title="OSMboxCreate" alt="" coords="185,56,295,83"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a905a0e05a1feccd489e2096ceb9aa086" title="OS_EventWaitListInit" alt="" coords="353,56,498,83"/>
+</map>

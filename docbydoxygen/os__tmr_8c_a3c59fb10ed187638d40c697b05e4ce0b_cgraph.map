@@ -1,0 +1,11 @@
+<map id="OSTmr_Task" name="OSTmr_Task">
+<area shape="rect" id="node2" href="$os__core_8c.html#ae57079213997465346e3836c7fe037c2" title="OSSchedLock" alt="" coords="159,5,265,32"/>
+<area shape="rect" id="node3" href="$os__core_8c.html#accb8ef08bd5b8ee1376b200e9f4ee9f7" title="OSSchedUnlock" alt="" coords="153,56,271,83"/>
+<area shape="rect" id="node6" href="$os__sem_8c.html#a108896df2b5c0b9b43f7388acab11b8e" title="OSSemPend" alt="" coords="163,107,261,133"/>
+<area shape="rect" id="node9" href="$os__tmr_8c.html#a6ac24f63bf5396eb6bc564e8a01c5ac4" title="OSTmr_Link" alt="" coords="165,157,259,184"/>
+<area shape="rect" id="node10" href="$os__tmr_8c.html#af2697aef44464fae1857cae97694e4f4" title="OSTmr_Unlink" alt="" coords="159,208,265,235"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="355,56,440,83"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,56,634,83"/>
+<area shape="rect" id="node7" href="$os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="320,107,475,133"/>
+<area shape="rect" id="node8" href="$os__core_8c.html#a72ffa04010427c899c109336e1de0046" title="OS_EventTaskWait" alt="" coords="330,157,465,184"/>
+</map>

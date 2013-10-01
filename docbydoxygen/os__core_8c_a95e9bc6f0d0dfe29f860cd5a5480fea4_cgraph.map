@@ -1,0 +1,6 @@
+<map id="OS_TCBInit" name="OS_TCBInit">
+<area shape="rect" id="node2" href="$os__cpu__c_8c.html#ae1fb9d8cc4bd490553efd061f0a3f68e" title="OSTaskCreateHook" alt="" coords="145,5,282,32"/>
+<area shape="rect" id="node4" href="$os__cpu__c_8c.html#ad175126f54000a30bf15a47ba68cffc4" title="OSTCBInitHook" alt="" coords="157,56,270,83"/>
+<area shape="rect" id="node3" href="$os__app__hooks_8c.html#a3fe26c8f7986e71fe528b5e682c3897d" title="App_TaskCreateHook" alt="" coords="331,5,479,32"/>
+<area shape="rect" id="node5" href="$os__app__hooks_8c.html#a3d5498f1cb00285147781e84ddc75a3d" title="App_TCBInitHook" alt="" coords="343,56,467,83"/>
+</map>

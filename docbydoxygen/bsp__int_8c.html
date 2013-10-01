@@ -1,0 +1,1888 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/BSP/bsp_int.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('bsp__int_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">bsp_int.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="bsp_8h_source.html">bsp.h</a>&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+bsp_int.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2_b_s_p_2bsp__int_8c" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2_b_s_p_2bsp__int_8c" id="_u_c_o_s___t_i___l_m3_s___keil_2_b_s_p_2bsp__int_8c">
+<area shape="rect" id="node2" href="bsp_8h.html" title="bsp.h" alt="" coords="1306,96,1360,123"/><area shape="rect" id="node3" href="cpu_8h.html" title="cpu.h" alt="" coords="318,469,372,496"/><area shape="rect" id="node6" href="cpu__core_8h.html" title="cpu_core.h" alt="" coords="218,171,304,197"/><area shape="rect" id="node17" href="bsp__int_8h.html" title="bsp_int.h" alt="" coords="1044,171,1119,197"/><area shape="rect" id="node18" href="bsp__ser_8h.html" title="bsp_ser.h" alt="" coords="1143,171,1221,197"/><area shape="rect" id="node20" href="bsp__os_8h.html" title="bsp_os.h" alt="" coords="1247,171,1321,197"/><area shape="rect" id="node4" href="cpu__def_8h.html" title="cpu_def.h" alt="" coords="306,544,384,571"/><area shape="rect" id="node5" href="u_c-_c_p_u_2cpu__cfg_8h.html" title="cpu_cfg.h" alt="" coords="85,544,163,571"/><area shape="rect" id="node7" href="lib__def_8h.html" title="lib_def.h" alt="" coords="251,395,321,421"/><area shape="rect" id="node8" href="lib__mem_8h.html" title="lib_mem.h" alt="" coords="141,245,224,272"/><area shape="rect" id="node10" href="lib__str_8h.html" title="lib_str.h" alt="" coords="479,245,547,272"/><area shape="rect" id="node9" href="app__cfg_8h.html" title="app_cfg.h" alt="" coords="145,320,223,347"/><area shape="rect" id="node11" href="lib__ascii_8h.html" title="lib_ascii.h" alt="" coords="435,320,515,347"/><area shape="rect" id="node21" href="ucos__ii_8h.html" title="ucos_ii.h" alt="" coords="1247,245,1321,272"/><area shape="rect" id="node22" href="_a_p_p_2os__cfg_8h.html" title="os_cfg.h" alt="" coords="1201,320,1271,347"/><area shape="rect" id="node23" href="os__cpu_8h.html" title="os_cpu.h" alt="" coords="1296,320,1371,347"/></map>
+</div>
+</div>
+<p><a href="bsp__int_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad23f942acb52bef80ccdf6b5bc96723c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ad23f942acb52bef80ccdf6b5bc96723c">BSP_INT_MODULE</a></td></tr>
+<tr class="separator:ad23f942acb52bef80ccdf6b5bc96723c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd1551a44f0029e3c7a11030ec67490"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>&#160;&#160;&#160;46u</td></tr>
+<tr class="separator:a9dd1551a44f0029e3c7a11030ec67490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8cb092c15c008f1d8ba4321a43fe8d64"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a> (<a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a> int_id)</td></tr>
+<tr class="separator:a8cb092c15c008f1d8ba4321a43fe8d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e72b2f47419d8140a58e44de3af12c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a4e72b2f47419d8140a58e44de3af12c1">BSP_IntHandlerDummy</a> (void)</td></tr>
+<tr class="separator:a4e72b2f47419d8140a58e44de3af12c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95532cd85ee6d87f598b7a77dde8d00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ad95532cd85ee6d87f598b7a77dde8d00">BSP_IntClr</a> (<a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a> int_id)</td></tr>
+<tr class="separator:ad95532cd85ee6d87f598b7a77dde8d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab563e154671bbffcd2e4b45ff17494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a4ab563e154671bbffcd2e4b45ff17494">BSP_IntDis</a> (<a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a> int_id)</td></tr>
+<tr class="separator:a4ab563e154671bbffcd2e4b45ff17494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14251c960bcc1fe0d82dbf91f8858e34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a14251c960bcc1fe0d82dbf91f8858e34">BSP_IntDisAll</a> (void)</td></tr>
+<tr class="separator:a14251c960bcc1fe0d82dbf91f8858e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a3f247742fbb06c6d9ac75f247a222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ac8a3f247742fbb06c6d9ac75f247a222">BSP_IntEn</a> (<a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a> int_id)</td></tr>
+<tr class="separator:ac8a3f247742fbb06c6d9ac75f247a222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a9b2a782d11a30676238d4da5f81d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a43a9b2a782d11a30676238d4da5f81d0">BSP_IntVectSet</a> (<a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a> int_id, <a class="el" href="cpu_8h.html#a1a3293affb5c1c53acd52503cfdce8d6">CPU_FNCT_VOID</a> isr)</td></tr>
+<tr class="separator:a43a9b2a782d11a30676238d4da5f81d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb01001018ab38158f0e4c174194da56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#aeb01001018ab38158f0e4c174194da56">BSP_IntPrioSet</a> (<a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a> int_id, <a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a> prio)</td></tr>
+<tr class="separator:aeb01001018ab38158f0e4c174194da56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25cb43e8b6d2e3efa3bc5cf6aa22e5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ad25cb43e8b6d2e3efa3bc5cf6aa22e5e">BSP_IntInit</a> (void)</td></tr>
+<tr class="separator:ad25cb43e8b6d2e3efa3bc5cf6aa22e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e8a40a7c3f632343a44cd4e9ef2ee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ac5e8a40a7c3f632343a44cd4e9ef2ee9">BSP_IntHandlerGPIOA</a> (void)</td></tr>
+<tr class="separator:ac5e8a40a7c3f632343a44cd4e9ef2ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf4668d56bca81773d264c9336a2cc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#acdf4668d56bca81773d264c9336a2cc3">BSP_IntHandlerGPIOB</a> (void)</td></tr>
+<tr class="separator:acdf4668d56bca81773d264c9336a2cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d45ceaf0f606d66d6656d1d0dc3fa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ac9d45ceaf0f606d66d6656d1d0dc3fa2">BSP_IntHandlerGPIOC</a> (void)</td></tr>
+<tr class="separator:ac9d45ceaf0f606d66d6656d1d0dc3fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728cfca4373a16a11596738daec9e9f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a728cfca4373a16a11596738daec9e9f7">BSP_IntHandlerGPIOD</a> (void)</td></tr>
+<tr class="separator:a728cfca4373a16a11596738daec9e9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe0bd5356d1244c02f6ba98e44349152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#afe0bd5356d1244c02f6ba98e44349152">BSP_IntHandlerGPIOE</a> (void)</td></tr>
+<tr class="separator:afe0bd5356d1244c02f6ba98e44349152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9bbbf852f53f5c77f449485a4d288a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ac9bbbf852f53f5c77f449485a4d288a4">BSP_IntHandlerUART0</a> (void)</td></tr>
+<tr class="separator:ac9bbbf852f53f5c77f449485a4d288a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d6d0dccc5594f984867d91cb647fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a03d6d0dccc5594f984867d91cb647fbd">BSP_IntHandlerUART1</a> (void)</td></tr>
+<tr class="separator:a03d6d0dccc5594f984867d91cb647fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e40612be7710cc609fd7dee77f8523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a08e40612be7710cc609fd7dee77f8523">BSP_IntHandlerSSI0</a> (void)</td></tr>
+<tr class="separator:a08e40612be7710cc609fd7dee77f8523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8788f2ce4e612a669c09098c6eff68fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a8788f2ce4e612a669c09098c6eff68fc">BSP_IntHandlerI2C0</a> (void)</td></tr>
+<tr class="separator:a8788f2ce4e612a669c09098c6eff68fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a294c5ea43749706175825369de29a8c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a294c5ea43749706175825369de29a8c5">BSP_IntHandlerPWM_FAULT</a> (void)</td></tr>
+<tr class="separator:a294c5ea43749706175825369de29a8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347689e95305a7a28740b644da43a861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a347689e95305a7a28740b644da43a861">BSP_IntHandlerPWM_GEN0</a> (void)</td></tr>
+<tr class="separator:a347689e95305a7a28740b644da43a861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3b136df3d372b1708a06f1167b6656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a4a3b136df3d372b1708a06f1167b6656">BSP_IntHandlerPWM_GEN1</a> (void)</td></tr>
+<tr class="separator:a4a3b136df3d372b1708a06f1167b6656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99171dfb12d98cfa4383f06172037e0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a99171dfb12d98cfa4383f06172037e0f">BSP_IntHandlerPWM_GEN2</a> (void)</td></tr>
+<tr class="separator:a99171dfb12d98cfa4383f06172037e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24df141eadd8d4bb0b87ef26eb985410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a24df141eadd8d4bb0b87ef26eb985410">BSP_IntHandlerQEI0</a> (void)</td></tr>
+<tr class="separator:a24df141eadd8d4bb0b87ef26eb985410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b3b94c23717cd78ec4e98a3db7ed23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a16b3b94c23717cd78ec4e98a3db7ed23">BSP_IntHandlerADC0</a> (void)</td></tr>
+<tr class="separator:a16b3b94c23717cd78ec4e98a3db7ed23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32436fa6d821383d8c384bcb0071bb0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a32436fa6d821383d8c384bcb0071bb0a">BSP_IntHandlerADC1</a> (void)</td></tr>
+<tr class="separator:a32436fa6d821383d8c384bcb0071bb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abbbb33ac0f7b12c0da98e2f8c3bbe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a0abbbb33ac0f7b12c0da98e2f8c3bbe4">BSP_IntHandlerADC2</a> (void)</td></tr>
+<tr class="separator:a0abbbb33ac0f7b12c0da98e2f8c3bbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0580ffb74c2eee5c824373474b89df2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a0580ffb74c2eee5c824373474b89df2e">BSP_IntHandlerADC3</a> (void)</td></tr>
+<tr class="separator:a0580ffb74c2eee5c824373474b89df2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985d8fb2169238272fb131fd2a57c79e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a985d8fb2169238272fb131fd2a57c79e">BSP_IntHandlerWATCHDOG</a> (void)</td></tr>
+<tr class="separator:a985d8fb2169238272fb131fd2a57c79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b61cf90a3136369d1f11196d8e713ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a8b61cf90a3136369d1f11196d8e713ed">BSP_IntHandlerTIMER0A</a> (void)</td></tr>
+<tr class="separator:a8b61cf90a3136369d1f11196d8e713ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b2450a6f922d0203a9c42dc17aba68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a61b2450a6f922d0203a9c42dc17aba68">BSP_IntHandlerTIMER0B</a> (void)</td></tr>
+<tr class="separator:a61b2450a6f922d0203a9c42dc17aba68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf80083e0adff10530e357c2e882aca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a1bf80083e0adff10530e357c2e882aca">BSP_IntHandlerTIMER1A</a> (void)</td></tr>
+<tr class="separator:a1bf80083e0adff10530e357c2e882aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6946270499c00fd826048d159d8bd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a5a6946270499c00fd826048d159d8bd6">BSP_IntHandlerTIMER1B</a> (void)</td></tr>
+<tr class="separator:a5a6946270499c00fd826048d159d8bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e4b83839bc4e5b2c47bb097fb7e543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ab9e4b83839bc4e5b2c47bb097fb7e543">BSP_IntHandlerTIMER2A</a> (void)</td></tr>
+<tr class="separator:ab9e4b83839bc4e5b2c47bb097fb7e543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2fc2151db90630577d1e2218d36ed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a4a2fc2151db90630577d1e2218d36ed3">BSP_IntHandlerTIMER2B</a> (void)</td></tr>
+<tr class="separator:a4a2fc2151db90630577d1e2218d36ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4946157b3ad715ab5cbc250f9bd7838b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a4946157b3ad715ab5cbc250f9bd7838b">BSP_IntHandlerCOMP0</a> (void)</td></tr>
+<tr class="separator:a4946157b3ad715ab5cbc250f9bd7838b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45cde074095874e8627ca50540677c27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a45cde074095874e8627ca50540677c27">BSP_IntHandlerCOMP1</a> (void)</td></tr>
+<tr class="separator:a45cde074095874e8627ca50540677c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a55edffa30ab4c0ab7952d99510b49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ac3a55edffa30ab4c0ab7952d99510b49">BSP_IntHandlerCOMP2</a> (void)</td></tr>
+<tr class="separator:ac3a55edffa30ab4c0ab7952d99510b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9439914094dbd317f41dec6d593392e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a9439914094dbd317f41dec6d593392e5">BSP_IntHandlerSYSCTL</a> (void)</td></tr>
+<tr class="separator:a9439914094dbd317f41dec6d593392e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac198daa2b0957f983adb207ad33ff3a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ac198daa2b0957f983adb207ad33ff3a3">BSP_IntHandlerFLASH</a> (void)</td></tr>
+<tr class="separator:ac198daa2b0957f983adb207ad33ff3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e735ead54e14c863d3d60fde0b565f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a4e735ead54e14c863d3d60fde0b565f4">BSP_IntHandlerGPIOF</a> (void)</td></tr>
+<tr class="separator:a4e735ead54e14c863d3d60fde0b565f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3113ce5a04cdced1eaeb6b17222aa169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a3113ce5a04cdced1eaeb6b17222aa169">BSP_IntHandlerGPIOG</a> (void)</td></tr>
+<tr class="separator:a3113ce5a04cdced1eaeb6b17222aa169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b49c2bbaabbcd57dbe1e3d407d7e0e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a3b49c2bbaabbcd57dbe1e3d407d7e0e5">BSP_IntHandlerGPIOH</a> (void)</td></tr>
+<tr class="separator:a3b49c2bbaabbcd57dbe1e3d407d7e0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c199968842d7cffef7c66278fab0fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a9c199968842d7cffef7c66278fab0fc4">BSP_IntHandlerUART2</a> (void)</td></tr>
+<tr class="separator:a9c199968842d7cffef7c66278fab0fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6969102be6a3ad5c4087222a3e9ed6b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a6969102be6a3ad5c4087222a3e9ed6b0">BSP_IntHandlerSSI1</a> (void)</td></tr>
+<tr class="separator:a6969102be6a3ad5c4087222a3e9ed6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7546c5c3314aeacf9efea73fed8299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a8d7546c5c3314aeacf9efea73fed8299">BSP_IntHandlerTIMER3A</a> (void)</td></tr>
+<tr class="separator:a8d7546c5c3314aeacf9efea73fed8299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1cc23b2db6b6153833ba02f589e8232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#af1cc23b2db6b6153833ba02f589e8232">BSP_IntHandlerTIMER3B</a> (void)</td></tr>
+<tr class="separator:af1cc23b2db6b6153833ba02f589e8232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e67049e3c0b2ae25e4e6083c157160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#aa9e67049e3c0b2ae25e4e6083c157160">BSP_IntHandlerI2C1</a> (void)</td></tr>
+<tr class="separator:aa9e67049e3c0b2ae25e4e6083c157160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8606e6588439ce712bde2b24fc1abd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#a5c8606e6588439ce712bde2b24fc1abd">BSP_IntHandlerQEI1</a> (void)</td></tr>
+<tr class="separator:a5c8606e6588439ce712bde2b24fc1abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22789bcb78f685d3df609638828b0c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#ac22789bcb78f685d3df609638828b0c0">BSP_IntHandlerHIBERNATE</a> (void)</td></tr>
+<tr class="separator:ac22789bcb78f685d3df609638828b0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aa4a2c9ee8e8a6f1e79aec1486c69e77b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="cpu_8h.html#a1a3293affb5c1c53acd52503cfdce8d6">CPU_FNCT_VOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__int_8c.html#aa4a2c9ee8e8a6f1e79aec1486c69e77b">BSP_IntVectTbl</a> [<a class="el" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>]</td></tr>
+<tr class="separator:aa4a2c9ee8e8a6f1e79aec1486c69e77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ad23f942acb52bef80ccdf6b5bc96723c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_INT_MODULE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00035">35</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9dd1551a44f0029e3c7a11030ec67490"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_INT_SRC_NBR&#160;&#160;&#160;46u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00045">45</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp__int_8c_source.html#l00134">BSP_IntDis()</a>, <a class="el" href="bsp__int_8c_source.html#l00180">BSP_IntEn()</a>, <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>, <a class="el" href="bsp__int_8c_source.html#l00276">BSP_IntInit()</a>, <a class="el" href="bsp__int_8c_source.html#l00238">BSP_IntPrioSet()</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00206">BSP_IntVectSet()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a8cb092c15c008f1d8ba4321a43fe8d64"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BSP_IntHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a>&#160;</td>
+          <td class="paramname"><em>int_id</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00371">371</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8c_source.html#l00045">BSP_INT_SRC_NBR</a>, <a class="el" href="bsp__int_8c_source.html#l00068">BSP_IntVectTbl</a>, <a class="el" href="os__core_8c_source.html#l00628">OSIntEnter()</a> , 以及 <a class="el" href="os__core_8c_source.html#l00656">OSIntExit()</a>.</p>
+
+<p>参考自 <a class="el" href="bsp__int_8c_source.html#l00317">BSP_IntHandlerADC0()</a>, <a class="el" href="bsp__int_8c_source.html#l00318">BSP_IntHandlerADC1()</a>, <a class="el" href="bsp__int_8c_source.html#l00320">BSP_IntHandlerADC2()</a>, <a class="el" href="bsp__int_8c_source.html#l00321">BSP_IntHandlerADC3()</a>, <a class="el" href="bsp__int_8c_source.html#l00329">BSP_IntHandlerCOMP0()</a>, <a class="el" href="bsp__int_8c_source.html#l00330">BSP_IntHandlerCOMP1()</a>, <a class="el" href="bsp__int_8c_source.html#l00331">BSP_IntHandlerCOMP2()</a>, <a class="el" href="bsp__int_8c_source.html#l00333">BSP_IntHandlerFLASH()</a>, <a class="el" href="bsp__int_8c_source.html#l00303">BSP_IntHandlerGPIOA()</a>, <a class="el" href="bsp__int_8c_source.html#l00304">BSP_IntHandlerGPIOB()</a>, <a class="el" href="bsp__int_8c_source.html#l00305">BSP_IntHandlerGPIOC()</a>, <a class="el" href="bsp__int_8c_source.html#l00306">BSP_IntHandlerGPIOD()</a>, <a class="el" href="bsp__int_8c_source.html#l00307">BSP_IntHandlerGPIOE()</a>, <a class="el" href="bsp__int_8c_source.html#l00334">BSP_IntHandlerGPIOF()</a>, <a class="el" href="bsp__int_8c_source.html#l00335">BSP_IntHandlerGPIOG()</a>, <a class="el" href="bsp__int_8c_source.html#l00337">BSP_IntHandlerGPIOH()</a>, <a class="el" href="bsp__int_8c_source.html#l00344">BSP_IntHandlerHIBERNATE()</a>, <a class="el" href="bsp__int_8c_source.html#l00311">BSP_IntHandlerI2C0()</a>, <a class="el" href="bsp__int_8c_source.html#l00342">BSP_IntHandlerI2C1()</a>, <a class="el" href="bsp__int_8c_source.html#l00312">BSP_IntHandlerPWM_FAULT()</a>, <a class="el" href="bsp__int_8c_source.html#l00313">BSP_IntHandlerPWM_GEN0()</a>, <a class="el" href="bsp__int_8c_source.html#l00314">BSP_IntHandlerPWM_GEN1()</a>, <a class="el" href="bsp__int_8c_source.html#l00315">BSP_IntHandlerPWM_GEN2()</a>, <a class="el" href="bsp__int_8c_source.html#l00316">BSP_IntHandlerQEI0()</a>, <a class="el" href="bsp__int_8c_source.html#l00343">BSP_IntHandlerQEI1()</a>, <a class="el" href="bsp__int_8c_source.html#l00310">BSP_IntHandlerSSI0()</a>, <a class="el" href="bsp__int_8c_source.html#l00339">BSP_IntHandlerSSI1()</a>, <a class="el" href="bsp__int_8c_source.html#l00332">BSP_IntHandlerSYSCTL()</a>, <a class="el" href="bsp__int_8c_source.html#l00323">BSP_IntHandlerTIMER0A()</a>, <a class="el" href="bsp__int_8c_source.html#l00324">BSP_IntHandlerTIMER0B()</a>, <a class="el" href="bsp__int_8c_source.html#l00325">BSP_IntHandlerTIMER1A()</a>, <a class="el" href="bsp__int_8c_source.html#l00326">BSP_IntHandlerTIMER1B()</a>, <a class="el" href="bsp__int_8c_source.html#l00327">BSP_IntHandlerTIMER2A()</a>, <a class="el" href="bsp__int_8c_source.html#l00328">BSP_IntHandlerTIMER2B()</a>, <a class="el" href="bsp__int_8c_source.html#l00340">BSP_IntHandlerTIMER3A()</a>, <a class="el" href="bsp__int_8c_source.html#l00341">BSP_IntHandlerTIMER3B()</a>, <a class="el" href="bsp__int_8c_source.html#l00308">BSP_IntHandlerUART0()</a>, <a class="el" href="bsp__int_8c_source.html#l00309">BSP_IntHandlerUART1()</a>, <a class="el" href="bsp__int_8c_source.html#l00338">BSP_IntHandlerUART2()</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00322">BSP_IntHandlerWATCHDOG()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;{</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="cpu__pr_8h.html#a1a3293affb5c1c53acd52503cfdce8d6">CPU_FNCT_VOID</a>  isr;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553">OSIntEnter</a>();                                               <span class="comment">/* Tell OS that we are starting an ISR.                 */</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span> (int_id &lt; <a class="code" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>) {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        isr = <a class="code" href="bsp__int_8c.html#aa4a2c9ee8e8a6f1e79aec1486c69e77b">BSP_IntVectTbl</a>[int_id];</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">if</span> (isr != (<a class="code" href="cpu__pr_8h.html#a1a3293affb5c1c53acd52503cfdce8d6">CPU_FNCT_VOID</a>)0) {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            isr();</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <a class="code" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e">OSIntExit</a>();                                                <span class="comment">/* Tell OS that we are leaving the ISR.                 */</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a8cb092c15c008f1d8ba4321a43fe8d64_cgraph.png" border="0" usemap="#bsp__int_8c_a8cb092c15c008f1d8ba4321a43fe8d64_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a8cb092c15c008f1d8ba4321a43fe8d64_cgraph" id="bsp__int_8c_a8cb092c15c008f1d8ba4321a43fe8d64_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="169,5,255,32"/><area shape="rect" id="node3" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="173,56,251,83"/><area shape="rect" id="node4" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="305,31,415,57"/><area shape="rect" id="node5" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="313,81,407,108"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a8cb092c15c008f1d8ba4321a43fe8d64_icgraph.png" border="0" usemap="#bsp__int_8c_a8cb092c15c008f1d8ba4321a43fe8d64_icgraph" alt=""/></div>
+<map name="bsp__int_8c_a8cb092c15c008f1d8ba4321a43fe8d64_icgraph" id="bsp__int_8c_a8cb092c15c008f1d8ba4321a43fe8d64_icgraph">
+<area shape="rect" id="node2" href="bsp__int_8h.html#a16b3b94c23717cd78ec4e98a3db7ed23" title="BSP_IntHandlerADC0" alt="" coords="191,5,339,32"/><area shape="rect" id="node3" href="bsp__int_8h.html#a32436fa6d821383d8c384bcb0071bb0a" title="BSP_IntHandlerADC1" alt="" coords="191,56,339,83"/><area shape="rect" id="node4" href="bsp__int_8h.html#a0abbbb33ac0f7b12c0da98e2f8c3bbe4" title="BSP_IntHandlerADC2" alt="" coords="191,107,339,133"/><area shape="rect" id="node5" href="bsp__int_8h.html#a0580ffb74c2eee5c824373474b89df2e" title="BSP_IntHandlerADC3" alt="" coords="191,157,339,184"/><area shape="rect" id="node6" href="bsp__int_8h.html#a4946157b3ad715ab5cbc250f9bd7838b" title="BSP_IntHandlerCOMP0" alt="" coords="185,208,345,235"/><area shape="rect" id="node7" href="bsp__int_8h.html#a45cde074095874e8627ca50540677c27" title="BSP_IntHandlerCOMP1" alt="" coords="185,259,345,285"/><area shape="rect" id="node8" href="bsp__int_8h.html#ac3a55edffa30ab4c0ab7952d99510b49" title="BSP_IntHandlerCOMP2" alt="" coords="185,309,345,336"/><area shape="rect" id="node9" href="bsp__int_8h.html#ac198daa2b0957f983adb207ad33ff3a3" title="BSP_IntHandlerFLASH" alt="" coords="187,360,343,387"/><area shape="rect" id="node10" href="bsp__int_8h.html#ac5e8a40a7c3f632343a44cd4e9ef2ee9" title="BSP_IntHandlerGPIOA" alt="" coords="188,411,343,437"/><area shape="rect" id="node11" href="bsp__int_8h.html#acdf4668d56bca81773d264c9336a2cc3" title="BSP_IntHandlerGPIOB" alt="" coords="188,461,343,488"/><area shape="rect" id="node12" href="bsp__int_8h.html#ac9d45ceaf0f606d66d6656d1d0dc3fa2" title="BSP_IntHandlerGPIOC" alt="" coords="188,512,343,539"/><area shape="rect" id="node13" href="bsp__int_8h.html#a728cfca4373a16a11596738daec9e9f7" title="BSP_IntHandlerGPIOD" alt="" coords="188,563,343,589"/><area shape="rect" id="node14" href="bsp__int_8h.html#afe0bd5356d1244c02f6ba98e44349152" title="BSP_IntHandlerGPIOE" alt="" coords="188,613,343,640"/><area shape="rect" id="node15" href="bsp__int_8h.html#a4e735ead54e14c863d3d60fde0b565f4" title="BSP_IntHandlerGPIOF" alt="" coords="188,664,343,691"/><area shape="rect" id="node16" href="bsp__int_8h.html#a3113ce5a04cdced1eaeb6b17222aa169" title="BSP_IntHandlerGPIOG" alt="" coords="187,715,343,741"/><area shape="rect" id="node17" href="bsp__int_8h.html#a3b49c2bbaabbcd57dbe1e3d407d7e0e5" title="BSP_IntHandlerGPIOH" alt="" coords="188,765,343,792"/><area shape="rect" id="node18" href="bsp__int_8h.html#ac22789bcb78f685d3df609638828b0c0" title="BSP_IntHandlerHIBERNATE" alt="" coords="172,816,359,843"/><area shape="rect" id="node19" href="bsp__int_8h.html#a8788f2ce4e612a669c09098c6eff68fc" title="BSP_IntHandlerI2C0" alt="" coords="195,867,335,893"/><area shape="rect" id="node20" href="bsp__int_8h.html#aa9e67049e3c0b2ae25e4e6083c157160" title="BSP_IntHandlerI2C1" alt="" coords="195,917,335,944"/><area shape="rect" id="node21" href="bsp__int_8h.html#a294c5ea43749706175825369de29a8c5" title="BSP_IntHandlerPWM_FAULT" alt="" coords="168,968,363,995"/><area shape="rect" id="node22" href="bsp__int_8h.html#a347689e95305a7a28740b644da43a861" title="BSP_IntHandlerPWM_GEN0" alt="" coords="171,1019,360,1045"/><area shape="rect" id="node23" href="bsp__int_8h.html#a4a3b136df3d372b1708a06f1167b6656" title="BSP_IntHandlerPWM_GEN1" alt="" coords="171,1069,360,1096"/><area shape="rect" id="node24" href="bsp__int_8h.html#a99171dfb12d98cfa4383f06172037e0f" title="BSP_IntHandlerPWM_GEN2" alt="" coords="171,1120,360,1147"/><area shape="rect" id="node25" href="bsp__int_8h.html#a24df141eadd8d4bb0b87ef26eb985410" title="BSP_IntHandlerQEI0" alt="" coords="194,1171,337,1197"/><area shape="rect" id="node26" href="bsp__int_8h.html#a5c8606e6588439ce712bde2b24fc1abd" title="BSP_IntHandlerQEI1" alt="" coords="194,1221,337,1248"/><area shape="rect" id="node27" href="bsp__int_8h.html#a08e40612be7710cc609fd7dee77f8523" title="BSP_IntHandlerSSI0" alt="" coords="194,1272,337,1299"/><area shape="rect" id="node28" href="bsp__int_8h.html#a6969102be6a3ad5c4087222a3e9ed6b0" title="BSP_IntHandlerSSI1" alt="" coords="194,1323,337,1349"/><area shape="rect" id="node29" href="bsp__int_8h.html#a9439914094dbd317f41dec6d593392e5" title="BSP_IntHandlerSYSCTL" alt="" coords="183,1373,347,1400"/><area shape="rect" id="node30" href="bsp__int_8h.html#a8b61cf90a3136369d1f11196d8e713ed" title="BSP_IntHandlerTIMER0A" alt="" coords="181,1424,350,1451"/><area shape="rect" id="node31" href="bsp__int_8h.html#a61b2450a6f922d0203a9c42dc17aba68" title="BSP_IntHandlerTIMER0B" alt="" coords="181,1475,350,1501"/><area shape="rect" id="node32" href="bsp__int_8h.html#a1bf80083e0adff10530e357c2e882aca" title="BSP_IntHandlerTIMER1A" alt="" coords="181,1525,350,1552"/><area shape="rect" id="node33" href="bsp__int_8h.html#a5a6946270499c00fd826048d159d8bd6" title="BSP_IntHandlerTIMER1B" alt="" coords="181,1576,350,1603"/><area shape="rect" id="node34" href="bsp__int_8h.html#ab9e4b83839bc4e5b2c47bb097fb7e543" title="BSP_IntHandlerTIMER2A" alt="" coords="181,1627,350,1653"/><area shape="rect" id="node35" href="bsp__int_8h.html#a4a2fc2151db90630577d1e2218d36ed3" title="BSP_IntHandlerTIMER2B" alt="" coords="181,1677,350,1704"/><area shape="rect" id="node36" href="bsp__int_8h.html#a8d7546c5c3314aeacf9efea73fed8299" title="BSP_IntHandlerTIMER3A" alt="" coords="181,1728,350,1755"/><area shape="rect" id="node37" href="bsp__int_8h.html#af1cc23b2db6b6153833ba02f589e8232" title="BSP_IntHandlerTIMER3B" alt="" coords="181,1779,350,1805"/><area shape="rect" id="node38" href="bsp__int_8h.html#ac9bbbf852f53f5c77f449485a4d288a4" title="BSP_IntHandlerUART0" alt="" coords="188,1829,343,1856"/><area shape="rect" id="node39" href="bsp__int_8h.html#a03d6d0dccc5594f984867d91cb647fbd" title="BSP_IntHandlerUART1" alt="" coords="188,1880,343,1907"/><area shape="rect" id="node40" href="bsp__int_8h.html#a9c199968842d7cffef7c66278fab0fc4" title="BSP_IntHandlerUART2" alt="" coords="188,1931,343,1957"/><area shape="rect" id="node41" href="bsp__int_8h.html#a985d8fb2169238272fb131fd2a57c79e" title="BSP_IntHandlerWATCHDOG" alt="" coords="170,1981,361,2008"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e72b2f47419d8140a58e44de3af12c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BSP_IntHandlerDummy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00405">405</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp__int_8c_source.html#l00276">BSP_IntInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;{</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a4e72b2f47419d8140a58e44de3af12c1_icgraph.png" border="0" usemap="#bsp__int_8c_a4e72b2f47419d8140a58e44de3af12c1_icgraph" alt=""/></div>
+<map name="bsp__int_8c_a4e72b2f47419d8140a58e44de3af12c1_icgraph" id="bsp__int_8c_a4e72b2f47419d8140a58e44de3af12c1_icgraph">
+<area shape="rect" id="node2" href="bsp__int_8h.html#ad25cb43e8b6d2e3efa3bc5cf6aa22e5e" title="BSP_IntInit" alt="" coords="214,5,301,32"/><area shape="rect" id="node3" href="bsp_8h.html#a7c3f1730d68ea5aa990ec47d5da7048d" title="BSP_Init" alt="" coords="350,5,423,32"/><area shape="rect" id="node4" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="472,5,523,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad95532cd85ee6d87f598b7a77dde8d00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntClr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a>&#160;</td>
+          <td class="paramname"><em>int_id</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00112">112</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4ab563e154671bbffcd2e4b45ff17494"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntDis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a>&#160;</td>
+          <td class="paramname"><em>int_id</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00134">134</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8c_source.html#l00045">BSP_INT_SRC_NBR</a> , 以及 <a class="el" href="cpu__c___ports_8c_source.html#l00249">CPU_IntSrcDis()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span> (int_id &lt; <a class="code" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="cpu_8h.html#a360cb5705b5c832c448eb0233c740147">CPU_IntSrcDis</a>(int_id + 16u);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a4ab563e154671bbffcd2e4b45ff17494_cgraph.png" border="0" usemap="#bsp__int_8c_a4ab563e154671bbffcd2e4b45ff17494_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a4ab563e154671bbffcd2e4b45ff17494_cgraph" id="bsp__int_8c_a4ab563e154671bbffcd2e4b45ff17494_cgraph">
+<area shape="rect" id="node2" href="cpu_8h.html#a360cb5705b5c832c448eb0233c740147" title="CPU_IntSrcDis" alt="" coords="144,5,253,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a14251c960bcc1fe0d82dbf91f8858e34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntDisAll </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00158">158</a> 行定义.</p>
+
+<p>参考 <a class="el" href="cpu_8h.html#a75fd956028d3ff81ed77bf1b8740267a">CPU_IntDis()</a>.</p>
+
+<p>参考自 <a class="el" href="app_8c_source.html#l00153">main()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="cpu_8h.html#a75fd956028d3ff81ed77bf1b8740267a">CPU_IntDis</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a14251c960bcc1fe0d82dbf91f8858e34_cgraph.png" border="0" usemap="#bsp__int_8c_a14251c960bcc1fe0d82dbf91f8858e34_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a14251c960bcc1fe0d82dbf91f8858e34_cgraph" id="bsp__int_8c_a14251c960bcc1fe0d82dbf91f8858e34_cgraph">
+<area shape="rect" id="node2" href="cpu_8h.html#a75fd956028d3ff81ed77bf1b8740267a" title="CPU_IntDis" alt="" coords="158,5,247,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a14251c960bcc1fe0d82dbf91f8858e34_icgraph.png" border="0" usemap="#bsp__int_8c_a14251c960bcc1fe0d82dbf91f8858e34_icgraph" alt=""/></div>
+<map name="bsp__int_8c_a14251c960bcc1fe0d82dbf91f8858e34_icgraph" id="bsp__int_8c_a14251c960bcc1fe0d82dbf91f8858e34_icgraph">
+<area shape="rect" id="node2" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="157,5,208,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8a3f247742fbb06c6d9ac75f247a222"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntEn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a>&#160;</td>
+          <td class="paramname"><em>int_id</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00180">180</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8c_source.html#l00045">BSP_INT_SRC_NBR</a> , 以及 <a class="el" href="cpu__c___ports_8c_source.html#l00338">CPU_IntSrcEn()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> (int_id &lt; <a class="code" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="cpu_8h.html#a1b5e0d573324f4e9fcdc42f307560ec7">CPU_IntSrcEn</a>(int_id + 16u);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ac8a3f247742fbb06c6d9ac75f247a222_cgraph.png" border="0" usemap="#bsp__int_8c_ac8a3f247742fbb06c6d9ac75f247a222_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ac8a3f247742fbb06c6d9ac75f247a222_cgraph" id="bsp__int_8c_ac8a3f247742fbb06c6d9ac75f247a222_cgraph">
+<area shape="rect" id="node2" href="cpu_8h.html#a1b5e0d573324f4e9fcdc42f307560ec7" title="CPU_IntSrcEn" alt="" coords="141,5,248,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a43a9b2a782d11a30676238d4da5f81d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntVectSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a>&#160;</td>
+          <td class="paramname"><em>int_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu_8h.html#a1a3293affb5c1c53acd52503cfdce8d6">CPU_FNCT_VOID</a>&#160;</td>
+          <td class="paramname"><em>isr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00206">206</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8c_source.html#l00045">BSP_INT_SRC_NBR</a>, <a class="el" href="bsp__int_8c_source.html#l00068">BSP_IntVectTbl</a>, <a class="el" href="cpu_8h_source.html#l00307">CPU_CRITICAL_ENTER</a>, <a class="el" href="cpu_8h_source.html#l00308">CPU_CRITICAL_EXIT</a> , 以及 <a class="el" href="cpu_8h_source.html#l00284">CPU_SR_ALLOC</a>.</p>
+
+<p>参考自 <a class="el" href="bsp__int_8c_source.html#l00276">BSP_IntInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="cpu_8h.html#a9613b70052445254c261863595b0b6e5">CPU_SR_ALLOC</a>();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">if</span> (int_id &lt; <a class="code" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="cpu_8h.html#a8f6a325617b3c9daea0084d5eed2698e">CPU_CRITICAL_ENTER</a>();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <a class="code" href="bsp__int_8c.html#aa4a2c9ee8e8a6f1e79aec1486c69e77b">BSP_IntVectTbl</a>[int_id] = isr;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <a class="code" href="cpu_8h.html#a14c1c05de85cf8a230d24ded521b1ed5">CPU_CRITICAL_EXIT</a>();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a43a9b2a782d11a30676238d4da5f81d0_icgraph.png" border="0" usemap="#bsp__int_8c_a43a9b2a782d11a30676238d4da5f81d0_icgraph" alt=""/></div>
+<map name="bsp__int_8c_a43a9b2a782d11a30676238d4da5f81d0_icgraph" id="bsp__int_8c_a43a9b2a782d11a30676238d4da5f81d0_icgraph">
+<area shape="rect" id="node2" href="bsp__int_8h.html#ad25cb43e8b6d2e3efa3bc5cf6aa22e5e" title="BSP_IntInit" alt="" coords="171,5,258,32"/><area shape="rect" id="node3" href="bsp_8h.html#a7c3f1730d68ea5aa990ec47d5da7048d" title="BSP_Init" alt="" coords="307,5,381,32"/><area shape="rect" id="node4" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="429,5,480,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb01001018ab38158f0e4c174194da56"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntPrioSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a>&#160;</td>
+          <td class="paramname"><em>int_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpu__pr_8h.html#a8e60b887bb91871f6e96265216815715">CPU_INT08U</a>&#160;</td>
+          <td class="paramname"><em>prio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00238">238</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8c_source.html#l00045">BSP_INT_SRC_NBR</a>, <a class="el" href="cpu_8h_source.html#l00307">CPU_CRITICAL_ENTER</a>, <a class="el" href="cpu_8h_source.html#l00308">CPU_CRITICAL_EXIT</a>, <a class="el" href="cpu__c___ports_8c_source.html#l00433">CPU_IntSrcPrioSet()</a> , 以及 <a class="el" href="cpu_8h_source.html#l00284">CPU_SR_ALLOC</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="cpu_8h.html#a9613b70052445254c261863595b0b6e5">CPU_SR_ALLOC</a>();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">if</span> (int_id &lt; <a class="code" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="cpu_8h.html#a8f6a325617b3c9daea0084d5eed2698e">CPU_CRITICAL_ENTER</a>();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="cpu_8h.html#abbeda24a5dd681a498b187b499520afa">CPU_IntSrcPrioSet</a>(int_id + 16, prio);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <a class="code" href="cpu_8h.html#a14c1c05de85cf8a230d24ded521b1ed5">CPU_CRITICAL_EXIT</a>();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_aeb01001018ab38158f0e4c174194da56_cgraph.png" border="0" usemap="#bsp__int_8c_aeb01001018ab38158f0e4c174194da56_cgraph" alt=""/></div>
+<map name="bsp__int_8c_aeb01001018ab38158f0e4c174194da56_cgraph" id="bsp__int_8c_aeb01001018ab38158f0e4c174194da56_cgraph">
+<area shape="rect" id="node2" href="cpu_8h.html#abbeda24a5dd681a498b187b499520afa" title="CPU_IntSrcPrioSet" alt="" coords="168,5,301,32"/><area shape="rect" id="node3" href="cpu_8h.html#af445adb7622a27265d832bcc777aed40" title="CPU_RevBits" alt="" coords="350,5,450,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad25cb43e8b6d2e3efa3bc5cf6aa22e5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00276">276</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8c_source.html#l00045">BSP_INT_SRC_NBR</a>, <a class="el" href="bsp__int_8c_source.html#l00405">BSP_IntHandlerDummy()</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00206">BSP_IntVectSet()</a>.</p>
+
+<p>参考自 <a class="el" href="bsp_8c_source.html#l00129">BSP_Init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;{</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="cpu__pr_8h.html#a743640810ca584b6c2d95746d9470469">CPU_DATA</a>  int_id;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">for</span> (int_id = 0; int_id &lt; <a class="code" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>; int_id++) {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <a class="code" href="bsp__int_8c.html#a43a9b2a782d11a30676238d4da5f81d0">BSP_IntVectSet</a>(int_id, <a class="code" href="bsp__int_8c.html#a4e72b2f47419d8140a58e44de3af12c1">BSP_IntHandlerDummy</a>);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ad25cb43e8b6d2e3efa3bc5cf6aa22e5e_cgraph.png" border="0" usemap="#bsp__int_8c_ad25cb43e8b6d2e3efa3bc5cf6aa22e5e_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ad25cb43e8b6d2e3efa3bc5cf6aa22e5e_cgraph" id="bsp__int_8c_ad25cb43e8b6d2e3efa3bc5cf6aa22e5e_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a4e72b2f47419d8140a58e44de3af12c1" title="BSP_IntHandlerDummy" alt="" coords="142,5,301,32"/><area shape="rect" id="node3" href="bsp__int_8c.html#a43a9b2a782d11a30676238d4da5f81d0" title="BSP_IntVectSet" alt="" coords="163,56,280,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ad25cb43e8b6d2e3efa3bc5cf6aa22e5e_icgraph.png" border="0" usemap="#bsp__int_8c_ad25cb43e8b6d2e3efa3bc5cf6aa22e5e_icgraph" alt=""/></div>
+<map name="bsp__int_8c_ad25cb43e8b6d2e3efa3bc5cf6aa22e5e_icgraph" id="bsp__int_8c_ad25cb43e8b6d2e3efa3bc5cf6aa22e5e_icgraph">
+<area shape="rect" id="node2" href="bsp_8h.html#a7c3f1730d68ea5aa990ec47d5da7048d" title="BSP_Init" alt="" coords="142,5,215,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="264,5,315,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5e8a40a7c3f632343a44cd4e9ef2ee9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerGPIOA </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00303">303</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00070">BSP_INT_ID_GPIOA</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a0a29eb0d52e95ecd4af4b9739fa785b9">BSP_INT_ID_GPIOA</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ac5e8a40a7c3f632343a44cd4e9ef2ee9_cgraph.png" border="0" usemap="#bsp__int_8c_ac5e8a40a7c3f632343a44cd4e9ef2ee9_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ac5e8a40a7c3f632343a44cd4e9ef2ee9_cgraph" id="bsp__int_8c_ac5e8a40a7c3f632343a44cd4e9ef2ee9_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acdf4668d56bca81773d264c9336a2cc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerGPIOB </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00304">304</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00071">BSP_INT_ID_GPIOB</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a316b26a999f0da4361049b58c746c939">BSP_INT_ID_GPIOB</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_acdf4668d56bca81773d264c9336a2cc3_cgraph.png" border="0" usemap="#bsp__int_8c_acdf4668d56bca81773d264c9336a2cc3_cgraph" alt=""/></div>
+<map name="bsp__int_8c_acdf4668d56bca81773d264c9336a2cc3_cgraph" id="bsp__int_8c_acdf4668d56bca81773d264c9336a2cc3_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9d45ceaf0f606d66d6656d1d0dc3fa2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerGPIOC </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00305">305</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00072">BSP_INT_ID_GPIOC</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ac70275925b7eb9f556fb172f06f7d0a3">BSP_INT_ID_GPIOC</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ac9d45ceaf0f606d66d6656d1d0dc3fa2_cgraph.png" border="0" usemap="#bsp__int_8c_ac9d45ceaf0f606d66d6656d1d0dc3fa2_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ac9d45ceaf0f606d66d6656d1d0dc3fa2_cgraph" id="bsp__int_8c_ac9d45ceaf0f606d66d6656d1d0dc3fa2_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a728cfca4373a16a11596738daec9e9f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerGPIOD </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00306">306</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00073">BSP_INT_ID_GPIOD</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a86ccb816d03fba57be4b240ffe4a4f83">BSP_INT_ID_GPIOD</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a728cfca4373a16a11596738daec9e9f7_cgraph.png" border="0" usemap="#bsp__int_8c_a728cfca4373a16a11596738daec9e9f7_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a728cfca4373a16a11596738daec9e9f7_cgraph" id="bsp__int_8c_a728cfca4373a16a11596738daec9e9f7_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afe0bd5356d1244c02f6ba98e44349152"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerGPIOE </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00307">307</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00074">BSP_INT_ID_GPIOE</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a7153d350f694b3e06f5d317df946bdc2">BSP_INT_ID_GPIOE</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_afe0bd5356d1244c02f6ba98e44349152_cgraph.png" border="0" usemap="#bsp__int_8c_afe0bd5356d1244c02f6ba98e44349152_cgraph" alt=""/></div>
+<map name="bsp__int_8c_afe0bd5356d1244c02f6ba98e44349152_cgraph" id="bsp__int_8c_afe0bd5356d1244c02f6ba98e44349152_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9bbbf852f53f5c77f449485a4d288a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerUART0 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00308">308</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00075">BSP_INT_ID_UART0</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a4f71aa12c155a4015bdfe26f1e0e296e">BSP_INT_ID_UART0</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ac9bbbf852f53f5c77f449485a4d288a4_cgraph.png" border="0" usemap="#bsp__int_8c_ac9bbbf852f53f5c77f449485a4d288a4_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ac9bbbf852f53f5c77f449485a4d288a4_cgraph" id="bsp__int_8c_ac9bbbf852f53f5c77f449485a4d288a4_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a03d6d0dccc5594f984867d91cb647fbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerUART1 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00309">309</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00076">BSP_INT_ID_UART1</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a0e2e510e8f4d93d87db1aa10f453aed7">BSP_INT_ID_UART1</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a03d6d0dccc5594f984867d91cb647fbd_cgraph.png" border="0" usemap="#bsp__int_8c_a03d6d0dccc5594f984867d91cb647fbd_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a03d6d0dccc5594f984867d91cb647fbd_cgraph" id="bsp__int_8c_a03d6d0dccc5594f984867d91cb647fbd_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a08e40612be7710cc609fd7dee77f8523"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerSSI0 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00310">310</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00077">BSP_INT_ID_SSI0</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a610ba1ef12b82d91c68370b7075ed8cd">BSP_INT_ID_SSI0</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a08e40612be7710cc609fd7dee77f8523_cgraph.png" border="0" usemap="#bsp__int_8c_a08e40612be7710cc609fd7dee77f8523_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a08e40612be7710cc609fd7dee77f8523_cgraph" id="bsp__int_8c_a08e40612be7710cc609fd7dee77f8523_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="197,31,312,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="361,5,447,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="365,56,443,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="497,31,607,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="505,81,599,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8788f2ce4e612a669c09098c6eff68fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerI2C0 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00311">311</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00078">BSP_INT_ID_I2C0</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a1cebb45da7fc6e53c4fb5b7382ef867b">BSP_INT_ID_I2C0</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a8788f2ce4e612a669c09098c6eff68fc_cgraph.png" border="0" usemap="#bsp__int_8c_a8788f2ce4e612a669c09098c6eff68fc_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a8788f2ce4e612a669c09098c6eff68fc_cgraph" id="bsp__int_8c_a8788f2ce4e612a669c09098c6eff68fc_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="195,31,309,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="358,5,445,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="362,56,441,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="494,31,605,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="503,81,596,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a294c5ea43749706175825369de29a8c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerPWM_FAULT </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00312">312</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00079">BSP_INT_ID_PWM_FAULT</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ae256914361147ba367a4aeb187d3fb6b">BSP_INT_ID_PWM_FAULT</a>); }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a294c5ea43749706175825369de29a8c5_cgraph.png" border="0" usemap="#bsp__int_8c_a294c5ea43749706175825369de29a8c5_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a294c5ea43749706175825369de29a8c5_cgraph" id="bsp__int_8c_a294c5ea43749706175825369de29a8c5_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="248,31,363,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="411,5,498,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="415,56,494,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="547,31,658,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="556,81,649,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a347689e95305a7a28740b644da43a861"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerPWM_GEN0 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00313">313</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00080">BSP_INT_ID_PWM_GEN0</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a640620f67b78771c1bc4e4af707ccfae">BSP_INT_ID_PWM_GEN0</a>);  }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a347689e95305a7a28740b644da43a861_cgraph.png" border="0" usemap="#bsp__int_8c_a347689e95305a7a28740b644da43a861_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a347689e95305a7a28740b644da43a861_cgraph" id="bsp__int_8c_a347689e95305a7a28740b644da43a861_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="243,31,357,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="406,5,493,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="410,56,489,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="542,31,653,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="551,81,644,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a3b136df3d372b1708a06f1167b6656"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerPWM_GEN1 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00314">314</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00081">BSP_INT_ID_PWM_GEN1</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a59a8487cd7668a886feb449f3627d52f">BSP_INT_ID_PWM_GEN1</a>);  }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a4a3b136df3d372b1708a06f1167b6656_cgraph.png" border="0" usemap="#bsp__int_8c_a4a3b136df3d372b1708a06f1167b6656_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a4a3b136df3d372b1708a06f1167b6656_cgraph" id="bsp__int_8c_a4a3b136df3d372b1708a06f1167b6656_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="243,31,357,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="406,5,493,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="410,56,489,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="542,31,653,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="551,81,644,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a99171dfb12d98cfa4383f06172037e0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerPWM_GEN2 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00315">315</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00082">BSP_INT_ID_PWM_GEN2</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a0be9d774cd19b7a317a2ee025c0b5c4b">BSP_INT_ID_PWM_GEN2</a>);  }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a99171dfb12d98cfa4383f06172037e0f_cgraph.png" border="0" usemap="#bsp__int_8c_a99171dfb12d98cfa4383f06172037e0f_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a99171dfb12d98cfa4383f06172037e0f_cgraph" id="bsp__int_8c_a99171dfb12d98cfa4383f06172037e0f_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="243,31,357,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="406,5,493,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="410,56,489,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="542,31,653,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="551,81,644,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a24df141eadd8d4bb0b87ef26eb985410"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerQEI0 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00316">316</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00083">BSP_INT_ID_QEI0</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a104b3abb478472d33474dbf9227c38ab">BSP_INT_ID_QEI0</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a24df141eadd8d4bb0b87ef26eb985410_cgraph.png" border="0" usemap="#bsp__int_8c_a24df141eadd8d4bb0b87ef26eb985410_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a24df141eadd8d4bb0b87ef26eb985410_cgraph" id="bsp__int_8c_a24df141eadd8d4bb0b87ef26eb985410_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="197,31,312,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="361,5,447,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="365,56,443,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="497,31,607,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="505,81,599,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a16b3b94c23717cd78ec4e98a3db7ed23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerADC0 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00317">317</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00084">BSP_INT_ID_ADC0</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a6f5b2f2154a2c8a1a0d0644fbb2822c9">BSP_INT_ID_ADC0</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a16b3b94c23717cd78ec4e98a3db7ed23_cgraph.png" border="0" usemap="#bsp__int_8c_a16b3b94c23717cd78ec4e98a3db7ed23_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a16b3b94c23717cd78ec4e98a3db7ed23_cgraph" id="bsp__int_8c_a16b3b94c23717cd78ec4e98a3db7ed23_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="203,31,317,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="366,5,453,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="370,56,449,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="502,31,613,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="511,81,604,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a32436fa6d821383d8c384bcb0071bb0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerADC1 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00318">318</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00085">BSP_INT_ID_ADC1</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a79b2abd53078a61949e0e18aa8fbcb88">BSP_INT_ID_ADC1</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a32436fa6d821383d8c384bcb0071bb0a_cgraph.png" border="0" usemap="#bsp__int_8c_a32436fa6d821383d8c384bcb0071bb0a_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a32436fa6d821383d8c384bcb0071bb0a_cgraph" id="bsp__int_8c_a32436fa6d821383d8c384bcb0071bb0a_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="203,31,317,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="366,5,453,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="370,56,449,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="502,31,613,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="511,81,604,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0abbbb33ac0f7b12c0da98e2f8c3bbe4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerADC2 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00320">320</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00087">BSP_INT_ID_ADC2</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a7182e6fb18b3396521bbc6bd716477d7">BSP_INT_ID_ADC2</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a0abbbb33ac0f7b12c0da98e2f8c3bbe4_cgraph.png" border="0" usemap="#bsp__int_8c_a0abbbb33ac0f7b12c0da98e2f8c3bbe4_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a0abbbb33ac0f7b12c0da98e2f8c3bbe4_cgraph" id="bsp__int_8c_a0abbbb33ac0f7b12c0da98e2f8c3bbe4_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="203,31,317,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="366,5,453,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="370,56,449,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="502,31,613,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="511,81,604,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0580ffb74c2eee5c824373474b89df2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerADC3 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00321">321</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00088">BSP_INT_ID_ADC3</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a55011a173708aaea734af4a1ad7f7aec">BSP_INT_ID_ADC3</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a0580ffb74c2eee5c824373474b89df2e_cgraph.png" border="0" usemap="#bsp__int_8c_a0580ffb74c2eee5c824373474b89df2e_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a0580ffb74c2eee5c824373474b89df2e_cgraph" id="bsp__int_8c_a0580ffb74c2eee5c824373474b89df2e_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="203,31,317,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="366,5,453,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="370,56,449,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="502,31,613,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="511,81,604,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a985d8fb2169238272fb131fd2a57c79e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerWATCHDOG </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00322">322</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00089">BSP_INT_ID_WATCHDOG</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a4e3c85355fc98c10601ef1766295fa78">BSP_INT_ID_WATCHDOG</a>);  }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a985d8fb2169238272fb131fd2a57c79e_cgraph.png" border="0" usemap="#bsp__int_8c_a985d8fb2169238272fb131fd2a57c79e_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a985d8fb2169238272fb131fd2a57c79e_cgraph" id="bsp__int_8c_a985d8fb2169238272fb131fd2a57c79e_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="245,31,360,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="409,5,495,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="413,56,491,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="545,31,655,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="553,81,647,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b61cf90a3136369d1f11196d8e713ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerTIMER0A </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00323">323</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00090">BSP_INT_ID_TIMER0A</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ada045639e47c8f61cc0210eed009170b">BSP_INT_ID_TIMER0A</a>);   }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a8b61cf90a3136369d1f11196d8e713ed_cgraph.png" border="0" usemap="#bsp__int_8c_a8b61cf90a3136369d1f11196d8e713ed_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a8b61cf90a3136369d1f11196d8e713ed_cgraph" id="bsp__int_8c_a8b61cf90a3136369d1f11196d8e713ed_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="224,31,339,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="387,5,474,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="391,56,470,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,31,634,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="532,81,625,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a61b2450a6f922d0203a9c42dc17aba68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerTIMER0B </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00324">324</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00091">BSP_INT_ID_TIMER0B</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a1a237a49df0161708d686e0618a6a067">BSP_INT_ID_TIMER0B</a>);   }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a61b2450a6f922d0203a9c42dc17aba68_cgraph.png" border="0" usemap="#bsp__int_8c_a61b2450a6f922d0203a9c42dc17aba68_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a61b2450a6f922d0203a9c42dc17aba68_cgraph" id="bsp__int_8c_a61b2450a6f922d0203a9c42dc17aba68_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="224,31,339,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="387,5,474,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="391,56,470,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,31,634,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="532,81,625,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1bf80083e0adff10530e357c2e882aca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerTIMER1A </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00325">325</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00092">BSP_INT_ID_TIMER1A</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a1824496e84f0fe4cafa4af21a43ff690">BSP_INT_ID_TIMER1A</a>);   }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a1bf80083e0adff10530e357c2e882aca_cgraph.png" border="0" usemap="#bsp__int_8c_a1bf80083e0adff10530e357c2e882aca_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a1bf80083e0adff10530e357c2e882aca_cgraph" id="bsp__int_8c_a1bf80083e0adff10530e357c2e882aca_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="224,31,339,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="387,5,474,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="391,56,470,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,31,634,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="532,81,625,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a6946270499c00fd826048d159d8bd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerTIMER1B </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00326">326</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00093">BSP_INT_ID_TIMER1B</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ab39e9866982060ede2aea31d3352f7ae">BSP_INT_ID_TIMER1B</a>);   }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a5a6946270499c00fd826048d159d8bd6_cgraph.png" border="0" usemap="#bsp__int_8c_a5a6946270499c00fd826048d159d8bd6_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a5a6946270499c00fd826048d159d8bd6_cgraph" id="bsp__int_8c_a5a6946270499c00fd826048d159d8bd6_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="224,31,339,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="387,5,474,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="391,56,470,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,31,634,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="532,81,625,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9e4b83839bc4e5b2c47bb097fb7e543"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerTIMER2A </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00327">327</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00094">BSP_INT_ID_TIMER2A</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a128c1a00aaf802b87200578f92e51300">BSP_INT_ID_TIMER2A</a>);   }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ab9e4b83839bc4e5b2c47bb097fb7e543_cgraph.png" border="0" usemap="#bsp__int_8c_ab9e4b83839bc4e5b2c47bb097fb7e543_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ab9e4b83839bc4e5b2c47bb097fb7e543_cgraph" id="bsp__int_8c_ab9e4b83839bc4e5b2c47bb097fb7e543_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="224,31,339,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="387,5,474,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="391,56,470,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,31,634,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="532,81,625,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a2fc2151db90630577d1e2218d36ed3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerTIMER2B </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00328">328</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00095">BSP_INT_ID_TIMER2B</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#af56bfce1471f0cbb3002e8c7e13cc0b8">BSP_INT_ID_TIMER2B</a>);   }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a4a2fc2151db90630577d1e2218d36ed3_cgraph.png" border="0" usemap="#bsp__int_8c_a4a2fc2151db90630577d1e2218d36ed3_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a4a2fc2151db90630577d1e2218d36ed3_cgraph" id="bsp__int_8c_a4a2fc2151db90630577d1e2218d36ed3_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="224,31,339,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="387,5,474,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="391,56,470,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,31,634,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="532,81,625,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4946157b3ad715ab5cbc250f9bd7838b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerCOMP0 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00329">329</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00096">BSP_INT_ID_COMP0</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#abf57196e97793a1b9bbe9500ecc5de96">BSP_INT_ID_COMP0</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a4946157b3ad715ab5cbc250f9bd7838b_cgraph.png" border="0" usemap="#bsp__int_8c_a4946157b3ad715ab5cbc250f9bd7838b_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a4946157b3ad715ab5cbc250f9bd7838b_cgraph" id="bsp__int_8c_a4946157b3ad715ab5cbc250f9bd7838b_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="213,31,328,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="377,5,463,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="381,56,459,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="513,31,623,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="521,81,615,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a45cde074095874e8627ca50540677c27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerCOMP1 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00330">330</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00097">BSP_INT_ID_COMP1</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a3a6065ca506362713724cc044094bd94">BSP_INT_ID_COMP1</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a45cde074095874e8627ca50540677c27_cgraph.png" border="0" usemap="#bsp__int_8c_a45cde074095874e8627ca50540677c27_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a45cde074095874e8627ca50540677c27_cgraph" id="bsp__int_8c_a45cde074095874e8627ca50540677c27_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="213,31,328,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="377,5,463,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="381,56,459,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="513,31,623,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="521,81,615,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3a55edffa30ab4c0ab7952d99510b49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerCOMP2 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00331">331</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00098">BSP_INT_ID_COMP2</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a5ce1dd001f2463cc52abe5e14462bab8">BSP_INT_ID_COMP2</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ac3a55edffa30ab4c0ab7952d99510b49_cgraph.png" border="0" usemap="#bsp__int_8c_ac3a55edffa30ab4c0ab7952d99510b49_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ac3a55edffa30ab4c0ab7952d99510b49_cgraph" id="bsp__int_8c_ac3a55edffa30ab4c0ab7952d99510b49_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="213,31,328,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="377,5,463,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="381,56,459,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="513,31,623,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="521,81,615,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9439914094dbd317f41dec6d593392e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerSYSCTL </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00332">332</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00099">BSP_INT_ID_SYSCTL</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ae15cc40be5f2e72ec543bd0efa2b02e3">BSP_INT_ID_SYSCTL</a>);    }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a9439914094dbd317f41dec6d593392e5_cgraph.png" border="0" usemap="#bsp__int_8c_a9439914094dbd317f41dec6d593392e5_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a9439914094dbd317f41dec6d593392e5_cgraph" id="bsp__int_8c_a9439914094dbd317f41dec6d593392e5_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="219,31,333,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="382,5,469,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="386,56,465,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="518,31,629,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="527,81,620,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac198daa2b0957f983adb207ad33ff3a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerFLASH </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00333">333</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00100">BSP_INT_ID_FLASH</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a295aa69b89eb5bfdd6842f39469b39f5">BSP_INT_ID_FLASH</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ac198daa2b0957f983adb207ad33ff3a3_cgraph.png" border="0" usemap="#bsp__int_8c_ac198daa2b0957f983adb207ad33ff3a3_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ac198daa2b0957f983adb207ad33ff3a3_cgraph" id="bsp__int_8c_ac198daa2b0957f983adb207ad33ff3a3_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="211,31,325,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="374,5,461,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="378,56,457,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="510,31,621,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="519,81,612,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e735ead54e14c863d3d60fde0b565f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerGPIOF </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00334">334</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00101">BSP_INT_ID_GPIOF</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a6b8779be4b7d76db427a167bf1dcd905">BSP_INT_ID_GPIOF</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a4e735ead54e14c863d3d60fde0b565f4_cgraph.png" border="0" usemap="#bsp__int_8c_a4e735ead54e14c863d3d60fde0b565f4_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a4e735ead54e14c863d3d60fde0b565f4_cgraph" id="bsp__int_8c_a4e735ead54e14c863d3d60fde0b565f4_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3113ce5a04cdced1eaeb6b17222aa169"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerGPIOG </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00335">335</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00102">BSP_INT_ID_GPIOG</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a4a74f18cdc461101486a0a94c818f106">BSP_INT_ID_GPIOG</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a3113ce5a04cdced1eaeb6b17222aa169_cgraph.png" border="0" usemap="#bsp__int_8c_a3113ce5a04cdced1eaeb6b17222aa169_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a3113ce5a04cdced1eaeb6b17222aa169_cgraph" id="bsp__int_8c_a3113ce5a04cdced1eaeb6b17222aa169_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="211,31,325,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="374,5,461,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="378,56,457,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="510,31,621,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="519,81,612,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b49c2bbaabbcd57dbe1e3d407d7e0e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerGPIOH </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00337">337</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00104">BSP_INT_ID_GPIOH</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a628b82b883a27635aab65327b7949ef5">BSP_INT_ID_GPIOH</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a3b49c2bbaabbcd57dbe1e3d407d7e0e5_cgraph.png" border="0" usemap="#bsp__int_8c_a3b49c2bbaabbcd57dbe1e3d407d7e0e5_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a3b49c2bbaabbcd57dbe1e3d407d7e0e5_cgraph" id="bsp__int_8c_a3b49c2bbaabbcd57dbe1e3d407d7e0e5_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c199968842d7cffef7c66278fab0fc4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerUART2 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00338">338</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00105">BSP_INT_ID_UART2</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ac2a3c4ebcc3c5c4dacb0d6feb622aafd">BSP_INT_ID_UART2</a>);     }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a9c199968842d7cffef7c66278fab0fc4_cgraph.png" border="0" usemap="#bsp__int_8c_a9c199968842d7cffef7c66278fab0fc4_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a9c199968842d7cffef7c66278fab0fc4_cgraph" id="bsp__int_8c_a9c199968842d7cffef7c66278fab0fc4_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="208,31,323,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="371,5,458,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="375,56,454,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="507,31,618,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="516,81,609,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6969102be6a3ad5c4087222a3e9ed6b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerSSI1 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00339">339</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00106">BSP_INT_ID_SSI1</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ae2314da7a30c75f902f42a144c912f56">BSP_INT_ID_SSI1</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a6969102be6a3ad5c4087222a3e9ed6b0_cgraph.png" border="0" usemap="#bsp__int_8c_a6969102be6a3ad5c4087222a3e9ed6b0_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a6969102be6a3ad5c4087222a3e9ed6b0_cgraph" id="bsp__int_8c_a6969102be6a3ad5c4087222a3e9ed6b0_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="197,31,312,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="361,5,447,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="365,56,443,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="497,31,607,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="505,81,599,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d7546c5c3314aeacf9efea73fed8299"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerTIMER3A </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00340">340</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00107">BSP_INT_ID_TIMER3A</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a142828d279256caa08bb2a82785f83ba">BSP_INT_ID_TIMER3A</a>);   }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a8d7546c5c3314aeacf9efea73fed8299_cgraph.png" border="0" usemap="#bsp__int_8c_a8d7546c5c3314aeacf9efea73fed8299_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a8d7546c5c3314aeacf9efea73fed8299_cgraph" id="bsp__int_8c_a8d7546c5c3314aeacf9efea73fed8299_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="224,31,339,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="387,5,474,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="391,56,470,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,31,634,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="532,81,625,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af1cc23b2db6b6153833ba02f589e8232"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerTIMER3B </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00341">341</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00108">BSP_INT_ID_TIMER3B</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ae743219f665b5ae9c924b0caaa2ea601">BSP_INT_ID_TIMER3B</a>);   }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_af1cc23b2db6b6153833ba02f589e8232_cgraph.png" border="0" usemap="#bsp__int_8c_af1cc23b2db6b6153833ba02f589e8232_cgraph" alt=""/></div>
+<map name="bsp__int_8c_af1cc23b2db6b6153833ba02f589e8232_cgraph" id="bsp__int_8c_af1cc23b2db6b6153833ba02f589e8232_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="224,31,339,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="387,5,474,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="391,56,470,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="523,31,634,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="532,81,625,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9e67049e3c0b2ae25e4e6083c157160"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerI2C1 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00342">342</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00109">BSP_INT_ID_I2C1</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#ab0838496137265a9ac50ae653d1ee991">BSP_INT_ID_I2C1</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_aa9e67049e3c0b2ae25e4e6083c157160_cgraph.png" border="0" usemap="#bsp__int_8c_aa9e67049e3c0b2ae25e4e6083c157160_cgraph" alt=""/></div>
+<map name="bsp__int_8c_aa9e67049e3c0b2ae25e4e6083c157160_cgraph" id="bsp__int_8c_aa9e67049e3c0b2ae25e4e6083c157160_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="195,31,309,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="358,5,445,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="362,56,441,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="494,31,605,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="503,81,596,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c8606e6588439ce712bde2b24fc1abd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerQEI1 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00343">343</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00110">BSP_INT_ID_QEI1</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a4e27af048419c3c45853f71b8b88e352">BSP_INT_ID_QEI1</a>);      }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_a5c8606e6588439ce712bde2b24fc1abd_cgraph.png" border="0" usemap="#bsp__int_8c_a5c8606e6588439ce712bde2b24fc1abd_cgraph" alt=""/></div>
+<map name="bsp__int_8c_a5c8606e6588439ce712bde2b24fc1abd_cgraph" id="bsp__int_8c_a5c8606e6588439ce712bde2b24fc1abd_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="197,31,312,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="361,5,447,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="365,56,443,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="497,31,607,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="505,81,599,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac22789bcb78f685d3df609638828b0c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_IntHandlerHIBERNATE </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00344">344</a> 行定义.</p>
+
+<p>参考 <a class="el" href="bsp__int_8h_source.html#l00111">BSP_INT_ID_HIBERNATE</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;{ <a class="code" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64">BSP_IntHandler</a>(<a class="code" href="bsp__int_8h.html#a45a34b2eab2d2e80fa138387cf8fb095">BSP_INT_ID_HIBERNATE</a>); }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__int_8c_ac22789bcb78f685d3df609638828b0c0_cgraph.png" border="0" usemap="#bsp__int_8c_ac22789bcb78f685d3df609638828b0c0_cgraph" alt=""/></div>
+<map name="bsp__int_8c_ac22789bcb78f685d3df609638828b0c0_cgraph" id="bsp__int_8c_ac22789bcb78f685d3df609638828b0c0_cgraph">
+<area shape="rect" id="node2" href="bsp__int_8c.html#a8cb092c15c008f1d8ba4321a43fe8d64" title="BSP_IntHandler" alt="" coords="240,31,355,57"/><area shape="rect" id="node3" href="os__core_8c.html#a2ca750f944f1f608b7f7bf3c32244553" title="OSIntEnter" alt="" coords="403,5,490,32"/><area shape="rect" id="node4" href="os__core_8c.html#abf1fd264b45d9f9fa70c14c4693c353e" title="OSIntExit" alt="" coords="407,56,486,83"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="539,31,650,57"/><area shape="rect" id="node6" href="os__cpu_8h.html#ae89129ee2d0df565adefafe44c0f743f" title="OSIntCtxSw" alt="" coords="548,81,641,108"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="aa4a2c9ee8e8a6f1e79aec1486c69e77b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpu_8h.html#a1a3293affb5c1c53acd52503cfdce8d6">CPU_FNCT_VOID</a> BSP_IntVectTbl[<a class="el" href="bsp__int_8c.html#a9dd1551a44f0029e3c7a11030ec67490">BSP_INT_SRC_NBR</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="bsp__int_8c_source.html">bsp_int.c</a> 第 <a class="el" href="bsp__int_8c_source.html#l00068">68</a> 行定义.</p>
+
+<p>参考自 <a class="el" href="bsp__int_8c_source.html#l00371">BSP_IntHandler()</a> , 以及 <a class="el" href="bsp__int_8c_source.html#l00206">BSP_IntVectSet()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_33cd9ca9555943b70c4654519d7bc5e0.html">BSP</a></li><li class="navelem"><a class="el" href="bsp__int_8c.html">bsp_int.c</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:40 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

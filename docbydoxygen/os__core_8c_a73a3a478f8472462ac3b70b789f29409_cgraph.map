@@ -1,0 +1,4 @@
+<map id="OS_TaskIdle" name="OS_TaskIdle">
+<area shape="rect" id="node2" href="$os__cpu__c_8c.html#a7819c02d33415b093052de6416d9889f" title="OSTaskIdleHook" alt="" coords="150,5,269,32"/>
+<area shape="rect" id="node3" href="$os__app__hooks_8c.html#a7a1d89e16105fcdb5e555b4ae6cc7468" title="App_TaskIdleHook" alt="" coords="317,5,448,32"/>
+</map>

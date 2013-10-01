@@ -1,0 +1,10 @@
+<map id="App_TaskKbd" name="App_TaskKbd">
+<area shape="rect" id="node2" href="$bsp_8c.html#a11b28ad35e9aa55a6144f5fdbf63c63a" title="BSP_PB_GetStatus" alt="" coords="158,5,298,32"/>
+<area shape="rect" id="node3" href="$os__mbox_8c.html#ae703df746b1a0ed796d2ebcf73eb06a6" title="OSMboxPost" alt="" coords="178,56,278,83"/>
+<area shape="rect" id="node9" href="$os__time_8c.html#a79fa80d326d321b4823c6d518db941ba" title="OSTimeDly" alt="" coords="184,107,272,133"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="347,56,477,83"/>
+<area shape="rect" id="node7" href="$os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="369,107,455,133"/>
+<area shape="rect" id="node5" href="$os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="540,5,695,32"/>
+<area shape="rect" id="node6" href="$os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="526,56,709,83"/>
+<area shape="rect" id="node8" href="$os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="562,107,673,133"/>
+</map>

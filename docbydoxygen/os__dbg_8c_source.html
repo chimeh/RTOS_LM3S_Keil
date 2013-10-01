@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uCOS-II/Ports/os_dbg.c 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('os__dbg_8c_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">os_dbg.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="os__dbg_8c.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*********************************************************************************************************</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*                                               uC/OS-II</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*                                         The Real-Time Kernel</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*                                          DEBUGGER CONSTANTS</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*                                (c) Copyright 2006, Micrium, Weston, FL</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*                                          All Rights Reserved</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*                                           ARM Cortex-M3 Port</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">* File      : OS_DBG.C</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">* Version   : V2.89</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">* By        : Jean J. Labrosse</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">* For       : ARMv7M Cortex-M3</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">* Mode      : Thumb2</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">* Toolchain : IAR EWARM</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*********************************************************************************************************</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ucos__ii_8h.html">ucos_ii.h</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">   24</a></span>&#160;<span class="preprocessor">#define  OS_COMPILER_OPT  __root</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">*********************************************************************************************************</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">*                                             DEBUG DATA</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">*********************************************************************************************************</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="os__dbg_8c.html#a4cd9ad7631b37f48988c24d6caf0175e">   32</a></span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  <a class="code" href="os__dbg_8c.html#a4cd9ad7631b37f48988c24d6caf0175e">OSDebugEn</a>           = <a class="code" href="_a_p_p_2os__cfg_8h.html#a1decf1ed005c46290c370d689e61bd3e">OS_DEBUG_EN</a>;               <span class="comment">/* Debug constants are defined below   */</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#if OS_DEBUG_EN &gt; 0u</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>  <span class="keyword">const</span>  OSEndiannessTest    = 0x12345678L;               <span class="comment">/* Variable to test CPU endianness     */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSEventEn           = <a class="code" href="ucos__ii_8h.html#af3b27e0fe87e2e082cbbbd7ea615203b">OS_EVENT_EN</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSEventMax          = <a class="code" href="_a_p_p_2os__cfg_8h.html#ac74bda24ae05c2663c5e20330a4b5d05">OS_MAX_EVENTS</a>;             <span class="comment">/* Number of event control blocks      */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSEventNameEn       = <a class="code" href="_a_p_p_2os__cfg_8h.html#a94fcf17efab621c10c19d328de6a0a77">OS_EVENT_NAME_EN</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if (OS_EVENT_EN &gt; 0u) &amp;&amp; (OS_MAX_EVENTS &gt; 0u)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSEventSize         = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a>);          <span class="comment">/* Size in Bytes of OS_EVENT           */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSEventTblSize      = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a5d37e876c05f49fd6eaa4c3a1731bbee">OSEventTbl</a>);        <span class="comment">/* Size of OSEventTbl[] in bytes       */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSEventSize         = 0u;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSEventTblSize      = 0u;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSEventMultiEn      = <a class="code" href="_a_p_p_2os__cfg_8h.html#aff64265e7eb90a1b46b06fed7a04200b">OS_EVENT_MULTI_EN</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagEn            = <a class="code" href="_a_p_p_2os__cfg_8h.html#aa85bd8d34c9920d369d0a5062fbd4b20">OS_FLAG_EN</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#if (OS_FLAG_EN &gt; 0u) &amp;&amp; (OS_MAX_FLAGS &gt; 0u)</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagGrpSize       = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#struct_o_s___f_l_a_g___g_r_p">OS_FLAG_GRP</a>);       <span class="comment">/* Size in Bytes of OS_FLAG_GRP        */</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagNodeSize      = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#struct_o_s___f_l_a_g___n_o_d_e">OS_FLAG_NODE</a>);      <span class="comment">/* Size in Bytes of OS_FLAG_NODE       */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagWidth         = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#ad708354fbabb219f1ac4093a69c1adeb">OS_FLAGS</a>);          <span class="comment">/* Width (in bytes) of OS_FLAGS        */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagGrpSize       = 0u;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagNodeSize      = 0u;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagWidth         = 0u;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagMax           = <a class="code" href="_a_p_p_2os__cfg_8h.html#ae3252042378005c845874a8a17e821bc">OS_MAX_FLAGS</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSFlagNameEn        = <a class="code" href="_a_p_p_2os__cfg_8h.html#a4f4ba471343ff3073754e3b6bad1120b">OS_FLAG_NAME_EN</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSLowestPrio        = <a class="code" href="_a_p_p_2os__cfg_8h.html#a15986333977445f8b73808d9d994db5e">OS_LOWEST_PRIO</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMboxEn            = <a class="code" href="_a_p_p_2os__cfg_8h.html#a90f031edbe684a36be10f23dff1a42cf">OS_MBOX_EN</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMemEn             = <a class="code" href="_a_p_p_2os__cfg_8h.html#ab158ab02811e4e020c9e2873772c50de">OS_MEM_EN</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMemMax            = <a class="code" href="_a_p_p_2os__cfg_8h.html#a90b7877e6318c77dbe81e4cb180df73f">OS_MAX_MEM_PART</a>;           <span class="comment">/* Number of memory partitions         */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMemNameEn         = <a class="code" href="_a_p_p_2os__cfg_8h.html#a601eff9b6ed42eb9eee000a583985b29">OS_MEM_NAME_EN</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if (OS_MEM_EN &gt; 0u) &amp;&amp; (OS_MAX_MEM_PART &gt; 0u)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMemSize           = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#struct_o_s___m_e_m">OS_MEM</a>);            <span class="comment">/* Mem. Partition header sine (bytes)  */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMemTblSize        = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMemSize           = 0u;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMemTblSize        = 0u;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSMutexEn           = <a class="code" href="_a_p_p_2os__cfg_8h.html#a9d40844d581a6622c658508d15eb7304">OS_MUTEX_EN</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSPtrSize           = <span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *);            <span class="comment">/* Size in Bytes of a pointer          */</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSQEn               = <a class="code" href="_a_p_p_2os__cfg_8h.html#a4dfad739295b276e9e5649a3cdc7062f">OS_Q_EN</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSQMax              = <a class="code" href="_a_p_p_2os__cfg_8h.html#a6ce1fa5424b86a2e16aafc0ae9ab2712">OS_MAX_QS</a>;                 <span class="comment">/* Number of queues                    */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#if (OS_Q_EN &gt; 0u) &amp;&amp; (OS_MAX_QS &gt; 0u)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSQSize             = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>);              <span class="comment">/* Size in bytes of OS_Q structure     */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSQSize             = 0u;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSRdyTblSize        = <a class="code" href="ucos__ii_8h.html#a5e3a24f0bb41e1a040adaa47f8852f8b">OS_RDY_TBL_SIZE</a>;           <span class="comment">/* Number of bytes in the ready table  */</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSSemEn             = <a class="code" href="_a_p_p_2os__cfg_8h.html#ac1cde36537245c3e6025882b37768aac">OS_SEM_EN</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSStkWidth          = <span class="keyword">sizeof</span>(<a class="code" href="os__cpu_8h.html#a1f60e2713aaa63efc8c5fafdcdeaa8a2">OS_STK</a>);            <span class="comment">/* Size in Bytes of a stack entry      */</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskCreateEn      = <a class="code" href="_a_p_p_2os__cfg_8h.html#a23a74e20717d0fd54b3a696c188b806c">OS_TASK_CREATE_EN</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskCreateExtEn   = <a class="code" href="_a_p_p_2os__cfg_8h.html#a9accc3624eab395a584f5f109e801d42">OS_TASK_CREATE_EXT_EN</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskDelEn         = <a class="code" href="_a_p_p_2os__cfg_8h.html#a7f42dc03f14a8723b5e632f5ad651157">OS_TASK_DEL_EN</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskIdleStkSize   = <a class="code" href="_a_p_p_2os__cfg_8h.html#a9cd755dba45826fa862868f1591d82a3">OS_TASK_IDLE_STK_SIZE</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskProfileEn     = <a class="code" href="_a_p_p_2os__cfg_8h.html#a7b387cf6ab2bc9bad40e41605f065ca0">OS_TASK_PROFILE_EN</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskMax           = <a class="code" href="_a_p_p_2os__cfg_8h.html#a16f4a5504fe99e05cc20203b7f6b87dc">OS_MAX_TASKS</a> + <a class="code" href="ucos__ii_8h.html#a683cab213f2ef4d245caed94b42b07ce">OS_N_SYS_TASKS</a>; <span class="comment">/* Total max. number of tasks      */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskNameEn        = <a class="code" href="_a_p_p_2os__cfg_8h.html#a2e75b6a3b678202b3098f41acc9b186b">OS_TASK_NAME_EN</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskStatEn        = <a class="code" href="_a_p_p_2os__cfg_8h.html#a100c30ae62bb27ffbfece77454867f26">OS_TASK_STAT_EN</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskStatStkSize   = <a class="code" href="_a_p_p_2os__cfg_8h.html#abf6a2ddac6b19944430310e7b26d2eab">OS_TASK_STAT_STK_SIZE</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskStatStkChkEn  = <a class="code" href="_a_p_p_2os__cfg_8h.html#adc6c26fc901a9349e14c1a7839f3cee6">OS_TASK_STAT_STK_CHK_EN</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTaskSwHookEn      = <a class="code" href="_a_p_p_2os__cfg_8h.html#a6b02bbad11959dace87d29f00c2e6cb0">OS_TASK_SW_HOOK_EN</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTCBPrioTblMax     = <a class="code" href="_a_p_p_2os__cfg_8h.html#a15986333977445f8b73808d9d994db5e">OS_LOWEST_PRIO</a> + 1u;       <span class="comment">/* Number of entries in OSTCBPrioTbl[] */</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTCBSize           = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#struct_o_s___t_c_b">OS_TCB</a>);            <span class="comment">/* Size in Bytes of OS_TCB             */</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTicksPerSec       = <a class="code" href="_a_p_p_2os__cfg_8h.html#a673d8c27b9b599a483cb83d8a52e8e05">OS_TICKS_PER_SEC</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTimeTickHookEn    = <a class="code" href="_a_p_p_2os__cfg_8h.html#aba2654fae7751ccfa1bb9f9665c2e742">OS_TIME_TICK_HOOK_EN</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSVersionNbr        = <a class="code" href="ucos__ii_8h.html#a8ee42974be7bd483db95ede8d81be518">OS_VERSION</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrEn             = <a class="code" href="_a_p_p_2os__cfg_8h.html#a4e16845791bb096053b606e3b2cfd8c6">OS_TMR_EN</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrCfgMax         = <a class="code" href="_a_p_p_2os__cfg_8h.html#ad321ff3fa461bc3f040fe2f5dec4c991">OS_TMR_CFG_MAX</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrCfgNameEn      = <a class="code" href="_a_p_p_2os__cfg_8h.html#ae8c128cc8560750ef1d1524d974b30dd">OS_TMR_CFG_NAME_EN</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrCfgWheelSize   = <a class="code" href="_a_p_p_2os__cfg_8h.html#acafe7627b7cb9f59f940887e55c07cf9">OS_TMR_CFG_WHEEL_SIZE</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrCfgTicksPerSec = <a class="code" href="_a_p_p_2os__cfg_8h.html#a5eba95c76bb3136e85f1aa72a465610a">OS_TMR_CFG_TICKS_PER_SEC</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#if (OS_TMR_EN &gt; 0u) &amp;&amp; (OS_TMR_CFG_MAX &gt; 0u)</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrSize           = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#struct_o_s___t_m_r">OS_TMR</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrTblSize        = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a9c43b7b8eb787956b9bf14eea9fb9669">OSTmrTbl</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrWheelSize      = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#struct_o_s___t_m_r___w_h_e_e_l">OS_TMR_WHEEL</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrWheelTblSize   = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#aa4b2af0f8975da06b69a656ed288e4da">OSTmrWheelTbl</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor"></span><a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrSize           = 0u;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrTblSize        = 0u;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrWheelSize      = 0u;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSTmrWheelTblSize   = 0u;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">/*$PAGE*/</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">*********************************************************************************************************</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">*                                             DEBUG DATA</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">*                            TOTAL DATA SPACE (i.e. RAM) USED BY uC/OS-II</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">*********************************************************************************************************</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#if OS_DEBUG_EN &gt; 0u</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<a class="code" href="os__dbg_8c.html#a5cf4a6e06f17b8acb2f091a83d7c32ed">OS_COMPILER_OPT</a>  <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  <span class="keyword">const</span>  OSDataSize = <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#ae5227cb8745794a07b0acfec52e051bc">OSCtxSwCtr</a>)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;#<span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#af3b27e0fe87e2e082cbbbd7ea615203b">OS_EVENT_EN</a> &gt; 0u) &amp;&amp; (<a class="code" href="_a_p_p_2os__cfg_8h.html#ac74bda24ae05c2663c5e20330a4b5d05">OS_MAX_EVENTS</a> &gt; 0u)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a5d37e876c05f49fd6eaa4c3a1731bbee">OSEventTbl</a>)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;#endif</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;#<span class="keywordflow">if</span> (<a class="code" href="_a_p_p_2os__cfg_8h.html#aa85bd8d34c9920d369d0a5062fbd4b20">OS_FLAG_EN</a> &gt; 0u) &amp;&amp; (<a class="code" href="_a_p_p_2os__cfg_8h.html#ae3252042378005c845874a8a17e821bc">OS_MAX_FLAGS</a> &gt; 0u)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a9e055b6fc3810d0f4cfb062c0890663c">OSFlagTbl</a>)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a4a5c06d4d91eecb45d5cf7da806246ba">OSFlagFreeList</a>)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;#endif</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;#<span class="keywordflow">if</span> <a class="code" href="_a_p_p_2os__cfg_8h.html#a100c30ae62bb27ffbfece77454867f26">OS_TASK_STAT_EN</a> &gt; 0u</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a685b2274b2907823a306e22bc122b396">OSCPUUsage</a>)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a846a2a0ffe3c7e4271b14104ab283d7c">OSIdleCtrMax</a>)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#adb6da987e1db9fc28189585d0aa785fe">OSIdleCtrRun</a>)</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#abe8dd86730be5673b531e5470c59b992">OSStatRdy</a>)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#af0ce20ffb24dbfd5693a4741f46fa218">OSTaskStatStk</a>)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if OS_TICK_STEP_EN &gt; 0u</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span>                                           + <span class="keyword">sizeof</span>(OSTickStepState)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;#endif</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;#<span class="keywordflow">if</span> (<a class="code" href="_a_p_p_2os__cfg_8h.html#ab158ab02811e4e020c9e2873772c50de">OS_MEM_EN</a> &gt; 0u) &amp;&amp; (<a class="code" href="_a_p_p_2os__cfg_8h.html#a90b7877e6318c77dbe81e4cb180df73f">OS_MAX_MEM_PART</a> &gt; 0u)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#adb1b60c7e1d81495c4d5132a8e7d6c2e">OSMemFreeList</a>)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a17544b0672757964d31534384685d29c">OSMemTbl</a>)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;#endif</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;#<span class="keywordflow">if</span> (<a class="code" href="_a_p_p_2os__cfg_8h.html#a4dfad739295b276e9e5649a3cdc7062f">OS_Q_EN</a> &gt; 0u) &amp;&amp; (<a class="code" href="_a_p_p_2os__cfg_8h.html#a6ce1fa5424b86a2e16aafc0ae9ab2712">OS_MAX_QS</a> &gt; 0u)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a6153ab507218c74028e21b58d1f7fafc">OSQTbl</a>)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;#endif</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;#<span class="keywordflow">if</span> <a class="code" href="_a_p_p_2os__cfg_8h.html#a42972576166df5d10409ff2d745c19a8">OS_TIME_GET_SET_EN</a> &gt; 0u</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a8edf459d0cc62ee7c523ce3bb88dd0ce">OSTime</a>)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if (OS_TMR_EN &gt; 0u) &amp;&amp; (OS_TMR_CFG_MAX &gt; 0u)</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span>                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a6cfd32426449ed89f9c55ba7d472dd52">OSTmrFree</a>)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#ad273bc72dd0e323b076b38aac364b213">OSTmrUsed</a>)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a578ec764c5460313d514b35e5f613ca6">OSTmrTime</a>)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a75659fcb549eae2e857a0662064c9553">OSTmrSem</a>)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a8f965bec3cf7eb8ff271432906ce038e">OSTmrSemSignal</a>)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a04aa4df38281171e7c57d51cf8f6d914">OSTmrFreeList</a>)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a9c43b7b8eb787956b9bf14eea9fb9669">OSTmrTbl</a>)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#aa4b2af0f8975da06b69a656ed288e4da">OSTmrWheelTbl</a>)</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor"></span>                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a>)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#ab1fe1308ad42239ec611b901ab8776ca">OSLockNesting</a>)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a3d01354b14fe8a2d45e7641d6d3a1661">OSPrioCur</a>)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a850b9da78fcef2c7bc2dca16d8d684a0">OSPrioHighRdy</a>)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a49b2e2692e2945cda23029b01b2d4cd5">OSRdyGrp</a>)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a558e37150e66695682e4b7e832558cbd">OSRdyTbl</a>)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a8933f3257ee6a506b5109864f0e16665">OSRunning</a>)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a42d918dd2944ac659534f05d146d2e9a">OSTaskCtr</a>)</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#aea768d9ba3c7b41f9495c0e9bc33033e">OSIdleCtr</a>)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a935964c53f65e2d94cf6975a95163213">OSTaskIdleStk</a>)</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>)</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#ad8b3475d8a0a3be8452e4fc9ee400dfb">OSTCBFreeList</a>)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a670d5e07e39c49ecf65127e9f9f03e53">OSTCBHighRdy</a>)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a11bf1577c97ecba464c62e22fbec415b">OSTCBList</a>)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#aa20debf0e8624401248604162af7d979">OSTCBPrioTbl</a>)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                           + <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a19db30162d602979f162164a4b863edf">OSTCBTbl</a>);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">/*$PAGE*/</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">*********************************************************************************************************</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">*                                       OS DEBUG INITIALIZAZTION</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">* Description: This function is used to make sure that debug variables that are unused in the application</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">*              are not optimized away.  This function might not be necessary for all compilers.  In this</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">*              case, you should simply DELETE the code in this function while still leaving the declaration</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">*              of the function itself.</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">* Arguments  : none</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">* Returns    : none</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">* Note(s)    : (1) This code doesn&#39;t do anything, it simply prevents the compiler from optimizing out</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">*                  the &#39;const&#39; variables which are declared in this file.</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">*********************************************************************************************************</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#if OS_DEBUG_EN &gt; 0u</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span>  OSDebugInit (<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">void</span>  *ptemp;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;<a class="code" href="os__dbg_8c.html#a4cd9ad7631b37f48988c24d6caf0175e">OSDebugEn</a>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSEndiannessTest;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSEventMax;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSEventNameEn;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSEventEn;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSEventSize;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSEventTblSize;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSEventMultiEn;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSFlagEn;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSFlagGrpSize;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSFlagNodeSize;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSFlagWidth;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSFlagMax;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSFlagNameEn;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSLowestPrio;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSMboxEn;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSMemEn;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSMemMax;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSMemNameEn;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSMemSize;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSMemTblSize;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSMutexEn;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSPtrSize;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSQEn;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSQMax;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSQSize;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSRdyTblSize;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSSemEn;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSStkWidth;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskCreateEn;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskCreateExtEn;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskDelEn;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskIdleStkSize;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskProfileEn;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskMax;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskNameEn;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskStatEn;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskStatStkSize;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskStatStkChkEn;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTaskSwHookEn;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTCBPrioTblMax;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTCBSize;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTicksPerSec;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTimeTickHookEn;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#if OS_TMR_EN &gt; 0u</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor"></span>    ptemp = (<span class="keywordtype">void</span> *)&amp;<a class="code" href="ucos__ii_8h.html#a9c43b7b8eb787956b9bf14eea9fb9669">OSTmrTbl</a>[0];</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;<a class="code" href="ucos__ii_8h.html#aa4b2af0f8975da06b69a656ed288e4da">OSTmrWheelTbl</a>[0];</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrEn;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrCfgMax;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrCfgNameEn;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrCfgWheelSize;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrCfgTicksPerSec;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrSize;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrTblSize;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrWheelSize;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSTmrWheelTblSize;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSVersionNbr;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    ptemp = (<span class="keywordtype">void</span> *)&amp;OSDataSize;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    ptemp = ptemp;                             <span class="comment">/* Prevent compiler warning for &#39;ptemp&#39; not being used! */</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_71bcdadcecd7b5ff1becd3dd629fd845.html">uCOS-II</a></li><li class="navelem"><a class="el" href="dir_dcae676bdefcb0f1d0df9eae4788ad92.html">Ports</a></li><li class="navelem"><a class="el" href="os__dbg_8c.html">os_dbg.c</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:39 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

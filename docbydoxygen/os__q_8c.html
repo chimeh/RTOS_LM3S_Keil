@@ -1,0 +1,1091 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>UCOS_TI_LM3S_Keil: UCOS_TI_LM3S_Keil/uCOS-II/Source/os_q.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">UCOS_TI_LM3S_Keil
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('os__q_8c.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>宏定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">os_q.c 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="ucos__ii_8h_source.html">ucos_ii.h</a>&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+os_q.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c__incl.png" border="0" usemap="#_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__q_8c" alt=""/></div>
+<map name="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__q_8c" id="_u_c_o_s___t_i___l_m3_s___keil_2u_c_o_s-_i_i_2_source_2os__q_8c">
+<area shape="rect" id="node2" href="ucos__ii_8h.html" title="ucos_ii.h" alt="" coords="60,96,135,123"/><area shape="rect" id="node3" href="_a_p_p_2os__cfg_8h.html" title="os_cfg.h" alt="" coords="14,171,84,197"/><area shape="rect" id="node4" href="os__cpu_8h.html" title="os_cpu.h" alt="" coords="109,171,184,197"/></map>
+</div>
+</div>
+<p><a href="os__q_8c_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a8c6977f75b3378037286508d651edbb8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#a8c6977f75b3378037286508d651edbb8">OSQAccept</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *perr)</td></tr>
+<tr class="separator:a8c6977f75b3378037286508d651edbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09733715ea02098f9fe6b0cda12fcc90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#a09733715ea02098f9fe6b0cda12fcc90">OSQCreate</a> (void **start, <a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a> size)</td></tr>
+<tr class="separator:a09733715ea02098f9fe6b0cda12fcc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d293df7319f498058fc686d9c0638a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#a00d293df7319f498058fc686d9c0638a">OSQDel</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> opt, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *perr)</td></tr>
+<tr class="separator:a00d293df7319f498058fc686d9c0638a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb651d6327aae1036f4b218da1cba06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#a7cb651d6327aae1036f4b218da1cba06">OSQFlush</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent)</td></tr>
+<tr class="separator:a7cb651d6327aae1036f4b218da1cba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7f2cfe6a3320ec951688e3decc2e68"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#aea7f2cfe6a3320ec951688e3decc2e68">OSQPend</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent, <a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a> timeout, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *perr)</td></tr>
+<tr class="separator:aea7f2cfe6a3320ec951688e3decc2e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749e3989a6762d806e742611a1467dc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#a749e3989a6762d806e742611a1467dc7">OSQPendAbort</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> opt, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *perr)</td></tr>
+<tr class="separator:a749e3989a6762d806e742611a1467dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1036ecb0789004e593d3d1c958f3fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#aae1036ecb0789004e593d3d1c958f3fa">OSQPost</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent, void *pmsg)</td></tr>
+<tr class="separator:aae1036ecb0789004e593d3d1c958f3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8366a0cf565004f88a88d4b1894a39c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#a8366a0cf565004f88a88d4b1894a39c4">OSQPostFront</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent, void *pmsg)</td></tr>
+<tr class="separator:a8366a0cf565004f88a88d4b1894a39c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa14e09d312bd2180272b0ff27e702e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#aefa14e09d312bd2180272b0ff27e702e">OSQPostOpt</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent, void *pmsg, <a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> opt)</td></tr>
+<tr class="separator:aefa14e09d312bd2180272b0ff27e702e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce6e7104710518cd12a43128c91f947"><td class="memItemLeft" align="right" valign="top"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#abce6e7104710518cd12a43128c91f947">OSQQuery</a> (<a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *pevent, <a class="el" href="ucos__ii_8h.html#struct_o_s___q___d_a_t_a">OS_Q_DATA</a> *p_q_data)</td></tr>
+<tr class="separator:abce6e7104710518cd12a43128c91f947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61641feff32e6bde0adb8fe1fb5e1e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os__q_8c.html#a61641feff32e6bde0adb8fe1fb5e1e3f">OS_QInit</a> (void)</td></tr>
+<tr class="separator:a61641feff32e6bde0adb8fe1fb5e1e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a8c6977f75b3378037286508d651edbb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* OSQAccept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>perr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00061">61</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00271">OS_ERR_Q_EMPTY</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00538">OS_Q::OSQEnd</a>, <a class="el" href="ucos__ii_8h_source.html#l00542">OS_Q::OSQEntries</a>, <a class="el" href="ucos__ii_8h_source.html#l00540">OS_Q::OSQOut</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00537">OS_Q::OSQStart</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span>      *pmsg;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (perr == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                    <span class="comment">/* Validate &#39;perr&#39;                                    */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {               <span class="comment">/* Validate &#39;pevent&#39;                                  */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {<span class="comment">/* Validate event block type                          */</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    pq = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;             <span class="comment">/* Point at queue control block                       */</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    if (pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a> &gt; 0u) {                   <span class="comment">/* See if any messages in the queue                   */</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        pmsg = *pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a>++;                    <span class="comment">/* Yes, extract oldest message from the queue         */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a>--;                        <span class="comment">/* Update the number of entries in the queue          */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> == pq-&gt;<a class="code" href="ucos__ii_8h.html#a60d92f59dcea53be9f36d9bae4f9f2d8">OSQEnd</a>) {          <span class="comment">/* Wrap OUT pointer if we are at the end of the queue */</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> = pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a399788b90badf30ce9ee364d10a49741">OS_ERR_Q_EMPTY</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        pmsg  = (<span class="keywordtype">void</span> *)0;                       <span class="comment">/* Queue is empty                                     */</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> (pmsg);                               <span class="comment">/* Return message received (or NULL)                  */</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a09733715ea02098f9fe6b0cda12fcc90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a>* OSQCreate </td>
+          <td>(</td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00122">122</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__core_8c_source.html#l01222">OS_EventWaitListInit()</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00395">OS_EVENT::OSEventCnt</a>, <a class="el" href="ucos__ii_8h_source.html#l00717">OSEventFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00405">OS_EVENT::OSEventName</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a>, <a class="el" href="ucos__ii_8h_source.html#l00538">OS_Q::OSQEnd</a>, <a class="el" href="ucos__ii_8h_source.html#l00542">OS_Q::OSQEntries</a>, <a class="el" href="ucos__ii_8h_source.html#l00775">OSQFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00539">OS_Q::OSQIn</a>, <a class="el" href="ucos__ii_8h_source.html#l00540">OS_Q::OSQOut</a>, <a class="el" href="ucos__ii_8h_source.html#l00536">OS_Q::OSQPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00541">OS_Q::OSQSize</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00537">OS_Q::OSQStart</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a>  *pevent;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a> &gt; 0u) {                     <span class="comment">/* See if called from ISR ...                         */</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0);                  <span class="comment">/* ... can&#39;t CREATE from an ISR                       */</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    pevent = <a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>;                    <span class="comment">/* Get next free event control block                  */</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a> != (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {      <span class="comment">/* See if pool of free ECB pool was empty             */</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a> = (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)<a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">if</span> (pevent != (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {               <span class="comment">/* See if we have an event control block              */</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        pq = <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>;                        <span class="comment">/* Get a free queue control block                     */</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span> (pq != (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)0) {                   <span class="comment">/* Were we able to get a queue control block ?        */</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>            = <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>-&gt;<a class="code" href="ucos__ii_8h.html#a6f140c2dc908271fda24f2fa6b7feaae">OSQPtr</a>; <span class="comment">/* Yes, Adjust free list pointer to next free*/</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>           = start;               <span class="comment">/*      Initialize the queue                 */</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#a60d92f59dcea53be9f36d9bae4f9f2d8">OSQEnd</a>             = &amp;start[size];</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#ae4a8dfc52173a959eab9c86f5ac9b2aa">OSQIn</a>              = start;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a>             = start;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#a6f9c1dac5f6120adc4f4b7d93fa0c80b">OSQSize</a>            = size;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a>         = 0u;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a>    = <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            pevent-&gt;<a class="code" href="ucos__ii_8h.html#a175e3b047215b3110fe5a58e5ca28c4b">OSEventCnt</a>     = 0u;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>     = pq;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#if OS_EVENT_NAME_EN &gt; 0u</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor"></span>            pevent-&gt;<a class="code" href="ucos__ii_8h.html#a795707e963e1d19c05cd1ba7775e6ef2">OSEventName</a>    = (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)<span class="stringliteral">&quot;?&quot;</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span>            <a class="code" href="os__core_8c.html#a905a0e05a1feccd489e2096ceb9aa086">OS_EventWaitListInit</a>(pevent);                 <span class="comment">/*      Initalize the wait list              */</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a> = (<span class="keywordtype">void</span> *)<a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>; <span class="comment">/* No,  Return event control block on error  */</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>    = pevent;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            pevent = (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> (pevent);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_a09733715ea02098f9fe6b0cda12fcc90_cgraph.png" border="0" usemap="#os__q_8c_a09733715ea02098f9fe6b0cda12fcc90_cgraph" alt=""/></div>
+<map name="os__q_8c_a09733715ea02098f9fe6b0cda12fcc90_cgraph" id="os__q_8c_a09733715ea02098f9fe6b0cda12fcc90_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a905a0e05a1feccd489e2096ceb9aa086" title="OS_EventWaitListInit" alt="" coords="145,5,290,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a00d293df7319f498058fc686d9c0638a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a>* OSQDel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>perr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00213">213</a> 行定义.</p>
+
+<p>参考 <a class="el" href="ucos__ii_8h_source.html#l00184">OS_DEL_ALWAYS</a>, <a class="el" href="ucos__ii_8h_source.html#l00183">OS_DEL_NO_PEND</a>, <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00263">OS_ERR_DEL_ISR</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00254">OS_ERR_INVALID_OPT</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00292">OS_ERR_TASK_WAITING</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="ucos__ii_8h_source.html#l00130">OS_EVENT_TYPE_UNUSED</a>, <a class="el" href="os__core_8c_source.html#l00995">OS_EventTaskRdy()</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00063">OS_FALSE</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="ucos__ii_8h_source.html#l00121">OS_STAT_PEND_OK</a>, <a class="el" href="ucos__ii_8h_source.html#l00108">OS_STAT_Q</a>, <a class="el" href="ucos__ii_8h_source.html#l00067">OS_TRUE</a>, <a class="el" href="ucos__ii_8h_source.html#l00395">OS_EVENT::OSEventCnt</a>, <a class="el" href="ucos__ii_8h_source.html#l00717">OSEventFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00397">OS_EVENT::OSEventGrp</a>, <a class="el" href="ucos__ii_8h_source.html#l00405">OS_EVENT::OSEventName</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a>, <a class="el" href="ucos__ii_8h_source.html#l00775">OSQFreeList</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00536">OS_Q::OSQPtr</a>.</p>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;{</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="os__cpu_8h.html#a112e3146cb38b6ee95e64d85842e380a">BOOLEAN</a>    tasks_waiting;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a>  *pevent_return;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                               </span><span class="comment">/* Allocate storage for CPU status register */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (perr == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                              <span class="comment">/* Validate &#39;perr&#39;                          */</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">return</span> (pevent);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {                         <span class="comment">/* Validate &#39;pevent&#39;                        */</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> (pevent);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {          <span class="comment">/* Validate event block type                */</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">return</span> (pevent);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a> &gt; 0u) {                               <span class="comment">/* See if called from ISR ...               */</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a89362354002bffd049ef35011df7ccb4">OS_ERR_DEL_ISR</a>;                            <span class="comment">/* ... can&#39;t DELETE from an ISR             */</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span> (pevent);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> != 0u) {                        <span class="comment">/* See if any tasks waiting on queue        */</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        tasks_waiting = <a class="code" href="ucos__ii_8h.html#a998ec127dfac549592d84afb2a9ac323">OS_TRUE</a>;                           <span class="comment">/* Yes                                      */</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        tasks_waiting = <a class="code" href="ucos__ii_8h.html#a5e0edee36263795a0a1f30658d4c8a3f">OS_FALSE</a>;                          <span class="comment">/* No                                       */</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">switch</span> (opt) {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ucos__ii_8h.html#abc5e06c4e1dd828b145b5d39a5dd6eaa">OS_DEL_NO_PEND</a>:                               <span class="comment">/* Delete queue only if no task waiting     */</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;             <span class="keywordflow">if</span> (tasks_waiting == <a class="code" href="ucos__ii_8h.html#a5e0edee36263795a0a1f30658d4c8a3f">OS_FALSE</a>) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#if OS_EVENT_NAME_EN &gt; 0u</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span>                 pevent-&gt;<a class="code" href="ucos__ii_8h.html#a795707e963e1d19c05cd1ba7775e6ef2">OSEventName</a>    = (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)<span class="stringliteral">&quot;?&quot;</span>;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor"></span>                 pq                     = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;  <span class="comment">/* Return OS_Q to free list     */</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                 pq-&gt;<a class="code" href="ucos__ii_8h.html#a6f140c2dc908271fda24f2fa6b7feaae">OSQPtr</a>             = <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                 <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>            = pq;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                 pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a>    = <a class="code" href="ucos__ii_8h.html#a69e500f97c245c942a7d6c45a453c7d3">OS_EVENT_TYPE_UNUSED</a>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                 pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>     = <a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>; <span class="comment">/* Return Event Control Block to free list  */</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                 pevent-&gt;<a class="code" href="ucos__ii_8h.html#a175e3b047215b3110fe5a58e5ca28c4b">OSEventCnt</a>     = 0u;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                 <a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>        = pevent;          <span class="comment">/* Get next free event control block        */</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                 <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                 *perr                  = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                 pevent_return          = (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0;   <span class="comment">/* Queue has been deleted                   */</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;             } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                 <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                 *perr                  = <a class="code" href="ucos__ii_8h.html#a5de893cffb80aa346f5a62aff3ce6cce">OS_ERR_TASK_WAITING</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                 pevent_return          = pevent;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;             }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ucos__ii_8h.html#a5cc28d8a1c48b022ba416c10804446ae">OS_DEL_ALWAYS</a>:                                <span class="comment">/* Always delete the queue                  */</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;             <span class="keywordflow">while</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> != 0u) {            <span class="comment">/* Ready ALL tasks waiting for queue        */</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                 (void)<a class="code" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85">OS_EventTaskRdy</a>(pevent, (<span class="keywordtype">void</span> *)0, <a class="code" href="ucos__ii_8h.html#add50b4d725edc9aca2c44b6092dd4153">OS_STAT_Q</a>, <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;             }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#if OS_EVENT_NAME_EN &gt; 0u</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span>             pevent-&gt;<a class="code" href="ucos__ii_8h.html#a795707e963e1d19c05cd1ba7775e6ef2">OSEventName</a>    = (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)<span class="stringliteral">&quot;?&quot;</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor"></span>             pq                     = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;   <span class="comment">/* Return OS_Q to free list        */</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;             pq-&gt;<a class="code" href="ucos__ii_8h.html#a6f140c2dc908271fda24f2fa6b7feaae">OSQPtr</a>             = <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;             <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>            = pq;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;             pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a>    = <a class="code" href="ucos__ii_8h.html#a69e500f97c245c942a7d6c45a453c7d3">OS_EVENT_TYPE_UNUSED</a>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;             pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>     = <a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>;     <span class="comment">/* Return Event Control Block to free list  */</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;             pevent-&gt;<a class="code" href="ucos__ii_8h.html#a175e3b047215b3110fe5a58e5ca28c4b">OSEventCnt</a>     = 0u;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;             <a class="code" href="ucos__ii_8h.html#a0c2762a3640d8f8792f012da073ce538">OSEventFreeList</a>        = pevent;              <span class="comment">/* Get next free event control block        */</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;             <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;             <span class="keywordflow">if</span> (tasks_waiting == <a class="code" href="ucos__ii_8h.html#a998ec127dfac549592d84afb2a9ac323">OS_TRUE</a>) {               <span class="comment">/* Reschedule only if task(s) were waiting  */</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                 <a class="code" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292">OS_Sched</a>();                               <span class="comment">/* Find highest priority task ready to run  */</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;             }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;             *perr                  = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;             pevent_return          = (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0;       <span class="comment">/* Queue has been deleted                   */</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;             <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;             *perr                  = <a class="code" href="ucos__ii_8h.html#ac5b5aa01b47d3dd7ba9310d68df057f5">OS_ERR_INVALID_OPT</a>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;             pevent_return          = pevent;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">return</span> (pevent_return);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_a00d293df7319f498058fc686d9c0638a_cgraph.png" border="0" usemap="#os__q_8c_a00d293df7319f498058fc686d9c0638a_cgraph" alt=""/></div>
+<map name="os__q_8c_a00d293df7319f498058fc686d9c0638a_cgraph" id="os__q_8c_a00d293df7319f498058fc686d9c0638a_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="125,56,256,83"/><area shape="rect" id="node5" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="148,107,233,133"/><area shape="rect" id="node3" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="319,5,473,32"/><area shape="rect" id="node4" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="305,56,487,83"/><area shape="rect" id="node6" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="341,107,451,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7cb651d6327aae1036f4b218da1cba06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSQFlush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00325">325</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00542">OS_Q::OSQEntries</a>, <a class="el" href="ucos__ii_8h_source.html#l00539">OS_Q::OSQIn</a>, <a class="el" href="ucos__ii_8h_source.html#l00540">OS_Q::OSQOut</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00537">OS_Q::OSQStart</a>.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                          </span><span class="comment">/* Allocate storage for CPU status register      */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {                    <span class="comment">/* Validate &#39;pevent&#39;                             */</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {     <span class="comment">/* Validate event block type                     */</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    pq             = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;      <span class="comment">/* Point to queue storage structure              */</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    pq-&gt;<a class="code" href="ucos__ii_8h.html#ae4a8dfc52173a959eab9c86f5ac9b2aa">OSQIn</a>      = pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a>     = pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a> = 0u;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aea7f2cfe6a3320ec951688e3decc2e68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* OSQPend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#a3954a3ec775325f557f0b4942a964f91">INT32U</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>perr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00389">389</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00262">OS_ERR_PEND_ABORT</a>, <a class="el" href="ucos__ii_8h_source.html#l00249">OS_ERR_PEND_ISR</a>, <a class="el" href="ucos__ii_8h_source.html#l00261">OS_ERR_PEND_LOCKED</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00258">OS_ERR_TIMEOUT</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__core_8c_source.html#l01147">OS_EventTaskRemove()</a>, <a class="el" href="os__core_8c_source.html#l01070">OS_EventTaskWait()</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="ucos__ii_8h_source.html#l00123">OS_STAT_PEND_ABORT</a>, <a class="el" href="ucos__ii_8h_source.html#l00121">OS_STAT_PEND_OK</a>, <a class="el" href="ucos__ii_8h_source.html#l00122">OS_STAT_PEND_TO</a>, <a class="el" href="ucos__ii_8h_source.html#l00108">OS_STAT_Q</a>, <a class="el" href="ucos__ii_8h_source.html#l00105">OS_STAT_RDY</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00734">OSIntNesting</a>, <a class="el" href="ucos__ii_8h_source.html#l00736">OSLockNesting</a>, <a class="el" href="ucos__ii_8h_source.html#l00538">OS_Q::OSQEnd</a>, <a class="el" href="ucos__ii_8h_source.html#l00542">OS_Q::OSQEntries</a>, <a class="el" href="ucos__ii_8h_source.html#l00540">OS_Q::OSQOut</a>, <a class="el" href="ucos__ii_8h_source.html#l00537">OS_Q::OSQStart</a>, <a class="el" href="ucos__ii_8h_source.html#l00758">OSTCBCur</a>, <a class="el" href="ucos__ii_8h_source.html#l00632">OS_TCB::OSTCBDly</a>, <a class="el" href="ucos__ii_8h_source.html#l00618">OS_TCB::OSTCBEventMultiPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00614">OS_TCB::OSTCBEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00622">OS_TCB::OSTCBMsg</a>, <a class="el" href="ucos__ii_8h_source.html#l00633">OS_TCB::OSTCBStat</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00634">OS_TCB::OSTCBStatPend</a>.</p>
+<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;{</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordtype">void</span>      *pmsg;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                     </span><span class="comment">/* Allocate storage for CPU status register           */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (perr == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                    <span class="comment">/* Validate &#39;perr&#39;                                    */</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {               <span class="comment">/* Validate &#39;pevent&#39;                                  */</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {<span class="comment">/* Validate event block type                          */</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    }</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#a31aacb20905e62207cfb25d3a16a8d19">OSIntNesting</a> &gt; 0u) {                     <span class="comment">/* See if called from ISR ...                         */</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a5f647f08b5da2753517fb881f7948622">OS_ERR_PEND_ISR</a>;                 <span class="comment">/* ... can&#39;t PEND from an ISR                         */</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    }</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="ucos__ii_8h.html#ab1fe1308ad42239ec611b901ab8776ca">OSLockNesting</a> &gt; 0u) {                    <span class="comment">/* See if called with scheduler locked ...            */</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a91e4a7da4f841419e2abd5372700aab2">OS_ERR_PEND_LOCKED</a>;              <span class="comment">/* ... can&#39;t PEND when locked                         */</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span> *)0);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    pq = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;             <span class="comment">/* Point at queue control block                       */</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    if (pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a> &gt; 0u) {                   <span class="comment">/* See if any messages in the queue                   */</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        pmsg = *pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a>++;                    <span class="comment">/* Yes, extract oldest message from the queue         */</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a>--;                        <span class="comment">/* Update the number of entries in the queue          */</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="keywordflow">if</span> (pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> == pq-&gt;<a class="code" href="ucos__ii_8h.html#a60d92f59dcea53be9f36d9bae4f9f2d8">OSQEnd</a>) {          <span class="comment">/* Wrap OUT pointer if we are at the end of the queue */</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> = pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        }</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordflow">return</span> (pmsg);                           <span class="comment">/* Return message received                            */</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    }</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#ac3da2b8fcd7c5155a98cf31065fe9b80">OSTCBStat</a>     |= <a class="code" href="ucos__ii_8h.html#add50b4d725edc9aca2c44b6092dd4153">OS_STAT_Q</a>;        <span class="comment">/* Task will have to pend for a message to be posted  */</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#a85edcad3358d773d2a93e1afc813eedd">OSTCBStatPend</a>  = <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#acce26ca7c92ec90b231e955e50a3ba87">OSTCBDly</a>       = timeout;          <span class="comment">/* Load timeout into TCB                              */</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <a class="code" href="os__core_8c.html#a72ffa04010427c899c109336e1de0046">OS_EventTaskWait</a>(pevent);                    <span class="comment">/* Suspend task until event or timeout occurs         */</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <a class="code" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292">OS_Sched</a>();                                  <span class="comment">/* Find next highest priority task ready to run       */</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordflow">switch</span> (<a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#a85edcad3358d773d2a93e1afc813eedd">OSTCBStatPend</a>) {                <span class="comment">/* See if we timed-out or aborted                */</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>:                         <span class="comment">/* Extract message from TCB (Put there by QPost) */</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;             pmsg =  <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#aee02770a7c553cadff50463ce35d0ad6">OSTCBMsg</a>;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            *perr =  <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ucos__ii_8h.html#adc4edffddb55aef53f8bface7f480a13">OS_STAT_PEND_ABORT</a>:</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;             pmsg = (<span class="keywordtype">void</span> *)0;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            *perr =  <a class="code" href="ucos__ii_8h.html#ad1b66a15b25cdd566e5d4a5bd5396447">OS_ERR_PEND_ABORT</a>;               <span class="comment">/* Indicate that we aborted                      */</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="ucos__ii_8h.html#a3a39c8ccb95b3f7709089b9afddc8597">OS_STAT_PEND_TO</a>:</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;             <a class="code" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0">OS_EventTaskRemove</a>(<a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>, pevent);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;             pmsg = (<span class="keywordtype">void</span> *)0;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            *perr =  <a class="code" href="ucos__ii_8h.html#a5cb45ca297f463a7f4766bb2be477309">OS_ERR_TIMEOUT</a>;                  <span class="comment">/* Indicate that we didn&#39;t get event within TO   */</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;             <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    }</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#ac3da2b8fcd7c5155a98cf31065fe9b80">OSTCBStat</a>          =  <a class="code" href="ucos__ii_8h.html#a1450c52d6c151e1e6766fa3948af90dd">OS_STAT_RDY</a>;      <span class="comment">/* Set   task  status to ready                   */</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#a85edcad3358d773d2a93e1afc813eedd">OSTCBStatPend</a>      =  <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>;  <span class="comment">/* Clear pend  status                            */</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#a02a04fc053c735cfe2b76bb6d755ad3f">OSTCBEventPtr</a>      = (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a>  *)0;    <span class="comment">/* Clear event pointers                          */</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor">#if (OS_EVENT_MULTI_EN &gt; 0u)</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="preprocessor"></span>    <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#aa94fe149dd4e4ba49e354230aed4a430">OSTCBEventMultiPtr</a> = (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> **)0;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="preprocessor"></span>    <a class="code" href="ucos__ii_8h.html#a44f9b3abcd80e7312aba184bae3f90e4">OSTCBCur</a>-&gt;<a class="code" href="ucos__ii_8h.html#aee02770a7c553cadff50463ce35d0ad6">OSTCBMsg</a>           = (<span class="keywordtype">void</span>      *)0;    <span class="comment">/* Clear  received message                       */</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordflow">return</span> (pmsg);                                    <span class="comment">/* Return received message                       */</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_aea7f2cfe6a3320ec951688e3decc2e68_cgraph.png" border="0" usemap="#os__q_8c_aea7f2cfe6a3320ec951688e3decc2e68_cgraph" alt=""/></div>
+<map name="os__q_8c_aea7f2cfe6a3320ec951688e3decc2e68_cgraph" id="os__q_8c_aea7f2cfe6a3320ec951688e3decc2e68_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="136,5,291,32"/><area shape="rect" id="node3" href="os__core_8c.html#a72ffa04010427c899c109336e1de0046" title="OS_EventTaskWait" alt="" coords="146,56,281,83"/><area shape="rect" id="node4" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="171,107,256,133"/><area shape="rect" id="node5" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="339,107,450,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a749e3989a6762d806e742611a1467dc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSQPendAbort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *&#160;</td>
+          <td class="paramname"><em>perr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00503">503</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00262">OS_ERR_PEND_ABORT</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__core_8c_source.html#l00995">OS_EventTaskRdy()</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00194">OS_PEND_OPT_BROADCAST</a>, <a class="el" href="ucos__ii_8h_source.html#l00193">OS_PEND_OPT_NONE</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="ucos__ii_8h_source.html#l00123">OS_STAT_PEND_ABORT</a>, <a class="el" href="ucos__ii_8h_source.html#l00108">OS_STAT_Q</a>, <a class="el" href="ucos__ii_8h_source.html#l00397">OS_EVENT::OSEventGrp</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>.</p>
+<div class="fragment"><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;{</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>      nbr_tasks;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                               </span><span class="comment">/* Allocate storage for CPU status register */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (perr == (<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)0) {                              <span class="comment">/* Validate &#39;perr&#39;                          */</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="keywordflow">return</span> (0u);</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    }</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {                         <span class="comment">/* Validate &#39;pevent&#39;                        */</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keywordflow">return</span> (0u);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    }</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {          <span class="comment">/* Validate event block type                */</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        <span class="keywordflow">return</span> (0u);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> != 0u) {                        <span class="comment">/* See if any task waiting on queue?        */</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        nbr_tasks = 0u;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <span class="keywordflow">switch</span> (opt) {</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="ucos__ii_8h.html#a335c6ae7d663c5ef70eecf6647d37abb">OS_PEND_OPT_BROADCAST</a>:                    <span class="comment">/* Do we need to abort ALL waiting tasks?   */</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                 <span class="keywordflow">while</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> != 0u) {        <span class="comment">/* Yes, ready ALL tasks waiting on queue    */</span></div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                     (void)<a class="code" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85">OS_EventTaskRdy</a>(pevent, (<span class="keywordtype">void</span> *)0, <a class="code" href="ucos__ii_8h.html#add50b4d725edc9aca2c44b6092dd4153">OS_STAT_Q</a>, <a class="code" href="ucos__ii_8h.html#adc4edffddb55aef53f8bface7f480a13">OS_STAT_PEND_ABORT</a>);</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                     nbr_tasks++;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                 }</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;                 <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;               </div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="ucos__ii_8h.html#a56b4d5109a4abaa4d2e370c159edc017">OS_PEND_OPT_NONE</a>:</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            <span class="keywordflow">default</span>:                                       <span class="comment">/* No,  ready HPT       waiting on queue    */</span></div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                 (void)<a class="code" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85">OS_EventTaskRdy</a>(pevent, (<span class="keywordtype">void</span> *)0, <a class="code" href="ucos__ii_8h.html#add50b4d725edc9aca2c44b6092dd4153">OS_STAT_Q</a>, <a class="code" href="ucos__ii_8h.html#adc4edffddb55aef53f8bface7f480a13">OS_STAT_PEND_ABORT</a>);</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                 nbr_tasks++;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                 <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        }</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <a class="code" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292">OS_Sched</a>();                                        <span class="comment">/* Find HPT ready to run                    */</span></div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        *perr = <a class="code" href="ucos__ii_8h.html#ad1b66a15b25cdd566e5d4a5bd5396447">OS_ERR_PEND_ABORT</a>;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <span class="keywordflow">return</span> (nbr_tasks);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    }</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    *perr = <a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordflow">return</span> (0u);                                           <span class="comment">/* No tasks waiting on queue                */</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_a749e3989a6762d806e742611a1467dc7_cgraph.png" border="0" usemap="#os__q_8c_a749e3989a6762d806e742611a1467dc7_cgraph" alt=""/></div>
+<map name="os__q_8c_a749e3989a6762d806e742611a1467dc7_cgraph" id="os__q_8c_a749e3989a6762d806e742611a1467dc7_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="165,56,296,83"/><area shape="rect" id="node5" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="188,107,273,133"/><area shape="rect" id="node3" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="359,5,513,32"/><area shape="rect" id="node4" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="345,56,527,83"/><area shape="rect" id="node6" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="381,107,491,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aae1036ecb0789004e593d3d1c958f3fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSQPost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pmsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00576">576</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00270">OS_ERR_Q_FULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__core_8c_source.html#l00995">OS_EventTaskRdy()</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="ucos__ii_8h_source.html#l00121">OS_STAT_PEND_OK</a>, <a class="el" href="ucos__ii_8h_source.html#l00108">OS_STAT_Q</a>, <a class="el" href="ucos__ii_8h_source.html#l00397">OS_EVENT::OSEventGrp</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00538">OS_Q::OSQEnd</a>, <a class="el" href="ucos__ii_8h_source.html#l00542">OS_Q::OSQEntries</a>, <a class="el" href="ucos__ii_8h_source.html#l00539">OS_Q::OSQIn</a>, <a class="el" href="ucos__ii_8h_source.html#l00541">OS_Q::OSQSize</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00537">OS_Q::OSQStart</a>.</p>
+<div class="fragment"><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;{</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                           </span><span class="comment">/* Allocate storage for CPU status register     */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {                     <span class="comment">/* Validate &#39;pevent&#39;                            */</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>);</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    }</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {      <span class="comment">/* Validate event block type                    */</span></div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>);</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;    }</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> != 0u) {                    <span class="comment">/* See if any task pending on queue             */</span></div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                                                       <span class="comment">/* Ready highest priority task waiting on event */</span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        (void)<a class="code" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85">OS_EventTaskRdy</a>(pevent, pmsg, <a class="code" href="ucos__ii_8h.html#add50b4d725edc9aca2c44b6092dd4153">OS_STAT_Q</a>, <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>);</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <a class="code" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292">OS_Sched</a>();                                    <span class="comment">/* Find highest priority task ready to run      */</span></div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    }</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    pq = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;                   <span class="comment">/* Point to queue control block                 */</span></div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    if (pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a> &gt;= pq-&gt;<a class="code" href="ucos__ii_8h.html#a6f9c1dac5f6120adc4f4b7d93fa0c80b">OSQSize</a>) {               <span class="comment">/* Make sure queue is not full                  */</span></div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#ab981dc11058f120bbc44a20bc6cf626d">OS_ERR_Q_FULL</a>);</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    }</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    *pq-&gt;<a class="code" href="ucos__ii_8h.html#ae4a8dfc52173a959eab9c86f5ac9b2aa">OSQIn</a>++ = pmsg;                               <span class="comment">/* Insert message into queue                    */</span></div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;    pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a>++;                                  <span class="comment">/* Update the nbr of entries in the queue       */</span></div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <span class="keywordflow">if</span> (pq-&gt;<a class="code" href="ucos__ii_8h.html#ae4a8dfc52173a959eab9c86f5ac9b2aa">OSQIn</a> == pq-&gt;<a class="code" href="ucos__ii_8h.html#a60d92f59dcea53be9f36d9bae4f9f2d8">OSQEnd</a>) {                     <span class="comment">/* Wrap IN ptr if we are at end of queue        */</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        pq-&gt;<a class="code" href="ucos__ii_8h.html#ae4a8dfc52173a959eab9c86f5ac9b2aa">OSQIn</a> = pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    }</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_aae1036ecb0789004e593d3d1c958f3fa_cgraph.png" border="0" usemap="#os__q_8c_aae1036ecb0789004e593d3d1c958f3fa_cgraph" alt=""/></div>
+<map name="os__q_8c_aae1036ecb0789004e593d3d1c958f3fa_cgraph" id="os__q_8c_aae1036ecb0789004e593d3d1c958f3fa_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="133,56,264,83"/><area shape="rect" id="node5" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="156,107,241,133"/><area shape="rect" id="node3" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="327,5,481,32"/><area shape="rect" id="node4" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="313,56,495,83"/><area shape="rect" id="node6" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="349,107,459,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8366a0cf565004f88a88d4b1894a39c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSQPostFront </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pmsg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00639">639</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00270">OS_ERR_Q_FULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__core_8c_source.html#l00995">OS_EventTaskRdy()</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="ucos__ii_8h_source.html#l00121">OS_STAT_PEND_OK</a>, <a class="el" href="ucos__ii_8h_source.html#l00108">OS_STAT_Q</a>, <a class="el" href="ucos__ii_8h_source.html#l00397">OS_EVENT::OSEventGrp</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00538">OS_Q::OSQEnd</a>, <a class="el" href="ucos__ii_8h_source.html#l00542">OS_Q::OSQEntries</a>, <a class="el" href="ucos__ii_8h_source.html#l00540">OS_Q::OSQOut</a>, <a class="el" href="ucos__ii_8h_source.html#l00541">OS_Q::OSQSize</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00537">OS_Q::OSQStart</a>.</p>
+<div class="fragment"><div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;{</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                          </span><span class="comment">/* Allocate storage for CPU status register      */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {                    <span class="comment">/* Validate &#39;pevent&#39;                             */</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>);</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    }</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {     <span class="comment">/* Validate event block type                     */</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>);</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    }</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> != 0u) {                   <span class="comment">/* See if any task pending on queue              */</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                                                      <span class="comment">/* Ready highest priority task waiting on event  */</span></div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        (void)<a class="code" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85">OS_EventTaskRdy</a>(pevent, pmsg, <a class="code" href="ucos__ii_8h.html#add50b4d725edc9aca2c44b6092dd4153">OS_STAT_Q</a>, <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        <a class="code" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292">OS_Sched</a>();                                   <span class="comment">/* Find highest priority task ready to run       */</span></div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    }</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    pq = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;                  <span class="comment">/* Point to queue control block                  */</span></div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    if (pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a> &gt;= pq-&gt;<a class="code" href="ucos__ii_8h.html#a6f9c1dac5f6120adc4f4b7d93fa0c80b">OSQSize</a>) {              <span class="comment">/* Make sure queue is not full                   */</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#ab981dc11058f120bbc44a20bc6cf626d">OS_ERR_Q_FULL</a>);</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    }</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    <span class="keywordflow">if</span> (pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> == pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>) {                 <span class="comment">/* Wrap OUT ptr if we are at the 1st queue entry */</span></div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> = pq-&gt;<a class="code" href="ucos__ii_8h.html#a60d92f59dcea53be9f36d9bae4f9f2d8">OSQEnd</a>;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    }</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a>--;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    *pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> = pmsg;                               <span class="comment">/* Insert message into queue                     */</span></div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a>++;                                 <span class="comment">/* Update the nbr of entries in the queue        */</span></div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_a8366a0cf565004f88a88d4b1894a39c4_cgraph.png" border="0" usemap="#os__q_8c_a8366a0cf565004f88a88d4b1894a39c4_cgraph" alt=""/></div>
+<map name="os__q_8c_a8366a0cf565004f88a88d4b1894a39c4_cgraph" id="os__q_8c_a8366a0cf565004f88a88d4b1894a39c4_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="163,56,293,83"/><area shape="rect" id="node5" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="185,107,271,133"/><area shape="rect" id="node3" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="356,5,511,32"/><area shape="rect" id="node4" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="342,56,525,83"/><area shape="rect" id="node6" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="378,107,489,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aefa14e09d312bd2180272b0ff27e702e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSQPostOpt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pmsg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00711">711</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00270">OS_ERR_Q_FULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__core_8c_source.html#l00995">OS_EventTaskRdy()</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00204">OS_POST_OPT_BROADCAST</a>, <a class="el" href="ucos__ii_8h_source.html#l00205">OS_POST_OPT_FRONT</a>, <a class="el" href="ucos__ii_8h_source.html#l00206">OS_POST_OPT_NO_SCHED</a>, <a class="el" href="os__core_8c_source.html#l01609">OS_Sched()</a>, <a class="el" href="ucos__ii_8h_source.html#l00121">OS_STAT_PEND_OK</a>, <a class="el" href="ucos__ii_8h_source.html#l00108">OS_STAT_Q</a>, <a class="el" href="ucos__ii_8h_source.html#l00397">OS_EVENT::OSEventGrp</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00538">OS_Q::OSQEnd</a>, <a class="el" href="ucos__ii_8h_source.html#l00542">OS_Q::OSQEntries</a>, <a class="el" href="ucos__ii_8h_source.html#l00539">OS_Q::OSQIn</a>, <a class="el" href="ucos__ii_8h_source.html#l00540">OS_Q::OSQOut</a>, <a class="el" href="ucos__ii_8h_source.html#l00541">OS_Q::OSQSize</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00537">OS_Q::OSQStart</a>.</p>
+<div class="fragment"><div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;{</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                          </span><span class="comment">/* Allocate storage for CPU status register      */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {                    <span class="comment">/* Validate &#39;pevent&#39;                             */</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    }</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {     <span class="comment">/* Validate event block type                     */</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>);</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    }</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> != 0x00u) {                <span class="comment">/* See if any task pending on queue              */</span></div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <span class="keywordflow">if</span> ((opt &amp; <a class="code" href="ucos__ii_8h.html#ae9536582162d524cfeceebebd26a9241">OS_POST_OPT_BROADCAST</a>) != 0x00u) { <span class="comment">/* Do we need to post msg to ALL waiting tasks ? */</span></div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;            <span class="keywordflow">while</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> != 0u) {        <span class="comment">/* Yes, Post to ALL tasks waiting on queue       */</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;                (void)<a class="code" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85">OS_EventTaskRdy</a>(pevent, pmsg, <a class="code" href="ucos__ii_8h.html#add50b4d725edc9aca2c44b6092dd4153">OS_STAT_Q</a>, <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            }</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        } <span class="keywordflow">else</span> {                                      <span class="comment">/* No,  Post to HPT waiting on queue             */</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            (void)<a class="code" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85">OS_EventTaskRdy</a>(pevent, pmsg, <a class="code" href="ucos__ii_8h.html#add50b4d725edc9aca2c44b6092dd4153">OS_STAT_Q</a>, <a class="code" href="ucos__ii_8h.html#a1d25ef49f6325eea1e7bde408c96cbf9">OS_STAT_PEND_OK</a>);</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        }</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <span class="keywordflow">if</span> ((opt &amp; <a class="code" href="ucos__ii_8h.html#aa6ac1286b5bbbef4c25b1af620a90c3a">OS_POST_OPT_NO_SCHED</a>) == 0u) {     <span class="comment">/* See if scheduler needs to be invoked          */</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            <a class="code" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292">OS_Sched</a>();                               <span class="comment">/* Find highest priority task ready to run       */</span></div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        }</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    }</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    pq = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;                  <span class="comment">/* Point to queue control block                  */</span></div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    if (pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a> &gt;= pq-&gt;<a class="code" href="ucos__ii_8h.html#a6f9c1dac5f6120adc4f4b7d93fa0c80b">OSQSize</a>) {              <span class="comment">/* Make sure queue is not full                   */</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#ab981dc11058f120bbc44a20bc6cf626d">OS_ERR_Q_FULL</a>);</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    }</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <span class="keywordflow">if</span> ((opt &amp; <a class="code" href="ucos__ii_8h.html#a2d86673a916f3cc2de89adba511bb0a7">OS_POST_OPT_FRONT</a>) != 0x00u) {         <span class="comment">/* Do we post to the FRONT of the queue?         */</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <span class="keywordflow">if</span> (pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> == pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>) {             <span class="comment">/* Yes, Post as LIFO, Wrap OUT pointer if we ... */</span></div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> = pq-&gt;<a class="code" href="ucos__ii_8h.html#a60d92f59dcea53be9f36d9bae4f9f2d8">OSQEnd</a>;                  <span class="comment">/*      ... are at the 1st queue entry           */</span></div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        }</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a>--;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        *pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a> = pmsg;                           <span class="comment">/*      Insert message into queue                */</span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    } <span class="keywordflow">else</span> {                                          <span class="comment">/* No,  Post as FIFO                             */</span></div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        *pq-&gt;<a class="code" href="ucos__ii_8h.html#ae4a8dfc52173a959eab9c86f5ac9b2aa">OSQIn</a>++ = pmsg;                          <span class="comment">/*      Insert message into queue                */</span></div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordflow">if</span> (pq-&gt;<a class="code" href="ucos__ii_8h.html#ae4a8dfc52173a959eab9c86f5ac9b2aa">OSQIn</a> == pq-&gt;<a class="code" href="ucos__ii_8h.html#a60d92f59dcea53be9f36d9bae4f9f2d8">OSQEnd</a>) {                <span class="comment">/*      Wrap IN ptr if we are at end of queue    */</span></div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            pq-&gt;<a class="code" href="ucos__ii_8h.html#ae4a8dfc52173a959eab9c86f5ac9b2aa">OSQIn</a> = pq-&gt;<a class="code" href="ucos__ii_8h.html#a131acde38b9546ce9a43784fec0fb1ad">OSQStart</a>;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        }</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    }</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a>++;                                 <span class="comment">/* Update the nbr of entries in the queue        */</span></div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_aefa14e09d312bd2180272b0ff27e702e_cgraph.png" border="0" usemap="#os__q_8c_aefa14e09d312bd2180272b0ff27e702e_cgraph" alt=""/></div>
+<map name="os__q_8c_aefa14e09d312bd2180272b0ff27e702e_cgraph" id="os__q_8c_aefa14e09d312bd2180272b0ff27e702e_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a66443267dcaea36601c0d05b297a9b85" title="OS_EventTaskRdy" alt="" coords="152,56,283,83"/><area shape="rect" id="node5" href="os__core_8c.html#a5d641c1c441f4be4896745deafd66292" title="OS_Sched" alt="" coords="175,107,260,133"/><area shape="rect" id="node3" href="os__core_8c.html#adc333171c0a5c0e970d0e52bb56028f0" title="OS_EventTaskRemove" alt="" coords="345,5,500,32"/><area shape="rect" id="node4" href="os__core_8c.html#a47fd3f13f0d6b856f5bf627c3ccb0259" title="OS_EventTaskRemoveMulti" alt="" coords="331,56,514,83"/><area shape="rect" id="node6" href="os__core_8c.html#a4c012d2e7a886885bd6f80ca15b295b8" title="OS_SchedNew" alt="" coords="367,107,478,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abce6e7104710518cd12a43128c91f947"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> OSQQuery </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *&#160;</td>
+          <td class="paramname"><em>pevent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ucos__ii_8h.html#struct_o_s___q___d_a_t_a">OS_Q_DATA</a> *&#160;</td>
+          <td class="paramname"><em>p_q_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00787">787</a> 行定义.</p>
+
+<p>参考 <a class="el" href="os__cpu_8h_source.html#l00078">OS_ENTER_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00248">OS_ERR_EVENT_TYPE</a>, <a class="el" href="ucos__ii_8h_source.html#l00246">OS_ERR_NONE</a>, <a class="el" href="ucos__ii_8h_source.html#l00256">OS_ERR_PDATA_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00251">OS_ERR_PEVENT_NULL</a>, <a class="el" href="ucos__ii_8h_source.html#l00084">OS_EVENT_TBL_SIZE</a>, <a class="el" href="ucos__ii_8h_source.html#l00132">OS_EVENT_TYPE_Q</a>, <a class="el" href="os__cpu_8h_source.html#l00079">OS_EXIT_CRITICAL</a>, <a class="el" href="ucos__ii_8h_source.html#l00397">OS_EVENT::OSEventGrp</a>, <a class="el" href="ucos__ii_8h_source.html#l00552">OS_Q_DATA::OSEventGrp</a>, <a class="el" href="ucos__ii_8h_source.html#l00394">OS_EVENT::OSEventPtr</a>, <a class="el" href="ucos__ii_8h_source.html#l00398">OS_EVENT::OSEventTbl</a>, <a class="el" href="ucos__ii_8h_source.html#l00551">OS_Q_DATA::OSEventTbl</a>, <a class="el" href="ucos__ii_8h_source.html#l00393">OS_EVENT::OSEventType</a>, <a class="el" href="ucos__ii_8h_source.html#l00547">OS_Q_DATA::OSMsg</a>, <a class="el" href="ucos__ii_8h_source.html#l00548">OS_Q_DATA::OSNMsgs</a>, <a class="el" href="ucos__ii_8h_source.html#l00542">OS_Q::OSQEntries</a>, <a class="el" href="ucos__ii_8h_source.html#l00540">OS_Q::OSQOut</a>, <a class="el" href="ucos__ii_8h_source.html#l00541">OS_Q::OSQSize</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00549">OS_Q_DATA::OSQSize</a>.</p>
+<div class="fragment"><div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;{</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>      *pq;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>      i;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="preprocessor">#if OS_LOWEST_PRIO &lt;= 63u</span></div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>     *psrc;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    <a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a>     *pdest;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>    *psrc;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>    *pdest;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#if OS_CRITICAL_METHOD == 3u                           </span><span class="comment">/* Allocate storage for CPU status register     */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#a5205c42256d1cca93aaa0171a20bae61">OS_CPU_SR</a>  cpu_sr = 0u;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="preprocessor">#if OS_ARG_CHK_EN &gt; 0u</span></div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent == (<a class="code" href="ucos__ii_8h.html#struct_o_s___e_v_e_n_t">OS_EVENT</a> *)0) {                     <span class="comment">/* Validate &#39;pevent&#39;                            */</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a2787e9192fff5a448159c0e978d0dc8f">OS_ERR_PEVENT_NULL</a>);</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    }</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <span class="keywordflow">if</span> (p_q_data == (<a class="code" href="ucos__ii_8h.html#struct_o_s___q___d_a_t_a">OS_Q_DATA</a> *)0) {                  <span class="comment">/* Validate &#39;p_q_data&#39;                          */</span></div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#addf55fc2d42c7c5ca9c3ccb6d9535ae4">OS_ERR_PDATA_NULL</a>);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    }</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (pevent-&gt;<a class="code" href="ucos__ii_8h.html#a5871bc0e9112f12b8f8f2579d93275d7">OSEventType</a> != <a class="code" href="ucos__ii_8h.html#aa6ba7a266f15a1668ee0622ad8b6989f">OS_EVENT_TYPE_Q</a>) {      <span class="comment">/* Validate event block type                    */</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#a6d0892eecfcc5a20ddad798264a8618f">OS_ERR_EVENT_TYPE</a>);</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    }</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <a class="code" href="os__cpu_8h.html#aac2779e293a9c4658daeaed6b68f5cd3">OS_ENTER_CRITICAL</a>();</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    p_q_data-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a> = pevent-&gt;<a class="code" href="ucos__ii_8h.html#a156c7ba07c3b098f6c74faee9eecd68a">OSEventGrp</a>;         <span class="comment">/* Copy message queue wait list                 */</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    psrc                 = &amp;pevent-&gt;<a class="code" href="ucos__ii_8h.html#a7eb4a323ad5c9a0b6185160da0869c1f">OSEventTbl</a>[0];</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    pdest                = &amp;p_q_data-&gt;<a class="code" href="ucos__ii_8h.html#a7eb4a323ad5c9a0b6185160da0869c1f">OSEventTbl</a>[0];</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <span class="keywordflow">for</span> (i = 0u; i &lt; <a class="code" href="ucos__ii_8h.html#a718ce0c469b8cdee4fcb184c36dab940">OS_EVENT_TBL_SIZE</a>; i++) {</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        *pdest++ = *psrc++;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    }</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    pq = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)pevent-&gt;<a class="code" href="ucos__ii_8h.html#a2d8adc94de9c79ca904c81b3a30d8c91">OSEventPtr</a>;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    if (pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a> &gt; 0u) {</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        p_q_data-&gt;<a class="code" href="ucos__ii_8h.html#ab695eaa961ca9c6ad997785d45d89501">OSMsg</a> = *pq-&gt;<a class="code" href="ucos__ii_8h.html#a90bf45409207c72f0b622e5486de8c9f">OSQOut</a>;                 <span class="comment">/* Get next message to return if available      */</span></div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        p_q_data-&gt;<a class="code" href="ucos__ii_8h.html#ab695eaa961ca9c6ad997785d45d89501">OSMsg</a> = (<span class="keywordtype">void</span> *)0;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    }</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    p_q_data-&gt;<a class="code" href="ucos__ii_8h.html#aa063bcfab3bcba899b8ebb4e4b5d4f2c">OSNMsgs</a> = pq-&gt;<a class="code" href="ucos__ii_8h.html#a09de047db4c6dd3e6cbc585317503320">OSQEntries</a>;</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    p_q_data-&gt;<a class="code" href="ucos__ii_8h.html#a6f9c1dac5f6120adc4f4b7d93fa0c80b">OSQSize</a> = pq-&gt;<a class="code" href="ucos__ii_8h.html#a6f9c1dac5f6120adc4f4b7d93fa0c80b">OSQSize</a>;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <a class="code" href="os__cpu_8h.html#a4118ef84c499db9b81e3f8586e21354f">OS_EXIT_CRITICAL</a>();</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="ucos__ii_8h.html#aba4101401c70765d26505155bd42a2a5">OS_ERR_NONE</a>);</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a61641feff32e6bde0adb8fe1fb5e1e3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OS_QInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>在文件 <a class="el" href="os__q_8c_source.html">os_q.c</a> 第 <a class="el" href="os__q_8c_source.html#l00852">852</a> 行定义.</p>
+
+<p>参考 <a class="el" href="_a_p_p_2os__cfg_8h_source.html#l00045">OS_MAX_QS</a>, <a class="el" href="os__core_8c_source.html#l01549">OS_MemClr()</a>, <a class="el" href="ucos__ii_8h_source.html#l00775">OSQFreeList</a>, <a class="el" href="ucos__ii_8h_source.html#l00536">OS_Q::OSQPtr</a> , 以及 <a class="el" href="ucos__ii_8h_source.html#l00776">OSQTbl</a>.</p>
+
+<p>参考自 <a class="el" href="os__core_8c_source.html#l00563">OSInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;{</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;<span class="preprocessor">#if OS_MAX_QS == 1u</span></div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;<span class="preprocessor"></span>    <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>         = &amp;<a class="code" href="ucos__ii_8h.html#a6153ab507218c74028e21b58d1f7fafc">OSQTbl</a>[0];                <span class="comment">/* Only ONE queue!                                */</span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a>-&gt;<a class="code" href="ucos__ii_8h.html#a6f140c2dc908271fda24f2fa6b7feaae">OSQPtr</a> = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)0;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;<span class="preprocessor">#if OS_MAX_QS &gt;= 2u</span></div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;<span class="preprocessor"></span>    <a class="code" href="os__cpu_8h.html#af4d9da7eb3e345e431a0949058541c14">INT16U</a>  i;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>   *pq1;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a>   *pq2;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    <a class="code" href="os__core_8c.html#a0ba333bc9b08985d9519c29a430188f0">OS_MemClr</a>((<a class="code" href="os__cpu_8h.html#aa6b4f0d7384ed9d5ed0dd95e92bc5a2c">INT8U</a> *)&amp;<a class="code" href="ucos__ii_8h.html#a6153ab507218c74028e21b58d1f7fafc">OSQTbl</a>[0], <span class="keyword">sizeof</span>(<a class="code" href="ucos__ii_8h.html#a6153ab507218c74028e21b58d1f7fafc">OSQTbl</a>));  <span class="comment">/* Clear the queue table                          */</span></div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    pq1 = &amp;<a class="code" href="ucos__ii_8h.html#a6153ab507218c74028e21b58d1f7fafc">OSQTbl</a>[0];</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    pq2 = &amp;<a class="code" href="ucos__ii_8h.html#a6153ab507218c74028e21b58d1f7fafc">OSQTbl</a>[1];</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;    <span class="keywordflow">for</span> (i = 0u; i &lt; (<a class="code" href="_a_p_p_2os__cfg_8h.html#a6ce1fa5424b86a2e16aafc0ae9ab2712">OS_MAX_QS</a> - 1u); i++) {        <span class="comment">/* Init. list of free QUEUE control blocks        */</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        pq1-&gt;<a class="code" href="ucos__ii_8h.html#a6f140c2dc908271fda24f2fa6b7feaae">OSQPtr</a> = pq2;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        pq1++;</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        pq2++;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    }</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    pq1-&gt;<a class="code" href="ucos__ii_8h.html#a6f140c2dc908271fda24f2fa6b7feaae">OSQPtr</a> = (<a class="code" href="ucos__ii_8h.html#struct_o_s___q">OS_Q</a> *)0;</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    <a class="code" href="ucos__ii_8h.html#a3c0604d98fe2e99860799d504130c507">OSQFreeList</a> = &amp;<a class="code" href="ucos__ii_8h.html#a6153ab507218c74028e21b58d1f7fafc">OSQTbl</a>[0];</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;<span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_a61641feff32e6bde0adb8fe1fb5e1e3f_cgraph.png" border="0" usemap="#os__q_8c_a61641feff32e6bde0adb8fe1fb5e1e3f_cgraph" alt=""/></div>
+<map name="os__q_8c_a61641feff32e6bde0adb8fe1fb5e1e3f_cgraph" id="os__q_8c_a61641feff32e6bde0adb8fe1fb5e1e3f_cgraph">
+<area shape="rect" id="node2" href="os__core_8c.html#a0ba333bc9b08985d9519c29a430188f0" title="OS_MemClr" alt="" coords="128,5,221,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="os__q_8c_a61641feff32e6bde0adb8fe1fb5e1e3f_icgraph.png" border="0" usemap="#os__q_8c_a61641feff32e6bde0adb8fe1fb5e1e3f_icgraph" alt=""/></div>
+<map name="os__q_8c_a61641feff32e6bde0adb8fe1fb5e1e3f_icgraph" id="os__q_8c_a61641feff32e6bde0adb8fe1fb5e1e3f_icgraph">
+<area shape="rect" id="node2" href="ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="128,5,187,32"/><area shape="rect" id="node3" href="app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="235,5,285,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_202a4c092cd709115b5c50b70b6611fe.html">UCOS_TI_LM3S_Keil</a></li><li class="navelem"><a class="el" href="dir_71bcdadcecd7b5ff1becd3dd629fd845.html">uCOS-II</a></li><li class="navelem"><a class="el" href="dir_039f0bfb9474175ba2ca0fe1aa10ce74.html">Source</a></li><li class="navelem"><a class="el" href="os__q_8c.html">os_q.c</a></li>
+    <li class="footer">生成于 2013年 十月 1日 星期二 12:18:45 , 为 UCOS_TI_LM3S_Keil使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
+  </ul>
+</div>
+</body>
+</html>

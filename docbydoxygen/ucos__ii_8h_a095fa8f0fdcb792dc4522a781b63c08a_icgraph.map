@@ -1,0 +1,7 @@
+<map id="App_TaskStatHook" name="App_TaskStatHook">
+<area shape="rect" id="node2" href="$ucos__ii_8h.html#a18eed81d1c43665ae8cf9242a188db7f" title="OSTaskStatHook" alt="" coords="189,5,312,32"/>
+<area shape="rect" id="node3" href="$ucos__ii_8h.html#a827236210af1492f347cebe245caeda1" title="OS_TaskStat" alt="" coords="361,5,461,32"/>
+<area shape="rect" id="node4" href="$os__core_8c.html#a15a49b390887c036182d8c0b49553fca" title="OS_InitTaskStat" alt="" coords="509,5,627,32"/>
+<area shape="rect" id="node5" href="$ucos__ii_8h.html#afefd47bb79544cf1414a3c6954d71258" title="OSInit" alt="" coords="675,5,733,32"/>
+<area shape="rect" id="node6" href="$app_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="781,5,832,32"/>
+</map>
